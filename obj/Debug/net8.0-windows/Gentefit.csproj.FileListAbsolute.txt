@@ -152,3 +152,4 @@ F:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de
 F:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Productos\P2. Capa acceso de datos\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.Admin.ListarClientes.resources
 F:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Productos\P2. Capa acceso de datos\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.Admin.ModificarCliente.resources
 F:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Productos\P2. Capa acceso de datos\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.Admin.EliminarCliente.resources
+F:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Productos\P2. Capa acceso de datos\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.sourcelink.json

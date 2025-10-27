@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfClienteXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ClienteXml>
+    <Id>26</Id>
+    <Nombre>Angela</Nombre>
+    <Apellidos>Morales Vega</Apellidos>
+    <Dni>22222231A</Dni>
+    <Telefono>600222231</Telefono>
+    <Email>andrea21@gentefit.com</Email>
+    <Contrasena>Gentefit1234</Contrasena>
+    <Gimnasio>Gentefit</Gimnasio>
+  </ClienteXml>
+  <ClienteXml>
+    <Id>27</Id>
+    <Nombre>Daniel</Nombre>
+    <Apellidos>Lozano Perez</Apellidos>
+    <Dni>22222232B</Dni>
+    <Telefono>600222232</Telefono>
+    <Email>david22@gentefit.com</Email>
+    <Contrasena>Gentefit1234</Contrasena>
+    <Gimnasio>Gentefit</Gimnasio>
+  </ClienteXml>
+  <ClienteXml>
+    <Id>28</Id>
+    <Nombre>Lucia</Nombre>
+    <Apellidos>Torres Ruiz</Apellidos>
+    <Dni>22222233C</Dni>
+    <Telefono>600222233</Telefono>
+    <Email>lucia23@gentefit.com</Email>
+    <Contrasena>Gentefit1234</Contrasena>
+    <Gimnasio>Gentefit</Gimnasio>
+  </ClienteXml>
+  <ClienteXml>
+    <Id>29</Id>
+    <Nombre>Jorge</Nombre>
+    <Apellidos>Garcia Ortega</Apellidos>
+    <Dni>22222234D</Dni>
+    <Telefono>600222234</Telefono>
+    <Email>jorge24@gentefit.com</Email>
+    <Contrasena>Gentefit1234</Contrasena>
+    <Gimnasio>Gentefit</Gimnasio>
+  </ClienteXml>
+  <ClienteXml>
+    <Id>30</Id>
+    <Nombre>Isabel</Nombre>
+    <Apellidos>Serrano Diaz</Apellidos>
+    <Dni>22222235E</Dni>
+    <Telefono>600222235</Telefono>
+    <Email>isabel25@gentefit.com</Email>
+    <Contrasena>Gentefit1234</Contrasena>
+    <Gimnasio>Gentefit</Gimnasio>
+  </ClienteXml>
+</ArrayOfClienteXml>

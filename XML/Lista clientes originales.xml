@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfClienteXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ClienteXml>
+    <Id>1</Id>
+    <Nombre>Carlos</Nombre>
+    <Apellidos>Martinez Lopez</Apellidos>
+    <Dni>12345678A</Dni>
+    <Telefono>612345678</Telefono>
+    <Email>carlos.martinez@example.com</Email>
+    <Contrasena>Gentefit1234</Contrasena>
+    <Gimnasio>Gentefit</Gimnasio>
+  </ClienteXml>
+  <ClienteXml>
+    <Id>2</Id>
+    <Nombre>Laura</Nombre>
+    <Apellidos>Gomez Ruiz</Apellidos>
+    <Dni>87654321B</Dni>
+    <Telefono>634567890</Telefono>
+    <Email>laura.gomez@example.com</Email>
+    <Contrasena>Gentefit1234</Contrasena>
+    <Gimnasio>Gentefit</Gimnasio>
+  </ClienteXml>
+  <ClienteXml>
+    <Id>3</Id>
+    <Nombre>Javier</Nombre>
+    <Apellidos>Fernandez Sanz</Apellidos>
+    <Dni>45678912C</Dni>
+    <Telefono>622334455</Telefono>
+    <Email>javier.fernandez@example.com</Email>
+    <Contrasena>Gentefit1234</Contrasena>
+    <Gimnasio>Gentefit</Gimnasio>
+  </ClienteXml>
+  <ClienteXml>
+    <Id>4</Id>
+    <Nombre>Maria</Nombre>
+    <Apellidos>Lopez Ortega</Apellidos>
+    <Dni>78912345D</Dni>
+    <Telefono>655443322</Telefono>
+    <Email>maria.lopez@example.com</Email>
+    <Contrasena>Gentefit1234</Contrasena>
+    <Gimnasio>Gentefit</Gimnasio>
+  </ClienteXml>
+  <ClienteXml>
+    <Id>5</Id>
+    <Nombre>Elena</Nombre>
+    <Apellidos>Sanchez Perez</Apellidos>
+    <Dni>23456789E</Dni>
+    <Telefono>677889900</Telefono>
+    <Email>elena.sanchez@example.com</Email>
+    <Contrasena>Gentefit1234</Contrasena>
+    <Gimnasio>Gentefit</Gimnasio>
+  </ClienteXml>
+  <ClienteXml>
+    <Id>6</Id>
+    <Nombre>Diego</Nombre>
+    <Apellidos>Fernandez Ruiz</Apellidos>
+    <Dni>11111111A</Dni>
+    <Telefono>600111111</Telefono>
+    <Email>diego1@gentefit.com</Email>
+    <Contrasena>Gentefit1234</Contrasena>
+    <Gimnasio>Gentefit</Gimnasio>
+  </ClienteXml>
+  <ClienteXml>
+    <Id>7</Id>
+    <Nombre>Sofia</Nombre>
+    <Apellidos>Martinez Lopez</Apellidos>
+    <Dni>11111112B</Dni>
+    <Telefono>600111112</Telefono>
+    <Email>sofia2@gentefit.com</Email>
+    <Contrasena>Gentefit1234</Contrasena>
+    <Gimnasio>Gentefit</Gimnasio>
+  </ClienteXml>
+  <ClienteXml>
+    <Id>8</Id>
+    <Nombre>Luis</Nombre>
+    <Apellidos>Gomez Sanchez</Apellidos>
+    <Dni>11111113C</Dni>
+    <Telefono>600111113</Telefono>
+    <Email>luis3@gentefit.com</Email>
+    <Contrasena>Gentefit1234</Contrasena>
+    <Gimnasio>Gentefit</Gimnasio>
+  </ClienteXml>
+  <ClienteXml>
+    <Id>9</Id>
+    <Nombre>Elena</Nombre>
+    <Apellidos>Ramirez Torres</Apellidos>
+    <Dni>11111114D</Dni>
+    <Telefono>600111114</Telefono>
+    <Email>elena4@gentefit.com</Email>
+    <Contrasena>Gentefit1234</Contrasena>
+    <Gimnasio>Gentefit</Gimnasio>
+  </ClienteXml>
+  <ClienteXml>
+    <Id>10</Id>
+    <Nombre>Pablo</Nombre>
+    <Apellidos>Navarro Diaz</Apellidos>
+    <Dni>11111115E</Dni>
+    <Telefono>600111115</Telefono>
+    <Email>pablo5@gentefit.com</Email>
+    <Contrasena>Gentefit1234</Contrasena>
+    <Gimnasio>Gentefit</Gimnasio>
+  </ClienteXml>
+  <ClienteXml>
+    <Id>11</Id>
+    <Nombre>Carla</Nombre>
+    <Apellidos>Santos Ortega</Apellidos>
+    <Dni>11111116F</Dni>
+    <Telefono>600111116</Telefono>
+    <Email>carla6@gentefit.com</Email>
+    <Contrasena>Gentefit1234</Contrasena>
+    <Gimnasio>Gentefit</Gimnasio>
+  </ClienteXml>
+  <ClienteXml>
+    <Id>12</Id>
+    <Nombre>Alvaro</Nombre>
+    <Apellidos>Lopez Garcia</Apellidos>
+    <Dni>11111117G</Dni>
+    <Telefono>600111117</Telefono>
+    <Email>alvaro7@gentefit.com</Email>
+    <Contrasena>Gentefit1234</Contrasena>
+    <Gimnasio>Gentefit</Gimnasio>
+  </ClienteXml>
+  <ClienteXml>
+    <Id>13</Id>
+    <Nombre>Valeria</Nombre>
+    <Apellidos>Martinez Torres</Apellidos>
+    <Dni>68759834H</Dni>
+    <Telefono>667836584</Telefono>
+    <Email>valeria8@gentefit.com</Email>
+    <Contrasena>Gentefit1234</Contrasena>
+    <Gimnasio>Gentefit</Gimnasio>
+  </ClienteXml>
+  <ClienteXml>
+    <Id>14</Id>
+    <Nombre>Hugo</Nombre>
+    <Apellidos>Perez Sanchez</Apellidos>
+    <Dni>11111119I</Dni>
+    <Telefono>600111119</Telefono>
+    <Email>hugo9@gentefit.com</Email>
+    <Contrasena>Gentefit1234</Contrasena>
+    <Gimnasio>Gentefit</Gimnasio>
+  </ClienteXml>
+  <ClienteXml>
+    <Id>15</Id>
+    <Nombre>Miriam</Nombre>
+    <Apellidos>Gonzalez Ruiz</Apellidos>
+    <Dni>11111120J</Dni>
+    <Telefono>600111120</Telefono>
+    <Email>miriam10@gentefit.com</Email>
+    <Contrasena>Gentefit1234</Contrasena>
+    <Gimnasio>Gentefit</Gimnasio>
+  </ClienteXml>
+  <ClienteXml>
+    <Id>16</Id>
+    <Nombre>Adrian</Nombre>
+    <Apellidos>Fernandez Lopez</Apellidos>
+    <Dni>11111121K</Dni>
+    <Telefono>600111121</Telefono>
+    <Email>adrian11@gentefit.com</Email>
+    <Contrasena>Gentefit1234</Contrasena>
+    <Gimnasio>Gentefit</Gimnasio>
+  </ClienteXml>
+  <ClienteXml>
+    <Id>17</Id>
+    <Nombre>Laura</Nombre>
+    <Apellidos>Santos Pascual</Apellidos>
+    <Dni>11111122L</Dni>
+    <Telefono>600111122</Telefono>
+    <Email>laura12@gentefit.com</Email>
+    <Contrasena>Gentefit1234</Contrasena>
+    <Gimnasio>Gentefit</Gimnasio>
+  </ClienteXml>
+  <ClienteXml>
+    <Id>18</Id>
+    <Nombre>Fernando</Nombre>
+    <Apellidos>Navarro Morales</Apellidos>
+    <Dni>11111123M</Dni>
+    <Telefono>600111123</Telefono>
+    <Email>fernando13@gentefit.com</Email>
+    <Contrasena>Gentefit1234</Contrasena>
+    <Gimnasio>Gentefit</Gimnasio>
+  </ClienteXml>
+  <ClienteXml>
+    <Id>19</Id>
+    <Nombre>Claudia</Nombre>
+    <Apellidos>Ramirez Gonzalez</Apellidos>
+    <Dni>11111124N</Dni>
+    <Telefono>600111124</Telefono>
+    <Email>claudia14@gentefit.com</Email>
+    <Contrasena>Gentefit1234</Contrasena>
+    <Gimnasio>Gentefit</Gimnasio>
+  </ClienteXml>
+  <ClienteXml>
+    <Id>20</Id>
+    <Nombre>Mario</Nombre>
+    <Apellidos>Lopez Torres</Apellidos>
+    <Dni>11111125O</Dni>
+    <Telefono>600111125</Telefono>
+    <Email>mario15@gentefit.com</Email>
+    <Contrasena>Gentefit1234</Contrasena>
+    <Gimnasio>Gentefit</Gimnasio>
+  </ClienteXml>
+  <ClienteXml>
+    <Id>21</Id>
+    <Nombre>Paula</Nombre>
+    <Apellidos>Martinez Ruiz</Apellidos>
+    <Dni>11111126P</Dni>
+    <Telefono>600111126</Telefono>
+    <Email>paula16@gentefit.com</Email>
+    <Contrasena>Gentefit1234</Contrasena>
+    <Gimnasio>Gentefit</Gimnasio>
+  </ClienteXml>
+  <ClienteXml>
+    <Id>22</Id>
+    <Nombre>Ricardo</Nombre>
+    <Apellidos>Gomez Fernandez</Apellidos>
+    <Dni>11111127Q</Dni>
+    <Telefono>600111127</Telefono>
+    <Email>ricardo17@gentefit.com</Email>
+    <Contrasena>Gentefit1234</Contrasena>
+    <Gimnasio>Gentefit</Gimnasio>
+  </ClienteXml>
+  <ClienteXml>
+    <Id>23</Id>
+    <Nombre>Natalia</Nombre>
+    <Apellidos>Santos Lopez</Apellidos>
+    <Dni>11111128R</Dni>
+    <Telefono>600111128</Telefono>
+    <Email>natalia18@gentefit.com</Email>
+    <Contrasena>Gentefit1234</Contrasena>
+    <Gimnasio>Gentefit</Gimnasio>
+  </ClienteXml>
+  <ClienteXml>
+    <Id>24</Id>
+    <Nombre>Diego</Nombre>
+    <Apellidos>Ramirez Perez</Apellidos>
+    <Dni>11111129S</Dni>
+    <Telefono>600111129</Telefono>
+    <Email>diego19@gentefit.com</Email>
+    <Contrasena>Gentefit1234</Contrasena>
+    <Gimnasio>Gentefit</Gimnasio>
+  </ClienteXml>
+  <ClienteXml>
+    <Id>25</Id>
+    <Nombre>Sara</Nombre>
+    <Apellidos>Navarro Gonzalez</Apellidos>
+    <Dni>11111130T</Dni>
+    <Telefono>600111130</Telefono>
+    <Email>sara20@gentefit.com</Email>
+    <Contrasena>Gentefit1234</Contrasena>
+    <Gimnasio>Gentefit</Gimnasio>
+  </ClienteXml>
+</ArrayOfClienteXml>

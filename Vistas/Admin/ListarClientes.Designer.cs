@@ -31,6 +31,8 @@
             PanelClientes = new DataGridView();
             Actividades = new Label();
             BotonVolver = new Button();
+            BotonExportarXml = new Button();
+            BotonImportarXml = new Button();
             ((System.ComponentModel.ISupportInitialize)PanelClientes).BeginInit();
             SuspendLayout();
             // 
@@ -41,9 +43,6 @@
             PanelClientes.Name = "PanelClientes";
             PanelClientes.Size = new Size(688, 285);
             PanelClientes.TabIndex = 0;
-
-        
-
             // 
             // Actividades
             // 
@@ -66,12 +65,36 @@
             BotonVolver.UseVisualStyleBackColor = true;
             BotonVolver.Click += BotonVolver_Click;
             // 
+            // BotonExportarXml
+            // 
+            BotonExportarXml.BackColor = Color.DarkOrange;
+            BotonExportarXml.Location = new Point(559, 396);
+            BotonExportarXml.Name = "BotonExportarXml";
+            BotonExportarXml.Size = new Size(97, 23);
+            BotonExportarXml.TabIndex = 15;
+            BotonExportarXml.Text = "Exportar XML";
+            BotonExportarXml.UseVisualStyleBackColor = false;
+            BotonExportarXml.Click += BotonExportarXml_Click;
+            // 
+            // BotonImportarXml
+            // 
+            BotonImportarXml.BackColor = Color.DarkOrange;
+            BotonImportarXml.Location = new Point(444, 396);
+            BotonImportarXml.Name = "BotonImportarXml";
+            BotonImportarXml.Size = new Size(97, 23);
+            BotonImportarXml.TabIndex = 16;
+            BotonImportarXml.Text = "Importar XML";
+            BotonImportarXml.UseVisualStyleBackColor = false;
+            BotonImportarXml.Click += BotonImportarXml_Click;
+            // 
             // ListarClientes
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(800, 450);
+            Controls.Add(BotonImportarXml);
+            Controls.Add(BotonExportarXml);
             Controls.Add(BotonVolver);
             Controls.Add(Actividades);
             Controls.Add(PanelClientes);
@@ -81,9 +104,9 @@
             ResumeLayout(false);
             PerformLayout();
 
-        
-          
-           
+
+
+
         }
 
         #endregion
@@ -91,5 +114,7 @@
         private DataGridView PanelClientes;
         private Label Actividades;
         private Button BotonVolver;
+        private Button BotonExportarXml;
+        private Button BotonImportarXml;
     }
 }
