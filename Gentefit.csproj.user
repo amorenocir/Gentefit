@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="Test\TestConexion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Admin\AnadirCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Admin\EliminarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Admin\ListarClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Admin\MenuAdActividades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Admin\MenuAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Admin\MenuAdClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Admin\ModificarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\MenuCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\MenuEncargado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\MenuRecepcionista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
