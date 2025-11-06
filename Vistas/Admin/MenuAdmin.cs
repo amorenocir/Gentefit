@@ -19,6 +19,12 @@ namespace Gentefit.Vistas.Admin
             InitializeComponent();
         }
 
+        private void MenuAdmin_Load(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
+
+
         private void ImagenPerfil_Click(object sender, EventArgs e)
         {
             //Abrir Menu Actividades
@@ -28,7 +34,7 @@ namespace Gentefit.Vistas.Admin
         private void ImagenMensajes_Click(object sender, EventArgs e)
         {
             //Abrir Menu Actividades
-           
+
         }
 
         private void BotonActividades_Click(object sender, EventArgs e)
@@ -40,13 +46,13 @@ namespace Gentefit.Vistas.Admin
         private void BotonReservas_Click(object sender, EventArgs e)
         {
             //Abrir Menu X
-         
+
         }
 
         private void BotonMonitores_Click(object sender, EventArgs e)
         {
             //Abrir Menu X
-           
+
         }
 
         private void BotonClientes_Click(object sender, EventArgs e)
@@ -58,13 +64,27 @@ namespace Gentefit.Vistas.Admin
         private void BotonUsuarios_Click(object sender, EventArgs e)
         {
             //Abrir Menu X
-           
+
         }
 
         private void BotonVolver_Click(object sender, EventArgs e)
         {
-            this.Hide(); 
-            new Login();
+            this.Hide();
+            new Login().Show();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            label2.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
         }
     }
 }

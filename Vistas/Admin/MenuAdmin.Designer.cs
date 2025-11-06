@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuAdmin));
             pictureBox1 = new PictureBox();
             ImagenPerfil = new PictureBox();
@@ -40,6 +41,7 @@
             BotonClientes = new Button();
             BotonUsuarios = new Button();
             BotonVolver = new Button();
+            timer1 = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ImagenPerfil).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ImagenMensajes).BeginInit();
@@ -92,6 +94,7 @@
             label2.Size = new Size(117, 15);
             label2.TabIndex = 4;
             label2.Text = "HH:MM DD-MM-AA";
+            label2.Click += label2_Click_1;
             // 
             // BotonActividades
             // 
@@ -163,6 +166,12 @@
             BotonVolver.UseVisualStyleBackColor = true;
             BotonVolver.Click += BotonVolver_Click;
             // 
+            // timer1
+            // 
+            timer1.Enabled = true;
+            timer1.Interval = 1000;
+            timer1.Tick += timer1_Tick;
+            // 
             // MenuAdmin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -183,6 +192,7 @@
             Controls.Add(pictureBox1);
             Name = "MenuAdmin";
             Text = "MenuAdmin";
+            Load += timer1_Tick;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)ImagenPerfil).EndInit();
             ((System.ComponentModel.ISupportInitialize)ImagenMensajes).EndInit();
@@ -203,5 +213,6 @@
         private Button BotonClientes;
         private Button BotonUsuarios;
         private Button BotonVolver;
+        private System.Windows.Forms.Timer timer1;
     }
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Gentefit")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+badb6dea514072a4faef3a2071ae3cd19ff1ee46")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b1a9cb719bbed987f4ead6c7f9557dc4f7053dc1")]
 [assembly: System.Reflection.AssemblyProductAttribute("Gentefit")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Gentefit")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
