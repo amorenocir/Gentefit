@@ -34,6 +34,7 @@
             BotonVolver = new Button();
             BotonEliminar = new Button();
             BotonVerTodos = new Button();
+            EliminarClientes = new Label();
             ((System.ComponentModel.ISupportInitialize)PanelClientes).BeginInit();
             SuspendLayout();
             // 
@@ -95,11 +96,23 @@
             BotonVerTodos.UseVisualStyleBackColor = false;
             BotonVerTodos.Click += BotonVerTodos_Click;
             // 
+            // EliminarClientes
+            // 
+            EliminarClientes.AutoSize = true;
+            EliminarClientes.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
+            EliminarClientes.ForeColor = Color.DarkSlateGray;
+            EliminarClientes.Location = new Point(79, 31);
+            EliminarClientes.Name = "EliminarClientes";
+            EliminarClientes.Size = new Size(274, 37);
+            EliminarClientes.TabIndex = 45;
+            EliminarClientes.Text = "ELIMINAR CLIENTES";
+            // 
             // EliminarCliente
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(EliminarClientes);
             Controls.Add(BotonVerTodos);
             Controls.Add(BotonVolver);
             Controls.Add(BotonEliminar);
@@ -121,5 +134,6 @@
         private Button BotonVolver;
         private Button BotonEliminar;
         private Button BotonVerTodos;
+        private Label EliminarClientes;
     }
 }

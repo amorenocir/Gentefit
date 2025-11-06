@@ -73,6 +73,7 @@
             Actividades.Size = new Size(193, 37);
             Actividades.TabIndex = 5;
             Actividades.Text = "ACTIVIDADES";
+            Actividades.Click += Actividades_Click;
             // 
             // BotonBodyCombat
             // 

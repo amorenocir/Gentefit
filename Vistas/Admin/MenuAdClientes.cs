@@ -44,5 +44,10 @@ namespace Gentefit.Vistas.Admin
             new MenuAdmin().Show();
             this.Hide();
         }
+
+        private void Actividades_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

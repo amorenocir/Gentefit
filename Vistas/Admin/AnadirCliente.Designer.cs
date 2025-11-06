@@ -43,6 +43,7 @@
             pictureBox1 = new PictureBox();
             BotonAnadir = new Button();
             BotonVolver = new Button();
+            AnadirClientes = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -145,7 +146,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.Perfil;
-            pictureBox1.Location = new Point(390, 20);
+            pictureBox1.Location = new Point(434, 20);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(248, 257);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -155,7 +156,7 @@
             // BotonAnadir
             // 
             BotonAnadir.BackColor = Color.DarkOrange;
-            BotonAnadir.Location = new Point(476, 356);
+            BotonAnadir.Location = new Point(358, 356);
             BotonAnadir.Name = "BotonAnadir";
             BotonAnadir.Size = new Size(70, 34);
             BotonAnadir.TabIndex = 19;
@@ -165,7 +166,7 @@
             // 
             // BotonVolver
             // 
-            BotonVolver.Location = new Point(567, 356);
+            BotonVolver.Location = new Point(611, 356);
             BotonVolver.Name = "BotonVolver";
             BotonVolver.Size = new Size(71, 34);
             BotonVolver.TabIndex = 20;
@@ -173,12 +174,25 @@
             BotonVolver.UseVisualStyleBackColor = true;
             BotonVolver.Click += BotonVolver_Click;
             // 
+            // AnadirClientes
+            // 
+            AnadirClientes.AutoSize = true;
+            AnadirClientes.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
+            AnadirClientes.ForeColor = Color.DarkSlateGray;
+            AnadirClientes.Location = new Point(103, 20);
+            AnadirClientes.Name = "AnadirClientes";
+            AnadirClientes.Size = new Size(250, 37);
+            AnadirClientes.TabIndex = 21;
+            AnadirClientes.Text = "AÑADIR CLIENTES";
+            AnadirClientes.Click += Actividades_Click;
+            // 
             // AnadirCliente
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(800, 450);
+            Controls.Add(AnadirClientes);
             Controls.Add(BotonVolver);
             Controls.Add(BotonAnadir);
             Controls.Add(CajaTextoTelefono);
@@ -218,5 +232,6 @@
         private PictureBox pictureBox1;
         private Button BotonAnadir;
         private Button BotonVolver;
+        private Label AnadirClientes;
     }
 }

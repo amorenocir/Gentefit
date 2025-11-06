@@ -30,7 +30,7 @@ namespace Gentefit.Vistas.Admin
         /// </summary>
         private void InitializeComponent()
         {
-            Actividades = new Label();
+            Clientes = new Label();
             BotonAnadir = new Button();
             BotonListar = new Button();
             BotonEliminar = new Button();
@@ -40,16 +40,17 @@ namespace Gentefit.Vistas.Admin
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // Actividades
+            // Clientes
             // 
-            Actividades.AutoSize = true;
-            Actividades.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
-            Actividades.ForeColor = Color.DarkSlateGray;
-            Actividades.Location = new Point(324, 113);
-            Actividades.Name = "Actividades";
-            Actividades.Size = new Size(137, 37);
-            Actividades.TabIndex = 6;
-            Actividades.Text = "CLIENTES";
+            Clientes.AutoSize = true;
+            Clientes.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
+            Clientes.ForeColor = Color.DarkSlateGray;
+            Clientes.Location = new Point(324, 113);
+            Clientes.Name = "Clientes";
+            Clientes.Size = new Size(137, 37);
+            Clientes.TabIndex = 6;
+            Clientes.Text = "CLIENTES";
+            Clientes.Click += Actividades_Click;
             // 
             // BotonAnadir
             // 
@@ -130,7 +131,7 @@ namespace Gentefit.Vistas.Admin
             Controls.Add(BotonEliminar);
             Controls.Add(BotonListar);
             Controls.Add(BotonAnadir);
-            Controls.Add(Actividades);
+            Controls.Add(Clientes);
             Name = "MenuAdClientes";
             Text = "MenuClientes";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -140,7 +141,7 @@ namespace Gentefit.Vistas.Admin
 
         #endregion
 
-        private Label Actividades;
+        private Label Clientes;
         private Button BotonAnadir;
         private Button BotonListar;
         private Button BotonEliminar;

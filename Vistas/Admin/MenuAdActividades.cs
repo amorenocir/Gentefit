@@ -48,8 +48,13 @@ namespace Gentefit.Vistas.Admin
         }
         private void BotonVolver_Click(object sender, EventArgs e)
         {
-            this.Hide(); 
+            this.Hide();
             new MenuAdmin().Show();
+        }
+
+        private void Actividades_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
