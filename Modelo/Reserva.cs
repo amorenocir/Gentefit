@@ -11,6 +11,7 @@ namespace Gentefit.Modelo
     public class Reserva
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int idReserva { get; set; }
 
         [Column("id_cliente")]

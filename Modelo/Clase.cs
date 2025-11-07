@@ -26,6 +26,10 @@ namespace Gentefit.Modelo
         [Column("id_sala")]
         public string idSala { get; set; }
         public Sala sala { get; set; }
+
+        public int plazasLibres{ get; set; }
+        public int enEspera { get; set; }
+
         public List<Reserva> reservas { get; set; } = new List<Reserva>();
         [NotMapped]
         public List<Reserva> registrados => reservas
