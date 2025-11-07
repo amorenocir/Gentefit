@@ -1,25 +1,32 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Gentefit.Modelo;
 
-namespace Gentefit.Modelo;
-
-public partial class Usuario
+namespace Gentefit.Modelo
 {
-    public int Id { get; set; }
 
-    public string Nombre { get; set; } = null!;
+    public class Usuario
+    {
+        [Key]
+        public int idUsuario { get; set; }
 
-    public string Apellidos { get; set; } = null!;
+        public string nombre { get; set; } = null!;
 
-    public string Email { get; set; } = null!;
+        public string apellidos { get; set; } = null!;
 
-    public string Contrasena { get; set; } = null!;
+        public string email { get; set; } = null!;
 
-    public int Idrol { get; set; }
+        public string contrasena { get; set; } = null!;
 
-    public string Gimnasio { get; set; } = null!;
+        public int idRol { get; set; }
+        public virtual Rol idRolNavigation { get; set; }
 
-    public virtual Gimnasio GimnasioNavigation { get; set; } = null!;
 
-    public virtual Rol IdrolNavigation { get; set; } = null!;
+        public Usuario() { }
+    }
 }

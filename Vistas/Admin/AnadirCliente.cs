@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Gentefit.db;
 
 namespace Gentefit.Vistas.Admin
 {
@@ -23,13 +24,12 @@ namespace Gentefit.Vistas.Admin
             // Recoger los datos del formulario
             Cliente nuevoCliente = new Cliente
             {
-                Nombre = CajaTextoNombre.Text,
-                Apellidos = CajaTextoApellidos.Text,
-                Dni = CajaTextoDNI.Text,
-                Telefono = int.Parse(CajaTextoTelefono.Text),
-                Email = CajaTextoEmail.Text,
-                Contrasena = CajaTextoContrasena.Text,
-                Gimnasio = "Gentefit"
+                nombre = CajaTextoNombre.Text,
+                apellidos = CajaTextoApellidos.Text,
+                dni = CajaTextoDNI.Text,
+                telefono = int.Parse(CajaTextoTelefono.Text),
+                email = CajaTextoEmail.Text,
+                contrasena = CajaTextoContrasena.Text,
             };
 
             // Insertar en la base de datos usando EF Core

@@ -1,21 +1,31 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace Gentefit.Modelo;
-
-public partial class Reserva
+namespace Gentefit.Modelo
 {
-    public int Id { get; set; }
+    public class Reserva
+    {
+        [Key]
+        public int idReserva { get; set; }
 
-    public int Cliente { get; set; }
+        [Column("id_cliente")]
+        public int idCliente { get; set; }
+        public Cliente cliente { get; set; }
 
-    public string Clase { get; set; } = null!;
+        [Column("id_clase")]
+        public string idClase { get; set; }
+        public Clase clase { get; set; }
 
-    public DateTime FechaSolicitud { get; set; }
+        public EstadoReserva estado { get; set; }
 
-    public string Estado { get; set; } = null!;
+        public DateTime fecha { get; set; }
 
-    public virtual Cliente ClienteNavigation { get; set; } = null!;
-
-    public virtual ICollection<EstadoReserva> EstadoReservas { get; set; } = new List<EstadoReserva>();
+        public Reserva() { }
+    }
 }
+

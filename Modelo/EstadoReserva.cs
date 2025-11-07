@@ -1,15 +1,13 @@
-﻿using System;
+﻿using Gentefit.Modelo;
+using System;
 using System.Collections.Generic;
 
-namespace Gentefit.Modelo;
-
-public partial class EstadoReserva
+namespace Gentefit.Modelo
 {
-    public int Id { get; set; }
-
-    public string Estado { get; set; } = null!;
-
-    public int? Reserva { get; set; }
-
-    public virtual Reserva? ReservaNavigation { get; set; }
+    public enum EstadoReserva
+    {
+        Pendiente = 0,
+        Confirmada = 1,
+        Cancelada = 2
+    }
 }

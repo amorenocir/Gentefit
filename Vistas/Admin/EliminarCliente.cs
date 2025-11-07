@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Gentefit.db;
 
 namespace Gentefit.Vistas.Admin
 {
@@ -35,7 +36,7 @@ namespace Gentefit.Vistas.Admin
             using (var contexto = new GentefitContext())
             {
                 var resultados = contexto.Clientes
-                    .Where(c => c.Id == idBuscado)
+                    .Where(c => c.idCliente == idBuscado)
                     .ToList();
 
                 PanelClientes.DataSource = resultados;

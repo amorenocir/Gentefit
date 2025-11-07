@@ -1,23 +1,44 @@
-﻿using System;
+﻿using Gentefit.Modelo;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace Gentefit.Modelo;
-
-public partial class Actividad
+namespace Gentefit.Modelo
 {
-    public int Id { get; set; }
+    public class Actividad
+    {
+        [Key]
+        public string idActividad { get; set; }
+        public string nombre { get; set; }
+        public int duracion { get; set; }
+        public string descripcion { get; set; }
+        public string intensidad { get; set; }
+        public List<Clase> listaClases { get; set; }
 
-    public string Nombre { get; set; } = null!;
+        public Actividad(string idActividad, string nombre, int duracion, string descripcion, string intensidad, List<Clase> listaClases)
+        {
+            this.idActividad = idActividad;
+            this.nombre = nombre;
+            this.duracion = duracion;
+            this.descripcion = descripcion;
+            this.intensidad = intensidad;
+            this.listaClases = listaClases;
+        }
 
-    public int Duración { get; set; }
+        public Actividad(string idActividad, string nombre, int duracion, string descripcion, string intensidad)
+        {
+            this.idActividad = idActividad;
+            this.nombre = nombre;
+            this.duracion = duracion;
+            this.descripcion = descripcion;
+            this.intensidad = intensidad;
+        }
 
-    public string? Descripcion { get; set; }
-
-    public string? Intensidad { get; set; }
-
-    public string Gimnasio { get; set; } = null!;
-
-    public virtual ICollection<Clase> Clases { get; set; } = new List<Clase>();
-
-    public virtual Gimnasio GimnasioNavigation { get; set; } = null!;
+        public Actividad()
+        {
+        }
+    }
 }

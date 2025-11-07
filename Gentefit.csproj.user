@@ -28,13 +28,13 @@
     <Compile Update="Vistas\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Vistas\MenuCliente.cs">
+    <Compile Update="Vistas\Cliente\MenuCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Vistas\MenuEncargado.cs">
+    <Compile Update="Vistas\Encargado\MenuEncargado.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Vistas\MenuRecepcionista.cs">
+    <Compile Update="Vistas\Recepcionista\MenuRecepcionista.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

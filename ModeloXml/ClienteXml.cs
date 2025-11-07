@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Gentefit.Modelo
+namespace Gentefit.ModeloXml
 {
     public class ClienteXml
     {

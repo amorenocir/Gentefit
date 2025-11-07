@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using Gentefit.db;
 
 namespace Gentefit.Vistas.Admin
 {
@@ -50,15 +51,15 @@ namespace Gentefit.Vistas.Admin
 
             using (var contexto = new GentefitContext())
             {
-                var cliente = contexto.Clientes.FirstOrDefault(c => c.Id == id);
+                var cliente = contexto.Clientes.FirstOrDefault(c => c.idCliente == id);
                 if (cliente != null)
                 {
-                    cliente.Nombre = CajaTextoNombre.Text;
-                    cliente.Apellidos = CajaTextoApellidos.Text;
-                    cliente.Dni = CajaTextoDNI.Text;
-                    cliente.Telefono = int.Parse(CajaTextoTelefono.Text);
-                    cliente.Email = CajaTextoEmail.Text;
-                    cliente.Contrasena = CajaTextoContrasena.Text;
+                    cliente.nombre = CajaTextoNombre.Text;
+                    cliente.apellidos = CajaTextoApellidos.Text;
+                    cliente.dni = CajaTextoDNI.Text;
+                    cliente.telefono = int.Parse(CajaTextoTelefono.Text);
+                    cliente.email = CajaTextoEmail.Text;
+                    cliente.contrasena = CajaTextoContrasena.Text;
 
                     contexto.SaveChanges();
                     MessageBox.Show("Cliente modificado correctamente");
@@ -78,7 +79,7 @@ namespace Gentefit.Vistas.Admin
             using (var contexto = new GentefitContext())
             {
                 var resultados = contexto.Clientes
-                    .Where(c => c.Id == idBuscado)
+                    .Where(c => c.idCliente == idBuscado)
                     .ToList();
 
                 PanelClientes.DataSource = resultados;

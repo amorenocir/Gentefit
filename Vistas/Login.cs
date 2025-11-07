@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Gentefit.Modelo;
+using Gentefit.db;
 using Gentefit.Vistas.Admin;
 
 namespace Gentefit.Vistas
@@ -33,12 +34,12 @@ namespace Gentefit.Vistas
             {
                 // Buscar en Usuarios
                 var usuarioAdmin = contexto.Usuarios
-                    .FirstOrDefault(u => u.Email == email && u.Contrasena == contrasena);
+                    .FirstOrDefault(u => u.email == email && u.contrasena == contrasena);
 
                 if (usuarioAdmin != null)
                 {
                     // Abrir formulario según tipo
-                    switch (usuarioAdmin.Idrol)
+                    switch (usuarioAdmin.idRol)
                     {
                         case 1:
                             new MenuAdmin().Show();
@@ -56,7 +57,7 @@ namespace Gentefit.Vistas
 
                 // Buscar en Clientes (si no está en Usuarios)
                 var cliente = contexto.Clientes
-                    .FirstOrDefault(c => c.Email == email && c.Contrasena == contrasena);
+                    .FirstOrDefault(c => c.email == email && c.contrasena == contrasena);
 
                 if (cliente != null)
                 {

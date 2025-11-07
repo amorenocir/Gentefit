@@ -1,5 +1,4 @@
-﻿using Gentefit.Modelo;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Serialization;
+using Gentefit.db;
+using Gentefit.ModeloXml;
+using Gentefit.Modelo;
 
 namespace Gentefit.Vistas.Admin
 {
@@ -73,7 +75,7 @@ namespace Gentefit.Vistas.Admin
                     List<Cliente> clientes = clientesXml.Select(x =>
                     {
                         var c = ConvertirAEntidad(x);
-                        c.Id = 0; // Ignoramos el ID del XML
+                        c.idCliente = 0; // Ignoramos el ID del XML
                         return c;
                     }).ToList();
 
@@ -93,14 +95,13 @@ namespace Gentefit.Vistas.Admin
         {
             return new ClienteXml
             {
-                Id = cliente.Id,
-                Nombre = cliente.Nombre,
-                Apellidos = cliente.Apellidos,
-                Dni = cliente.Dni,
-                Telefono = cliente.Telefono,
-                Email = cliente.Email,
-                Contrasena = cliente.Contrasena,
-                Gimnasio = cliente.Gimnasio
+                Id = cliente.idCliente,
+                Nombre = cliente.nombre,
+                Apellidos = cliente.apellidos,
+                Dni = cliente.dni,
+                Telefono = cliente.telefono,
+                Email = cliente.email,
+                Contrasena = cliente.contrasena,
             };
         }
 
@@ -109,14 +110,13 @@ namespace Gentefit.Vistas.Admin
             return new Cliente
             {
                 // Si el Id es autoincremental en la BD, podemos dejarlo en 0.
-                Id = clienteXml.Id,
-                Nombre = clienteXml.Nombre,
-                Apellidos = clienteXml.Apellidos,
-                Dni = clienteXml.Dni,
-                Telefono = clienteXml.Telefono,
-                Email = clienteXml.Email,
-                Contrasena = clienteXml.Contrasena,
-                Gimnasio = clienteXml.Gimnasio
+                idCliente = clienteXml.Id,
+                nombre = clienteXml.Nombre,
+                apellidos = clienteXml.Apellidos,
+                dni = clienteXml.Dni,
+                telefono = clienteXml.Telefono,
+                email = clienteXml.Email,
+                contrasena = clienteXml.Contrasena,
             };
         }
     }
