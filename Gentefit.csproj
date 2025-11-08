@@ -15,8 +15,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="Vistas\Admin\dz1od1hr.4cz~" />
-    <None Remove="Vistas\Admin\e0npqnep.jcq~" />
+    <None Remove="Vistas\PantallasAdmin\dz1od1hr.4cz~" />
+    <None Remove="Vistas\PantallasAdmin\e0npqnep.jcq~" />
   </ItemGroup>
 
   <ItemGroup>

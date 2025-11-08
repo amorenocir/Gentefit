@@ -12,7 +12,7 @@ using Gentefit.db;
 using Gentefit.ModeloXml;
 using Gentefit.Modelo;
 
-namespace Gentefit.Vistas.Admin
+namespace Gentefit.Vistas.PantallasAdmin
 {
     public partial class ListarClientes : Form
     {

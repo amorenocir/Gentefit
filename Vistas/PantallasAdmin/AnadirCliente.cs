@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Gentefit.db;
 
-namespace Gentefit.Vistas.Admin
+namespace Gentefit.Vistas.PantallasAdmin
 {
     public partial class AnadirCliente : Form
     {

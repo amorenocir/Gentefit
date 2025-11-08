@@ -1,6 +1,6 @@
 using Gentefit.Test;
 using Gentefit.Vistas;
-using Gentefit.Vistas.Admin;
+using Gentefit.Vistas.PantallasAdmin;
 
 
 namespace Gentefit
@@ -17,7 +17,8 @@ namespace Gentefit
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             //Application.Run(new Login());
-            Application.Run(new MenuAdmin()); //Run de pruebas para saltarse el login
+            //Application.Run(new MenuAdmin()); //Run de pruebas para saltarse el login e ir a admin
+            Application.Run(new MenuCliente()); //Saltarse login e ir a cliente
         }
     }
 }

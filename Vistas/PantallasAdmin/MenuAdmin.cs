@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Gentefit.Vistas;
 
-namespace Gentefit.Vistas.Admin
+namespace Gentefit.Vistas.PantallasAdmin
 {
     public partial class MenuAdmin : Form
     {
@@ -85,6 +85,11 @@ namespace Gentefit.Vistas.Admin
         private void timer1_Tick(object sender, EventArgs e)
         {
             label2.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

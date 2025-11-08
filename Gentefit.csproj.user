@@ -4,37 +4,46 @@
     <Compile Update="Test\TestConexion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Vistas\Admin\AnadirCliente.cs">
+    <Compile Update="Vistas\PantallasAdmin\AnadirCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Vistas\Admin\EliminarCliente.cs">
+    <Compile Update="Vistas\PantallasAdmin\EliminarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Vistas\Admin\ListarClientes.cs">
+    <Compile Update="Vistas\PantallasAdmin\ListarClientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Vistas\Admin\MenuAdActividades.cs">
+    <Compile Update="Vistas\PantallasAdmin\MenuAdActividades.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Vistas\Admin\MenuAdmin.cs">
+    <Compile Update="Vistas\PantallasAdmin\MenuAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Vistas\Admin\MenuAdClientes.cs">
+    <Compile Update="Vistas\PantallasAdmin\MenuAdClientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Vistas\Admin\ModificarCliente.cs">
+    <Compile Update="Vistas\PantallasAdmin\ModificarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\PantallasCliente\ActividadesCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\PantallasCliente\HorariosCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\PantallasCliente\ReservasCliente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Vistas\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Vistas\Cliente\MenuCliente.cs">
+    <Compile Update="Vistas\PantallasCliente\MenuCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Vistas\Encargado\MenuEncargado.cs">
+    <Compile Update="Vistas\PantallasEncargado\MenuEncargado.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Vistas\Recepcionista\MenuRecepcionista.cs">
+    <Compile Update="Vistas\PantallasRecepcionista\MenuRecepcionista.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

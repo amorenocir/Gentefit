@@ -1,5 +1,4 @@
-﻿namespace Gentefit.Vistas.Admin
-{
+﻿namespace Gentefit.Vistas.PantallasAdmin { 
     partial class ListarClientes
     {
         /// <summary>

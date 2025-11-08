@@ -3,7 +3,7 @@ using Gentefit.db;
 using System;
 using System.Windows.Forms;
 
-namespace Gentefit.Vistas.Admin
+namespace Gentefit.Vistas.PantallasAdmin
 {
     public partial class EliminarCliente : Form
     {

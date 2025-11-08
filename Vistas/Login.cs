@@ -1,7 +1,7 @@
 ﻿using Gentefit.db;
 using Gentefit.Modelo;
 using Gentefit.Modelo.Enums;
-using Gentefit.Vistas.Admin;
+using Gentefit.Vistas.PantallasAdmin;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -34,13 +34,13 @@ namespace Gentefit.Vistas
             using (var contexto = new GentefitContext())
             {
                 // Buscar en Usuarios
-                var usuarioAdmin = contexto.Usuarios
+                var usuario = contexto.Usuarios
                     .FirstOrDefault(u => u.email == email && u.contrasena == contrasena);
 
-                if (usuarioAdmin != null)
+                if (usuario != null)
                 {
                     // Abrir formulario según tipo
-                    switch (usuarioAdmin.rol)
+                    switch (usuario.rol)
                     {
                         case TipoRol.Admin:
                             new MenuAdmin().Show();

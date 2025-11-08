@@ -4,7 +4,7 @@ using System;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace Gentefit.Vistas.Admin
+namespace Gentefit.Vistas.PantallasAdmin
 {
     public partial class ModificarCliente : Form
     {

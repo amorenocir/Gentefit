@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Gentefit.Vistas.Admin
+namespace Gentefit.Vistas.PantallasAdmin
 {
     public partial class MenuAdActividades : Form
     {
@@ -49,7 +49,7 @@ namespace Gentefit.Vistas.Admin
         private void BotonVolver_Click(object sender, EventArgs e)
         {
             this.Hide();
-            new MenuAdmin().Show();
+            new Gentefit.Vistas.PantallasAdmin.MenuAdmin().Show();
         }
 
         private void Actividades_Click(object sender, EventArgs e)

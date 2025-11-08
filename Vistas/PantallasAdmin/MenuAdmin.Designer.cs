@@ -1,4 +1,4 @@
-﻿namespace Gentefit.Vistas.Admin
+﻿namespace Gentefit.Vistas.PantallasAdmin
 {
     partial class MenuAdmin
     {
@@ -80,16 +80,21 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(393, 152);
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
+            label1.ForeColor = SystemColors.ControlText;
+            label1.Location = new Point(375, 138);
             label1.Name = "label1";
-            label1.Size = new Size(42, 15);
+            label1.Size = new Size(82, 30);
             label1.TabIndex = 3;
             label1.Text = "INICIO";
+            label1.TextAlign = ContentAlignment.MiddleLeft;
+            label1.Click += label1_Click;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(356, 181);
+            label2.Location = new Point(356, 168);
             label2.Name = "label2";
             label2.Size = new Size(117, 15);
             label2.TabIndex = 4;
