@@ -16,18 +16,12 @@ namespace Gentefit.Vistas.Admin
 {
     public partial class ListarClientes : Form
     {
+        private readonly LogicaClientes logica = new LogicaClientes();
+
         public ListarClientes()
         {
             InitializeComponent();
-            this.Load += cargarDatos;
-        }
-
-        private void cargarDatos(object sender, EventArgs e)
-        {
-            using var context = new GentefitContext();
-            var clientes = context.Clientes.ToList(); // Obtiene los clientes
-            PanelClientes.DataSource = clientes; // Asigna la lista al grid
-
+            this.Load += (s, e) => PanelClientes.DataSource = logica.ObtenerTodos();
         }
 
         private void BotonVolver_Click(object sender, EventArgs e)
@@ -38,56 +32,33 @@ namespace Gentefit.Vistas.Admin
 
         private void BotonExportarXml_Click(object sender, EventArgs e)
         {
-            using (var context = new GentefitContext())
+            SaveFileDialog saveFileDialog = new SaveFileDialog
             {
-                var clientes = context.Clientes.ToList();
-                var clientesXml = clientes.Select(c => ConvertirAXml(c)).ToList();
+                Filter = "Archivos XML|*.xml",
+                Title = "Exportar clientes a XML"
+            };
 
-                SaveFileDialog saveFileDialog = new SaveFileDialog();
-                saveFileDialog.Filter = "Archivos XML|*.xml";
-                saveFileDialog.Title = "Exportar clientes a XML";
-
-                if (saveFileDialog.ShowDialog() == DialogResult.OK)
-                {
-                    XmlSerializer serializer = new XmlSerializer(typeof(List<ClienteXml>));
-                    using (FileStream fs = new FileStream(saveFileDialog.FileName, FileMode.Create))
-                    {
-                        serializer.Serialize(fs, clientesXml);
-                    }
-
-                    MessageBox.Show("Clientes exportados correctamente.");
-                }
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                logica.ExportarXml(saveFileDialog.FileName);
+                MessageBox.Show("Clientes exportados correctamente.");
             }
         }
 
         private void BotonImportarXml_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "Archivos XML|*.xml";
-            openFileDialog.Title = "Importar clientes desde XML";
+            OpenFileDialog openFileDialog = new OpenFileDialog
+            {
+                Filter = "Archivos XML|*.xml",
+                Title = "Importar clientes desde XML"
+            };
 
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
-                XmlSerializer serializer = new XmlSerializer(typeof(List<ClienteXml>));
-                using (FileStream fs = new FileStream(openFileDialog.FileName, FileMode.Open))
-                {
-                    List<ClienteXml> clientesXml = (List<ClienteXml>)serializer.Deserialize(fs);
-                    List<Cliente> clientes = clientesXml.Select(x =>
-                    {
-                        var c = ConvertirAEntidad(x);
-                        c.idCliente = 0; // Ignoramos el ID del XML
-                        return c;
-                    }).ToList();
+                logica.ImportarXml(openFileDialog.FileName);
+                MessageBox.Show("Clientes importados correctamente.");
+                PanelClientes.DataSource = logica.ObtenerTodos();
 
-                    using (var context = new GentefitContext())
-                    {
-                        context.Clientes.AddRange(clientes);
-                        context.SaveChanges();
-                    }
-
-                    MessageBox.Show("Clientes importados correctamente.");
-                    cargarDatos(sender, e); // Actualiza el grid
-                }
             }
         }
 

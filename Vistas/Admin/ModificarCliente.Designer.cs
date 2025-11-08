@@ -148,6 +148,7 @@
             CajaTextoNombre.Name = "CajaTextoNombre";
             CajaTextoNombre.Size = new Size(184, 23);
             CajaTextoNombre.TabIndex = 21;
+            CajaTextoNombre.TextChanged += CajaTextoNombre_TextChanged;
             // 
             // Nombre
             // 
@@ -201,6 +202,7 @@
             CajaTextoId.Name = "CajaTextoId";
             CajaTextoId.Size = new Size(184, 23);
             CajaTextoId.TabIndex = 38;
+            CajaTextoId.TextChanged += CajaTextoId_TextChanged;
             // 
             // label3
             // 
@@ -274,8 +276,8 @@
         private Button BotonGuardar;
         private TextBox CajaTextoBuscar;
         private DataGridView PanelClientes;
-        private TextBox CajaTextoId;
         private Label label3;
         private Button BotonBuscar;
+        private TextBox CajaTextoId;
     }
 }

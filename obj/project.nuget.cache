@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TqGQtz2TZCU=",
+  "dgSpecHash": "xiT1zO+mwfQ=",
   "success": true,
-  "projectFilePath": "F:\\andrea\\Clase\\4-Grado Informática\\Clase\\3º Año\\1º Semestre\\Persistencia de Datos .NET\\Productos\\P2. Capa acceso de datos\\Visual Studio\\Gentefit\\Gentefit.csproj",
+  "projectFilePath": "F:\\andrea\\Clase\\4-Grado Informática\\Clase\\3º Año\\1º Semestre\\Persistencia de Datos .NET\\Visual Studio\\Gentefit\\Gentefit.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\andre\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

@@ -1,74 +1,65 @@
 ﻿using Gentefit.Modelo;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using Gentefit.db;
+using System;
+using System.Linq;
+using System.Windows.Forms;
 
 namespace Gentefit.Vistas.Admin
 {
     public partial class ModificarCliente : Form
     {
+        private readonly LogicaClientes logica = new LogicaClientes();
+
         public ModificarCliente()
         {
             InitializeComponent();
-            this.Load += cargarDatos;
+            this.Load += (s, e) => CargarDatos();
             CajaTextoId.ReadOnly = true;
-
         }
-        private void cargarDatos(object sender, EventArgs e)
-        {
-            using var context = new GentefitContext();
-            var clientes = context.Clientes.ToList(); // Obtiene los clientes
-            PanelClientes.DataSource = clientes; // Asigna la lista al grid
 
-        }
         private void PanelClientes_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0)
-            {
-                var fila = PanelClientes.Rows[e.RowIndex];
+            if (e.RowIndex < 0) return;
 
-                CajaTextoId.Text = fila.Cells["Id"].Value.ToString(); // Mejor ponerlo solo lectura
-                CajaTextoNombre.Text = fila.Cells["Nombre"].Value.ToString();
-                CajaTextoApellidos.Text = fila.Cells["Apellidos"].Value.ToString();
-                CajaTextoDNI.Text = fila.Cells["Dni"].Value.ToString();
-                CajaTextoTelefono.Text = fila.Cells["Telefono"].Value.ToString();
-                CajaTextoEmail.Text = fila.Cells["Email"].Value.ToString();
-                CajaTextoContrasena.Text = fila.Cells["Contrasena"].Value.ToString();
-            }
+            var fila = PanelClientes.Rows[e.RowIndex];
+
+            // Se asume que las columnas del DataGridView se llaman igual que las propiedades de Cliente
+            CajaTextoId.Text = fila.Cells["idCliente"].Value.ToString();
+            CajaTextoNombre.Text = fila.Cells["nombre"].Value.ToString();
+            CajaTextoApellidos.Text = fila.Cells["apellidos"].Value.ToString();
+            CajaTextoDNI.Text = fila.Cells["dni"].Value.ToString();
+            CajaTextoTelefono.Text = fila.Cells["telefono"].Value.ToString();
+            CajaTextoEmail.Text = fila.Cells["email"].Value.ToString();
+            CajaTextoContrasena.Text = fila.Cells["contrasena"].Value.ToString();
         }
 
         private void BotonGuardar_Click(object sender, EventArgs e)
         {
-            int id = int.Parse(CajaTextoId.Text);
+            if (!int.TryParse(CajaTextoId.Text, out int id)) return;
 
-            using (var contexto = new GentefitContext())
+            var cliente = new Cliente
             {
-                var cliente = contexto.Clientes.FirstOrDefault(c => c.idCliente == id);
-                if (cliente != null)
-                {
-                    cliente.nombre = CajaTextoNombre.Text;
-                    cliente.apellidos = CajaTextoApellidos.Text;
-                    cliente.dni = CajaTextoDNI.Text;
-                    cliente.telefono = int.Parse(CajaTextoTelefono.Text);
-                    cliente.email = CajaTextoEmail.Text;
-                    cliente.contrasena = CajaTextoContrasena.Text;
+                idCliente = id,
+                nombre = CajaTextoNombre.Text,
+                apellidos = CajaTextoApellidos.Text,
+                dni = CajaTextoDNI.Text,
+                telefono = int.Parse(CajaTextoTelefono.Text),
+                email = CajaTextoEmail.Text,
+                contrasena = CajaTextoContrasena.Text
+            };
 
-                    contexto.SaveChanges();
-                    MessageBox.Show("Cliente modificado correctamente");
-                }
+            bool exito = logica.Modificar(cliente);
+            if (exito)
+            {
+                MessageBox.Show("Cliente modificado correctamente");
+                CargarDatos();
             }
-
-            // Refrescar la lista
-            cargarDatos(null, null);
+            else
+            {
+                MessageBox.Show("No se pudo modificar el cliente.");
+            }
         }
+
         private void BotonBuscar_Click(object sender, EventArgs e)
         {
             if (!int.TryParse(CajaTextoBuscar.Text, out int idBuscado))
@@ -76,19 +67,32 @@ namespace Gentefit.Vistas.Admin
                 MessageBox.Show("Por favor introduce un ID válido.");
                 return;
             }
-            using (var contexto = new GentefitContext())
-            {
-                var resultados = contexto.Clientes
-                    .Where(c => c.idCliente == idBuscado)
-                    .ToList();
 
-                PanelClientes.DataSource = resultados;
-            }
+            var resultados = logica.BuscarPorId(idBuscado);
+            PanelClientes.DataSource = resultados;
         }
+
         private void BotonVolver_Click(object sender, EventArgs e)
         {
             new MenuAdClientes().Show();
             this.Hide();
         }
+
+        // Método vacío para evitar error del Designer
+        private void CajaTextoId_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void CajaTextoNombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CargarDatos()
+        {
+            PanelClientes.DataSource = logica.ObtenerTodos();
+        }
     }
 }
+
+

@@ -1,31 +1,27 @@
 ﻿using Gentefit.Modelo;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using Gentefit.db;
+using System;
+using System.Windows.Forms;
 
 namespace Gentefit.Vistas.Admin
 {
     public partial class EliminarCliente : Form
     {
+        private LogicaClientes logica;
+
         public EliminarCliente()
         {
             InitializeComponent();
-            this.Load += cargarDatos;
+            this.Load += EliminarCliente_Load;
         }
-        private void cargarDatos(object sender, EventArgs e)
-        {
-            using var context = new GentefitContext();
-            var clientes = context.Clientes.ToList(); // Obtiene los clientes
-            PanelClientes.DataSource = clientes; // Asigna la lista al grid
 
+        private void EliminarCliente_Load(object sender, EventArgs e)
+        {
+            using var contexto = new GentefitContext();
+            logica = new LogicaClientes();
+            PanelClientes.DataSource = logica.ObtenerTodos();
         }
+
         private void BotonBuscar_Click(object sender, EventArgs e)
         {
             if (!int.TryParse(CajaTextoBuscar.Text, out int idBuscado))
@@ -33,14 +29,7 @@ namespace Gentefit.Vistas.Admin
                 MessageBox.Show("Por favor introduce un ID válido.");
                 return;
             }
-            using (var contexto = new GentefitContext())
-            {
-                var resultados = contexto.Clientes
-                    .Where(c => c.idCliente == idBuscado)
-                    .ToList();
-
-                PanelClientes.DataSource = resultados;
-            }
+            PanelClientes.DataSource = logica.BuscarPorId(idBuscado);
         }
 
         private void BotonEliminar_Click(object sender, EventArgs e)
@@ -51,10 +40,8 @@ namespace Gentefit.Vistas.Admin
                 return;
             }
 
-            // Obtenemos el ID de la fila seleccionada (asegúrate de que la columna se llama Id o cambia el nombre)
-            int idCliente = (int)PanelClientes.CurrentRow.Cells["Id"].Value;
+            int idCliente = (int)PanelClientes.CurrentRow.Cells["idCliente"].Value;
 
-            // Confirmamos antes de eliminar
             var confirmacion = MessageBox.Show(
                 "¿Seguro que deseas eliminar este cliente?",
                 "Confirmar eliminación",
@@ -64,35 +51,33 @@ namespace Gentefit.Vistas.Admin
 
             if (confirmacion == DialogResult.Yes)
             {
-                using (var contexto = new GentefitContext())
+                if (logica.EliminarCliente(idCliente))
                 {
-                    var clienteAEliminar = contexto.Clientes.Find(idCliente);
-
-                    if (clienteAEliminar != null)
-                    {
-                        contexto.Clientes.Remove(clienteAEliminar);
-                        contexto.SaveChanges();
-                        MessageBox.Show("Cliente eliminado correctamente.");
-
-                        // Vuelves a cargar los datos (puedes usar tu método de búsqueda o cargar todo)
-                        cargarDatos(null, null);
-                    }
-                    else
-                    {
-                        MessageBox.Show("No se encontró el cliente en la base de datos.");
-                    }
+                    MessageBox.Show("Cliente eliminado correctamente.");
+                    CargarDatos();
+                }
+                else
+                {
+                    MessageBox.Show("No se encontró el cliente en la base de datos.");
                 }
             }
-        
         }
+
         private void BotonVolver_Click(object sender, EventArgs e)
         {
             this.Hide();
             new MenuAdClientes().Show();
         }
+
         private void BotonVerTodos_Click(object sender, EventArgs e)
         {
-            cargarDatos(null, null);
+            CargarDatos();
+        }
+
+        private void CargarDatos()
+        {
+            PanelClientes.DataSource = logica.ObtenerTodos();
         }
     }
 }
+
