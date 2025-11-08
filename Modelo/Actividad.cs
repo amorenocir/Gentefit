@@ -11,14 +11,14 @@ namespace Gentefit.Modelo
     public class Actividad
     {
         [Key]
-        public string idActividad { get; set; }
+        public int idActividad { get; set; }
         public string nombre { get; set; }
         public int duracion { get; set; }
         public string descripcion { get; set; }
         public string intensidad { get; set; }
         public List<Clase> listaClases { get; set; }
 
-        public Actividad(string idActividad, string nombre, int duracion, string descripcion, string intensidad, List<Clase> listaClases)
+        public Actividad(int idActividad, string nombre, int duracion, string descripcion, string intensidad, List<Clase> listaClases)
         {
             this.idActividad = idActividad;
             this.nombre = nombre;
@@ -28,7 +28,7 @@ namespace Gentefit.Modelo
             this.listaClases = listaClases;
         }
 
-        public Actividad(string idActividad, string nombre, int duracion, string descripcion, string intensidad)
+        public Actividad(int idActividad, string nombre, int duracion, string descripcion, string intensidad)
         {
             this.idActividad = idActividad;
             this.nombre = nombre;

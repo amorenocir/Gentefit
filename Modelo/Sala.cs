@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,18 +11,20 @@ namespace Gentefit.Modelo
     public class Sala
     {
         [Key]
-        public string idSala { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int idSala { get; set; }
+        [Required, MaxLength(50)]
         public string nombre { get; set; }
         public List<Clase> listaClases { get; set; }
 
-        public Sala(string idSala, string nombre, List<Clase> listaClases)
+        public Sala(int idSala, string nombre, List<Clase> listaClases)
         {
             this.idSala = idSala;
             this.nombre = nombre;
             this.listaClases = listaClases;
         }
 
-        public Sala(string idSala, string nombre)
+        public Sala(int idSala, string nombre)
         {
             this.idSala = idSala;
             this.nombre = nombre;

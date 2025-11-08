@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Gentefit.Modelo.Enums;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -19,7 +20,7 @@ namespace Gentefit.Modelo
         public Cliente cliente { get; set; }
 
         [Column("id_clase")]
-        public string idClase { get; set; }
+        public int idClase { get; set; }
         public Clase clase { get; set; }
 
         public EstadoReserva estado { get; set; }

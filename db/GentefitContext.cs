@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Gentefit.Modelo;
+using Gentefit.Modelo.Enums;
 using Microsoft.EntityFrameworkCore;
 
 namespace Gentefit.db;

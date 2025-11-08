@@ -1,4 +1,4 @@
-﻿using Gentefit.Modelo;
+﻿using Gentefit.Modelo.Enums;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -12,19 +12,20 @@ namespace Gentefit.Modelo
     public class Clase
     {
         [Key]
-        public string idClase { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int idClase { get; set; }
         [ForeignKey("actividad")]
         [Column("id_actividad")]
-        public string idActividad { get; set; }
+        public int idActividad { get; set; }
         public Actividad actividad { get; set; }
         public DateTime horario { get; set; }
         [ForeignKey("entrenador")]
         [Column("id_entrenador")]
-        public string idEntrenador { get; set; }
+        public int idEntrenador { get; set; }
         public Entrenador entrenador { get; set; }
         [ForeignKey("sala")]
         [Column("id_sala")]
-        public string idSala { get; set; }
+        public int idSala { get; set; }
         public Sala sala { get; set; }
 
         public int plazasLibres{ get; set; }

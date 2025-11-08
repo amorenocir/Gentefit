@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Gentefit.Modelo;
+namespace Gentefit.Modelo.Enums;
 
 public partial class Rol
 {

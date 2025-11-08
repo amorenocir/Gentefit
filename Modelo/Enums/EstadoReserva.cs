@@ -1,8 +1,7 @@
-﻿using Gentefit.Modelo;
-using System;
+﻿using System;
 using System.Collections.Generic;
 
-namespace Gentefit.Modelo
+namespace Gentefit.Modelo.Enums
 {
     public enum EstadoReserva
     {
