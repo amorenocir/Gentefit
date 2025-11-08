@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Gentefit.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class initial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -19,15 +19,14 @@ namespace Gentefit.Migrations
                 name: "Actividad",
                 columns: table => new
                 {
-                    ID = table.Column<string>(type: "varchar(255)", nullable: false)
-                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    ID = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     nombre = table.Column<string>(type: "varchar(30)", unicode: false, maxLength: 30, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     duracion = table.Column<int>(type: "int", nullable: false),
                     descripcion = table.Column<string>(type: "varchar(200)", unicode: false, maxLength: 200, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    intensidad = table.Column<string>(type: "varchar(20)", unicode: false, maxLength: 20, nullable: false)
-                        .Annotation("MySql:CharSet", "utf8mb4")
+                    Intensidad = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -51,7 +50,7 @@ namespace Gentefit.Migrations
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     contrasena = table.Column<string>(type: "varchar(100)", unicode: false, maxLength: 100, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    telefono = table.Column<int>(type: "int", nullable: false)
+                    telefono = table.Column<int>(type: "int", maxLength: 20, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -63,8 +62,8 @@ namespace Gentefit.Migrations
                 name: "Monitor",
                 columns: table => new
                 {
-                    ID = table.Column<string>(type: "varchar(255)", nullable: false)
-                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    ID = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     nombre = table.Column<string>(type: "varchar(100)", unicode: false, maxLength: 100, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     apellidos = table.Column<string>(type: "varchar(200)", unicode: false, maxLength: 200, nullable: false)
@@ -79,25 +78,11 @@ namespace Gentefit.Migrations
                 .Annotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.CreateTable(
-                name: "Rol",
-                columns: table => new
-                {
-                    ID = table.Column<int>(type: "int", nullable: false),
-                    TipoRol = table.Column<string>(type: "varchar(20)", unicode: false, maxLength: 20, nullable: false)
-                        .Annotation("MySql:CharSet", "utf8mb4")
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK__Rol__3214EC271A97D82B", x => x.ID);
-                })
-                .Annotation("MySql:CharSet", "utf8mb4");
-
-            migrationBuilder.CreateTable(
                 name: "Sala",
                 columns: table => new
                 {
-                    ID = table.Column<string>(type: "varchar(255)", nullable: false)
-                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    ID = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     nombre = table.Column<string>(type: "varchar(30)", unicode: false, maxLength: 30, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4")
                 },
@@ -121,16 +106,11 @@ namespace Gentefit.Migrations
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     contrasena = table.Column<string>(type: "varchar(100)", unicode: false, maxLength: 100, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    IDRol = table.Column<int>(type: "int", nullable: false)
+                    IdRol = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK__Usuario__3214EC2704BBB9A4", x => x.ID);
-                    table.ForeignKey(
-                        name: "fk_Usuario_Rol",
-                        column: x => x.IDRol,
-                        principalTable: "Rol",
-                        principalColumn: "ID");
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 
@@ -138,15 +118,14 @@ namespace Gentefit.Migrations
                 name: "Clase",
                 columns: table => new
                 {
-                    ID = table.Column<string>(type: "varchar(255)", nullable: false)
-                        .Annotation("MySql:CharSet", "utf8mb4"),
-                    id_actividad = table.Column<string>(type: "varchar(255)", nullable: false)
-                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    ID = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+                    id_actividad = table.Column<int>(type: "int", nullable: false),
+                    id_entrenador = table.Column<int>(type: "int", nullable: false),
+                    id_sala = table.Column<int>(type: "int", nullable: false),
                     horario = table.Column<DateTime>(type: "datetime", nullable: false),
-                    id_entrenador = table.Column<string>(type: "varchar(255)", nullable: false)
-                        .Annotation("MySql:CharSet", "utf8mb4"),
-                    id_sala = table.Column<string>(type: "varchar(255)", nullable: false)
-                        .Annotation("MySql:CharSet", "utf8mb4")
+                    plazasLibres = table.Column<int>(type: "int", nullable: false),
+                    enEspera = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -179,10 +158,9 @@ namespace Gentefit.Migrations
                     ID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     id_cliente = table.Column<int>(type: "int", nullable: false),
-                    id_clase = table.Column<string>(type: "varchar(255)", nullable: false)
-                        .Annotation("MySql:CharSet", "utf8mb4"),
-                    estado = table.Column<int>(type: "int", nullable: false),
-                    fecha = table.Column<DateTime>(type: "datetime", nullable: false, defaultValueSql: "CURRENT_TIMESTAMP")
+                    id_clase = table.Column<int>(type: "int", nullable: false),
+                    Estado = table.Column<int>(type: "int", nullable: false),
+                    fecha = table.Column<DateTime>(type: "timestamp", nullable: false, defaultValueSql: "CURRENT_TIMESTAMP")
                 },
                 constraints: table =>
                 {
@@ -226,11 +204,6 @@ namespace Gentefit.Migrations
                 name: "IX_Reserva_id_cliente",
                 table: "Reserva",
                 column: "id_cliente");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Usuario_IDRol",
-                table: "Usuario",
-                column: "IDRol");
         }
 
         /// <inheritdoc />
@@ -247,9 +220,6 @@ namespace Gentefit.Migrations
 
             migrationBuilder.DropTable(
                 name: "Cliente");
-
-            migrationBuilder.DropTable(
-                name: "Rol");
 
             migrationBuilder.DropTable(
                 name: "Actividad");

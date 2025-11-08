@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Gentefit.Migrations
 {
     [DbContext(typeof(GentefitContext))]
-    [Migration("20251107200110_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20251108165201_initial")]
+    partial class initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -27,9 +27,12 @@ namespace Gentefit.Migrations
 
             modelBuilder.Entity("Gentefit.Modelo.Actividad", b =>
                 {
-                    b.Property<string>("idActividad")
-                        .HasColumnType("varchar(255)")
+                    b.Property<int>("idActividad")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
                         .HasColumnName("ID");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("idActividad"));
 
                     b.Property<string>("descripcion")
                         .IsRequired()
@@ -40,11 +43,9 @@ namespace Gentefit.Migrations
                     b.Property<int>("duracion")
                         .HasColumnType("int");
 
-                    b.Property<string>("intensidad")
-                        .IsRequired()
-                        .HasMaxLength(20)
-                        .IsUnicode(false)
-                        .HasColumnType("varchar(20)");
+                    b.Property<int>("intensidad")
+                        .HasColumnType("int")
+                        .HasColumnName("Intensidad");
 
                     b.Property<string>("nombre")
                         .IsRequired()
@@ -60,27 +61,33 @@ namespace Gentefit.Migrations
 
             modelBuilder.Entity("Gentefit.Modelo.Clase", b =>
                 {
-                    b.Property<string>("idClase")
-                        .HasColumnType("varchar(255)")
+                    b.Property<int>("idClase")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
                         .HasColumnName("ID");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("idClase"));
+
+                    b.Property<int>("enEspera")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("horario")
                         .HasColumnType("datetime");
 
-                    b.Property<string>("idActividad")
-                        .IsRequired()
-                        .HasColumnType("varchar(255)")
+                    b.Property<int>("idActividad")
+                        .HasColumnType("int")
                         .HasColumnName("id_actividad");
 
-                    b.Property<string>("idEntrenador")
-                        .IsRequired()
-                        .HasColumnType("varchar(255)")
+                    b.Property<int>("idEntrenador")
+                        .HasColumnType("int")
                         .HasColumnName("id_entrenador");
 
-                    b.Property<string>("idSala")
-                        .IsRequired()
-                        .HasColumnType("varchar(255)")
+                    b.Property<int>("idSala")
+                        .HasColumnType("int")
                         .HasColumnName("id_sala");
+
+                    b.Property<int>("plazasLibres")
+                        .HasColumnType("int");
 
                     b.HasKey("idClase")
                         .HasName("PK__Clase__3214EC272040217E");
@@ -135,6 +142,7 @@ namespace Gentefit.Migrations
                         .HasColumnType("varchar(100)");
 
                     b.Property<int>("telefono")
+                        .HasMaxLength(20)
                         .HasColumnType("int");
 
                     b.HasKey("idCliente")
@@ -145,9 +153,12 @@ namespace Gentefit.Migrations
 
             modelBuilder.Entity("Gentefit.Modelo.Entrenador", b =>
                 {
-                    b.Property<string>("idEntrenador")
-                        .HasColumnType("varchar(255)")
+                    b.Property<int>("idEntrenador")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
                         .HasColumnName("ID");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("idEntrenador"));
 
                     b.Property<string>("apellidos")
                         .IsRequired()
@@ -184,16 +195,16 @@ namespace Gentefit.Migrations
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("idReserva"));
 
                     b.Property<int>("estado")
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasColumnName("Estado");
 
                     b.Property<DateTime>("fecha")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("datetime")
+                        .HasColumnType("timestamp")
                         .HasDefaultValueSql("CURRENT_TIMESTAMP");
 
-                    b.Property<string>("idClase")
-                        .IsRequired()
-                        .HasColumnType("varchar(255)")
+                    b.Property<int>("idClase")
+                        .HasColumnType("int")
                         .HasColumnName("id_clase");
 
                     b.Property<int>("idCliente")
@@ -210,29 +221,14 @@ namespace Gentefit.Migrations
                     b.ToTable("Reserva", (string)null);
                 });
 
-            modelBuilder.Entity("Gentefit.Modelo.Rol", b =>
+            modelBuilder.Entity("Gentefit.Modelo.Sala", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("idSala")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasColumnName("ID");
 
-                    b.Property<string>("TipoRol")
-                        .IsRequired()
-                        .HasMaxLength(20)
-                        .IsUnicode(false)
-                        .HasColumnType("varchar(20)");
-
-                    b.HasKey("Id")
-                        .HasName("PK__Rol__3214EC271A97D82B");
-
-                    b.ToTable("Rol", (string)null);
-                });
-
-            modelBuilder.Entity("Gentefit.Modelo.Sala", b =>
-                {
-                    b.Property<string>("idSala")
-                        .HasColumnType("varchar(255)")
-                        .HasColumnName("ID");
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("idSala"));
 
                     b.Property<string>("nombre")
                         .IsRequired()
@@ -273,20 +269,18 @@ namespace Gentefit.Migrations
                         .IsUnicode(false)
                         .HasColumnType("varchar(300)");
 
-                    b.Property<int>("idRol")
-                        .HasColumnType("int")
-                        .HasColumnName("IDRol");
-
                     b.Property<string>("nombre")
                         .IsRequired()
                         .HasMaxLength(100)
                         .IsUnicode(false)
                         .HasColumnType("varchar(100)");
 
+                    b.Property<int>("rol")
+                        .HasColumnType("int")
+                        .HasColumnName("IdRol");
+
                     b.HasKey("idUsuario")
                         .HasName("PK__Usuario__3214EC2704BBB9A4");
-
-                    b.HasIndex("idRol");
 
                     b.ToTable("Usuario", (string)null);
                 });
@@ -337,17 +331,6 @@ namespace Gentefit.Migrations
                     b.Navigation("cliente");
                 });
 
-            modelBuilder.Entity("Gentefit.Modelo.Usuario", b =>
-                {
-                    b.HasOne("Gentefit.Modelo.Rol", "idRolNavigation")
-                        .WithMany("Usuarios")
-                        .HasForeignKey("idRol")
-                        .IsRequired()
-                        .HasConstraintName("fk_Usuario_Rol");
-
-                    b.Navigation("idRolNavigation");
-                });
-
             modelBuilder.Entity("Gentefit.Modelo.Actividad", b =>
                 {
                     b.Navigation("listaClases");
@@ -366,11 +349,6 @@ namespace Gentefit.Migrations
             modelBuilder.Entity("Gentefit.Modelo.Entrenador", b =>
                 {
                     b.Navigation("listaClases");
-                });
-
-            modelBuilder.Entity("Gentefit.Modelo.Rol", b =>
-                {
-                    b.Navigation("Usuarios");
                 });
 
             modelBuilder.Entity("Gentefit.Modelo.Sala", b =>

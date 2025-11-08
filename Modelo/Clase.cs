@@ -13,36 +13,38 @@ namespace Gentefit.Modelo
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Column("id_clase")]
         public int idClase { get; set; }
+
         [ForeignKey("actividad")]
         [Column("id_actividad")]
         public int idActividad { get; set; }
         public Actividad actividad { get; set; }
-        public DateTime horario { get; set; }
+
         [ForeignKey("entrenador")]
         [Column("id_entrenador")]
         public int idEntrenador { get; set; }
         public Entrenador entrenador { get; set; }
+
         [ForeignKey("sala")]
         [Column("id_sala")]
         public int idSala { get; set; }
         public Sala sala { get; set; }
 
-        public int plazasLibres{ get; set; }
+        public DateTime horario { get; set; }
+        public int plazasLibres { get; set; }
         public int enEspera { get; set; }
 
         public List<Reserva> reservas { get; set; } = new List<Reserva>();
-        [NotMapped]
-        public List<Reserva> registrados => reservas
-            .Where(r => r.estado == EstadoReserva.Confirmada)
-            .ToList();
-        [NotMapped]
-        public List<Reserva> listaEspera => reservas
-            .Where(r => r.estado == EstadoReserva.Pendiente)
-            .ToList();
 
-        public Clase()
-        {
-        }
+        [NotMapped]
+        public List<Reserva> registrados =>
+            reservas.Where(r => r.estado == EstadoReserva.Confirmada).ToList();
+
+        [NotMapped]
+        public List<Reserva> listaEspera =>
+            reservas.Where(r => r.estado == EstadoReserva.Pendiente).ToList();
+
+        public Clase() { }
     }
 }
