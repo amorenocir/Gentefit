@@ -1,4 +1,8 @@
-﻿using System;
+﻿using Gentefit.db;
+using Gentefit.Modelo;
+using Gentefit.Modelo.Enums;
+using Gentefit.Vistas.Admin;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,9 +11,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Gentefit.Modelo;
-using Gentefit.db;
-using Gentefit.Vistas.Admin;
 
 namespace Gentefit.Vistas
 {
@@ -39,21 +40,22 @@ namespace Gentefit.Vistas
                 if (usuarioAdmin != null)
                 {
                     // Abrir formulario según tipo
-                    switch (usuarioAdmin.idRol)
+                    switch (usuarioAdmin.rol)
                     {
-                        case 1:
+                        case TipoRol.Admin:
                             new MenuAdmin().Show();
                             break;
-                        case 2:
+                        case TipoRol.Encargado:
                             new MenuEncargado().Show();
                             break;
-                        case 3:
+                        case TipoRol.Recepcionista:
                             new MenuRecepcionista().Show();
                             break;
                     }
                     this.Hide();
                     return;
                 }
+
 
                 // Buscar en Clientes (si no está en Usuarios)
                 var cliente = contexto.Clientes

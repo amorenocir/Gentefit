@@ -28,8 +28,6 @@ public partial class GentefitContext : DbContext
 
     public virtual DbSet<Reserva> Reservas { get; set; }
 
-    public virtual DbSet<Rol> Roles { get; set; }
-
     public virtual DbSet<Sala> Salas { get; set; }
 
     public virtual DbSet<Usuario> Usuarios { get; set; }
@@ -51,8 +49,8 @@ public partial class GentefitContext : DbContext
                 .HasMaxLength(200)
                 .IsUnicode(false);
             entity.Property(e => e.intensidad)
-                .HasMaxLength(20)
-                .IsUnicode(false);
+                .HasConversion<int>()  // Guardar enum como INT
+                .HasColumnName("Intensidad");
             entity.Property(e => e.nombre)
                 .HasMaxLength(30)
                 .IsUnicode(false);
@@ -122,11 +120,12 @@ public partial class GentefitContext : DbContext
             entity.Property(e => e.idReserva).HasColumnName("ID");
 
             entity.Property(e => e.estado)
-                .HasConversion<int>();
+                .HasConversion<int>() // Guarda el enum como int
+                .HasColumnName("Estado");
 
             entity.Property(e => e.fecha)
                 .HasDefaultValueSql("CURRENT_TIMESTAMP")
-                .HasColumnType("datetime");
+                .HasColumnType("FechaHora");
 
             entity.HasOne(r => r.cliente)
                 .WithMany(c => c.listaReservas)
@@ -138,21 +137,6 @@ public partial class GentefitContext : DbContext
                 .HasForeignKey(r => r.idClase)
                 .OnDelete(DeleteBehavior.Cascade);
 
-        });
-
-        modelBuilder.Entity<Rol>(entity =>
-        {
-            entity.HasKey(e => e.Id).HasName("PK__Rol__3214EC271A97D82B");
-
-            entity.ToTable("Rol");
-
-            entity.Property(e => e.Id)
-                .ValueGeneratedNever()
-                .HasColumnName("ID");
-
-            entity.Property(e => e.TipoRol)
-                .HasMaxLength(20)
-                .IsUnicode(false);
         });
 
 
@@ -184,15 +168,12 @@ public partial class GentefitContext : DbContext
             entity.Property(e => e.email)
                 .HasMaxLength(300)
                 .IsUnicode(false);
-            entity.Property(e => e.idRol).HasColumnName("IDRol");
+            entity.Property(e => e.rol)
+                .HasConversion<int>() // Guarda el enum como int
+                .HasColumnName("IdRol");
             entity.Property(e => e.nombre)
                 .HasMaxLength(100)
                 .IsUnicode(false);
-
-            entity.HasOne(d => d.idRolNavigation).WithMany(p => p.Usuarios)
-                .HasForeignKey(d => d.idRol)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("fk_Usuario_Rol");
         });
 
         OnModelCreatingPartial(modelBuilder);

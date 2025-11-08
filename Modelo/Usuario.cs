@@ -24,8 +24,7 @@ namespace Gentefit.Modelo
         public string email { get; set; } = null!;
         [Required, MaxLength(50)]
         public string contrasena { get; set; } = null!;
-        public int idRol { get; set; }
-        public virtual Rol idRolNavigation { get; set; }
+        public TipoRol rol { get; set; }
 
 
         public Usuario() { }

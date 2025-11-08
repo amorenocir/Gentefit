@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Gentefit.Modelo.Enums;
 
 namespace Gentefit.Modelo
 {
@@ -15,10 +16,10 @@ namespace Gentefit.Modelo
         public string nombre { get; set; }
         public int duracion { get; set; }
         public string descripcion { get; set; }
-        public string intensidad { get; set; }
+        public Intensidad intensidad { get; set; }
         public List<Clase> listaClases { get; set; }
 
-        public Actividad(int idActividad, string nombre, int duracion, string descripcion, string intensidad, List<Clase> listaClases)
+        public Actividad(int idActividad, string nombre, int duracion, string descripcion, Intensidad intensidad, List<Clase> listaClases)
         {
             this.idActividad = idActividad;
             this.nombre = nombre;
@@ -28,7 +29,7 @@ namespace Gentefit.Modelo
             this.listaClases = listaClases;
         }
 
-        public Actividad(int idActividad, string nombre, int duracion, string descripcion, string intensidad)
+        public Actividad(int idActividad, string nombre, int duracion, string descripcion, Intensidad intensidad)
         {
             this.idActividad = idActividad;
             this.nombre = nombre;
