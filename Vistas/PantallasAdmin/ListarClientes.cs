@@ -16,12 +16,12 @@ namespace Gentefit.Vistas.PantallasAdmin
 {
     public partial class ListarClientes : Form
     {
-        private readonly LogicaClientes logica = new LogicaClientes();
+        private readonly LogicaClientes logicaCl = new LogicaClientes();
 
         public ListarClientes()
         {
             InitializeComponent();
-            this.Load += (s, e) => PanelClientes.DataSource = logica.ObtenerTodos();
+            this.Load += (s, e) => PanelClientes.DataSource = logicaCl.ObtenerTodos();
         }
 
         private void BotonVolver_Click(object sender, EventArgs e)
@@ -40,7 +40,7 @@ namespace Gentefit.Vistas.PantallasAdmin
 
             if (saveFileDialog.ShowDialog() == DialogResult.OK)
             {
-                logica.ExportarXml(saveFileDialog.FileName);
+                logicaCl.ExportarXml(saveFileDialog.FileName);
                 MessageBox.Show("Clientes exportados correctamente.");
             }
         }
@@ -55,9 +55,9 @@ namespace Gentefit.Vistas.PantallasAdmin
 
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
-                logica.ImportarXml(openFileDialog.FileName);
+                logicaCl.ImportarXml(openFileDialog.FileName);
                 MessageBox.Show("Clientes importados correctamente.");
-                PanelClientes.DataSource = logica.ObtenerTodos();
+                PanelClientes.DataSource = logicaCl.ObtenerTodos();
 
             }
         }

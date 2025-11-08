@@ -33,7 +33,7 @@
             ImagenPerfil = new PictureBox();
             label1 = new Label();
             label2 = new Label();
-            dataGridView1 = new DataGridView();
+            PanelReservas = new DataGridView();
             BotonInicio = new Button();
             BotonActividades = new Button();
             BotonReservas = new Button();
@@ -41,7 +41,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ImagenMensajes).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ImagenPerfil).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)PanelReservas).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -86,7 +86,6 @@
             label1.TabIndex = 8;
             label1.Text = "RESERVAS";
             label1.TextAlign = ContentAlignment.MiddleLeft;
-            label1.Click += label1_Click;
             // 
             // label2
             // 
@@ -97,13 +96,13 @@
             label2.TabIndex = 9;
             label2.Text = "HH:MM DD-MM-AA";
             // 
-            // dataGridView1
+            // PanelReservas
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(188, 200);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(426, 215);
-            dataGridView1.TabIndex = 10;
+            PanelReservas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            PanelReservas.Location = new Point(188, 200);
+            PanelReservas.Name = "PanelReservas";
+            PanelReservas.Size = new Size(426, 215);
+            PanelReservas.TabIndex = 10;
             // 
             // BotonInicio
             // 
@@ -157,7 +156,7 @@
             Controls.Add(BotonReservas);
             Controls.Add(BotonActividades);
             Controls.Add(BotonInicio);
-            Controls.Add(dataGridView1);
+            Controls.Add(PanelReservas);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
@@ -169,7 +168,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)ImagenMensajes).EndInit();
             ((System.ComponentModel.ISupportInitialize)ImagenPerfil).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)PanelReservas).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -181,7 +180,7 @@
         private PictureBox ImagenPerfil;
         private Label label1;
         private Label label2;
-        private DataGridView dataGridView1;
+        private DataGridView PanelReservas;
         private Button BotonInicio;
         private Button BotonActividades;
         private Button BotonReservas;

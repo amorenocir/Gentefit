@@ -15,7 +15,6 @@ namespace Gentefit.ModeloXml
         public int Telefono { get; set; }
         public string Email { get; set; }
         public string Contrasena { get; set; }
-        public string Gimnasio { get; set; }
     }
 }
 
