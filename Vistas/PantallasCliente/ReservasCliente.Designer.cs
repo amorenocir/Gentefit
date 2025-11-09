@@ -38,6 +38,7 @@
             BotonActividades = new Button();
             BotonReservas = new Button();
             BotonHorarios = new Button();
+            EtiquetaCliente = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ImagenMensajes).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ImagenPerfil).BeginInit();
@@ -147,11 +148,20 @@
             BotonHorarios.UseVisualStyleBackColor = false;
             BotonHorarios.Click += BotonHorarios_Click;
             // 
+            // EtiquetaCliente
+            // 
+            EtiquetaCliente.AutoSize = true;
+            EtiquetaCliente.Location = new Point(46, 178);
+            EtiquetaCliente.Name = "EtiquetaCliente";
+            EtiquetaCliente.Size = new Size(0, 15);
+            EtiquetaCliente.TabIndex = 15;
+            // 
             // ReservasCliente
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(EtiquetaCliente);
             Controls.Add(BotonHorarios);
             Controls.Add(BotonReservas);
             Controls.Add(BotonActividades);
@@ -185,5 +195,6 @@
         private Button BotonActividades;
         private Button BotonReservas;
         private Button BotonHorarios;
+        private Label EtiquetaCliente;
     }
 }

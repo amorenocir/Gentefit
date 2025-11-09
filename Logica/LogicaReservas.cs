@@ -1,13 +1,13 @@
 ﻿using Gentefit.db;
 using Gentefit.Modelo;
 using Gentefit.ModeloXml;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Serialization;
 
 public class LogicaReservas
 {
-
     // Obtener todos las reservas
     public List<Reserva> ObtenerTodos()
     {
@@ -25,7 +25,7 @@ public class LogicaReservas
     }
 
     // Añadir una nueva reserva
-    public void AnadirReserva(Reserva nuevaReserva)
+    public void GuardarReserva(Reserva nuevaReserva)
     {
         using var contexto = new GentefitContext();
         contexto.Reservas.Add(nuevaReserva);
@@ -40,16 +40,13 @@ public class LogicaReservas
         if (c == null) return false;
 
         c.idCliente = reserva.idCliente;
-        c.cliente = reserva.cliente;
         c.idClase = reserva.idClase;
-        c.clase = reserva.clase;
         c.estado = reserva.estado;
         c.fecha = reserva.fecha;
 
         contexto.SaveChanges();
         return true;
     }
-
 
     // Eliminar reserva por ID
     public bool EliminarReserva(int id)
@@ -64,6 +61,36 @@ public class LogicaReservas
         }
         return false;
     }
+
+    //Filtrar reservas del usuario logeado
+    public List <ReservaDTO> FiltrarReservas(int id)
+    {
+        using var contexto = new GentefitContext();
+
+        return contexto.Reservas
+            .Where(r => r.idCliente == id)
+            .Include(r => r.cliente)
+            .Include(r => r.clase)
+                .ThenInclude(c => c.actividad)
+            .Select(r => new ReservaDTO
+            {
+                IdReserva = r.idReserva,
+                ClaseNombre = r.clase.actividad.nombre,
+                Estado = r.estado.ToString(),
+                Fecha = r.fecha
+            })
+            .ToList();
+    }
+
+    public class ReservaDTO
+    {
+        public int IdReserva { get; set; }
+        public string ClaseNombre { get; set; }
+        public DateTime Fecha { get; set; }
+        public string Estado { get; set; }
+        
+    }
+
 
     // Exportar reservas a XML
     public void ExportarXmlReservas(string rutaArchivo)

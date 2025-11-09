@@ -16,9 +16,9 @@ namespace Gentefit
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            //Application.Run(new Login());
+            Application.Run(new Login());
             //Application.Run(new MenuAdmin()); //Run de pruebas para saltarse el login e ir a admin
-            Application.Run(new MenuCliente()); //Saltarse login e ir a cliente
+            //Application.Run(new MenuCliente()); //Saltarse login e ir a cliente
         }
     }
 }

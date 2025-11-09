@@ -63,7 +63,7 @@ namespace Gentefit.Vistas
 
                 if (cliente != null)
                 {
-                    new MenuCliente().Show();
+                    new MenuCliente(cliente).Show();
                     this.Hide();
                 }
                 else

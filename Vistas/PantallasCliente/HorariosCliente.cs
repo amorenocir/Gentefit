@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Gentefit.Modelo;
+using MySqlX.XDevAPI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +14,11 @@ namespace Gentefit.Vistas
 {
     public partial class HorariosCliente : Form
     {
-        public HorariosCliente()
+        private Cliente clienteLogeado;
+        public HorariosCliente(Cliente cliente)
         {
             InitializeComponent();
+            clienteLogeado = cliente;
         }
         private void label1_Click(object sender, EventArgs e)
         {
@@ -22,18 +26,18 @@ namespace Gentefit.Vistas
         }
         private void BotonInicio_Click(object sender, EventArgs e)
         {
-            new MenuCliente().Show();
+            new MenuCliente(clienteLogeado).Show();
             this.Hide();
         }
         private void BotonActividades_Click(object sender, EventArgs e)
         {
-            new ActividadesCliente().Show();
+            new ActividadesCliente(clienteLogeado).Show();
             this.Hide();
         }
         
         private void BotonReservas_Click(object sender, EventArgs e)
         {
-            new ReservasCliente().Show();
+            new ReservasCliente(clienteLogeado).Show();
             this.Hide();
         }
     }

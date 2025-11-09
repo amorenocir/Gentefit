@@ -1,4 +1,6 @@
-﻿using Gentefit.Vistas.PantallasAdmin;
+﻿using Gentefit.Modelo;
+using Gentefit.Vistas.PantallasAdmin;
+using MySqlX.XDevAPI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,9 +15,12 @@ namespace Gentefit.Vistas
 {
     public partial class MenuCliente : Form
     {
-        public MenuCliente()
+        private Cliente clienteLogeado;
+
+        public MenuCliente(Cliente cliente)
         {
             InitializeComponent();
+            clienteLogeado = cliente;
         }
         private void MenuAdmin_Load(object sender, EventArgs e)
         {
@@ -28,17 +33,17 @@ namespace Gentefit.Vistas
 
         private void BotonActividades_Click(object sender, EventArgs e)
         {
-            new ActividadesCliente().Show();
+            new ActividadesCliente(clienteLogeado).Show();
             this.Hide();
         }
         private void BotonHorarios_Click(object sender, EventArgs e)
         {
-            new HorariosCliente().Show();
+            new HorariosCliente(clienteLogeado).Show();
             this.Hide();
         }
         private void BotonReservas_Click(object sender, EventArgs e)
         {
-            new ReservasCliente().Show();
+            new ReservasCliente(clienteLogeado).Show();
             this.Hide();
         }
 
