@@ -80,7 +80,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
             label1.ForeColor = SystemColors.ControlText;
-            label1.Location = new Point(351, 155);
+            label1.Location = new Point(343, 154);
             label1.Name = "label1";
             label1.Size = new Size(118, 30);
             label1.TabIndex = 8;
@@ -99,9 +99,9 @@
             // PanelReservas
             // 
             PanelReservas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            PanelReservas.Location = new Point(188, 200);
+            PanelReservas.Location = new Point(44, 200);
             PanelReservas.Name = "PanelReservas";
-            PanelReservas.Size = new Size(426, 215);
+            PanelReservas.Size = new Size(715, 215);
             PanelReservas.TabIndex = 10;
             // 
             // BotonInicio

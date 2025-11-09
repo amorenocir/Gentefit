@@ -28,24 +28,24 @@ namespace Gentefit.Vistas
 
         private void BotonActividades_Click(object sender, EventArgs e)
         {
-            this.Hide();
             new ActividadesCliente().Show();
+            this.Hide();
         }
         private void BotonHorarios_Click(object sender, EventArgs e)
         {
-            this.Hide();
             new HorariosCliente().Show();
+            this.Hide();
         }
         private void BotonReservas_Click(object sender, EventArgs e)
         {
-            this.Hide();
             new ReservasCliente().Show();
+            this.Hide();
         }
 
         private void BotonSalir_Click(object sender, EventArgs e)
         {
-            this.Hide();
             new Login().Show();
+            this.Hide();
         }
 
     }

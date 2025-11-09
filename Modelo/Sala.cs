@@ -12,6 +12,7 @@ namespace Gentefit.Modelo
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Column("id_sala")]
         public int idSala { get; set; }
         [Required, MaxLength(50)]
         public string nombre { get; set; }

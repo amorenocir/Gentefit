@@ -124,8 +124,8 @@ public partial class GentefitContext : DbContext
                 .HasColumnName("Estado");
 
             entity.Property(e => e.fecha)
-                .HasDefaultValueSql("CURRENT_TIMESTAMP")
-                .HasColumnType("FechaHora");
+                .HasColumnType("timestamp")
+                .HasDefaultValueSql("CURRENT_TIMESTAMP");
 
             entity.HasOne(r => r.cliente)
                 .WithMany(c => c.listaReservas)

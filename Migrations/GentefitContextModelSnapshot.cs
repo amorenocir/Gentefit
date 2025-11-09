@@ -197,7 +197,7 @@ namespace Gentefit.Migrations
 
                     b.Property<DateTime>("fecha")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("FechaHora")
+                        .HasColumnType("timestamp")
                         .HasDefaultValueSql("CURRENT_TIMESTAMP");
 
                     b.Property<int>("idClase")
