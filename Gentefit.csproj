@@ -17,6 +17,7 @@
   <ItemGroup>
     <None Remove="Vistas\PantallasAdmin\dz1od1hr.4cz~" />
     <None Remove="Vistas\PantallasAdmin\e0npqnep.jcq~" />
+    <None Remove="Vistas\PantallasCliente\c34rf5vl.10z~" />
   </ItemGroup>
 
   <ItemGroup>

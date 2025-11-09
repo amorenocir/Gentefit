@@ -35,7 +35,8 @@ namespace Gentefit.Vistas
             PanelReservas.Columns["IdReserva"].HeaderText = "ID Reserva";
             PanelReservas.Columns["ClaseNombre"].HeaderText = "Clase";
             PanelReservas.Columns["Estado"].HeaderText = "Estado";
-            PanelReservas.Columns["Fecha"].HeaderText = "Fecha";
+            PanelReservas.Columns["FechaClase"].HeaderText = "Fecha de la Clase";
+            PanelReservas.Columns["FechaReserva"].HeaderText = "Fecha de Reserva";
 
             PanelReservas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
@@ -59,5 +60,31 @@ namespace Gentefit.Vistas
             this.Hide();
         }
 
+        private void BotonCancelarReserva_Click(object sender, EventArgs e)
+        {
+            if (PanelReservas.CurrentRow == null)
+            {
+                MessageBox.Show("Selecciona una reserva para cancelar.",
+                    "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            var reservaDTO = (LogicaReservas.ReservaDTO)PanelReservas.CurrentRow.DataBoundItem;
+
+            // Mensaje de confirmacion
+            DialogResult resultado = MessageBox.Show(
+                "¿Seguro que quieres cancelar esta reserva?",
+                "Confirmar cancelacion",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+            if (resultado != DialogResult.Yes) return;
+            
+            LogicaReservas logica = new LogicaReservas();
+            if (logica.CancelarReserva(reservaDTO.IdReserva))
+            {
+                CargarReservas();
+            }
+        }
     }
 }

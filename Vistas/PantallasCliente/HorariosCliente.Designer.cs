@@ -37,9 +37,12 @@
             pictureBox1 = new PictureBox();
             ImagenMensajes = new PictureBox();
             ImagenPerfil = new PictureBox();
+            PanelHorarios = new DataGridView();
+            BotonReservar = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ImagenMensajes).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ImagenPerfil).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)PanelHorarios).BeginInit();
             SuspendLayout();
             // 
             // BotonHorarios
@@ -138,11 +141,32 @@
             ImagenPerfil.TabIndex = 15;
             ImagenPerfil.TabStop = false;
             // 
+            // PanelHorarios
+            // 
+            PanelHorarios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            PanelHorarios.Location = new Point(132, 198);
+            PanelHorarios.Name = "PanelHorarios";
+            PanelHorarios.Size = new Size(547, 215);
+            PanelHorarios.TabIndex = 24;
+            // 
+            // BotonReservar
+            // 
+            BotonReservar.BackColor = Color.DarkOrange;
+            BotonReservar.Location = new Point(685, 380);
+            BotonReservar.Name = "BotonReservar";
+            BotonReservar.Size = new Size(67, 33);
+            BotonReservar.TabIndex = 25;
+            BotonReservar.Text = "Reservar";
+            BotonReservar.UseVisualStyleBackColor = false;
+            BotonReservar.Click += BotonReservar_Click;
+            // 
             // HorariosCliente
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(BotonReservar);
+            Controls.Add(PanelHorarios);
             Controls.Add(BotonHorarios);
             Controls.Add(BotonReservas);
             Controls.Add(BotonActividades);
@@ -157,6 +181,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)ImagenMensajes).EndInit();
             ((System.ComponentModel.ISupportInitialize)ImagenPerfil).EndInit();
+            ((System.ComponentModel.ISupportInitialize)PanelHorarios).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -172,5 +197,7 @@
         private PictureBox pictureBox1;
         private PictureBox ImagenMensajes;
         private PictureBox ImagenPerfil;
+        private DataGridView PanelHorarios;
+        private Button BotonReservar;
     }
 }

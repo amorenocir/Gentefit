@@ -19,6 +19,7 @@ namespace Gentefit.Vistas
         {
             InitializeComponent();
             clienteLogeado = cliente;
+            CargarClases();
         }
         private void label1_Click(object sender, EventArgs e)
         {
@@ -40,5 +41,48 @@ namespace Gentefit.Vistas
             new ReservasCliente(clienteLogeado).Show();
             this.Hide();
         }
+
+        private void BotonReservar_Click(object sender, EventArgs e)
+        {
+            if (PanelHorarios.CurrentRow == null) return;
+
+            var claseDTO = (LogicaClases.ClaseDTO)PanelHorarios.CurrentRow.DataBoundItem;
+            int idClienteLogueado = clienteLogeado.idCliente; // tu cliente logueado
+
+            LogicaReservas logicaReservas = new LogicaReservas();
+            bool exito = logicaReservas.ReservarClase(claseDTO.IdClase, idClienteLogueado);
+
+            if (exito)
+            {
+                MessageBox.Show(claseDTO.PlazasLibres > 0
+                    ? "Reserva confirmada."
+                    : "No quedan plazas disponibles. Te has añadido a la lista de espera.");
+
+                // Refrescar grid de clases
+                CargarClases();
+            }
+            else
+            {
+                MessageBox.Show("No se pudo realizar la reserva.");
+            }
+        }
+
+        private void CargarClases()
+        {
+            LogicaClases logica = new LogicaClases();
+            var clasesDisponibles = logica.ObtenerClasesDisponibles();
+
+            PanelHorarios.DataSource = clasesDisponibles;
+
+            // Ajustar nombres de columnas
+            PanelHorarios.Columns["IdClase"].HeaderText = "ID";
+            PanelHorarios.Columns["NombreActividad"].HeaderText = "Actividad";
+            PanelHorarios.Columns["NombreEntrenador"].HeaderText = "Entrenador";
+            PanelHorarios.Columns["NombreSala"].HeaderText = "Sala";
+            PanelHorarios.Columns["Horario"].HeaderText = "Horario";
+            PanelHorarios.Columns["PlazasLibres"].HeaderText = "Plazas libres";
+            PanelHorarios.Columns["EnEspera"].HeaderText = "En espera";
+        }
+
     }
 }

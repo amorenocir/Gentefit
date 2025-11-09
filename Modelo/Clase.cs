@@ -43,7 +43,7 @@ namespace Gentefit.Modelo
 
         [NotMapped]
         public List<Reserva> listaEspera =>
-            reservas.Where(r => r.estado == EstadoReserva.Pendiente).ToList();
+            reservas.Where(r => r.estado == EstadoReserva.EnEspera).ToList();
 
         public Clase() { }
     }

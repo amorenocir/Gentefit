@@ -39,6 +39,7 @@
             BotonReservas = new Button();
             BotonHorarios = new Button();
             EtiquetaCliente = new Label();
+            BotonCancelarReserva = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ImagenMensajes).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ImagenPerfil).BeginInit();
@@ -100,9 +101,9 @@
             // PanelReservas
             // 
             PanelReservas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            PanelReservas.Location = new Point(44, 200);
+            PanelReservas.Location = new Point(135, 200);
             PanelReservas.Name = "PanelReservas";
-            PanelReservas.Size = new Size(715, 215);
+            PanelReservas.Size = new Size(544, 215);
             PanelReservas.TabIndex = 10;
             // 
             // BotonInicio
@@ -151,16 +152,28 @@
             // EtiquetaCliente
             // 
             EtiquetaCliente.AutoSize = true;
-            EtiquetaCliente.Location = new Point(46, 178);
+            EtiquetaCliente.Location = new Point(106, 178);
             EtiquetaCliente.Name = "EtiquetaCliente";
             EtiquetaCliente.Size = new Size(0, 15);
             EtiquetaCliente.TabIndex = 15;
+            // 
+            // BotonCancelarReserva
+            // 
+            BotonCancelarReserva.BackColor = Color.DarkOrange;
+            BotonCancelarReserva.Location = new Point(685, 373);
+            BotonCancelarReserva.Name = "BotonCancelarReserva";
+            BotonCancelarReserva.Size = new Size(87, 42);
+            BotonCancelarReserva.TabIndex = 16;
+            BotonCancelarReserva.Text = "Cancelar reserva";
+            BotonCancelarReserva.UseVisualStyleBackColor = false;
+            BotonCancelarReserva.Click += BotonCancelarReserva_Click;
             // 
             // ReservasCliente
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(BotonCancelarReserva);
             Controls.Add(EtiquetaCliente);
             Controls.Add(BotonHorarios);
             Controls.Add(BotonReservas);
@@ -196,5 +209,6 @@
         private Button BotonReservas;
         private Button BotonHorarios;
         private Label EtiquetaCliente;
+        private Button BotonCancelarReserva;
     }
 }

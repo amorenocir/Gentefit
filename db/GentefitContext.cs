@@ -24,7 +24,7 @@ public partial class GentefitContext : DbContext
     public virtual DbSet<Cliente> Clientes { get; set; }
 
 
-    public virtual DbSet<Gentefit.Modelo.Entrenador> Monitors { get; set; }
+    public virtual DbSet<Gentefit.Modelo.Entrenador> Entrenadores { get; set; }
 
     public virtual DbSet<Reserva> Reservas { get; set; }
 
@@ -96,7 +96,7 @@ public partial class GentefitContext : DbContext
         {
             entity.HasKey(e => e.idEntrenador).HasName("PK__Monitor__3214EC272BF7700F");
 
-            entity.ToTable("Monitor");
+            entity.ToTable("Entrenador");
 
             entity.Property(e => e.idEntrenador).HasColumnName("ID");
             entity.Property(e => e.apellidos)

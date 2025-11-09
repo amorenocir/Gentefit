@@ -1,9 +1,11 @@
 ﻿using Gentefit.db;
 using Gentefit.Modelo;
+using Gentefit.Modelo.Enums;
 using Gentefit.ModeloXml;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
+using System.Windows.Forms;
 using System.Xml.Serialization;
 
 public class LogicaReservas
@@ -24,7 +26,64 @@ public class LogicaReservas
                         .ToList();
     }
 
-    // Añadir una nueva reserva
+    // Crear una reserva
+    public bool ReservarClase(int idClase, int idCliente)
+    {
+        using var contexto = new GentefitContext();
+
+        // Comprobar si el cliente ya tiene una reserva para esa clase
+        bool existeReserva = contexto.Reservas
+            .Any(r => r.idClase == idClase && r.idCliente == idCliente && r.estado != EstadoReserva.Cancelada);
+
+        if (existeReserva)
+        {
+            MessageBox.Show(
+                "Ya tienes una reserva para esta clase.",
+                "Reserva duplicada",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Warning
+            );
+            return false;
+        }
+
+        // Obtener la clase
+        var clase = contexto.Clases
+            .Include(c => c.reservas)
+            .FirstOrDefault(c => c.idClase == idClase);
+
+        if (clase == null) return false;
+
+        // Crear la reserva
+        Reserva nuevaReserva = new Reserva
+        {
+            idClase = clase.idClase,
+            idCliente = idCliente,
+            fecha = DateTime.Now
+        };
+
+        // Comprobar plazas libres
+        if (clase.plazasLibres > 0)
+        {
+            clase.plazasLibres--;
+            nuevaReserva.estado = EstadoReserva.Confirmada;
+        }
+        else
+        {
+            clase.enEspera++;
+            nuevaReserva.estado = EstadoReserva.EnEspera; // en espera
+        }
+
+        // Guardar la reserva
+        GuardarReserva(nuevaReserva);
+
+        // Guardar los cambios en la clase (plazas libres y plazas en espera)
+        contexto.SaveChanges();
+
+        return true;
+    }
+
+
+    // Guardar una reserva nueva
     public void GuardarReserva(Reserva nuevaReserva)
     {
         using var contexto = new GentefitContext();
@@ -48,7 +107,63 @@ public class LogicaReservas
         return true;
     }
 
-    // Eliminar reserva por ID
+    // Cancelar una reserva
+    public bool CancelarReserva(int idReserva)
+    {
+        using var contexto = new GentefitContext();
+
+        // Obtener la reserva con su clase
+        var reserva = contexto.Reservas
+            .Include(r => r.clase)
+            .FirstOrDefault(r => r.idReserva == idReserva);
+
+        if (reserva == null) return false;
+        
+        var clase = reserva.clase;
+        bool estabaConfirmada = reserva.estado == EstadoReserva.Confirmada;
+      
+        // Si estaba confirmada, gestionar lista de espera antes de eliminar
+        if (estabaConfirmada)
+        {
+            // Buscar la reserva en espera más antigua
+            var primeraEnEspera = contexto.Reservas
+                .Where(r => r.idClase == clase.idClase && r.estado == EstadoReserva.EnEspera)
+                .OrderBy(r => r.fecha)
+                .FirstOrDefault();
+
+            if (primeraEnEspera != null)
+            {
+                // Cambiar a confirmada
+                primeraEnEspera.estado = EstadoReserva.Confirmada;
+                clase.enEspera--;
+            }
+            else
+            {
+                // No hay lista de espera → liberar plaza
+                clase.plazasLibres++;
+            }
+            MessageBox.Show("Reserva cancelada",
+                    "Reserva cancelada", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+        else
+        {
+            // Estaba en espera
+            clase.enEspera--;
+            MessageBox.Show("Reserva en espera cancelada.",
+                "Reserva cancelada", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        // Cambiar estado a cancelada
+        reserva.estado = EstadoReserva.Cancelada;
+
+        // Guardar cambio inicial
+        contexto.SaveChanges();
+
+        return true;
+    }
+
+
+    // Eliminar una reserva cancelada
     public bool EliminarReserva(int id)
     {
         using var contexto = new GentefitContext();
@@ -77,7 +192,8 @@ public class LogicaReservas
                 IdReserva = r.idReserva,
                 ClaseNombre = r.clase.actividad.nombre,
                 Estado = r.estado.ToString(),
-                Fecha = r.fecha
+                FechaClase = r.clase.horario,
+                FechaReserva = r.fecha,
             })
             .ToList();
     }
@@ -86,7 +202,8 @@ public class LogicaReservas
     {
         public int IdReserva { get; set; }
         public string ClaseNombre { get; set; }
-        public DateTime Fecha { get; set; }
+        public DateTime FechaClase { get; set; }
+        public DateTime FechaReserva { get; set; }
         public string Estado { get; set; }
         
     }
