@@ -86,5 +86,33 @@ namespace Gentefit.Vistas.Admin
         {
             label2.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
         }
+
+        private void TestReservas_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var testResultado = Gentefit.Test.TestReservasInterno.ProbarReservas();
+                MessageBox.Show(testResultado, "Resultado del test de reservas",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error durante el test: {ex.Message}", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void TestCancelarReserva_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string resultado = Gentefit.Test.TestReservasInterno.TestCancelarReserva();
+                MessageBox.Show(resultado, "Resultado del test de cancelación", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"❌ Error inesperado: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

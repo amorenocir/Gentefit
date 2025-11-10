@@ -23,11 +23,13 @@ namespace Gentefit.Modelo
         public int idClase { get; set; }
         public Clase clase { get; set; }
 
-        public EstadoReserva estado { get; set; }
+        public EstadoReserva estado { get; set; } = EstadoReserva.Pendiente;
+        public DateTime fecha { get; set; } = DateTime.Now;
 
-        public DateTime fecha { get; set; }
 
         public Reserva() { }
     }
+
+
 }
 
