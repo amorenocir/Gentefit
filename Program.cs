@@ -1,3 +1,4 @@
+using Gentefit.db;
 using Gentefit.Test;
 using Gentefit.Vistas;
 using Gentefit.Vistas.PantallasAdmin;
@@ -18,7 +19,21 @@ namespace Gentefit
             ApplicationConfiguration.Initialize();
             Application.Run(new Login());
             //Application.Run(new MenuAdmin()); //Run de pruebas para saltarse el login e ir a admin
-            //Application.Run(new MenuCliente()); //Saltarse login e ir a cliente
+
+            using var contexto = new GentefitContext();
+            var cliente = contexto.Clientes.FirstOrDefault(); // obtiene el primero existente
+            /*
+            if (cliente != null)
+            {
+                // ?? Pasamos ese cliente al menú del cliente
+                Application.Run(new MenuCliente(cliente));
+            }
+            else
+            {
+                MessageBox.Show("No hay clientes en la base de datos.");
+            }
+            Application.Run(new MenuCliente(cliente)); //Saltarse login e ir a cliente
+            */
         }
     }
 }

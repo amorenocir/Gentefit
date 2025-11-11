@@ -37,7 +37,6 @@ public class LogicaClases
                 NombreSala = c.sala.nombre,
                 Horario = c.horario,
                 PlazasLibres = c.plazasLibres,
-                EnEspera = c.enEspera
             })
             .ToList();
     }
@@ -85,7 +84,6 @@ public class LogicaClases
         c.idSala = clase.idSala;
         c.horario = clase.horario;
         c.plazasLibres = clase.plazasLibres;
-        c.enEspera = clase.enEspera;
 
         contexto.SaveChanges();
         return true;
@@ -122,7 +120,6 @@ public class LogicaClases
                 NombreSala = c.sala.nombre,
                 Horario = c.horario,
                 PlazasLibres = c.plazasLibres,
-                EnEspera = c.enEspera
             })
             .ToList();
     }
@@ -175,7 +172,6 @@ public class LogicaClases
             Sala = clase.sala,
             Horario = clase.horario,
             PlazasLibres = clase.plazasLibres,
-            EnEspera = clase.enEspera,
             Reservas = clase.reservas
         };
     }
@@ -194,7 +190,6 @@ public class LogicaClases
             sala = claseXml.Sala,
             horario = claseXml.Horario,
             plazasLibres = claseXml.PlazasLibres,
-            enEspera = claseXml.EnEspera,
             reservas = claseXml.Reservas
         };
     }

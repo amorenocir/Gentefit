@@ -1,8 +1,10 @@
 ﻿using Gentefit.db;
+using Gentefit.Logica;
 using Gentefit.Modelo;
 using Gentefit.Modelo.Enums;
 using Gentefit.ModeloXml;
 using Microsoft.EntityFrameworkCore;
+using MySqlX.XDevAPI;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
@@ -49,6 +51,7 @@ public class LogicaReservas
         // Obtener la clase
         var clase = contexto.Clases
             .Include(c => c.reservas)
+            .Include(c => c.actividad)  
             .FirstOrDefault(c => c.idClase == idClase);
 
         if (clase == null) return false;
@@ -69,7 +72,6 @@ public class LogicaReservas
         }
         else
         {
-            clase.enEspera++;
             nuevaReserva.estado = EstadoReserva.EnEspera; // en espera
         }
 
@@ -78,6 +80,22 @@ public class LogicaReservas
 
         // Guardar los cambios en la clase (plazas libres y plazas en espera)
         contexto.SaveChanges();
+
+        // Justo después de guardar la reserva:
+        var cliente = contexto.Clientes.FirstOrDefault(c => c.idCliente == idCliente);
+        if (cliente != null)
+        {
+            string estadoTexto = nuevaReserva.estado == EstadoReserva.Confirmada ? "Confirmada ✅" : "En espera ⏳";
+            string asunto = "📋 Confirmación de tu reserva en Gentefit";
+            string cuerpo = $@"
+                <h3>Hola {cliente.nombre},</h3>
+                <p>Tu reserva para la clase <b>{clase.actividad.nombre}</b> se ha registrado correctamente.</p>
+                <p><b>Estado actual:</b> {estadoTexto}</p>
+                <p>Fecha de la clase: {clase.horario}</p>
+                <hr><p>Gracias por confiar en Gentefit 💪</p>";
+
+            EnviarCorreo.Notificar(cliente.email, asunto, cuerpo);
+        }
 
         return true;
     }
@@ -114,10 +132,16 @@ public class LogicaReservas
 
         // Obtener la reserva con su clase
         var reserva = contexto.Reservas
+            .Include(r => r.cliente) // 👈 esto carga el cliente asociado
             .Include(r => r.clase)
+                .ThenInclude(c => c.actividad)
             .FirstOrDefault(r => r.idReserva == idReserva);
 
-        if (reserva == null) return false;
+
+        if (reserva == null) 
+        { 
+            return false; 
+        }
         
         var clase = reserva.clase;
         bool estabaConfirmada = reserva.estado == EstadoReserva.Confirmada;
@@ -127,6 +151,7 @@ public class LogicaReservas
         {
             // Buscar la reserva en espera más antigua
             var primeraEnEspera = contexto.Reservas
+                .Include(r => r.cliente) // 👈 cargamos el cliente aquí
                 .Where(r => r.idClase == clase.idClase && r.estado == EstadoReserva.EnEspera)
                 .OrderBy(r => r.fecha)
                 .FirstOrDefault();
@@ -135,22 +160,22 @@ public class LogicaReservas
             {
                 // Cambiar a confirmada
                 primeraEnEspera.estado = EstadoReserva.Confirmada;
-                clase.enEspera--;
+
+                // Enviar correo al cliente que pasa de espera a confirmada
+                    string asunto = "🎉 ¡Tu reserva ha sido confirmada!";
+                    string cuerpo = $@"
+                            <h3>Hola {primeraEnEspera.cliente.nombre},</h3>
+                            <p>Tu reserva en Gentefit ha pasado de <b>espera</b> a <b>confirmada</b>.</p>
+                            <p><b>Clase:</b> {clase.actividad?.nombre}</p>
+                            <p><b>Fecha de la clase:</b> {clase.horario}</p>
+                            <hr><p>¡Nos vemos en el gimnasio 🏋️‍♀️!</p>";
+                    EnviarCorreo.Notificar(primeraEnEspera.cliente.email, asunto, cuerpo);
             }
             else
             {
                 // No hay lista de espera → liberar plaza
                 clase.plazasLibres++;
             }
-            MessageBox.Show("Reserva cancelada",
-                    "Reserva cancelada", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
-        else
-        {
-            // Estaba en espera
-            clase.enEspera--;
-            MessageBox.Show("Reserva en espera cancelada.",
-                "Reserva cancelada", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         // Cambiar estado a cancelada
@@ -159,6 +184,20 @@ public class LogicaReservas
         // Guardar cambio inicial
         contexto.SaveChanges();
 
+        if (reserva != null)
+        {
+            string asunto = "❌ Reserva cancelada";
+            string cuerpo = $@"
+            <h3>Hola {reserva.cliente.nombre},</h3>
+            <p>Tu reserva para la clase <b>{clase.actividad?.nombre}</b> ha sido cancelada correctamente.</p>
+            <p><b>Fecha de la clase:</b> {clase.horario}</p>
+            <hr><p>Esperamos verte pronto 💪</p>";
+
+            EnviarCorreo.Notificar(reserva.cliente.email, asunto, cuerpo);
+        }
+
+        MessageBox.Show("Reserva cancelada correctamente.",
+            "Reserva cancelada", MessageBoxButtons.OK, MessageBoxIcon.Information);
         return true;
     }
 

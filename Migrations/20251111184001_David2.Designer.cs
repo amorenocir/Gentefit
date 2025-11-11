@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Gentefit.Migrations
 {
     [DbContext(typeof(GentefitContext))]
-    [Migration("20251109070305_Inicial")]
-    partial class Inicial
+    [Migration("20251111184001_David2")]
+    partial class David2
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -67,9 +67,6 @@ namespace Gentefit.Migrations
                         .HasColumnName("ID");
 
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("idClase"));
-
-                    b.Property<int>("enEspera")
-                        .HasColumnType("int");
 
                     b.Property<DateTime>("horario")
                         .HasColumnType("datetime");
@@ -182,7 +179,7 @@ namespace Gentefit.Migrations
                     b.HasKey("idEntrenador")
                         .HasName("PK__Monitor__3214EC272BF7700F");
 
-                    b.ToTable("Monitor", (string)null);
+                    b.ToTable("Entrenador", (string)null);
                 });
 
             modelBuilder.Entity("Gentefit.Modelo.Reserva", b =>
