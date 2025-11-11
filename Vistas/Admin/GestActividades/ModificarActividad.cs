@@ -27,12 +27,13 @@ namespace Gentefit.Vistas.Admin.GestActividades
             DespleIntensidad.DataSource = Enum.GetValues(typeof(Intensidad));
         }
 
-        private void PanelActividades_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void PanelActividades_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex < 0) return;
 
             var fila = PanelActividades.Rows[e.RowIndex];
 
+            CajaTextoID.Text = fila.Cells["idActividad"].Value.ToString();
             CajaTextoNombre.Text = fila.Cells["nombre"].Value.ToString();
             CajaTextoDuracion.Text = fila.Cells["duracion"].Value.ToString();
             CajaTextoDescripcion.Text = fila.Cells["descripcion"].Value.ToString();
@@ -43,6 +44,7 @@ namespace Gentefit.Vistas.Admin.GestActividades
         {
             var actividad = new Actividad
             {
+                idActividad = int.Parse(CajaTextoID.Text),
                 nombre = CajaTextoNombre.Text,
                 duracion = int.Parse(CajaTextoDuracion.Text),
                 descripcion = CajaTextoDescripcion.Text,

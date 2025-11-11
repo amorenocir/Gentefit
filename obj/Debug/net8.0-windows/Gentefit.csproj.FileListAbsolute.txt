@@ -145,12 +145,10 @@ C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.csp
 C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Properties.Resources.resources
 C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Test.TestConexion.resources
 C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.Admin.GestActividades.AnadirActividad.resources
-C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.Admin.GestActividades.GestBodyPump.resources
 C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.Admin.GestActividades.ListarActividades.resources
 C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.Admin.GestActividades.MenuAdActividades.resources
 C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.Admin.GestActividades.ModificarActividad.resources
 C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.Admin.AnadirCliente.resources
-C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.Admin.EliminarCliente.resources
 C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.Admin.ListarClientes.resources
 C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.Admin.MenuAdClientes.resources
 C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.Admin.ModificarCliente.resources
@@ -172,3 +170,5 @@ C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\refint\Gente
 C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.pdb
 C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.genruntimeconfig.cache
 C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\ref\Gentefit.dll
+C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.Admin.GestActividades.EliminarActividad.resources
+C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.Admin.EliminarActividad.resources

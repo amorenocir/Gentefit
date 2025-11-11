@@ -7,7 +7,7 @@
     <Compile Update="Vistas\Admin\GestActividades\AnadirActividad.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Vistas\Admin\GestActividades\GestBodyPump.cs">
+    <Compile Update="Vistas\Admin\GestActividades\EliminarActividad.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Vistas\Admin\GestActividades\ListarActividades.cs">
@@ -17,9 +17,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Vistas\Admin\GestActividades\ModificarActividad.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Vistas\Admin\GestActividades\Pruebas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Vistas\Admin\GestClientes\AnadirCliente.cs">

@@ -1,6 +1,6 @@
 ﻿namespace Gentefit.Vistas.Admin
 {
-    partial class EliminarCliente
+    partial class EliminarActividad
     {
         /// <summary>
         /// Required designer variable.
@@ -103,11 +103,11 @@
             EliminarClientes.ForeColor = Color.DarkSlateGray;
             EliminarClientes.Location = new Point(79, 31);
             EliminarClientes.Name = "EliminarClientes";
-            EliminarClientes.Size = new Size(274, 37);
+            EliminarClientes.Size = new Size(259, 37);
             EliminarClientes.TabIndex = 45;
-            EliminarClientes.Text = "ELIMINAR CLIENTES";
+            EliminarClientes.Text = "ELIMINAR CLIENTE";
             // 
-            // EliminarCliente
+            // EliminarActividad
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -119,7 +119,7 @@
             Controls.Add(BotonBuscar);
             Controls.Add(CajaTextoBuscar);
             Controls.Add(PanelClientes);
-            Name = "EliminarCliente";
+            Name = "EliminarActividad";
             Text = "EliminarCliente";
             ((System.ComponentModel.ISupportInitialize)PanelClientes).EndInit();
             ResumeLayout(false);

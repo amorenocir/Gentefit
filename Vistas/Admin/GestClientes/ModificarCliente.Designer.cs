@@ -46,6 +46,8 @@
             CajaTextoBuscar = new TextBox();
             PanelClientes = new DataGridView();
             BotonBuscar = new Button();
+            CajaTextoID = new TextBox();
+            ID = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)PanelClientes).BeginInit();
             SuspendLayout();
@@ -205,11 +207,31 @@
             BotonBuscar.UseVisualStyleBackColor = false;
             BotonBuscar.Click += BotonBuscar_Click;
             // 
+            // CajaTextoID
+            // 
+            CajaTextoID.Location = new Point(339, 38);
+            CajaTextoID.Name = "CajaTextoID";
+            CajaTextoID.ReadOnly = true;
+            CajaTextoID.Size = new Size(184, 23);
+            CajaTextoID.TabIndex = 40;
+            CajaTextoID.TextChanged += CajaTextoID_TextChanged_1;
+            // 
+            // ID
+            // 
+            ID.AutoSize = true;
+            ID.Location = new Point(339, 20);
+            ID.Name = "ID";
+            ID.Size = new Size(18, 15);
+            ID.TabIndex = 41;
+            ID.Text = "ID";
+            // 
             // ModificarCliente
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(ID);
+            Controls.Add(CajaTextoID);
             Controls.Add(BotonBuscar);
             Controls.Add(PanelClientes);
             Controls.Add(CajaTextoBuscar);
@@ -256,5 +278,7 @@
         private TextBox CajaTextoBuscar;
         private DataGridView PanelClientes;
         private Button BotonBuscar;
+        private TextBox CajaTextoID;
+        private Label ID;
     }
 }

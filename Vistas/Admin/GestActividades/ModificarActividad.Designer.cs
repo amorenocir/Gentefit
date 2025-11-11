@@ -39,6 +39,8 @@
             BotonVolver = new Button();
             BotonGuardar = new Button();
             DespleIntensidad = new ComboBox();
+            ID = new Label();
+            CajaTextoID = new TextBox();
             ((System.ComponentModel.ISupportInitialize)PanelActividades).BeginInit();
             SuspendLayout();
             // 
@@ -48,11 +50,11 @@
             PanelActividades.Name = "PanelActividades";
             PanelActividades.Size = new Size(363, 336);
             PanelActividades.TabIndex = 50;
-            PanelActividades.CellContentClick += PanelActividades_CellContentClick;
+            PanelActividades.CellClick += PanelActividades_CellClick;
             // 
             // CajaTextoNombre
             // 
-            CajaTextoNombre.Location = new Point(502, 72);
+            CajaTextoNombre.Location = new Point(501, 101);
             CajaTextoNombre.Name = "CajaTextoNombre";
             CajaTextoNombre.Size = new Size(184, 23);
             CajaTextoNombre.TabIndex = 46;
@@ -60,7 +62,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(502, 54);
+            label3.Location = new Point(501, 83);
             label3.Name = "label3";
             label3.Size = new Size(51, 15);
             label3.TabIndex = 45;
@@ -68,7 +70,7 @@
             // 
             // CajaTextoDescripcion
             // 
-            CajaTextoDescripcion.Location = new Point(502, 243);
+            CajaTextoDescripcion.Location = new Point(501, 272);
             CajaTextoDescripcion.Multiline = true;
             CajaTextoDescripcion.Name = "CajaTextoDescripcion";
             CajaTextoDescripcion.Size = new Size(184, 90);
@@ -77,7 +79,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(502, 225);
+            label5.Location = new Point(501, 254);
             label5.Name = "label5";
             label5.Size = new Size(69, 15);
             label5.TabIndex = 43;
@@ -86,7 +88,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(502, 160);
+            label2.Location = new Point(501, 189);
             label2.Name = "label2";
             label2.Size = new Size(62, 15);
             label2.TabIndex = 41;
@@ -94,7 +96,7 @@
             // 
             // CajaTextoDuracion
             // 
-            CajaTextoDuracion.Location = new Point(502, 121);
+            CajaTextoDuracion.Location = new Point(501, 150);
             CajaTextoDuracion.Name = "CajaTextoDuracion";
             CajaTextoDuracion.Size = new Size(184, 23);
             CajaTextoDuracion.TabIndex = 40;
@@ -102,7 +104,7 @@
             // Nombre
             // 
             Nombre.AutoSize = true;
-            Nombre.Location = new Point(502, 103);
+            Nombre.Location = new Point(501, 132);
             Nombre.Name = "Nombre";
             Nombre.Size = new Size(55, 15);
             Nombre.TabIndex = 39;
@@ -110,7 +112,7 @@
             // 
             // BotonVolver
             // 
-            BotonVolver.Location = new Point(615, 356);
+            BotonVolver.Location = new Point(614, 385);
             BotonVolver.Name = "BotonVolver";
             BotonVolver.Size = new Size(71, 34);
             BotonVolver.TabIndex = 48;
@@ -121,7 +123,7 @@
             // BotonGuardar
             // 
             BotonGuardar.BackColor = Color.DarkOrange;
-            BotonGuardar.Location = new Point(524, 356);
+            BotonGuardar.Location = new Point(523, 385);
             BotonGuardar.Name = "BotonGuardar";
             BotonGuardar.Size = new Size(70, 34);
             BotonGuardar.TabIndex = 47;
@@ -132,16 +134,35 @@
             // DespleIntensidad
             // 
             DespleIntensidad.FormattingEnabled = true;
-            DespleIntensidad.Location = new Point(502, 178);
+            DespleIntensidad.Location = new Point(501, 207);
             DespleIntensidad.Name = "DespleIntensidad";
             DespleIntensidad.Size = new Size(184, 23);
             DespleIntensidad.TabIndex = 49;
+            // 
+            // ID
+            // 
+            ID.AutoSize = true;
+            ID.Location = new Point(501, 26);
+            ID.Name = "ID";
+            ID.Size = new Size(18, 15);
+            ID.TabIndex = 52;
+            ID.Text = "ID";
+            // 
+            // CajaTextoID
+            // 
+            CajaTextoID.Location = new Point(501, 44);
+            CajaTextoID.Name = "CajaTextoID";
+            CajaTextoID.ReadOnly = true;
+            CajaTextoID.Size = new Size(184, 23);
+            CajaTextoID.TabIndex = 51;
             // 
             // ModificarActividad
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(ID);
+            Controls.Add(CajaTextoID);
             Controls.Add(DespleIntensidad);
             Controls.Add(BotonVolver);
             Controls.Add(BotonGuardar);
@@ -174,5 +195,7 @@
         private Button BotonVolver;
         private Button BotonGuardar;
         private ComboBox DespleIntensidad;
+        private Label ID;
+        private TextBox CajaTextoID;
     }
 }

@@ -23,6 +23,7 @@ namespace Gentefit.Vistas.Admin
             var fila = PanelClientes.Rows[e.RowIndex];
 
             // Se asume que las columnas del DataGridView se llaman igual que las propiedades de Cliente
+            CajaTextoID.Text = fila.Cells["idCliente"].Value.ToString();
             CajaTextoNombre.Text = fila.Cells["nombre"].Value.ToString();
             CajaTextoApellidos.Text = fila.Cells["apellidos"].Value.ToString();
             CajaTextoDNI.Text = fila.Cells["dni"].Value.ToString();
@@ -35,6 +36,7 @@ namespace Gentefit.Vistas.Admin
         {
             var cliente = new Cliente
             {
+                idCliente = int.Parse(CajaTextoID.Text),
                 nombre = CajaTextoNombre.Text,
                 apellidos = CajaTextoApellidos.Text,
                 dni = CajaTextoDNI.Text,
@@ -86,6 +88,11 @@ namespace Gentefit.Vistas.Admin
         private void CargarDatos()
         {
             PanelClientes.DataSource = logica.ObtenerTodos();
+        }
+
+        private void CajaTextoID_TextChanged_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

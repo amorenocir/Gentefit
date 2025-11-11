@@ -37,7 +37,8 @@ namespace Gentefit.Vistas.Admin.GestActividades
 
         private void BotonEliminar_Click(object sender, EventArgs e)
         {
-
+            new EliminarActividad().Show();
+            this.Hide();
         }
 
         private void BotonVolver_Click(object sender, EventArgs e)

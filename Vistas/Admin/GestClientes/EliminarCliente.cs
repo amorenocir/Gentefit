@@ -5,11 +5,11 @@ using System.Windows.Forms;
 
 namespace Gentefit.Vistas.Admin
 {
-    public partial class EliminarCliente : Form
+    public partial class EliminarActividad : Form
     {
         private LogicaClientes logica;
 
-        public EliminarCliente()
+        public EliminarActividad()
         {
             InitializeComponent();
             this.Load += EliminarCliente_Load;

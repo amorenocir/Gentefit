@@ -17,6 +17,13 @@ namespace Gentefit.Controlador
             return contexto.Actividades.ToList();
         }
 
+        //Buscar actividad por ID
+        public List<Actividad> BuscarPorID(int id)
+        {
+            using var contexto = new GentefitContext();
+            return contexto.Actividades.Where(c => c.idActividad == id).ToList().ToList();
+        }
+
         //Añadir una nueva actividad
         public void AddActividad(Actividad nuevaActividad)
         {
@@ -39,6 +46,20 @@ namespace Gentefit.Controlador
 
             contexto.SaveChanges();
             return true;
+        }
+
+        //Eliminar actividad
+        public bool EliminarActividad(int id)
+        {
+            using var contexto = new GentefitContext();
+            var actividad = contexto.Actividades.Find(id);
+            if(actividad != null)
+            {
+                contexto.Actividades.Remove(actividad);
+                contexto.SaveChanges();
+                return true;
+            }
+            return false;
         }
     }
 }
