@@ -137,9 +137,9 @@ namespace Gentefit.Migrations
                         principalColumn: "ID",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Clase_Monitor_id_entrenador",
+                        name: "FK_Clase_Entrenador_id_entrenador",
                         column: x => x.id_entrenador,
-                        principalTable: "Monitor",
+                        principalTable: "Entrenador",
                         principalColumn: "ID",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(

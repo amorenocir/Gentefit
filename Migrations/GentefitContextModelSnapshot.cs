@@ -179,7 +179,7 @@ namespace Gentefit.Migrations
                     b.HasKey("idEntrenador")
                         .HasName("PK__Monitor__3214EC272BF7700F");
 
-                    b.ToTable("Monitor", (string)null);
+                    b.ToTable("Entrenador", (string)null);
                 });
 
             modelBuilder.Entity("Gentefit.Modelo.Reserva", b =>

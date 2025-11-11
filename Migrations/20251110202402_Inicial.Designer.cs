@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Gentefit.Migrations
 {
     [DbContext(typeof(GentefitContext))]
-    [Migration("20251109070305_Inicial")]
+    [Migration("20251110202402_Inicial")]
     partial class Inicial
     {
         /// <inheritdoc />
@@ -182,7 +182,7 @@ namespace Gentefit.Migrations
                     b.HasKey("idEntrenador")
                         .HasName("PK__Monitor__3214EC272BF7700F");
 
-                    b.ToTable("Monitor", (string)null);
+                    b.ToTable("Entrenador", (string)null);
                 });
 
             modelBuilder.Entity("Gentefit.Modelo.Reserva", b =>

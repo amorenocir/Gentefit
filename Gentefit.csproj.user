@@ -40,6 +40,9 @@
     <Compile Update="Vistas\PantallasCliente\MenuCliente.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Resources\Tarjetas\TarjetaActividad.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="Vistas\PantallasEncargado\MenuEncargado.cs">
       <SubType>Form</SubType>
     </Compile>

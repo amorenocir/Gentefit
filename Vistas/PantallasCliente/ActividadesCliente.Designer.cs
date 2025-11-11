@@ -1,17 +1,9 @@
 ﻿namespace Gentefit.Vistas
-
 {
     partial class ActividadesCliente
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -23,156 +15,146 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
-            BotonHorarios = new Button();
-            BotonReservas = new Button();
-            BotonActividades = new Button();
-            BotonInicio = new Button();
-            label2 = new Label();
-            label1 = new Label();
-            pictureBox1 = new PictureBox();
-            ImagenMensajes = new PictureBox();
-            ImagenPerfil = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)ImagenMensajes).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)ImagenPerfil).BeginInit();
-            SuspendLayout();
+            this.BotonHorarios = new System.Windows.Forms.Button();
+            this.BotonReservas = new System.Windows.Forms.Button();
+            this.BotonActividades = new System.Windows.Forms.Button();
+            this.BotonInicio = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ImagenMensajes = new System.Windows.Forms.PictureBox();
+            this.ImagenPerfil = new System.Windows.Forms.PictureBox();
+            this.PanelFlow = new System.Windows.Forms.FlowLayoutPanel();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImagenMensajes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImagenPerfil)).BeginInit();
+            this.SuspendLayout();
             // 
             // BotonHorarios
             // 
-            BotonHorarios.BackColor = Color.DarkOrange;
-            BotonHorarios.Location = new Point(421, 105);
-            BotonHorarios.Name = "BotonHorarios";
-            BotonHorarios.Size = new Size(87, 33);
-            BotonHorarios.TabIndex = 23;
-            BotonHorarios.Text = "Horarios";
-            BotonHorarios.UseVisualStyleBackColor = false;
-            BotonHorarios.Click += BotonHorarios_Click;
+            this.BotonHorarios.BackColor = System.Drawing.Color.DarkOrange;
+            this.BotonHorarios.Location = new System.Drawing.Point(481, 140);
+            this.BotonHorarios.Name = "BotonHorarios";
+            this.BotonHorarios.Size = new System.Drawing.Size(99, 44);
+            this.BotonHorarios.Text = "Horarios";
+            this.BotonHorarios.UseVisualStyleBackColor = false;
+            this.BotonHorarios.Click += new System.EventHandler(this.BotonHorarios_Click);
             // 
             // BotonReservas
             // 
-            BotonReservas.BackColor = Color.DarkOrange;
-            BotonReservas.Location = new Point(528, 105);
-            BotonReservas.Name = "BotonReservas";
-            BotonReservas.Size = new Size(87, 33);
-            BotonReservas.TabIndex = 22;
-            BotonReservas.Text = "Reservas";
-            BotonReservas.UseVisualStyleBackColor = false;
-            BotonReservas.Click += BotonReservas_Click;
+            this.BotonReservas.BackColor = System.Drawing.Color.DarkOrange;
+            this.BotonReservas.Location = new System.Drawing.Point(603, 140);
+            this.BotonReservas.Name = "BotonReservas";
+            this.BotonReservas.Size = new System.Drawing.Size(99, 44);
+            this.BotonReservas.Text = "Reservas";
+            this.BotonReservas.UseVisualStyleBackColor = false;
+            this.BotonReservas.Click += new System.EventHandler(this.BotonReservas_Click);
             // 
             // BotonActividades
             // 
-            BotonActividades.BackColor = Color.Wheat;
-            BotonActividades.Location = new Point(306, 105);
-            BotonActividades.Name = "BotonActividades";
-            BotonActividades.Size = new Size(87, 33);
-            BotonActividades.TabIndex = 21;
-            BotonActividades.Text = "Actividades";
-            BotonActividades.UseVisualStyleBackColor = false;
+            this.BotonActividades.BackColor = System.Drawing.Color.Wheat;
+            this.BotonActividades.Location = new System.Drawing.Point(350, 140);
+            this.BotonActividades.Name = "BotonActividades";
+            this.BotonActividades.Size = new System.Drawing.Size(99, 44);
+            this.BotonActividades.Text = "Actividades";
+            this.BotonActividades.UseVisualStyleBackColor = false;
             // 
             // BotonInicio
             // 
-            BotonInicio.BackColor = Color.DarkOrange;
-            BotonInicio.Location = new Point(189, 105);
-            BotonInicio.Name = "BotonInicio";
-            BotonInicio.Size = new Size(87, 33);
-            BotonInicio.TabIndex = 20;
-            BotonInicio.Text = "Inicio";
-            BotonInicio.UseVisualStyleBackColor = false;
-            BotonInicio.Click += BotonInicio_Click;
+            this.BotonInicio.BackColor = System.Drawing.Color.DarkOrange;
+            this.BotonInicio.Location = new System.Drawing.Point(216, 140);
+            this.BotonInicio.Name = "BotonInicio";
+            this.BotonInicio.Size = new System.Drawing.Size(99, 44);
+            this.BotonInicio.Text = "Inicio";
+            this.BotonInicio.UseVisualStyleBackColor = false;
+            this.BotonInicio.Click += new System.EventHandler(this.BotonInicio_Click);
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(341, 83);
-            label2.Name = "label2";
-            label2.Size = new Size(117, 15);
-            label2.TabIndex = 19;
-            label2.Text = "HH:MM DD-MM-AA";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(390, 111);
+            this.label2.Text = "HH:MM DD-MM-AA";
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
-            label1.ForeColor = SystemColors.ControlText;
-            label1.Location = new Point(325, 154);
-            label1.Name = "label1";
-            label1.Size = new Size(155, 30);
-            label1.TabIndex = 18;
-            label1.Text = "ACTIVIDADES";
-            label1.TextAlign = ContentAlignment.MiddleLeft;
-            label1.Click += label1_Click;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(371, 205);
+            this.label1.Text = "ACTIVIDADES";
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources.Texto;
-            pictureBox1.Location = new Point(317, 12);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(163, 87);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 17;
-            pictureBox1.TabStop = false;
+            this.pictureBox1.Image = global::Gentefit.Properties.Resources.Texto;
+            this.pictureBox1.Location = new System.Drawing.Point(362, 16);
+            this.pictureBox1.Size = new System.Drawing.Size(186, 116);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabStop = false;
             // 
             // ImagenMensajes
             // 
-            ImagenMensajes.Image = Properties.Resources.Mensajes;
-            ImagenMensajes.Location = new Point(500, 12);
-            ImagenMensajes.Name = "ImagenMensajes";
-            ImagenMensajes.Size = new Size(115, 88);
-            ImagenMensajes.SizeMode = PictureBoxSizeMode.Zoom;
-            ImagenMensajes.TabIndex = 16;
-            ImagenMensajes.TabStop = false;
+            this.ImagenMensajes.Image = global::Gentefit.Properties.Resources.Mensajes;
+            this.ImagenMensajes.Location = new System.Drawing.Point(571, 16);
+            this.ImagenMensajes.Size = new System.Drawing.Size(131, 117);
+            this.ImagenMensajes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ImagenMensajes.TabStop = false;
             // 
             // ImagenPerfil
             // 
-            ImagenPerfil.Image = Properties.Resources.Perfil;
-            ImagenPerfil.Location = new Point(189, 17);
-            ImagenPerfil.Name = "ImagenPerfil";
-            ImagenPerfil.Size = new Size(106, 82);
-            ImagenPerfil.SizeMode = PictureBoxSizeMode.Zoom;
-            ImagenPerfil.TabIndex = 15;
-            ImagenPerfil.TabStop = false;
+            this.ImagenPerfil.Image = global::Gentefit.Properties.Resources.Perfil;
+            this.ImagenPerfil.Location = new System.Drawing.Point(216, 23);
+            this.ImagenPerfil.Size = new System.Drawing.Size(121, 109);
+            this.ImagenPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ImagenPerfil.TabStop = false;
+            // 
+            // PanelFlow
+            // 
+            this.PanelFlow.AutoScroll = true;
+            this.PanelFlow.FlowDirection = System.Windows.Forms.FlowDirection.LeftToRight; // horizontal
+            this.PanelFlow.WrapContents = false;
+            this.PanelFlow.Location = new System.Drawing.Point(41, 267);
+            this.PanelFlow.Size = new System.Drawing.Size(861, 291);
+            this.PanelFlow.Name = "PanelFlow";
             // 
             // ActividadesCliente
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(BotonHorarios);
-            Controls.Add(BotonReservas);
-            Controls.Add(BotonActividades);
-            Controls.Add(BotonInicio);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Controls.Add(pictureBox1);
-            Controls.Add(ImagenMensajes);
-            Controls.Add(ImagenPerfil);
-            Name = "ActividadesCliente";
-            Text = "ActividadesCliente";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)ImagenMensajes).EndInit();
-            ((System.ComponentModel.ISupportInitialize)ImagenPerfil).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(908, 600);
+            this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.PanelFlow);
+            this.Controls.Add(this.BotonHorarios);
+            this.Controls.Add(this.BotonReservas);
+            this.Controls.Add(this.BotonActividades);
+            this.Controls.Add(this.BotonInicio);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.ImagenMensajes);
+            this.Controls.Add(this.ImagenPerfil);
+            this.Name = "ActividadesCliente";
+            this.Text = "ActividadesCliente";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImagenMensajes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImagenPerfil)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
         }
 
         #endregion
 
-        private Button BotonHorarios;
-        private Button BotonReservas;
-        private Button BotonActividades;
-        private Button BotonInicio;
-        private Label label2;
-        private Label label1;
-        private PictureBox pictureBox1;
-        private PictureBox ImagenMensajes;
-        private PictureBox ImagenPerfil;
-        private Button BotonVolver;
+        private System.Windows.Forms.Button BotonHorarios;
+        private System.Windows.Forms.Button BotonReservas;
+        private System.Windows.Forms.Button BotonActividades;
+        private System.Windows.Forms.Button BotonInicio;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox ImagenMensajes;
+        private System.Windows.Forms.PictureBox ImagenPerfil;
+        private System.Windows.Forms.FlowLayoutPanel PanelFlow;
     }
 }
+
