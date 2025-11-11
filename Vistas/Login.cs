@@ -74,5 +74,10 @@ namespace Gentefit.Vistas
 
 
         }
+
+        private void BotonSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

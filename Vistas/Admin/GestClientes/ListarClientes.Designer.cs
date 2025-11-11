@@ -43,6 +43,7 @@
             PanelClientes.Name = "PanelClientes";
             PanelClientes.Size = new Size(688, 285);
             PanelClientes.TabIndex = 0;
+            PanelClientes.CellContentClick += PanelClientes_CellContentClick;
             // 
             // Actividades
             // 
@@ -54,6 +55,7 @@
             Actividades.Size = new Size(327, 37);
             Actividades.TabIndex = 7;
             Actividades.Text = "CLIENTES REGISTRADOS";
+            Actividades.Click += Actividades_Click;
             // 
             // BotonVolver
             // 

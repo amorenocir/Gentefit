@@ -45,8 +45,6 @@
             BotonGuardar = new Button();
             CajaTextoBuscar = new TextBox();
             PanelClientes = new DataGridView();
-            CajaTextoId = new TextBox();
-            label3 = new Label();
             BotonBuscar = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)PanelClientes).BeginInit();
@@ -196,23 +194,6 @@
             PanelClientes.TabIndex = 36;
             PanelClientes.CellClick += PanelClientes_CellClick;
             // 
-            // CajaTextoId
-            // 
-            CajaTextoId.Location = new Point(339, 50);
-            CajaTextoId.Name = "CajaTextoId";
-            CajaTextoId.Size = new Size(184, 23);
-            CajaTextoId.TabIndex = 38;
-            CajaTextoId.TextChanged += CajaTextoId_TextChanged;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(339, 32);
-            label3.Name = "label3";
-            label3.Size = new Size(18, 15);
-            label3.TabIndex = 37;
-            label3.Text = "ID";
-            // 
             // BotonBuscar
             // 
             BotonBuscar.BackColor = Color.DarkOrange;
@@ -230,8 +211,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(BotonBuscar);
-            Controls.Add(CajaTextoId);
-            Controls.Add(label3);
             Controls.Add(PanelClientes);
             Controls.Add(CajaTextoBuscar);
             Controls.Add(BotonVolver);
@@ -276,8 +255,6 @@
         private Button BotonGuardar;
         private TextBox CajaTextoBuscar;
         private DataGridView PanelClientes;
-        private Label label3;
         private Button BotonBuscar;
-        private TextBox CajaTextoId;
     }
 }

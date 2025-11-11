@@ -27,7 +27,7 @@ namespace Gentefit.Vistas.Admin
         private void BotonVolver_Click(object sender, EventArgs e)
         {
             new MenuAdClientes().Show();
-            this.Hide();
+            this.Close();
         }
 
         private void BotonExportarXml_Click(object sender, EventArgs e)
@@ -89,6 +89,16 @@ namespace Gentefit.Vistas.Admin
                 email = clienteXml.Email,
                 contrasena = clienteXml.Contrasena,
             };
+        }
+
+        private void PanelClientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void Actividades_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

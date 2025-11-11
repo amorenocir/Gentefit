@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Gentefit.Vistas;
+using Gentefit.Vistas.Admin.GestActividades;
 
 namespace Gentefit.Vistas.Admin
 {
@@ -46,7 +47,8 @@ namespace Gentefit.Vistas.Admin
         private void BotonReservas_Click(object sender, EventArgs e)
         {
             //Abrir Menu X
-
+            this.Hide();
+            new MenuAdActividades().Show();
         }
 
         private void BotonMonitores_Click(object sender, EventArgs e)

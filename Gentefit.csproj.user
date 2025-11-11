@@ -4,25 +4,43 @@
     <Compile Update="Test\TestConexion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Vistas\Admin\AnadirCliente.cs">
+    <Compile Update="Vistas\Admin\GestActividades\AnadirActividad.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Vistas\Admin\EliminarCliente.cs">
+    <Compile Update="Vistas\Admin\GestActividades\GestBodyPump.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Vistas\Admin\ListarClientes.cs">
+    <Compile Update="Vistas\Admin\GestActividades\ListarActividades.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Vistas\Admin\MenuAdActividades.cs">
+    <Compile Update="Vistas\Admin\GestActividades\MenuAdActividades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Admin\GestActividades\ModificarActividad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Admin\GestActividades\Pruebas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Admin\GestClientes\AnadirCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Admin\GestClientes\EliminarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Admin\GestClientes\ListarClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Admin\GestReservas\MenuAdReservas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Vistas\Admin\MenuAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Vistas\Admin\MenuAdClientes.cs">
+    <Compile Update="Vistas\Admin\GestClientes\MenuAdClientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Vistas\Admin\ModificarCliente.cs">
+    <Compile Update="Vistas\Admin\GestClientes\ModificarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Vistas\Login.cs">

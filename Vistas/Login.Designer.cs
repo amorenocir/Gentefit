@@ -34,6 +34,7 @@
             TextoEmail = new Label();
             CajaTextoEmail = new TextBox();
             Logo = new PictureBox();
+            BotonSalir = new Button();
             ((System.ComponentModel.ISupportInitialize)Logo).BeginInit();
             SuspendLayout();
             // 
@@ -42,10 +43,10 @@
             BotonEntrar.BackColor = Color.DarkOrange;
             BotonEntrar.FlatStyle = FlatStyle.Popup;
             BotonEntrar.ForeColor = Color.White;
-            BotonEntrar.Location = new Point(514, 340);
+            BotonEntrar.Location = new Point(241, 339);
             BotonEntrar.Name = "BotonEntrar";
             BotonEntrar.Size = new Size(89, 38);
-            BotonEntrar.TabIndex = 0;
+            BotonEntrar.TabIndex = 3;
             BotonEntrar.Text = "Entrar";
             BotonEntrar.UseVisualStyleBackColor = false;
             BotonEntrar.UseWaitCursor = true;
@@ -58,7 +59,7 @@
             CajaTextoContrasena.Name = "CajaTextoContrasena";
             CajaTextoContrasena.PasswordChar = '*';
             CajaTextoContrasena.Size = new Size(218, 23);
-            CajaTextoContrasena.TabIndex = 1;
+            CajaTextoContrasena.TabIndex = 2;
             // 
             // TextoContraseña
             // 
@@ -86,7 +87,7 @@
             CajaTextoEmail.Location = new Point(294, 197);
             CajaTextoEmail.Name = "CajaTextoEmail";
             CajaTextoEmail.Size = new Size(218, 23);
-            CajaTextoEmail.TabIndex = 3;
+            CajaTextoEmail.TabIndex = 1;
             // 
             // Logo
             // 
@@ -99,12 +100,26 @@
             Logo.TabIndex = 5;
             Logo.TabStop = false;
             // 
+            // BotonSalir
+            // 
+            BotonSalir.BackColor = Color.DarkRed;
+            BotonSalir.FlatStyle = FlatStyle.Popup;
+            BotonSalir.ForeColor = Color.White;
+            BotonSalir.Location = new Point(478, 339);
+            BotonSalir.Name = "BotonSalir";
+            BotonSalir.Size = new Size(89, 38);
+            BotonSalir.TabIndex = 4;
+            BotonSalir.Text = "Salir";
+            BotonSalir.UseVisualStyleBackColor = false;
+            BotonSalir.Click += BotonSalir_Click;
+            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(794, 446);
+            Controls.Add(BotonSalir);
             Controls.Add(Logo);
             Controls.Add(TextoEmail);
             Controls.Add(CajaTextoEmail);
@@ -126,5 +141,6 @@
         private Label TextoEmail;
         private TextBox CajaTextoEmail;
         private PictureBox Logo;
+        private Button BotonSalir;
     }
 }

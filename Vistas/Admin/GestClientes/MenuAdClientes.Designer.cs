@@ -56,7 +56,7 @@ namespace Gentefit.Vistas.Admin
             // 
             BotonAnadir.BackColor = Color.DarkOrange;
             BotonAnadir.ForeColor = Color.White;
-            BotonAnadir.Location = new Point(137, 202);
+            BotonAnadir.Location = new Point(137, 256);
             BotonAnadir.Name = "BotonAnadir";
             BotonAnadir.Size = new Size(115, 49);
             BotonAnadir.TabIndex = 7;
@@ -68,7 +68,7 @@ namespace Gentefit.Vistas.Admin
             // 
             BotonListar.BackColor = Color.DarkOrange;
             BotonListar.ForeColor = Color.White;
-            BotonListar.Location = new Point(270, 202);
+            BotonListar.Location = new Point(270, 256);
             BotonListar.Name = "BotonListar";
             BotonListar.Size = new Size(115, 49);
             BotonListar.TabIndex = 8;
@@ -80,7 +80,7 @@ namespace Gentefit.Vistas.Admin
             // 
             BotonEliminar.BackColor = Color.DarkOrange;
             BotonEliminar.ForeColor = Color.White;
-            BotonEliminar.Location = new Point(537, 202);
+            BotonEliminar.Location = new Point(537, 256);
             BotonEliminar.Name = "BotonEliminar";
             BotonEliminar.Size = new Size(115, 49);
             BotonEliminar.TabIndex = 9;
@@ -92,7 +92,7 @@ namespace Gentefit.Vistas.Admin
             // 
             BotonModificar.BackColor = Color.DarkOrange;
             BotonModificar.ForeColor = Color.White;
-            BotonModificar.Location = new Point(404, 202);
+            BotonModificar.Location = new Point(404, 256);
             BotonModificar.Name = "BotonModificar";
             BotonModificar.Size = new Size(115, 49);
             BotonModificar.TabIndex = 10;
@@ -109,6 +109,7 @@ namespace Gentefit.Vistas.Admin
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 15;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // BotonVolver
             // 

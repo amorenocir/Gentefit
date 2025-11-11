@@ -14,7 +14,6 @@ namespace Gentefit.Vistas.Admin
         {
             InitializeComponent();
             this.Load += (s, e) => CargarDatos();
-            CajaTextoId.ReadOnly = true;
         }
 
         private void PanelClientes_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -24,7 +23,6 @@ namespace Gentefit.Vistas.Admin
             var fila = PanelClientes.Rows[e.RowIndex];
 
             // Se asume que las columnas del DataGridView se llaman igual que las propiedades de Cliente
-            CajaTextoId.Text = fila.Cells["idCliente"].Value.ToString();
             CajaTextoNombre.Text = fila.Cells["nombre"].Value.ToString();
             CajaTextoApellidos.Text = fila.Cells["apellidos"].Value.ToString();
             CajaTextoDNI.Text = fila.Cells["dni"].Value.ToString();
@@ -35,11 +33,8 @@ namespace Gentefit.Vistas.Admin
 
         private void BotonGuardar_Click(object sender, EventArgs e)
         {
-            if (!int.TryParse(CajaTextoId.Text, out int id)) return;
-
             var cliente = new Cliente
             {
-                idCliente = id,
                 nombre = CajaTextoNombre.Text,
                 apellidos = CajaTextoApellidos.Text,
                 dni = CajaTextoDNI.Text,
@@ -75,7 +70,7 @@ namespace Gentefit.Vistas.Admin
         private void BotonVolver_Click(object sender, EventArgs e)
         {
             new MenuAdClientes().Show();
-            this.Hide();
+            this.Close();
         }
 
         // Método vacío para evitar error del Designer

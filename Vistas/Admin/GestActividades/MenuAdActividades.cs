@@ -1,5 +1,4 @@
-﻿using Gentefit.Modelo;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,46 +7,43 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Microsoft.EntityFrameworkCore;
 
-namespace Gentefit.Vistas.Admin
+namespace Gentefit.Vistas.Admin.GestActividades
 {
-    public partial class MenuAdClientes : Form
+    public partial class MenuAdActividades : Form
     {
-        public MenuAdClientes()
+        public MenuAdActividades()
         {
             InitializeComponent();
         }
 
         private void BotonAnadir_Click(object sender, EventArgs e)
         {
-            new AnadirCliente().Show();
+            new AnadirActividad().Show();
             this.Hide();
         }
+
         private void BotonListar_Click(object sender, EventArgs e)
         {
-            new ListarClientes().Show();
+            new ListarActividades().Show();
             this.Hide();
         }
+
         private void BotonModificar_Click(object sender, EventArgs e)
         {
-            new ModificarCliente().Show();
+            new ModificarActividad().Show();
             this.Hide();
         }
+
         private void BotonEliminar_Click(object sender, EventArgs e)
         {
-            new EliminarCliente().Show();
-            this.Hide();
+
         }
+
         private void BotonVolver_Click(object sender, EventArgs e)
         {
             new MenuAdmin().Show();
-            this.Hide();
-        }
-
-        private void Actividades_Click(object sender, EventArgs e)
-        {
-
+            this.Close();
         }
     }
 }

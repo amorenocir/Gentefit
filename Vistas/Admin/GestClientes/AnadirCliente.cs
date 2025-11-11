@@ -33,13 +33,12 @@ namespace Gentefit.Vistas.Admin
             };
 
             // Insertar en la base de datos usando EF Core
-            using (var contexto = new GentefitContext())
-            {
-                var logica = new LogicaClientes();
-                logica.AnadirCliente(nuevoCliente);
-            }
+            var logica = new LogicaClientes();
+            logica.AnadirCliente(nuevoCliente);
 
             MessageBox.Show("Cliente añadido correctamente");
+            this.Close();
+            new MenuAdClientes().Show();
         }
 
         private void BotonVolver_Click(object sender, EventArgs e)

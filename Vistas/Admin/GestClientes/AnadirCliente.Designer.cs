@@ -68,7 +68,7 @@
             CajaTextoApellidos.Location = new Point(109, 142);
             CajaTextoApellidos.Name = "CajaTextoApellidos";
             CajaTextoApellidos.Size = new Size(227, 23);
-            CajaTextoApellidos.TabIndex = 3;
+            CajaTextoApellidos.TabIndex = 2;
             // 
             // label2
             // 
@@ -84,7 +84,7 @@
             CajaTextoDNI.Location = new Point(109, 200);
             CajaTextoDNI.Name = "CajaTextoDNI";
             CajaTextoDNI.Size = new Size(227, 23);
-            CajaTextoDNI.TabIndex = 9;
+            CajaTextoDNI.TabIndex = 3;
             // 
             // label5
             // 
@@ -100,7 +100,7 @@
             CajaTextoEmail.Location = new Point(109, 311);
             CajaTextoEmail.Name = "CajaTextoEmail";
             CajaTextoEmail.Size = new Size(227, 23);
-            CajaTextoEmail.TabIndex = 13;
+            CajaTextoEmail.TabIndex = 5;
             // 
             // label7
             // 
@@ -116,7 +116,7 @@
             CajaTextoContrasena.Location = new Point(109, 368);
             CajaTextoContrasena.Name = "CajaTextoContrasena";
             CajaTextoContrasena.Size = new Size(227, 23);
-            CajaTextoContrasena.TabIndex = 15;
+            CajaTextoContrasena.TabIndex = 6;
             // 
             // label8
             // 
@@ -132,7 +132,7 @@
             CajaTextoTelefono.Location = new Point(109, 254);
             CajaTextoTelefono.Name = "CajaTextoTelefono";
             CajaTextoTelefono.Size = new Size(227, 23);
-            CajaTextoTelefono.TabIndex = 17;
+            CajaTextoTelefono.TabIndex = 4;
             // 
             // label9
             // 
@@ -159,7 +159,7 @@
             BotonAnadir.Location = new Point(358, 356);
             BotonAnadir.Name = "BotonAnadir";
             BotonAnadir.Size = new Size(70, 34);
-            BotonAnadir.TabIndex = 19;
+            BotonAnadir.TabIndex = 7;
             BotonAnadir.Text = "Añadir";
             BotonAnadir.UseVisualStyleBackColor = false;
             BotonAnadir.Click += BotonAnadir_Click;
@@ -169,7 +169,7 @@
             BotonVolver.Location = new Point(611, 356);
             BotonVolver.Name = "BotonVolver";
             BotonVolver.Size = new Size(71, 34);
-            BotonVolver.TabIndex = 20;
+            BotonVolver.TabIndex = 8;
             BotonVolver.Text = "Volver";
             BotonVolver.UseVisualStyleBackColor = true;
             BotonVolver.Click += BotonVolver_Click;
@@ -179,11 +179,11 @@
             AnadirClientes.AutoSize = true;
             AnadirClientes.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
             AnadirClientes.ForeColor = Color.DarkSlateGray;
-            AnadirClientes.Location = new Point(103, 20);
+            AnadirClientes.Location = new Point(109, 20);
             AnadirClientes.Name = "AnadirClientes";
-            AnadirClientes.Size = new Size(250, 37);
+            AnadirClientes.Size = new Size(235, 37);
             AnadirClientes.TabIndex = 21;
-            AnadirClientes.Text = "AÑADIR CLIENTES";
+            AnadirClientes.Text = "AÑADIR CLIENTE";
             AnadirClientes.Click += Actividades_Click;
             // 
             // AnadirCliente
