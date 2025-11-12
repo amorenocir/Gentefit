@@ -89,7 +89,6 @@
             label1.TabIndex = 3;
             label1.Text = "INICIO";
             label1.TextAlign = ContentAlignment.MiddleLeft;
-            label1.Click += label1_Click;
             // 
             // label2
             // 
@@ -99,7 +98,6 @@
             label2.Size = new Size(117, 15);
             label2.TabIndex = 4;
             label2.Text = "HH:MM DD-MM-AA";
-            label2.Click += label2_Click_1;
             // 
             // BotonActividades
             // 

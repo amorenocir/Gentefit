@@ -1,5 +1,6 @@
 ﻿using Gentefit.Modelo;
 using Gentefit.Vistas.PantallasAdmin;
+using Gentefit.Vistas.PantallasCliente;
 using MySqlX.XDevAPI;
 using System;
 using System.Collections.Generic;
@@ -51,6 +52,12 @@ namespace Gentefit.Vistas
         private void BotonSalir_Click(object sender, EventArgs e)
         {
             new Login().Show();
+            this.Hide();
+        }
+        private void ImagenPerfil_Click(object sender, EventArgs e)
+        {
+            PerfilCliente perfil = new PerfilCliente(clienteLogeado);
+            perfil.Show();
             this.Hide();
         }
 

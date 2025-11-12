@@ -45,13 +45,13 @@ namespace Gentefit.Vistas.PantallasAdmin
 
         private void BotonReservas_Click(object sender, EventArgs e)
         {
-            //Abrir Menu X
+            //Abrir Menu Reservas
 
         }
 
         private void BotonMonitores_Click(object sender, EventArgs e)
         {
-            //Abrir Menu X
+            //Abrir Menu Monitores
 
         }
 
@@ -63,7 +63,7 @@ namespace Gentefit.Vistas.PantallasAdmin
 
         private void BotonUsuarios_Click(object sender, EventArgs e)
         {
-            //Abrir Menu X
+            //Abrir Menu Usuarios
 
         }
 
@@ -73,23 +73,9 @@ namespace Gentefit.Vistas.PantallasAdmin
             new Login().Show();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click_1(object sender, EventArgs e)
-        {
-
-        }
         private void timer1_Tick(object sender, EventArgs e)
         {
             label2.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

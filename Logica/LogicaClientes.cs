@@ -16,12 +16,10 @@ public class LogicaClientes
     }
 
     // Buscar cliente por ID
-    public List<Cliente> BuscarPorId(int id)
+    public Cliente BuscarPorId(int id)
     {
         using var contexto = new GentefitContext();
-        return contexto.Clientes
-                        .Where(c => c.idCliente == id)
-                        .ToList();
+        return contexto.Clientes.FirstOrDefault(c => c.idCliente == id);
     }
 
     // Añadir un nuevo cliente

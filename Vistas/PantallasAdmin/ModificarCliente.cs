@@ -78,16 +78,6 @@ namespace Gentefit.Vistas.PantallasAdmin
             this.Hide();
         }
 
-        // Método vacío para evitar error del Designer
-        private void CajaTextoId_TextChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void CajaTextoNombre_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void CargarDatos()
         {
             PanelClientes.DataSource = logica.ObtenerTodos();

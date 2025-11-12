@@ -48,10 +48,5 @@ namespace Gentefit.Vistas.PantallasAdmin
             new MenuAdClientes().Show();
 
         }
-
-        private void Actividades_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

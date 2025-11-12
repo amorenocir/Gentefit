@@ -19,13 +19,7 @@
             }
             base.Dispose(disposing);
         }
-
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
+   
         private void InitializeComponent()
         {
             Logo = new PictureBox();
@@ -73,7 +67,6 @@
             Actividades.Size = new Size(193, 37);
             Actividades.TabIndex = 5;
             Actividades.Text = "ACTIVIDADES";
-            Actividades.Click += Actividades_Click;
             // 
             // BotonBodyCombat
             // 
@@ -179,8 +172,6 @@
             ResumeLayout(false);
             PerformLayout();
         }
-
-        #endregion
 
         private PictureBox Logo;
         private Button BotonBodyPump;

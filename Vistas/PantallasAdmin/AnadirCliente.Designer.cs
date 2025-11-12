@@ -184,7 +184,6 @@
             AnadirClientes.Size = new Size(250, 37);
             AnadirClientes.TabIndex = 21;
             AnadirClientes.Text = "AÑADIR CLIENTES";
-            AnadirClientes.Click += Actividades_Click;
             // 
             // AnadirCliente
             // 

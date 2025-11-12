@@ -1,4 +1,5 @@
 ﻿using Gentefit.Modelo;
+using Gentefit.Vistas.PantallasCliente;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -24,6 +25,12 @@ namespace Gentefit.Vistas
             clienteLogeado = cliente;
             idCliente = cliente.idCliente;
             CargarReservas();
+        }
+        private void ImagenPerfil_Click(object sender, EventArgs e)
+        {
+            PerfilCliente perfil = new PerfilCliente(clienteLogeado);
+            perfil.Show();
+            this.Hide();
         }
 
         private void CargarReservas()

@@ -109,7 +109,6 @@
             label1.TabIndex = 18;
             label1.Text = "HORARIOS";
             label1.TextAlign = ContentAlignment.MiddleLeft;
-            label1.Click += label1_Click;
             // 
             // pictureBox1
             // 

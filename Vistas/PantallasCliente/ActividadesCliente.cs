@@ -16,6 +16,12 @@ namespace Gentefit.Vistas
             clienteLogeado = cliente;
             this.Load += ActividadesCliente_Load;
         }
+        private void ImagenPerfil_Click(object sender, EventArgs e)
+        {
+            PerfilCliente perfil = new PerfilCliente(clienteLogeado);
+            perfil.Show();
+            this.Hide();
+        }
 
         private void BotonInicio_Click(object sender, EventArgs e)
         {

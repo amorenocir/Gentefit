@@ -31,6 +31,12 @@
     <Compile Update="Vistas\PantallasCliente\HorariosCliente.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Vistas\PantallasCliente\PerfilCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\PantallasCliente\PerfilClienteEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Vistas\PantallasCliente\ReservasCliente.cs">
       <SubType>Form</SubType>
     </Compile>

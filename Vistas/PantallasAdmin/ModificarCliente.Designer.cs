@@ -30,23 +30,23 @@
         {
             pictureBox1 = new PictureBox();
             CajaTextoTelefono = new TextBox();
-            label9 = new Label();
+            EtiquetaTelefono = new Label();
             CajaTextoContrasena = new TextBox();
-            label8 = new Label();
+            EtiquetaContrasena = new Label();
             CajaTextoEmail = new TextBox();
-            label7 = new Label();
+            EtiquetaEmail = new Label();
             CajaTextoDNI = new TextBox();
-            label5 = new Label();
+            EtiquetaDni = new Label();
             CajaTextoApellidos = new TextBox();
-            label2 = new Label();
+            EtiquetaApellidos = new Label();
             CajaTextoNombre = new TextBox();
-            Nombre = new Label();
+            EtiquetaNombre = new Label();
             BotonVolver = new Button();
             BotonGuardar = new Button();
             CajaTextoBuscar = new TextBox();
             PanelClientes = new DataGridView();
             CajaTextoId = new TextBox();
-            label3 = new Label();
+            EtiquetaID = new Label();
             BotonBuscar = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)PanelClientes).BeginInit();
@@ -55,115 +55,122 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.Perfil;
-            pictureBox1.Location = new Point(529, 50);
+            pictureBox1.Location = new Point(605, 67);
+            pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(248, 257);
+            pictureBox1.Size = new Size(283, 343);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 19;
             pictureBox1.TabStop = false;
             // 
             // CajaTextoTelefono
             // 
-            CajaTextoTelefono.Location = new Point(339, 268);
+            CajaTextoTelefono.Location = new Point(387, 357);
+            CajaTextoTelefono.Margin = new Padding(3, 4, 3, 4);
             CajaTextoTelefono.Name = "CajaTextoTelefono";
-            CajaTextoTelefono.Size = new Size(184, 23);
+            CajaTextoTelefono.Size = new Size(210, 27);
             CajaTextoTelefono.TabIndex = 31;
             // 
-            // label9
+            // EtiquetaTelefono
             // 
-            label9.AutoSize = true;
-            label9.Location = new Point(339, 250);
-            label9.Name = "label9";
-            label9.Size = new Size(52, 15);
-            label9.TabIndex = 30;
-            label9.Text = "Teléfono";
+            EtiquetaTelefono.AutoSize = true;
+            EtiquetaTelefono.Location = new Point(387, 333);
+            EtiquetaTelefono.Name = "EtiquetaTelefono";
+            EtiquetaTelefono.Size = new Size(67, 20);
+            EtiquetaTelefono.TabIndex = 30;
+            EtiquetaTelefono.Text = "Teléfono";
             // 
             // CajaTextoContrasena
             // 
-            CajaTextoContrasena.Location = new Point(339, 382);
+            CajaTextoContrasena.Location = new Point(387, 509);
+            CajaTextoContrasena.Margin = new Padding(3, 4, 3, 4);
             CajaTextoContrasena.Name = "CajaTextoContrasena";
-            CajaTextoContrasena.Size = new Size(184, 23);
+            CajaTextoContrasena.Size = new Size(210, 27);
             CajaTextoContrasena.TabIndex = 29;
             // 
-            // label8
+            // EtiquetaContrasena
             // 
-            label8.AutoSize = true;
-            label8.Location = new Point(339, 364);
-            label8.Name = "label8";
-            label8.Size = new Size(67, 15);
-            label8.TabIndex = 28;
-            label8.Text = "Contraseña";
+            EtiquetaContrasena.AutoSize = true;
+            EtiquetaContrasena.Location = new Point(387, 485);
+            EtiquetaContrasena.Name = "EtiquetaContrasena";
+            EtiquetaContrasena.Size = new Size(83, 20);
+            EtiquetaContrasena.TabIndex = 28;
+            EtiquetaContrasena.Text = "Contraseña";
             // 
             // CajaTextoEmail
             // 
-            CajaTextoEmail.Location = new Point(339, 325);
+            CajaTextoEmail.Location = new Point(387, 433);
+            CajaTextoEmail.Margin = new Padding(3, 4, 3, 4);
             CajaTextoEmail.Name = "CajaTextoEmail";
-            CajaTextoEmail.Size = new Size(184, 23);
+            CajaTextoEmail.Size = new Size(210, 27);
             CajaTextoEmail.TabIndex = 27;
             // 
-            // label7
+            // EtiquetaEmail
             // 
-            label7.AutoSize = true;
-            label7.Location = new Point(339, 307);
-            label7.Name = "label7";
-            label7.Size = new Size(36, 15);
-            label7.TabIndex = 26;
-            label7.Text = "Email";
+            EtiquetaEmail.AutoSize = true;
+            EtiquetaEmail.Location = new Point(387, 409);
+            EtiquetaEmail.Name = "EtiquetaEmail";
+            EtiquetaEmail.Size = new Size(46, 20);
+            EtiquetaEmail.TabIndex = 26;
+            EtiquetaEmail.Text = "Email";
             // 
             // CajaTextoDNI
             // 
-            CajaTextoDNI.Location = new Point(339, 214);
+            CajaTextoDNI.Location = new Point(387, 285);
+            CajaTextoDNI.Margin = new Padding(3, 4, 3, 4);
             CajaTextoDNI.Name = "CajaTextoDNI";
-            CajaTextoDNI.Size = new Size(184, 23);
+            CajaTextoDNI.Size = new Size(210, 27);
             CajaTextoDNI.TabIndex = 25;
             // 
-            // label5
+            // EtiquetaDni
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(339, 196);
-            label5.Name = "label5";
-            label5.Size = new Size(107, 15);
-            label5.TabIndex = 24;
-            label5.Text = "DNI/NIE/Pasaporte";
+            EtiquetaDni.AutoSize = true;
+            EtiquetaDni.Location = new Point(387, 261);
+            EtiquetaDni.Name = "EtiquetaDni";
+            EtiquetaDni.Size = new Size(135, 20);
+            EtiquetaDni.TabIndex = 24;
+            EtiquetaDni.Text = "DNI/NIE/Pasaporte";
             // 
             // CajaTextoApellidos
             // 
-            CajaTextoApellidos.Location = new Point(339, 156);
+            CajaTextoApellidos.Location = new Point(387, 208);
+            CajaTextoApellidos.Margin = new Padding(3, 4, 3, 4);
             CajaTextoApellidos.Name = "CajaTextoApellidos";
-            CajaTextoApellidos.Size = new Size(184, 23);
+            CajaTextoApellidos.Size = new Size(210, 27);
             CajaTextoApellidos.TabIndex = 23;
             // 
-            // label2
+            // EtiquetaApellidos
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(339, 138);
-            label2.Name = "label2";
-            label2.Size = new Size(56, 15);
-            label2.TabIndex = 22;
-            label2.Text = "Apellidos";
+            EtiquetaApellidos.AutoSize = true;
+            EtiquetaApellidos.Location = new Point(387, 184);
+            EtiquetaApellidos.Name = "EtiquetaApellidos";
+            EtiquetaApellidos.Size = new Size(72, 20);
+            EtiquetaApellidos.TabIndex = 22;
+            EtiquetaApellidos.Text = "Apellidos";
             // 
             // CajaTextoNombre
             // 
-            CajaTextoNombre.Location = new Point(339, 99);
+            CajaTextoNombre.Location = new Point(387, 132);
+            CajaTextoNombre.Margin = new Padding(3, 4, 3, 4);
             CajaTextoNombre.Name = "CajaTextoNombre";
-            CajaTextoNombre.Size = new Size(184, 23);
+            CajaTextoNombre.Size = new Size(210, 27);
             CajaTextoNombre.TabIndex = 21;
-            CajaTextoNombre.TextChanged += CajaTextoNombre_TextChanged;
             // 
-            // Nombre
+            // EtiquetaNombre
             // 
-            Nombre.AutoSize = true;
-            Nombre.Location = new Point(339, 81);
-            Nombre.Name = "Nombre";
-            Nombre.Size = new Size(51, 15);
-            Nombre.TabIndex = 20;
-            Nombre.Text = "Nombre";
+            EtiquetaNombre.AutoSize = true;
+            EtiquetaNombre.Location = new Point(387, 108);
+            EtiquetaNombre.Name = "EtiquetaNombre";
+            EtiquetaNombre.Size = new Size(64, 20);
+            EtiquetaNombre.TabIndex = 20;
+            EtiquetaNombre.Text = "Nombre";
             // 
             // BotonVolver
             // 
-            BotonVolver.Location = new Point(665, 371);
+            BotonVolver.Location = new Point(760, 495);
+            BotonVolver.Margin = new Padding(3, 4, 3, 4);
             BotonVolver.Name = "BotonVolver";
-            BotonVolver.Size = new Size(71, 34);
+            BotonVolver.Size = new Size(81, 45);
             BotonVolver.TabIndex = 33;
             BotonVolver.Text = "Volver";
             BotonVolver.UseVisualStyleBackColor = true;
@@ -172,9 +179,10 @@
             // BotonGuardar
             // 
             BotonGuardar.BackColor = Color.DarkOrange;
-            BotonGuardar.Location = new Point(574, 371);
+            BotonGuardar.Location = new Point(656, 495);
+            BotonGuardar.Margin = new Padding(3, 4, 3, 4);
             BotonGuardar.Name = "BotonGuardar";
-            BotonGuardar.Size = new Size(70, 34);
+            BotonGuardar.Size = new Size(80, 45);
             BotonGuardar.TabIndex = 32;
             BotonGuardar.Text = "Guardar";
             BotonGuardar.UseVisualStyleBackColor = false;
@@ -182,43 +190,47 @@
             // 
             // CajaTextoBuscar
             // 
-            CajaTextoBuscar.Location = new Point(32, 61);
+            CajaTextoBuscar.Location = new Point(37, 81);
+            CajaTextoBuscar.Margin = new Padding(3, 4, 3, 4);
             CajaTextoBuscar.Name = "CajaTextoBuscar";
-            CajaTextoBuscar.Size = new Size(180, 23);
+            CajaTextoBuscar.Size = new Size(205, 27);
             CajaTextoBuscar.TabIndex = 35;
             // 
             // PanelClientes
             // 
             PanelClientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            PanelClientes.Location = new Point(32, 120);
+            PanelClientes.Location = new Point(37, 160);
+            PanelClientes.Margin = new Padding(3, 4, 3, 4);
             PanelClientes.Name = "PanelClientes";
-            PanelClientes.Size = new Size(277, 285);
+            PanelClientes.RowHeadersWidth = 51;
+            PanelClientes.Size = new Size(317, 380);
             PanelClientes.TabIndex = 36;
             PanelClientes.CellClick += PanelClientes_CellClick;
             // 
             // CajaTextoId
             // 
-            CajaTextoId.Location = new Point(339, 50);
+            CajaTextoId.Location = new Point(387, 67);
+            CajaTextoId.Margin = new Padding(3, 4, 3, 4);
             CajaTextoId.Name = "CajaTextoId";
-            CajaTextoId.Size = new Size(184, 23);
+            CajaTextoId.Size = new Size(210, 27);
             CajaTextoId.TabIndex = 38;
-            CajaTextoId.TextChanged += CajaTextoId_TextChanged;
             // 
-            // label3
+            // EtiquetaID
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(339, 32);
-            label3.Name = "label3";
-            label3.Size = new Size(18, 15);
-            label3.TabIndex = 37;
-            label3.Text = "ID";
+            EtiquetaID.AutoSize = true;
+            EtiquetaID.Location = new Point(387, 43);
+            EtiquetaID.Name = "EtiquetaID";
+            EtiquetaID.Size = new Size(24, 20);
+            EtiquetaID.TabIndex = 37;
+            EtiquetaID.Text = "ID";
             // 
             // BotonBuscar
             // 
             BotonBuscar.BackColor = Color.DarkOrange;
-            BotonBuscar.Location = new Point(227, 54);
+            BotonBuscar.Location = new Point(259, 72);
+            BotonBuscar.Margin = new Padding(3, 4, 3, 4);
             BotonBuscar.Name = "BotonBuscar";
-            BotonBuscar.Size = new Size(70, 34);
+            BotonBuscar.Size = new Size(80, 45);
             BotonBuscar.TabIndex = 39;
             BotonBuscar.Text = "Buscar";
             BotonBuscar.UseVisualStyleBackColor = false;
@@ -226,29 +238,30 @@
             // 
             // ModificarCliente
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
             Controls.Add(BotonBuscar);
             Controls.Add(CajaTextoId);
-            Controls.Add(label3);
+            Controls.Add(EtiquetaID);
             Controls.Add(PanelClientes);
             Controls.Add(CajaTextoBuscar);
             Controls.Add(BotonVolver);
             Controls.Add(BotonGuardar);
             Controls.Add(CajaTextoTelefono);
-            Controls.Add(label9);
+            Controls.Add(EtiquetaTelefono);
             Controls.Add(CajaTextoContrasena);
-            Controls.Add(label8);
+            Controls.Add(EtiquetaContrasena);
             Controls.Add(CajaTextoEmail);
-            Controls.Add(label7);
+            Controls.Add(EtiquetaEmail);
             Controls.Add(CajaTextoDNI);
-            Controls.Add(label5);
+            Controls.Add(EtiquetaDni);
             Controls.Add(CajaTextoApellidos);
-            Controls.Add(label2);
+            Controls.Add(EtiquetaApellidos);
             Controls.Add(CajaTextoNombre);
-            Controls.Add(Nombre);
+            Controls.Add(EtiquetaNombre);
             Controls.Add(pictureBox1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "ModificarCliente";
             Text = "ModificarCliente";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -261,22 +274,22 @@
 
         private PictureBox pictureBox1;
         private TextBox CajaTextoTelefono;
-        private Label label9;
+        private Label EtiquetaTelefono;
         private TextBox CajaTextoContrasena;
-        private Label label8;
+        private Label EtiquetaContrasena;
         private TextBox CajaTextoEmail;
-        private Label label7;
+        private Label EtiquetaEmail;
         private TextBox CajaTextoDNI;
-        private Label label5;
+        private Label EtiquetaDni;
         private TextBox CajaTextoApellidos;
-        private Label label2;
+        private Label EtiquetaApellidos;
         private TextBox CajaTextoNombre;
-        private Label Nombre;
+        private Label EtiquetaNombre;
         private Button BotonVolver;
         private Button BotonGuardar;
         private TextBox CajaTextoBuscar;
         private DataGridView PanelClientes;
-        private Label label3;
+        private Label EtiquetaID;
         private Button BotonBuscar;
         private TextBox CajaTextoId;
     }

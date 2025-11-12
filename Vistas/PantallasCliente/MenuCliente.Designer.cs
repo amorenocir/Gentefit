@@ -54,6 +54,7 @@
             ImagenPerfil.SizeMode = PictureBoxSizeMode.Zoom;
             ImagenPerfil.TabIndex = 2;
             ImagenPerfil.TabStop = false;
+            ImagenPerfil.Click += ImagenPerfil_Click;
             // 
             // ImagenMensajes
             // 
