@@ -12,9 +12,9 @@ using Gentefit.Vistas;
 
 namespace Gentefit.Vistas.PantallasAdmin
 {
-    public partial class MenuAdmin : Form
+    public partial class InicioAdmin : Form
     {
-        public MenuAdmin()
+        public InicioAdmin()
         {
             InitializeComponent();
         }
@@ -39,7 +39,7 @@ namespace Gentefit.Vistas.PantallasAdmin
 
         private void BotonActividades_Click(object sender, EventArgs e)
         {
-            new MenuAdActividades().Show();
+            new ActividadesAdmin().Show();
             this.Hide();
         }
 
@@ -57,13 +57,14 @@ namespace Gentefit.Vistas.PantallasAdmin
 
         private void BotonClientes_Click(object sender, EventArgs e)
         {
-            new MenuAdClientes().Show();
+            new ClientesAdmin().Show();
             this.Hide();
         }
 
         private void BotonUsuarios_Click(object sender, EventArgs e)
         {
-            //Abrir Menu Usuarios
+            new UsuariosAdmin().Show();
+            this.Hide();
 
         }
 

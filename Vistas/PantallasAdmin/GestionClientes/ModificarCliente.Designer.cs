@@ -2,15 +2,8 @@
 {
     partial class ModificarCliente
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,12 +13,6 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             pictureBox1 = new PictureBox();
@@ -48,6 +35,7 @@
             CajaTextoId = new TextBox();
             EtiquetaID = new Label();
             BotonBuscar = new Button();
+            BotonVerTodos = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)PanelClientes).BeginInit();
             SuspendLayout();
@@ -55,7 +43,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.Perfil;
-            pictureBox1.Location = new Point(605, 67);
+            pictureBox1.Location = new Point(579, -13);
             pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(283, 343);
@@ -65,7 +53,7 @@
             // 
             // CajaTextoTelefono
             // 
-            CajaTextoTelefono.Location = new Point(387, 357);
+            CajaTextoTelefono.Location = new Point(301, 59);
             CajaTextoTelefono.Margin = new Padding(3, 4, 3, 4);
             CajaTextoTelefono.Name = "CajaTextoTelefono";
             CajaTextoTelefono.Size = new Size(210, 27);
@@ -74,7 +62,7 @@
             // EtiquetaTelefono
             // 
             EtiquetaTelefono.AutoSize = true;
-            EtiquetaTelefono.Location = new Point(387, 333);
+            EtiquetaTelefono.Location = new Point(301, 35);
             EtiquetaTelefono.Name = "EtiquetaTelefono";
             EtiquetaTelefono.Size = new Size(67, 20);
             EtiquetaTelefono.TabIndex = 30;
@@ -82,7 +70,7 @@
             // 
             // CajaTextoContrasena
             // 
-            CajaTextoContrasena.Location = new Point(387, 509);
+            CajaTextoContrasena.Location = new Point(301, 204);
             CajaTextoContrasena.Margin = new Padding(3, 4, 3, 4);
             CajaTextoContrasena.Name = "CajaTextoContrasena";
             CajaTextoContrasena.Size = new Size(210, 27);
@@ -91,7 +79,7 @@
             // EtiquetaContrasena
             // 
             EtiquetaContrasena.AutoSize = true;
-            EtiquetaContrasena.Location = new Point(387, 485);
+            EtiquetaContrasena.Location = new Point(301, 180);
             EtiquetaContrasena.Name = "EtiquetaContrasena";
             EtiquetaContrasena.Size = new Size(83, 20);
             EtiquetaContrasena.TabIndex = 28;
@@ -99,7 +87,7 @@
             // 
             // CajaTextoEmail
             // 
-            CajaTextoEmail.Location = new Point(387, 433);
+            CajaTextoEmail.Location = new Point(301, 135);
             CajaTextoEmail.Margin = new Padding(3, 4, 3, 4);
             CajaTextoEmail.Name = "CajaTextoEmail";
             CajaTextoEmail.Size = new Size(210, 27);
@@ -108,7 +96,7 @@
             // EtiquetaEmail
             // 
             EtiquetaEmail.AutoSize = true;
-            EtiquetaEmail.Location = new Point(387, 409);
+            EtiquetaEmail.Location = new Point(301, 111);
             EtiquetaEmail.Name = "EtiquetaEmail";
             EtiquetaEmail.Size = new Size(46, 20);
             EtiquetaEmail.TabIndex = 26;
@@ -116,7 +104,7 @@
             // 
             // CajaTextoDNI
             // 
-            CajaTextoDNI.Location = new Point(387, 285);
+            CajaTextoDNI.Location = new Point(43, 273);
             CajaTextoDNI.Margin = new Padding(3, 4, 3, 4);
             CajaTextoDNI.Name = "CajaTextoDNI";
             CajaTextoDNI.Size = new Size(210, 27);
@@ -125,7 +113,7 @@
             // EtiquetaDni
             // 
             EtiquetaDni.AutoSize = true;
-            EtiquetaDni.Location = new Point(387, 261);
+            EtiquetaDni.Location = new Point(43, 249);
             EtiquetaDni.Name = "EtiquetaDni";
             EtiquetaDni.Size = new Size(135, 20);
             EtiquetaDni.TabIndex = 24;
@@ -133,7 +121,7 @@
             // 
             // CajaTextoApellidos
             // 
-            CajaTextoApellidos.Location = new Point(387, 208);
+            CajaTextoApellidos.Location = new Point(43, 204);
             CajaTextoApellidos.Margin = new Padding(3, 4, 3, 4);
             CajaTextoApellidos.Name = "CajaTextoApellidos";
             CajaTextoApellidos.Size = new Size(210, 27);
@@ -142,7 +130,7 @@
             // EtiquetaApellidos
             // 
             EtiquetaApellidos.AutoSize = true;
-            EtiquetaApellidos.Location = new Point(387, 184);
+            EtiquetaApellidos.Location = new Point(43, 180);
             EtiquetaApellidos.Name = "EtiquetaApellidos";
             EtiquetaApellidos.Size = new Size(72, 20);
             EtiquetaApellidos.TabIndex = 22;
@@ -150,7 +138,7 @@
             // 
             // CajaTextoNombre
             // 
-            CajaTextoNombre.Location = new Point(387, 132);
+            CajaTextoNombre.Location = new Point(43, 128);
             CajaTextoNombre.Margin = new Padding(3, 4, 3, 4);
             CajaTextoNombre.Name = "CajaTextoNombre";
             CajaTextoNombre.Size = new Size(210, 27);
@@ -159,7 +147,7 @@
             // EtiquetaNombre
             // 
             EtiquetaNombre.AutoSize = true;
-            EtiquetaNombre.Location = new Point(387, 108);
+            EtiquetaNombre.Location = new Point(43, 104);
             EtiquetaNombre.Name = "EtiquetaNombre";
             EtiquetaNombre.Size = new Size(64, 20);
             EtiquetaNombre.TabIndex = 20;
@@ -167,7 +155,7 @@
             // 
             // BotonVolver
             // 
-            BotonVolver.Location = new Point(760, 495);
+            BotonVolver.Location = new Point(799, 528);
             BotonVolver.Margin = new Padding(3, 4, 3, 4);
             BotonVolver.Name = "BotonVolver";
             BotonVolver.Size = new Size(81, 45);
@@ -179,7 +167,7 @@
             // BotonGuardar
             // 
             BotonGuardar.BackColor = Color.DarkOrange;
-            BotonGuardar.Location = new Point(656, 495);
+            BotonGuardar.Location = new Point(713, 528);
             BotonGuardar.Margin = new Padding(3, 4, 3, 4);
             BotonGuardar.Name = "BotonGuardar";
             BotonGuardar.Size = new Size(80, 45);
@@ -190,7 +178,7 @@
             // 
             // CajaTextoBuscar
             // 
-            CajaTextoBuscar.Location = new Point(37, 81);
+            CajaTextoBuscar.Location = new Point(489, 323);
             CajaTextoBuscar.Margin = new Padding(3, 4, 3, 4);
             CajaTextoBuscar.Name = "CajaTextoBuscar";
             CajaTextoBuscar.Size = new Size(205, 27);
@@ -199,17 +187,17 @@
             // PanelClientes
             // 
             PanelClientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            PanelClientes.Location = new Point(37, 160);
+            PanelClientes.Location = new Point(43, 359);
             PanelClientes.Margin = new Padding(3, 4, 3, 4);
             PanelClientes.Name = "PanelClientes";
             PanelClientes.RowHeadersWidth = 51;
-            PanelClientes.Size = new Size(317, 380);
+            PanelClientes.Size = new Size(837, 161);
             PanelClientes.TabIndex = 36;
             PanelClientes.CellClick += PanelClientes_CellClick;
             // 
             // CajaTextoId
             // 
-            CajaTextoId.Location = new Point(387, 67);
+            CajaTextoId.Location = new Point(43, 63);
             CajaTextoId.Margin = new Padding(3, 4, 3, 4);
             CajaTextoId.Name = "CajaTextoId";
             CajaTextoId.Size = new Size(210, 27);
@@ -218,7 +206,7 @@
             // EtiquetaID
             // 
             EtiquetaID.AutoSize = true;
-            EtiquetaID.Location = new Point(387, 43);
+            EtiquetaID.Location = new Point(43, 39);
             EtiquetaID.Name = "EtiquetaID";
             EtiquetaID.Size = new Size(24, 20);
             EtiquetaID.TabIndex = 37;
@@ -227,20 +215,33 @@
             // BotonBuscar
             // 
             BotonBuscar.BackColor = Color.DarkOrange;
-            BotonBuscar.Location = new Point(259, 72);
+            BotonBuscar.Location = new Point(700, 320);
             BotonBuscar.Margin = new Padding(3, 4, 3, 4);
             BotonBuscar.Name = "BotonBuscar";
-            BotonBuscar.Size = new Size(80, 45);
+            BotonBuscar.Size = new Size(80, 32);
             BotonBuscar.TabIndex = 39;
             BotonBuscar.Text = "Buscar";
             BotonBuscar.UseVisualStyleBackColor = false;
             BotonBuscar.Click += BotonBuscar_Click;
+            // 
+            // BotonVerTodos
+            // 
+            BotonVerTodos.BackColor = Color.DarkOrange;
+            BotonVerTodos.Location = new Point(786, 320);
+            BotonVerTodos.Margin = new Padding(3, 4, 3, 4);
+            BotonVerTodos.Name = "BotonVerTodos";
+            BotonVerTodos.Size = new Size(94, 32);
+            BotonVerTodos.TabIndex = 45;
+            BotonVerTodos.Text = "Ver todos";
+            BotonVerTodos.UseVisualStyleBackColor = false;
+            BotonVerTodos.Click += BotonVerTodos_Click;
             // 
             // ModificarCliente
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(914, 600);
+            Controls.Add(BotonVerTodos);
             Controls.Add(BotonBuscar);
             Controls.Add(CajaTextoId);
             Controls.Add(EtiquetaID);
@@ -270,8 +271,6 @@
             PerformLayout();
         }
 
-        #endregion
-
         private PictureBox pictureBox1;
         private TextBox CajaTextoTelefono;
         private Label EtiquetaTelefono;
@@ -292,5 +291,6 @@
         private Label EtiquetaID;
         private Button BotonBuscar;
         private TextBox CajaTextoId;
+        private Button BotonVerTodos;
     }
 }

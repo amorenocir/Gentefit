@@ -25,7 +25,7 @@ namespace Gentefit.Vistas
 
         private void BotonInicio_Click(object sender, EventArgs e)
         {
-            new MenuCliente(clienteLogeado).Show();
+            new InicioCliente(clienteLogeado).Show();
             this.Hide();
         }
 

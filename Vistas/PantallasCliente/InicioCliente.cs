@@ -14,11 +14,11 @@ using System.Windows.Forms;
 
 namespace Gentefit.Vistas
 {
-    public partial class MenuCliente : Form
+    public partial class InicioCliente : Form
     {
         private Cliente clienteLogeado;
 
-        public MenuCliente(Cliente cliente)
+        public InicioCliente(Cliente cliente)
         {
             InitializeComponent();
             clienteLogeado = cliente;

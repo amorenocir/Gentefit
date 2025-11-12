@@ -56,7 +56,7 @@ namespace Gentefit.Vistas.PantallasCliente
             if (exito)
             {
                 // Actualizamos la referencia de clienteLogeado con los datos actualizados
-                clienteLogeado = logica.BuscarPorId(clienteLogeado.idCliente);
+                clienteLogeado = logica.BuscarPorId(clienteLogeado.idCliente).FirstOrDefault();
 
 
                 // Actualizamos los campos de texto si quieres ver los cambios reflejados

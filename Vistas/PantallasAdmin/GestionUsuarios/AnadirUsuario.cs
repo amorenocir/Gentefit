@@ -1,4 +1,6 @@
-﻿using Gentefit.Modelo;
+﻿using Gentefit.db;
+using Gentefit.Modelo;
+using Gentefit.Modelo.Enums;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,13 +10,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Gentefit.db;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
-namespace Gentefit.Vistas.PantallasAdmin
+namespace Gentefit.Vistas.PantallasAdmin.GestionUsuarios
 {
-    public partial class AnadirCliente : Form
+    public partial class AnadirUsuario : Form
     {
-        public AnadirCliente()
+        public AnadirUsuario()
         {
             InitializeComponent();
         }
@@ -22,30 +24,30 @@ namespace Gentefit.Vistas.PantallasAdmin
         private void BotonAnadir_Click(object sender, EventArgs e)
         {
             // Recoger los datos del formulario
-            Cliente nuevoCliente = new Cliente
+            Usuario nuevoUsuario = new Usuario
             {
                 nombre = CajaTextoNombre.Text,
                 apellidos = CajaTextoApellidos.Text,
-                dni = CajaTextoDNI.Text,
-                telefono = int.Parse(CajaTextoTelefono.Text),
                 email = CajaTextoEmail.Text,
                 contrasena = CajaTextoContrasena.Text,
+                rol = Enum.Parse<TipoRol>(CajaTextoRol.Text),
+
             };
 
             // Insertar en la base de datos usando EF Core
             using (var contexto = new GentefitContext())
             {
-                var logica = new LogicaClientes();
-                logica.AnadirCliente(nuevoCliente);
+                var logica = new LogicaUsuarios();
+                logica.AnadirUsuario(nuevoUsuario);
             }
 
-            MessageBox.Show("Cliente añadido correctamente");
+            MessageBox.Show("Usuario añadido correctamente");
         }
 
         private void BotonVolver_Click(object sender, EventArgs e)
         {
             this.Hide();
-            new MenuAdClientes().Show();
+            new UsuariosAdmin().Show();
 
         }
     }

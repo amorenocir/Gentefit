@@ -1,6 +1,6 @@
 ﻿namespace Gentefit.Vistas.PantallasAdmin
 {
-    partial class MenuAdActividades
+    partial class ActividadesAdmin
     {
         /// <summary>
         /// Required designer variable.

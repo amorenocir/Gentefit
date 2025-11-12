@@ -1,62 +1,73 @@
 ﻿using Gentefit.Modelo;
-using Gentefit.db;
+using Gentefit.Modelo.Enums;
 using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Gentefit.Vistas.PantallasAdmin
+namespace Gentefit.Vistas.PantallasAdmin.GestionUsuarios
 {
-    public partial class ModificarCliente : Form
+    public partial class ModificarUsuario : Form
     {
-        private readonly LogicaClientes logica = new LogicaClientes();
+        private readonly LogicaUsuarios logica = new LogicaUsuarios();
 
-        public ModificarCliente()
+        public ModificarUsuario()
         {
             InitializeComponent();
             this.Load += (s, e) => CargarDatos();
+            this.PanelUsuarios.CellClick += PanelUsuarios_CellClick;
             CajaTextoId.ReadOnly = true;
         }
 
-        private void PanelClientes_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void PanelUsuarios_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex < 0) return;
 
-            var fila = PanelClientes.Rows[e.RowIndex];
+            var fila = PanelUsuarios.Rows[e.RowIndex];
 
-            // Se asume que las columnas del DataGridView se llaman igual que las propiedades de Cliente
-            CajaTextoId.Text = fila.Cells["idCliente"].Value.ToString();
+            CajaTextoId.Text = fila.Cells["idUsuario"].Value.ToString();
             CajaTextoNombre.Text = fila.Cells["nombre"].Value.ToString();
             CajaTextoApellidos.Text = fila.Cells["apellidos"].Value.ToString();
-            CajaTextoDNI.Text = fila.Cells["dni"].Value.ToString();
-            CajaTextoTelefono.Text = fila.Cells["telefono"].Value.ToString();
             CajaTextoEmail.Text = fila.Cells["email"].Value.ToString();
             CajaTextoContrasena.Text = fila.Cells["contrasena"].Value.ToString();
+            var valorRol = fila.Cells["rol"].Value?.ToString();
+            if (valorRol != null)
+            {
+                CajaOpcionesRol.SelectedItem = valorRol;
+            }
         }
+
+    
 
         private void BotonGuardar_Click(object sender, EventArgs e)
         {
             if (!int.TryParse(CajaTextoId.Text, out int id)) return;
 
-            var cliente = new Cliente
+            var usuario = new Usuario
             {
-                idCliente = id,
+                idUsuario = id,
                 nombre = CajaTextoNombre.Text,
                 apellidos = CajaTextoApellidos.Text,
-                dni = CajaTextoDNI.Text,
-                telefono = int.Parse(CajaTextoTelefono.Text),
                 email = CajaTextoEmail.Text,
-                contrasena = CajaTextoContrasena.Text
+                contrasena = CajaTextoContrasena.Text,
+                rol = Enum.Parse<TipoRol>(CajaOpcionesRol.SelectedItem.ToString()),
+
             };
 
-            bool exito = logica.Modificar(cliente);
+            bool exito = logica.Modificar(usuario);
             if (exito)
             {
-                MessageBox.Show("Cliente modificado correctamente");
+                MessageBox.Show("Usuario modificado correctamente");
                 CargarDatos();
             }
             else
             {
-                MessageBox.Show("No se pudo modificar el cliente.");
+                MessageBox.Show("No se pudo modificar el usuario.");
             }
         }
 
@@ -69,20 +80,22 @@ namespace Gentefit.Vistas.PantallasAdmin
             }
 
             var resultados = logica.BuscarPorId(idBuscado);
-            PanelClientes.DataSource = resultados;
+            PanelUsuarios.DataSource = resultados;
         }
 
         private void BotonVolver_Click(object sender, EventArgs e)
         {
-            new MenuAdClientes().Show();
+            new UsuariosAdmin().Show();
             this.Hide();
+        }
+        private void BotonVerTodos_Click(object sender, EventArgs e)
+        {
+            CargarDatos();
         }
 
         private void CargarDatos()
         {
-            PanelClientes.DataSource = logica.ObtenerTodos();
+            PanelUsuarios.DataSource = logica.ObtenerTodos();
         }
     }
 }
-
-

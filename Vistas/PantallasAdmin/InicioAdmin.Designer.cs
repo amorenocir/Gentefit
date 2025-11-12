@@ -1,6 +1,6 @@
 ﻿namespace Gentefit.Vistas.PantallasAdmin
 {
-    partial class MenuAdmin
+    partial class InicioAdmin
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuAdmin));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InicioAdmin));
             pictureBox1 = new PictureBox();
             ImagenPerfil = new PictureBox();
             ImagenMensajes = new PictureBox();

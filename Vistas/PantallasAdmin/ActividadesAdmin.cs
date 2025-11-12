@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Gentefit.Vistas.PantallasAdmin
 {
-    public partial class MenuAdActividades : Form
+    public partial class ActividadesAdmin : Form
     {
-        public MenuAdActividades()
+        public ActividadesAdmin()
         {
             InitializeComponent();
         }
@@ -49,7 +49,7 @@ namespace Gentefit.Vistas.PantallasAdmin
         private void BotonVolver_Click(object sender, EventArgs e)
         {
             this.Hide();
-            new Gentefit.Vistas.PantallasAdmin.MenuAdmin().Show();
+            new Gentefit.Vistas.PantallasAdmin.InicioAdmin().Show();
         }
     }
 }

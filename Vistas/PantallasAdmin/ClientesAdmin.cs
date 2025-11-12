@@ -12,9 +12,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Gentefit.Vistas.PantallasAdmin
 {
-    public partial class MenuAdClientes : Form
+    public partial class ClientesAdmin : Form
     {
-        public MenuAdClientes()
+        public ClientesAdmin()
         {
             InitializeComponent();
         }
@@ -41,7 +41,7 @@ namespace Gentefit.Vistas.PantallasAdmin
         }
         private void BotonVolver_Click(object sender, EventArgs e)
         {
-            new MenuAdmin().Show();
+            new InicioAdmin().Show();
             this.Hide();
         }
 

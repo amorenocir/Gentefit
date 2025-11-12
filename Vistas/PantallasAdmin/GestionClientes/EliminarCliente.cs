@@ -66,7 +66,7 @@ namespace Gentefit.Vistas.PantallasAdmin
         private void BotonVolver_Click(object sender, EventArgs e)
         {
             this.Hide();
-            new MenuAdClientes().Show();
+            new ClientesAdmin().Show();
         }
 
         private void BotonVerTodos_Click(object sender, EventArgs e)

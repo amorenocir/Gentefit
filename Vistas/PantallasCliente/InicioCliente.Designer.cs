@@ -1,6 +1,6 @@
 ﻿namespace Gentefit.Vistas
 {
-    partial class MenuCliente
+    partial class InicioCliente
     {
         /// <summary>
         /// Required designer variable.

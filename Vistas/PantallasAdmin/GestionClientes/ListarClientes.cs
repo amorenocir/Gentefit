@@ -26,7 +26,7 @@ namespace Gentefit.Vistas.PantallasAdmin
 
         private void BotonVolver_Click(object sender, EventArgs e)
         {
-            new MenuAdClientes().Show();
+            new ClientesAdmin().Show();
             this.Hide();
         }
 
