@@ -17,130 +17,148 @@
 
         private void InitializeComponent()
         {
-            this.BotonHorarios = new System.Windows.Forms.Button();
-            this.BotonReservas = new System.Windows.Forms.Button();
-            this.BotonActividades = new System.Windows.Forms.Button();
-            this.BotonInicio = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.ImagenMensajes = new System.Windows.Forms.PictureBox();
-            this.ImagenPerfil = new System.Windows.Forms.PictureBox();
-            this.PanelFlow = new System.Windows.Forms.FlowLayoutPanel();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImagenMensajes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImagenPerfil)).BeginInit();
-            this.SuspendLayout();
+            PanelFlow = new FlowLayoutPanel();
+            BotonHorarios = new Button();
+            BotonReservas = new Button();
+            BotonActividades = new Button();
+            BotonInicio = new Button();
+            FechaHora = new Label();
+            TituloActividades = new Label();
+            pictureBox1 = new PictureBox();
+            ImagenMensajes = new PictureBox();
+            ImagenPerfil = new PictureBox();
+            PanelFlow = new FlowLayoutPanel();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)ImagenMensajes).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)ImagenPerfil).BeginInit();
+            SuspendLayout();
             // 
             // BotonHorarios
             // 
-            this.BotonHorarios.BackColor = System.Drawing.Color.DarkOrange;
-            this.BotonHorarios.Location = new System.Drawing.Point(481, 140);
-            this.BotonHorarios.Name = "BotonHorarios";
-            this.BotonHorarios.Size = new System.Drawing.Size(99, 44);
-            this.BotonHorarios.Text = "Horarios";
-            this.BotonHorarios.UseVisualStyleBackColor = false;
-            this.BotonHorarios.Click += new System.EventHandler(this.BotonHorarios_Click);
+            BotonHorarios.BackColor = Color.DarkOrange;
+            BotonHorarios.Location = new Point(481, 140);
+            BotonHorarios.Name = "BotonHorarios";
+            BotonHorarios.Size = new Size(99, 44);
+            BotonHorarios.TabIndex = 1;
+            BotonHorarios.Text = "Horarios";
+            BotonHorarios.UseVisualStyleBackColor = false;
+            BotonHorarios.Click += BotonHorarios_Click;
             // 
             // BotonReservas
             // 
-            this.BotonReservas.BackColor = System.Drawing.Color.DarkOrange;
-            this.BotonReservas.Location = new System.Drawing.Point(603, 140);
-            this.BotonReservas.Name = "BotonReservas";
-            this.BotonReservas.Size = new System.Drawing.Size(99, 44);
-            this.BotonReservas.Text = "Reservas";
-            this.BotonReservas.UseVisualStyleBackColor = false;
-            this.BotonReservas.Click += new System.EventHandler(this.BotonReservas_Click);
+            BotonReservas.BackColor = Color.DarkOrange;
+            BotonReservas.Location = new Point(603, 140);
+            BotonReservas.Name = "BotonReservas";
+            BotonReservas.Size = new Size(99, 44);
+            BotonReservas.TabIndex = 2;
+            BotonReservas.Text = "Reservas";
+            BotonReservas.UseVisualStyleBackColor = false;
+            BotonReservas.Click += BotonReservas_Click;
             // 
             // BotonActividades
             // 
-            this.BotonActividades.BackColor = System.Drawing.Color.Wheat;
-            this.BotonActividades.Location = new System.Drawing.Point(350, 140);
-            this.BotonActividades.Name = "BotonActividades";
-            this.BotonActividades.Size = new System.Drawing.Size(99, 44);
-            this.BotonActividades.Text = "Actividades";
-            this.BotonActividades.UseVisualStyleBackColor = false;
+            BotonActividades.BackColor = Color.Wheat;
+            BotonActividades.Location = new Point(350, 140);
+            BotonActividades.Name = "BotonActividades";
+            BotonActividades.Size = new Size(99, 44);
+            BotonActividades.TabIndex = 3;
+            BotonActividades.Text = "Actividades";
+            BotonActividades.UseVisualStyleBackColor = false;
             // 
             // BotonInicio
             // 
-            this.BotonInicio.BackColor = System.Drawing.Color.DarkOrange;
-            this.BotonInicio.Location = new System.Drawing.Point(216, 140);
-            this.BotonInicio.Name = "BotonInicio";
-            this.BotonInicio.Size = new System.Drawing.Size(99, 44);
-            this.BotonInicio.Text = "Inicio";
-            this.BotonInicio.UseVisualStyleBackColor = false;
-            this.BotonInicio.Click += new System.EventHandler(this.BotonInicio_Click);
+            BotonInicio.BackColor = Color.DarkOrange;
+            BotonInicio.Location = new Point(216, 140);
+            BotonInicio.Name = "BotonInicio";
+            BotonInicio.Size = new Size(99, 44);
+            BotonInicio.TabIndex = 4;
+            BotonInicio.Text = "Inicio";
+            BotonInicio.UseVisualStyleBackColor = false;
+            BotonInicio.Click += BotonInicio_Click;
             // 
-            // label2
+            // FechaHora
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(390, 111);
-            this.label2.Text = "HH:MM DD-MM-AA";
+            FechaHora.AutoSize = true;
+            FechaHora.Location = new Point(390, 111);
+            FechaHora.Name = "FechaHora";
+            FechaHora.Size = new Size(144, 20);
+            FechaHora.TabIndex = 5;
+            FechaHora.Text = "HH:MM DD-MM-AA";
             // 
-            // label1
+            // TituloActividades
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(371, 205);
-            this.label1.Text = "ACTIVIDADES";
+            TituloActividades.AutoSize = true;
+            TituloActividades.BackColor = Color.Transparent;
+            TituloActividades.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
+            TituloActividades.Location = new Point(371, 205);
+            TituloActividades.Name = "TituloActividades";
+            TituloActividades.Size = new Size(193, 37);
+            TituloActividades.TabIndex = 6;
+            TituloActividades.Text = "ACTIVIDADES";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Gentefit.Properties.Resources.Texto;
-            this.pictureBox1.Location = new System.Drawing.Point(362, 16);
-            this.pictureBox1.Size = new System.Drawing.Size(186, 116);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.Image = Properties.Resources.Texto;
+            pictureBox1.Location = new Point(362, 16);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(186, 116);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 7;
+            pictureBox1.TabStop = false;
             // 
             // ImagenMensajes
             // 
-            this.ImagenMensajes.Image = global::Gentefit.Properties.Resources.Mensajes;
-            this.ImagenMensajes.Location = new System.Drawing.Point(571, 16);
-            this.ImagenMensajes.Size = new System.Drawing.Size(131, 117);
-            this.ImagenMensajes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ImagenMensajes.TabStop = false;
+            ImagenMensajes.Image = Properties.Resources.Mensajes;
+            ImagenMensajes.Location = new Point(571, 16);
+            ImagenMensajes.Name = "ImagenMensajes";
+            ImagenMensajes.Size = new Size(131, 117);
+            ImagenMensajes.SizeMode = PictureBoxSizeMode.Zoom;
+            ImagenMensajes.TabIndex = 8;
+            ImagenMensajes.TabStop = false;
             // 
             // ImagenPerfil
             // 
-            this.ImagenPerfil.Image = global::Gentefit.Properties.Resources.Perfil;
-            this.ImagenPerfil.Location = new System.Drawing.Point(216, 23);
-            this.ImagenPerfil.Size = new System.Drawing.Size(121, 109);
-            this.ImagenPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ImagenPerfil.TabStop = false;
+            ImagenPerfil.Image = Properties.Resources.Perfil;
+            ImagenPerfil.Location = new Point(216, 23);
+            ImagenPerfil.Name = "ImagenPerfil";
+            ImagenPerfil.Size = new Size(121, 109);
+            ImagenPerfil.SizeMode = PictureBoxSizeMode.Zoom;
+            ImagenPerfil.TabIndex = 9;
+            ImagenPerfil.TabStop = false;
+            ImagenPerfil.Click += ImagenPerfil_Click;
             // 
             // PanelFlow
             // 
-            this.PanelFlow.AutoScroll = true;
-            this.PanelFlow.FlowDirection = System.Windows.Forms.FlowDirection.LeftToRight; // horizontal
-            this.PanelFlow.WrapContents = false;
-            this.PanelFlow.Location = new System.Drawing.Point(41, 267);
-            this.PanelFlow.Size = new System.Drawing.Size(861, 291);
-            this.PanelFlow.Name = "PanelFlow";
+            PanelFlow.AutoScroll = true;
+            PanelFlow.Location = new Point(41, 267);
+            PanelFlow.Name = "PanelFlow";
+            PanelFlow.Size = new Size(861, 291);
+            PanelFlow.TabIndex = 0;
+            PanelFlow.WrapContents = false;
             // 
             // ActividadesCliente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(908, 600);
-            this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.PanelFlow);
-            this.Controls.Add(this.BotonHorarios);
-            this.Controls.Add(this.BotonReservas);
-            this.Controls.Add(this.BotonActividades);
-            this.Controls.Add(this.BotonInicio);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.ImagenMensajes);
-            this.Controls.Add(this.ImagenPerfil);
-            this.Name = "ActividadesCliente";
-            this.Text = "ActividadesCliente";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImagenMensajes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImagenPerfil)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
+            ClientSize = new Size(908, 600);
+            Controls.Add(PanelFlow);
+            Controls.Add(BotonHorarios);
+            Controls.Add(BotonReservas);
+            Controls.Add(BotonActividades);
+            Controls.Add(BotonInicio);
+            Controls.Add(FechaHora);
+            Controls.Add(TituloActividades);
+            Controls.Add(pictureBox1);
+            Controls.Add(ImagenMensajes);
+            Controls.Add(ImagenPerfil);
+            Name = "ActividadesCliente";
+            Text = "ActividadesCliente";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)ImagenMensajes).EndInit();
+            ((System.ComponentModel.ISupportInitialize)ImagenPerfil).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -149,8 +167,8 @@
         private System.Windows.Forms.Button BotonReservas;
         private System.Windows.Forms.Button BotonActividades;
         private System.Windows.Forms.Button BotonInicio;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label FechaHora;
+        private System.Windows.Forms.Label TituloActividades;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox ImagenMensajes;
         private System.Windows.Forms.PictureBox ImagenPerfil;

@@ -139,6 +139,7 @@
             ImagenPerfil.SizeMode = PictureBoxSizeMode.Zoom;
             ImagenPerfil.TabIndex = 15;
             ImagenPerfil.TabStop = false;
+            ImagenPerfil.Click += ImagenPerfil_Click;
             // 
             // PanelHorarios
             // 

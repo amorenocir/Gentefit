@@ -31,6 +31,24 @@
     <Compile Update="Vistas\PantallasCliente\HorariosCliente.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Vistas\PantallasCliente\PantallasActividadesCliente\BodyCombat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\PantallasCliente\PantallasActividadesCliente\BodyPump.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\PantallasCliente\PantallasActividadesCliente\Core.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\PantallasCliente\PantallasActividadesCliente\Spinning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\PantallasCliente\PantallasActividadesCliente\Yoga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\PantallasCliente\PantallasActividadesCliente\Zumba.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Vistas\PantallasCliente\PerfilCliente.cs">
       <SubType>Form</SubType>
     </Compile>

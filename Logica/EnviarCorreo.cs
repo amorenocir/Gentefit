@@ -28,7 +28,8 @@ namespace Gentefit.Logica
                 smtp.Credentials = new NetworkCredential("davidzurge@gmail.com", "webk uxms lagl ptak");
                 smtp.EnableSsl = true;
 
-                smtp.Send(mensaje);
+                // Dejo el envio de emails desconectado para no petar a emails por ahora.
+                //smtp.Send(mensaje);
             }
             catch (Exception ex)
             {

@@ -3,7 +3,7 @@ using Gentefit.Vistas.PantallasCliente;
 using System;
 using System.Drawing;
 using System.Windows.Forms;
-
+using Gentefit.Vistas.PantallasCliente.PantallasActividadesCliente;
 namespace Gentefit.Vistas
 {
     public partial class ActividadesCliente : Form
@@ -55,11 +55,37 @@ namespace Gentefit.Vistas
             // Agregar tarjetas dinámicamente
             for (int i = 0; i < actividades.Length; i++)
             {
+                string nombreActividad = actividades[i];
                 TarjetaActividad tarjeta = new TarjetaActividad();
                 tarjeta.Size = new Size(200, 220);
                 tarjeta.Imagen = imagenes[i];
                 tarjeta.Texto = actividades[i];
+
+                tarjeta.Click += (s, args) => AbrirFormularioActividad(nombreActividad);
+
                 PanelFlow.Controls.Add(tarjeta);
+            }
+        }
+
+
+        // Método que abre el formulario según la actividad
+        private void AbrirFormularioActividad(string actividad)
+        {
+            Form formularioActividad = actividad switch
+            {
+                "BodyPump" => new BodyPump(),
+                "BodyCombat" => new BodyCombat(),
+                "Zumba" => new Zumba(),
+                "Yoga" => new Yoga(),
+                "Spinning" => new Spinning(),
+                "Core" => new Core(),
+                _ => null
+            };
+
+            if (formularioActividad != null)
+            {
+                formularioActividad.Show();
+                this.Hide();
             }
         }
     }

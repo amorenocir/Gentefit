@@ -81,7 +81,7 @@ public class LogicaReservas
         // Guardar los cambios en la clase (plazas libres y plazas en espera)
         contexto.SaveChanges();
 
-        // Justo después de guardar la reserva:
+        // Enviar mail de confirmación:
         var cliente = contexto.Clientes.FirstOrDefault(c => c.idCliente == idCliente);
         if (cliente != null)
         {
@@ -93,8 +93,10 @@ public class LogicaReservas
                 <p><b>Estado actual:</b> {estadoTexto}</p>
                 <p>Fecha de la clase: {clase.horario}</p>
                 <hr><p>Gracias por confiar en Gentefit 💪</p>";
-
-            EnviarCorreo.Notificar(cliente.email, asunto, cuerpo);
+            
+            // Dejo el envio de emails desconectado para no petar a emails por ahora.
+            //EnviarCorreo.Notificar(cliente.email, asunto, cuerpo);
+            
         }
 
         return true;
@@ -132,7 +134,7 @@ public class LogicaReservas
 
         // Obtener la reserva con su clase
         var reserva = contexto.Reservas
-            .Include(r => r.cliente) // 👈 esto carga el cliente asociado
+            .Include(r => r.cliente) 
             .Include(r => r.clase)
                 .ThenInclude(c => c.actividad)
             .FirstOrDefault(r => r.idReserva == idReserva);
@@ -151,7 +153,7 @@ public class LogicaReservas
         {
             // Buscar la reserva en espera más antigua
             var primeraEnEspera = contexto.Reservas
-                .Include(r => r.cliente) // 👈 cargamos el cliente aquí
+                .Include(r => r.cliente) 
                 .Where(r => r.idClase == clase.idClase && r.estado == EstadoReserva.EnEspera)
                 .OrderBy(r => r.fecha)
                 .FirstOrDefault();
@@ -169,7 +171,8 @@ public class LogicaReservas
                             <p><b>Clase:</b> {clase.actividad?.nombre}</p>
                             <p><b>Fecha de la clase:</b> {clase.horario}</p>
                             <hr><p>¡Nos vemos en el gimnasio 🏋️‍♀️!</p>";
-                    EnviarCorreo.Notificar(primeraEnEspera.cliente.email, asunto, cuerpo);
+                // Dejo el envio de emails desconectado para no petar a emails por ahora.
+                //EnviarCorreo.Notificar(primeraEnEspera.cliente.email, asunto, cuerpo);
             }
             else
             {
@@ -193,7 +196,8 @@ public class LogicaReservas
             <p><b>Fecha de la clase:</b> {clase.horario}</p>
             <hr><p>Esperamos verte pronto 💪</p>";
 
-            EnviarCorreo.Notificar(reserva.cliente.email, asunto, cuerpo);
+            // Dejo el envio de emails desconectado para no petar a emails por ahora.
+            //EnviarCorreo.Notificar(reserva.cliente.email, asunto, cuerpo);
         }
 
         MessageBox.Show("Reserva cancelada correctamente.",

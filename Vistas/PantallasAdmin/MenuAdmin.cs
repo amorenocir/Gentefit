@@ -39,8 +39,8 @@ namespace Gentefit.Vistas.PantallasAdmin
 
         private void BotonActividades_Click(object sender, EventArgs e)
         {
-            this.Hide();
             new MenuAdActividades().Show();
+            this.Hide();
         }
 
         private void BotonReservas_Click(object sender, EventArgs e)
@@ -57,8 +57,8 @@ namespace Gentefit.Vistas.PantallasAdmin
 
         private void BotonClientes_Click(object sender, EventArgs e)
         {
-            this.Hide();
             new MenuAdClientes().Show();
+            this.Hide();
         }
 
         private void BotonUsuarios_Click(object sender, EventArgs e)
@@ -69,8 +69,8 @@ namespace Gentefit.Vistas.PantallasAdmin
 
         private void BotonVolver_Click(object sender, EventArgs e)
         {
-            this.Hide();
             new Login().Show();
+            this.Hide();
         }
 
         private void timer1_Tick(object sender, EventArgs e)

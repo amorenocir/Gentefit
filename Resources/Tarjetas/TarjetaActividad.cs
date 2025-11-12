@@ -15,26 +15,24 @@ namespace Gentefit.Vistas.PantallasCliente
         public TarjetaActividad()
         {
             InitializeComponent();
+            // Añadir el click de todos los elementos al click de la tarjeta general
+            AnadirClickAHijos(this);
+        }
+        private void AnadirClickAHijos(Control padre)
+        {
+            foreach (Control hijo in padre.Controls)
+            {
+                hijo.Click += (s, e) => this.OnClick(e);
+                if (hijo.HasChildren)
+                {
+                    AnadirClickAHijos(hijo);
+                }
+            }
         }
         public Image Imagen
         {
             get => ImagenTarjeta.Image;
             set => ImagenTarjeta.Image = value;
-        }
-
-        private void ImagenTarjeta_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TarjetaActividad_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void EtiquetaTarjeta_Click(object sender, EventArgs e)
-        {
-
         }
 
         public string Texto
@@ -43,7 +41,7 @@ namespace Gentefit.Vistas.PantallasCliente
             set
             {
                 EtiquetaTarjeta.Text = value;
-                EtiquetaTarjeta.TextAlign = ContentAlignment.TopCenter; // centra el texto
+                EtiquetaTarjeta.TextAlign = ContentAlignment.TopCenter;
             }
         }
     }

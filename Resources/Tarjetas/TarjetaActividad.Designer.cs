@@ -44,7 +44,6 @@
             ImagenTarjeta.SizeMode = PictureBoxSizeMode.Zoom;
             ImagenTarjeta.TabIndex = 0;
             ImagenTarjeta.TabStop = false;
-            ImagenTarjeta.Click += ImagenTarjeta_Click;
             // 
             // EtiquetaTarjeta
             // 
@@ -56,7 +55,6 @@
             EtiquetaTarjeta.TabIndex = 1;
             EtiquetaTarjeta.Text = "Actividad";
             EtiquetaTarjeta.TextAlign = ContentAlignment.TopCenter;
-            EtiquetaTarjeta.Click += EtiquetaTarjeta_Click;
             // 
             // TarjetaActividad
             // 
@@ -68,7 +66,6 @@
             Margin = new Padding(3, 4, 3, 4);
             Name = "TarjetaActividad";
             Size = new Size(209, 185);
-            Load += TarjetaActividad_Load;
             ((System.ComponentModel.ISupportInitialize)ImagenTarjeta).EndInit();
             ResumeLayout(false);
         }
