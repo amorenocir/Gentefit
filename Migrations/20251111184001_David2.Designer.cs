@@ -12,13 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Gentefit.Migrations
 {
     [DbContext(typeof(GentefitContext))]
-<<<<<<<< HEAD:Migrations/20251110202402_Inicial.Designer.cs
-    [Migration("20251110202402_Inicial")]
-    partial class Inicial
-========
-    [Migration("20251110154121_David")]
-    partial class David
->>>>>>>> origin/DavidRamaAndrea:Migrations/20251110154121_David.Designer.cs
+    [Migration("20251111184001_David2")]
+    partial class David2
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

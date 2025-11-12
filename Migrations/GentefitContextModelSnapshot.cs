@@ -65,9 +65,6 @@ namespace Gentefit.Migrations
 
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("idClase"));
 
-                    b.Property<int>("enEspera")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("horario")
                         .HasColumnType("datetime");
 

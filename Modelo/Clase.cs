@@ -33,8 +33,6 @@ namespace Gentefit.Modelo
 
         public DateTime horario { get; set; }
         public int plazasLibres { get; set; }
-        public int enEspera { get; set; }
-
         public List<Reserva> reservas { get; set; } = new List<Reserva>();
 
         [NotMapped]

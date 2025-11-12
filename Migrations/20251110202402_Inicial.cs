@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Gentefit.Migrations
 {
     /// <inheritdoc />
-    public partial class Inicial : Migration
+    public partial class David : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -124,8 +124,7 @@ namespace Gentefit.Migrations
                     id_entrenador = table.Column<int>(type: "int", nullable: false),
                     id_sala = table.Column<int>(type: "int", nullable: false),
                     horario = table.Column<DateTime>(type: "datetime", nullable: false),
-                    plazasLibres = table.Column<int>(type: "int", nullable: false),
-                    enEspera = table.Column<int>(type: "int", nullable: false)
+                    plazasLibres = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {

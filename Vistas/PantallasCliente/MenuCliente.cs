@@ -22,6 +22,7 @@ namespace Gentefit.Vistas
             InitializeComponent();
             clienteLogeado = cliente;
         }
+
         private void MenuAdmin_Load(object sender, EventArgs e)
         {
             timer2.Start();
