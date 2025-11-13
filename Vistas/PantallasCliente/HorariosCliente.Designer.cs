@@ -48,9 +48,10 @@
             // BotonHorarios
             // 
             BotonHorarios.BackColor = Color.Wheat;
-            BotonHorarios.Location = new Point(418, 105);
+            BotonHorarios.Location = new Point(478, 140);
+            BotonHorarios.Margin = new Padding(3, 4, 3, 4);
             BotonHorarios.Name = "BotonHorarios";
-            BotonHorarios.Size = new Size(87, 33);
+            BotonHorarios.Size = new Size(99, 44);
             BotonHorarios.TabIndex = 23;
             BotonHorarios.Text = "Horarios";
             BotonHorarios.UseVisualStyleBackColor = false;
@@ -58,9 +59,10 @@
             // BotonReservas
             // 
             BotonReservas.BackColor = Color.DarkOrange;
-            BotonReservas.Location = new Point(525, 105);
+            BotonReservas.Location = new Point(600, 140);
+            BotonReservas.Margin = new Padding(3, 4, 3, 4);
             BotonReservas.Name = "BotonReservas";
-            BotonReservas.Size = new Size(87, 33);
+            BotonReservas.Size = new Size(99, 44);
             BotonReservas.TabIndex = 22;
             BotonReservas.Text = "Reservas";
             BotonReservas.UseVisualStyleBackColor = false;
@@ -69,9 +71,10 @@
             // BotonActividades
             // 
             BotonActividades.BackColor = Color.DarkOrange;
-            BotonActividades.Location = new Point(303, 105);
+            BotonActividades.Location = new Point(346, 140);
+            BotonActividades.Margin = new Padding(3, 4, 3, 4);
             BotonActividades.Name = "BotonActividades";
-            BotonActividades.Size = new Size(87, 33);
+            BotonActividades.Size = new Size(99, 44);
             BotonActividades.TabIndex = 21;
             BotonActividades.Text = "Actividades";
             BotonActividades.UseVisualStyleBackColor = false;
@@ -80,9 +83,10 @@
             // BotonInicio
             // 
             BotonInicio.BackColor = Color.DarkOrange;
-            BotonInicio.Location = new Point(186, 105);
+            BotonInicio.Location = new Point(213, 140);
+            BotonInicio.Margin = new Padding(3, 4, 3, 4);
             BotonInicio.Name = "BotonInicio";
-            BotonInicio.Size = new Size(87, 33);
+            BotonInicio.Size = new Size(99, 44);
             BotonInicio.TabIndex = 20;
             BotonInicio.Text = "Inicio";
             BotonInicio.UseVisualStyleBackColor = false;
@@ -91,9 +95,9 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(338, 83);
+            label2.Location = new Point(386, 111);
             label2.Name = "label2";
-            label2.Size = new Size(117, 15);
+            label2.Size = new Size(144, 20);
             label2.TabIndex = 19;
             label2.Text = "HH:MM DD-MM-AA";
             // 
@@ -103,9 +107,9 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
             label1.ForeColor = SystemColors.ControlText;
-            label1.Location = new Point(341, 154);
+            label1.Location = new Point(390, 205);
             label1.Name = "label1";
-            label1.Size = new Size(126, 30);
+            label1.Size = new Size(157, 37);
             label1.TabIndex = 18;
             label1.Text = "HORARIOS";
             label1.TextAlign = ContentAlignment.MiddleLeft;
@@ -114,9 +118,10 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.Texto;
-            pictureBox1.Location = new Point(314, 12);
+            pictureBox1.Location = new Point(359, 16);
+            pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(163, 87);
+            pictureBox1.Size = new Size(186, 116);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 17;
             pictureBox1.TabStop = false;
@@ -124,9 +129,10 @@
             // ImagenMensajes
             // 
             ImagenMensajes.Image = Properties.Resources.Mensajes;
-            ImagenMensajes.Location = new Point(497, 12);
+            ImagenMensajes.Location = new Point(568, 16);
+            ImagenMensajes.Margin = new Padding(3, 4, 3, 4);
             ImagenMensajes.Name = "ImagenMensajes";
-            ImagenMensajes.Size = new Size(115, 88);
+            ImagenMensajes.Size = new Size(131, 117);
             ImagenMensajes.SizeMode = PictureBoxSizeMode.Zoom;
             ImagenMensajes.TabIndex = 16;
             ImagenMensajes.TabStop = false;
@@ -134,9 +140,10 @@
             // ImagenPerfil
             // 
             ImagenPerfil.Image = Properties.Resources.Perfil;
-            ImagenPerfil.Location = new Point(186, 17);
+            ImagenPerfil.Location = new Point(213, 23);
+            ImagenPerfil.Margin = new Padding(3, 4, 3, 4);
             ImagenPerfil.Name = "ImagenPerfil";
-            ImagenPerfil.Size = new Size(106, 82);
+            ImagenPerfil.Size = new Size(121, 109);
             ImagenPerfil.SizeMode = PictureBoxSizeMode.Zoom;
             ImagenPerfil.TabIndex = 15;
             ImagenPerfil.TabStop = false;
@@ -144,17 +151,20 @@
             // PanelHorarios
             // 
             PanelHorarios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            PanelHorarios.Location = new Point(132, 198);
+            PanelHorarios.Location = new Point(81, 262);
+            PanelHorarios.Margin = new Padding(3, 4, 3, 4);
             PanelHorarios.Name = "PanelHorarios";
-            PanelHorarios.Size = new Size(547, 215);
+            PanelHorarios.RowHeadersWidth = 51;
+            PanelHorarios.Size = new Size(805, 383);
             PanelHorarios.TabIndex = 24;
             // 
             // BotonReservar
             // 
             BotonReservar.BackColor = Color.DarkOrange;
-            BotonReservar.Location = new Point(685, 380);
+            BotonReservar.Location = new Point(892, 601);
+            BotonReservar.Margin = new Padding(3, 4, 3, 4);
             BotonReservar.Name = "BotonReservar";
-            BotonReservar.Size = new Size(67, 33);
+            BotonReservar.Size = new Size(77, 44);
             BotonReservar.TabIndex = 25;
             BotonReservar.Text = "Reservar";
             BotonReservar.UseVisualStyleBackColor = false;
@@ -162,9 +172,9 @@
             // 
             // HorariosCliente
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1107, 711);
             Controls.Add(BotonReservar);
             Controls.Add(PanelHorarios);
             Controls.Add(BotonHorarios);
@@ -176,6 +186,7 @@
             Controls.Add(pictureBox1);
             Controls.Add(ImagenMensajes);
             Controls.Add(ImagenPerfil);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "HorariosCliente";
             Text = "Horarios";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

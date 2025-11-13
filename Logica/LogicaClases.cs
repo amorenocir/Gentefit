@@ -35,7 +35,11 @@ public class LogicaClases
                 NombreActividad = c.actividad.nombre,
                 NombreEntrenador = c.entrenador.nombre,
                 NombreSala = c.sala.nombre,
-                Horario = c.horario,
+
+                // 📅 Dividimos el DateTime en tres partes
+                Dia = c.horario.ToString("dddd"),      // lunes, martes...
+                Fecha = c.horario.ToString("dd/MM"),   // 11/11
+                Hora = c.horario.ToString("HH:mm"),    // 19:00
                 PlazasLibres = c.plazasLibres,
             })
             .ToList();
@@ -48,9 +52,10 @@ public class LogicaClases
         public string NombreActividad { get; set; }
         public string NombreEntrenador { get; set; }
         public string NombreSala { get; set; }
-        public DateTime Horario { get; set; }
+        public string Dia { get; set; }        // 🟢 Nuevo campo: día de la semana
+        public string Fecha { get; set; }      // 🟢 Nuevo campo: fecha
+        public string Hora { get; set; }       // 🟢 Nuevo campo: hora
         public int PlazasLibres { get; set; }
-        public int EnEspera { get; set; }
     }
 
     // Buscar clase por ID
@@ -118,7 +123,10 @@ public class LogicaClases
                 NombreActividad = c.actividad.nombre,
                 NombreEntrenador = c.entrenador.nombre,
                 NombreSala = c.sala.nombre,
-                Horario = c.horario,
+                // 📅 Dividimos el DateTime en tres partes
+                Dia = c.horario.ToString("dddd"),      // lunes, martes...
+                Fecha = c.horario.ToString("dd/MM"),   // 11/11
+                Hora = c.horario.ToString("HH:mm"),    // 19:00
                 PlazasLibres = c.plazasLibres,
             })
             .ToList();

@@ -73,15 +73,18 @@ namespace Gentefit.Vistas
             var clasesDisponibles = logica.ObtenerClasesDisponibles();
 
             PanelHorarios.DataSource = clasesDisponibles;
+            PanelHorarios.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
 
             // Ajustar nombres de columnas
             PanelHorarios.Columns["IdClase"].HeaderText = "ID";
             PanelHorarios.Columns["NombreActividad"].HeaderText = "Actividad";
             PanelHorarios.Columns["NombreEntrenador"].HeaderText = "Entrenador";
             PanelHorarios.Columns["NombreSala"].HeaderText = "Sala";
-            PanelHorarios.Columns["Horario"].HeaderText = "Horario";
+            PanelHorarios.Columns["Dia"].HeaderText = "Día";
+            PanelHorarios.Columns["Fecha"].HeaderText = "Fecha";
+            PanelHorarios.Columns["Hora"].HeaderText = "Hora";
             PanelHorarios.Columns["PlazasLibres"].HeaderText = "Plazas libres";
-            PanelHorarios.Columns["EnEspera"].HeaderText = "En espera";
         }
 
     }

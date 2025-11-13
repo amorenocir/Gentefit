@@ -91,7 +91,7 @@ public class LogicaReservas
                 <h3>Hola {cliente.nombre},</h3>
                 <p>Tu reserva para la clase <b>{clase.actividad.nombre}</b> se ha registrado correctamente.</p>
                 <p><b>Estado actual:</b> {estadoTexto}</p>
-                <p>Fecha de la clase: {clase.horario}</p>
+                <p>Fecha de la clase: {clase.horario.ToString("dd HH:mm")}</p>
                 <hr><p>Gracias por confiar en Gentefit 💪</p>";
 
             EnviarCorreo.Notificar(cliente.email, asunto, cuerpo);
