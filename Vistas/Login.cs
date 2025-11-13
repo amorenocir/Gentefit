@@ -2,6 +2,7 @@
 using Gentefit.Modelo;
 using Gentefit.Modelo.Enums;
 using Gentefit.Vistas.PantallasAdmin;
+using Gentefit.Vistas.PantallasRecepcionista;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -46,10 +47,10 @@ namespace Gentefit.Vistas
                             new InicioAdmin().Show();
                             break;
                         case TipoRol.Encargado:
-                            new MenuEncargado().Show();
+                            new InicioEncargado().Show();
                             break;
                         case TipoRol.Recepcionista:
-                            new MenuRecepcionista().Show();
+                            new InicioRecepcionista().Show();
                             break;
                     }
                     this.Hide();

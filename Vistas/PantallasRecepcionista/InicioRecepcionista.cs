@@ -1,4 +1,4 @@
-﻿using Gentefit.Modelo;
+﻿using Gentefit.Vistas.PantallasAdmin;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,17 +8,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Microsoft.EntityFrameworkCore;
 
-namespace Gentefit.Vistas.PantallasAdmin
+namespace Gentefit.Vistas.PantallasRecepcionista
 {
-    public partial class ClientesAdmin : Form
+    public partial class InicioRecepcionista : Form
     {
-        public ClientesAdmin()
+        public InicioRecepcionista()
         {
             InitializeComponent();
         }
-
         private void BotonAnadir_Click(object sender, EventArgs e)
         {
             new AnadirCliente().Show();
@@ -41,7 +39,7 @@ namespace Gentefit.Vistas.PantallasAdmin
         }
         private void BotonVolver_Click(object sender, EventArgs e)
         {
-            new InicioAdmin().Show();
+            new Login().Show();
             this.Hide();
         }
     }

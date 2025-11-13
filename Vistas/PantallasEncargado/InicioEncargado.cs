@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Gentefit.Vistas
 {
-    public partial class MenuRecepcionista : Form
+    public partial class InicioEncargado : Form
     {
-        public MenuRecepcionista()
+        public InicioEncargado()
         {
             InitializeComponent();
         }
