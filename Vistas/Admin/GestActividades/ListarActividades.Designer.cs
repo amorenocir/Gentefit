@@ -51,9 +51,9 @@
             Actividades.ForeColor = Color.DarkSlateGray;
             Actividades.Location = new Point(234, 35);
             Actividades.Name = "Actividades";
-            Actividades.Size = new Size(383, 37);
+            Actividades.Size = new Size(382, 37);
             Actividades.TabIndex = 18;
-            Actividades.Text = "ACTIVIDADES REGISTRADOS";
+            Actividades.Text = "ACTIVIDADES REGISTRADAS";
             Actividades.Click += Actividades_Click;
             // 
             // PanelActividades

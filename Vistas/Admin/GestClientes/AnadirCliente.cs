@@ -36,7 +36,7 @@ namespace Gentefit.Vistas.Admin
             var logica = new LogicaClientes();
             logica.AnadirCliente(nuevoCliente);
 
-            MessageBox.Show("Cliente añadido correctamente");
+            MessageBox.Show("Cliente añadido correctamente.");
             this.Close();
             new MenuAdClientes().Show();
         }

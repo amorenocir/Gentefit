@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Gentefit.Vistas.Admin.GestActividades.GestClases;
 
 namespace Gentefit.Vistas.Admin.GestActividades
 {
@@ -45,6 +46,12 @@ namespace Gentefit.Vistas.Admin.GestActividades
         {
             new MenuAdmin().Show();
             this.Close();
+        }
+
+        private void GestionarClases_Click(object sender, EventArgs e)
+        {
+            new MenuActivClases().Show();
+            this.Hide();
         }
     }
 }

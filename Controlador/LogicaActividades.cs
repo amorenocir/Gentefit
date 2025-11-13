@@ -21,7 +21,7 @@ namespace Gentefit.Controlador
         public List<Actividad> BuscarPorID(int id)
         {
             using var contexto = new GentefitContext();
-            return contexto.Actividades.Where(c => c.idActividad == id).ToList().ToList();
+            return contexto.Actividades.Where(c => c.idActividad == id).ToList();
         }
 
         //Añadir una nueva actividad

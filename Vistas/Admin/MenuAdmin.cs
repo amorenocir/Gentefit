@@ -10,6 +10,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Gentefit.Vistas;
 using Gentefit.Vistas.Admin.GestActividades;
+using Gentefit.Vistas.Admin.GestiEntrenadores;
+using Gentefit.Vistas.Admin.GestSalas;
 
 namespace Gentefit.Vistas.Admin
 {
@@ -53,8 +55,8 @@ namespace Gentefit.Vistas.Admin
 
         private void BotonMonitores_Click(object sender, EventArgs e)
         {
-            //Abrir Menu X
-
+            new MenuAdEntrenadores().Show();
+            this.Hide();
         }
 
         private void BotonClientes_Click(object sender, EventArgs e)
@@ -87,6 +89,12 @@ namespace Gentefit.Vistas.Admin
         private void timer1_Tick(object sender, EventArgs e)
         {
             label2.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
+        }
+
+        private void BotonSalas_Click(object sender, EventArgs e)
+        {
+            new MenuAdSalas().Show();
+            this.Hide();
         }
     }
 }

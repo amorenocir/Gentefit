@@ -42,6 +42,7 @@
             BotonUsuarios = new Button();
             BotonVolver = new Button();
             timer1 = new System.Windows.Forms.Timer(components);
+            BotonSalas = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ImagenPerfil).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ImagenMensajes).BeginInit();
@@ -103,7 +104,7 @@
             BotonActividades.Location = new Point(99, 228);
             BotonActividades.Name = "BotonActividades";
             BotonActividades.Size = new Size(113, 40);
-            BotonActividades.TabIndex = 5;
+            BotonActividades.TabIndex = 1;
             BotonActividades.Text = "Actividades";
             BotonActividades.UseVisualStyleBackColor = false;
             BotonActividades.Click += BotonActividades_Click;
@@ -115,7 +116,7 @@
             BotonReservas.Location = new Point(231, 228);
             BotonReservas.Name = "BotonReservas";
             BotonReservas.Size = new Size(113, 40);
-            BotonReservas.TabIndex = 6;
+            BotonReservas.TabIndex = 2;
             BotonReservas.Text = "Reservas";
             BotonReservas.UseVisualStyleBackColor = false;
             BotonReservas.Click += BotonReservas_Click;
@@ -127,8 +128,8 @@
             BotonMonitores.Location = new Point(360, 228);
             BotonMonitores.Name = "BotonMonitores";
             BotonMonitores.Size = new Size(113, 40);
-            BotonMonitores.TabIndex = 7;
-            BotonMonitores.Text = "Monitores";
+            BotonMonitores.TabIndex = 3;
+            BotonMonitores.Text = "Entrenadores";
             BotonMonitores.UseVisualStyleBackColor = false;
             BotonMonitores.Click += BotonMonitores_Click;
             // 
@@ -139,7 +140,7 @@
             BotonClientes.Location = new Point(493, 228);
             BotonClientes.Name = "BotonClientes";
             BotonClientes.Size = new Size(113, 40);
-            BotonClientes.TabIndex = 8;
+            BotonClientes.TabIndex = 4;
             BotonClientes.Text = "Clientes";
             BotonClientes.UseVisualStyleBackColor = false;
             BotonClientes.Click += BotonClientes_Click;
@@ -148,10 +149,10 @@
             // 
             BotonUsuarios.BackColor = Color.DarkOrange;
             BotonUsuarios.ForeColor = Color.White;
-            BotonUsuarios.Location = new Point(624, 228);
+            BotonUsuarios.Location = new Point(99, 292);
             BotonUsuarios.Name = "BotonUsuarios";
             BotonUsuarios.Size = new Size(113, 40);
-            BotonUsuarios.TabIndex = 9;
+            BotonUsuarios.TabIndex = 6;
             BotonUsuarios.Text = "Usuarios";
             BotonUsuarios.UseVisualStyleBackColor = false;
             BotonUsuarios.Click += BotonUsuarios_Click;
@@ -172,6 +173,18 @@
             timer1.Interval = 1000;
             timer1.Tick += timer1_Tick;
             // 
+            // BotonSalas
+            // 
+            BotonSalas.BackColor = Color.DarkOrange;
+            BotonSalas.ForeColor = Color.White;
+            BotonSalas.Location = new Point(624, 228);
+            BotonSalas.Name = "BotonSalas";
+            BotonSalas.Size = new Size(113, 40);
+            BotonSalas.TabIndex = 5;
+            BotonSalas.Text = "Salas";
+            BotonSalas.UseVisualStyleBackColor = false;
+            BotonSalas.Click += BotonSalas_Click;
+            // 
             // MenuAdmin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -179,6 +192,7 @@
             BackColor = Color.White;
             BackgroundImageLayout = ImageLayout.None;
             ClientSize = new Size(800, 450);
+            Controls.Add(BotonSalas);
             Controls.Add(BotonVolver);
             Controls.Add(BotonUsuarios);
             Controls.Add(BotonClientes);
@@ -214,5 +228,6 @@
         private Button BotonUsuarios;
         private Button BotonVolver;
         private System.Windows.Forms.Timer timer1;
+        private Button BotonSalas;
     }
 }

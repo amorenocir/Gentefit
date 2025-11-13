@@ -58,7 +58,7 @@
             BotonAnadir.Location = new Point(363, 371);
             BotonAnadir.Name = "BotonAnadir";
             BotonAnadir.Size = new Size(70, 34);
-            BotonAnadir.TabIndex = 30;
+            BotonAnadir.TabIndex = 5;
             BotonAnadir.Text = "Añadir";
             BotonAnadir.UseVisualStyleBackColor = false;
             BotonAnadir.Click += BotonAnadir_Click;
@@ -76,7 +76,7 @@
             CajaTextoDescripcion.Multiline = true;
             CajaTextoDescripcion.Name = "CajaTextoDescripcion";
             CajaTextoDescripcion.Size = new Size(227, 64);
-            CajaTextoDescripcion.TabIndex = 26;
+            CajaTextoDescripcion.TabIndex = 4;
             CajaTextoDescripcion.TextChanged += CajaTextoDescripcion_TextChanged;
             // 
             // label5
@@ -93,7 +93,7 @@
             CajaTextoDuracion.Location = new Point(108, 163);
             CajaTextoDuracion.Name = "CajaTextoDuracion";
             CajaTextoDuracion.Size = new Size(227, 23);
-            CajaTextoDuracion.TabIndex = 24;
+            CajaTextoDuracion.TabIndex = 2;
             CajaTextoDuracion.TextChanged += CajaTextoDuracion_TextChanged;
             // 
             // label2
@@ -110,7 +110,7 @@
             CajaTextoNombre.Location = new Point(108, 106);
             CajaTextoNombre.Name = "CajaTextoNombre";
             CajaTextoNombre.Size = new Size(227, 23);
-            CajaTextoNombre.TabIndex = 23;
+            CajaTextoNombre.TabIndex = 1;
             CajaTextoNombre.TextChanged += CajaTextoNombre_TextChanged;
             // 
             // Nombre
@@ -127,7 +127,7 @@
             BotonVolver.Location = new Point(591, 365);
             BotonVolver.Name = "BotonVolver";
             BotonVolver.Size = new Size(71, 34);
-            BotonVolver.TabIndex = 36;
+            BotonVolver.TabIndex = 6;
             BotonVolver.Text = "Volver";
             BotonVolver.UseVisualStyleBackColor = true;
             BotonVolver.Click += BotonVolver_Click;
@@ -139,7 +139,7 @@
             DespleIntesidad.Location = new Point(108, 224);
             DespleIntesidad.Name = "DespleIntesidad";
             DespleIntesidad.Size = new Size(227, 23);
-            DespleIntesidad.TabIndex = 37;
+            DespleIntesidad.TabIndex = 3;
             DespleIntesidad.SelectedIndexChanged += DespleIntesidad_SelectedIndexChanged;
             // 
             // AnadirActividad

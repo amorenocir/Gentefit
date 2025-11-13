@@ -7,7 +7,7 @@ namespace Gentefit.Vistas.Admin
 {
     public partial class EliminarActividad : Form
     {
-        private LogicaClientes logica;
+        private LogicaClientes logica = new LogicaClientes();
 
         public EliminarActividad()
         {
@@ -17,8 +17,8 @@ namespace Gentefit.Vistas.Admin
 
         private void EliminarCliente_Load(object sender, EventArgs e)
         {
-            using var contexto = new GentefitContext();
-            logica = new LogicaClientes();
+            //using var contexto = new GentefitContext();
+            //logica = new LogicaClientes();
             PanelClientes.DataSource = logica.ObtenerTodos();
         }
 

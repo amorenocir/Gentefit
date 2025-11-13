@@ -172,3 +172,15 @@ C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.gen
 C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\ref\Gentefit.dll
 C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.Admin.GestActividades.EliminarActividad.resources
 C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.Admin.EliminarActividad.resources
+C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.Admin.GestiEntrenadores.AnadirEntrenador.resources
+C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.Admin.GestiEntrenadores.ListarEntrenadores.resources
+C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.Admin.GestiEntrenadores.MenuAdEntrenadores.resources
+C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.Admin.GestiEntrenadores.ModificarEntrenadores.resources
+C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.Admin.GestiEntrenadores.EliminarEntrenador.resources
+C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.Admin.GestSalas.AnadirSala.resources
+C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.Admin.GestSalas.ListarSalas.resources
+C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.Admin.GestSalas.MenuAdSalas.resources
+C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.Admin.GestSalas.ModificarSalas.resources
+C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.Admin.GestiEntrenadores.EliminarSala.resources
+C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.Admin.GestActividades.GestClases.MenuActivClases.resources
+C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.Admin.GestActividades.GestClases.MenuAdClases.resources

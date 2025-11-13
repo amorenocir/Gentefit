@@ -36,7 +36,8 @@ public class LogicaClientes
     public bool Modificar(Cliente cliente)
     {
         using var contexto = new GentefitContext();
-        var c = contexto.Clientes.FirstOrDefault(x => x.idCliente == cliente.idCliente);
+        var c = contexto.Clientes.
+            FirstOrDefault(x => x.idCliente == cliente.idCliente);
         if (c == null) return false;
 
         c.nombre = cliente.nombre;

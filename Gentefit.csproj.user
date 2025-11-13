@@ -10,6 +10,12 @@
     <Compile Update="Vistas\Admin\GestActividades\EliminarActividad.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Vistas\Admin\GestActividades\GestClases\MenuActivClases.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Admin\GestActividades\GestClases\MenuAdClases.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Vistas\Admin\GestActividades\ListarActividades.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -28,7 +34,37 @@
     <Compile Update="Vistas\Admin\GestClientes\ListarClientes.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Vistas\Admin\GestiEntrenadores\AnadirEntrenador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Admin\GestiEntrenadores\EliminarEntrenador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Admin\GestSalas\EliminarSala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Admin\GestiEntrenadores\ListarEntrenadores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Admin\GestiEntrenadores\MenuAdEntrenadores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Admin\GestiEntrenadores\ModificarEntrenadores.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Vistas\Admin\GestReservas\MenuAdReservas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Admin\GestSalas\AnadirSala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Admin\GestSalas\ListarSalas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Admin\GestSalas\MenuAdSalas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Admin\GestSalas\ModificarSalas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Vistas\Admin\MenuAdmin.cs">
