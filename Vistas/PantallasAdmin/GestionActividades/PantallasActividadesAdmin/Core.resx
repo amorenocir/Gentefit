@@ -117,4 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="TextoCore.Text" xml:space="preserve">
+    <value>Core es una actividad centrada en el fortalecimiento de la zona central del cuerpo: abdominales, lumbares y glúteos. Mejora la postura, la estabilidad y el equilibrio, además de prevenir lesiones y potenciar el rendimiento en otros ejercicios y actividades deportivas.</value>
+  </data>
 </root>

@@ -17,7 +17,7 @@ public partial class GentefitContext : DbContext
     {
     }
 
-    public virtual DbSet<Actividad> Actividads { get; set; }
+    public virtual DbSet<Actividad> Actividades { get; set; }
 
     public virtual DbSet<Clase> Clases { get; set; }
 

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Gentefit.Vistas.PantallasAdmin.GestionActividades;
 
 namespace Gentefit.Vistas.PantallasAdmin
 {
@@ -17,39 +18,31 @@ namespace Gentefit.Vistas.PantallasAdmin
             InitializeComponent();
         }
 
-        private void ImagenAnadir_Click(object sender, EventArgs e)
+        private void BotonAnadir_Click(object sender, EventArgs e)
         {
-            //Añadir una actividad
+            new AnadirActividad().Show();
+            this.Hide();
+        }
+        private void BotonListar_Click(object sender, EventArgs e)
+        {
+            new ListarActividades().Show();
+            this.Hide();
+        }
+        private void BotonModificar_Click(object sender, EventArgs e)
+        {
+            new ModificarActividad().Show();
+            this.Hide();
+        }
+        private void BotonEliminar_Click(object sender, EventArgs e)
+        {
+            new EliminarActividad().Show();
+            this.Hide();
         }
 
-        private void BotonBodyPump_Click(object sender, EventArgs e)
-        {
-            //Abrir actividad
-        }
-        private void BotonBodyCombat_Click(object sender, EventArgs e)
-        {
-            //Abrir actividad
-        }
-        private void BotonCore_Click(object sender, EventArgs e)
-        {
-            //Abrir actividad
-        }
-        private void BotonYoga_Click(object sender, EventArgs e)
-        {
-            //Abrir actividad
-        }
-        private void BotonSpinning_Click(object sender, EventArgs e)
-        {
-            //Abrir actividad
-        }
-        private void BotonZumba_Click(object sender, EventArgs e)
-        {
-            //Abrir actividad
-        }
         private void BotonVolver_Click(object sender, EventArgs e)
         {
             this.Hide();
-            new Gentefit.Vistas.PantallasAdmin.InicioAdmin().Show();
+            new InicioAdmin().Show();
         }
     }
 }

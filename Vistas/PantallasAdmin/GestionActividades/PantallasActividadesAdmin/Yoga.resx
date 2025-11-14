@@ -117,4 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="TextoYoga.Text" xml:space="preserve">
+    <value>El yoga es una práctica milenaria que combina posturas físicas, respiración y meditación para mejorar la flexibilidad, fuerza y equilibrio mental. Es ideal para reducir el estrés y mejorar la concentración, fomentando un bienestar general tanto físico como emocional.</value>
+  </data>
 </root>

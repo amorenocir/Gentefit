@@ -2,15 +2,7 @@
 {
     partial class ActividadesAdmin
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
-
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -19,169 +11,131 @@
             }
             base.Dispose(disposing);
         }
-   
+
         private void InitializeComponent()
         {
             Logo = new PictureBox();
-            BotonBodyPump = new Button();
             Actividades = new Label();
-            BotonBodyCombat = new Button();
-            BotonYoga = new Button();
-            BotonCore = new Button();
-            BotonZumba = new Button();
-            BotonSpinning = new Button();
-            ImagenAnadir = new PictureBox();
             BotonVolver = new Button();
+            BotonModificar = new Button();
+            BotonEliminar = new Button();
+            BotonListar = new Button();
+            BotonAnadir = new Button();
             ((System.ComponentModel.ISupportInitialize)Logo).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)ImagenAnadir).BeginInit();
             SuspendLayout();
             // 
             // Logo
             // 
             Logo.Image = Properties.Resources.LogoAdmin;
-            Logo.Location = new Point(327, 24);
+            Logo.Location = new Point(374, 32);
+            Logo.Margin = new Padding(3, 4, 3, 4);
             Logo.Name = "Logo";
-            Logo.Size = new Size(155, 85);
+            Logo.Size = new Size(177, 113);
             Logo.SizeMode = PictureBoxSizeMode.Zoom;
             Logo.TabIndex = 0;
             Logo.TabStop = false;
-            // 
-            // BotonBodyPump
-            // 
-            BotonBodyPump.BackColor = Color.DarkOrange;
-            BotonBodyPump.ForeColor = Color.White;
-            BotonBodyPump.Location = new Point(212, 199);
-            BotonBodyPump.Name = "BotonBodyPump";
-            BotonBodyPump.Size = new Size(115, 49);
-            BotonBodyPump.TabIndex = 4;
-            BotonBodyPump.Text = "Body Pump";
-            BotonBodyPump.UseVisualStyleBackColor = false;
             // 
             // Actividades
             // 
             Actividades.AutoSize = true;
             Actividades.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
             Actividades.ForeColor = Color.DarkSlateGray;
-            Actividades.Location = new Point(311, 141);
+            Actividades.Location = new Point(356, 176);
             Actividades.Name = "Actividades";
-            Actividades.Size = new Size(193, 37);
+            Actividades.Size = new Size(239, 46);
             Actividades.TabIndex = 5;
             Actividades.Text = "ACTIVIDADES";
             // 
-            // BotonBodyCombat
-            // 
-            BotonBodyCombat.BackColor = Color.DarkOrange;
-            BotonBodyCombat.ForeColor = Color.White;
-            BotonBodyCombat.Location = new Point(212, 271);
-            BotonBodyCombat.Name = "BotonBodyCombat";
-            BotonBodyCombat.Size = new Size(115, 49);
-            BotonBodyCombat.TabIndex = 6;
-            BotonBodyCombat.Text = "Body Combat";
-            BotonBodyCombat.UseVisualStyleBackColor = false;
-            BotonBodyCombat.Click += BotonBodyCombat_Click;
-            // 
-            // BotonYoga
-            // 
-            BotonYoga.BackColor = Color.DarkOrange;
-            BotonYoga.ForeColor = Color.White;
-            BotonYoga.Location = new Point(349, 271);
-            BotonYoga.Name = "BotonYoga";
-            BotonYoga.Size = new Size(115, 49);
-            BotonYoga.TabIndex = 8;
-            BotonYoga.Text = "Yoga";
-            BotonYoga.UseVisualStyleBackColor = false;
-            BotonYoga.Click += BotonYoga_Click;
-            // 
-            // BotonCore
-            // 
-            BotonCore.BackColor = Color.DarkOrange;
-            BotonCore.ForeColor = Color.White;
-            BotonCore.Location = new Point(349, 199);
-            BotonCore.Name = "BotonCore";
-            BotonCore.Size = new Size(115, 49);
-            BotonCore.TabIndex = 7;
-            BotonCore.Text = "Core";
-            BotonCore.UseVisualStyleBackColor = false;
-            BotonCore.Click += BotonCore_Click;
-            // 
-            // BotonZumba
-            // 
-            BotonZumba.BackColor = Color.DarkOrange;
-            BotonZumba.ForeColor = Color.White;
-            BotonZumba.Location = new Point(487, 271);
-            BotonZumba.Name = "BotonZumba";
-            BotonZumba.Size = new Size(115, 49);
-            BotonZumba.TabIndex = 10;
-            BotonZumba.Text = "Zumba";
-            BotonZumba.UseVisualStyleBackColor = false;
-            BotonZumba.Click += BotonZumba_Click;
-            // 
-            // BotonSpinning
-            // 
-            BotonSpinning.BackColor = Color.DarkOrange;
-            BotonSpinning.ForeColor = Color.White;
-            BotonSpinning.Location = new Point(487, 199);
-            BotonSpinning.Name = "BotonSpinning";
-            BotonSpinning.Size = new Size(115, 49);
-            BotonSpinning.TabIndex = 9;
-            BotonSpinning.Text = "Spinning";
-            BotonSpinning.UseVisualStyleBackColor = false;
-            BotonSpinning.Click += BotonSpinning_Click;
-            // 
-            // ImagenAnadir
-            // 
-            ImagenAnadir.Image = Properties.Resources.Añadir1;
-            ImagenAnadir.Location = new Point(505, 146);
-            ImagenAnadir.Name = "ImagenAnadir";
-            ImagenAnadir.Size = new Size(28, 28);
-            ImagenAnadir.SizeMode = PictureBoxSizeMode.Zoom;
-            ImagenAnadir.TabIndex = 11;
-            ImagenAnadir.TabStop = false;
-            ImagenAnadir.Click += ImagenAnadir_Click;
-            // 
             // BotonVolver
             // 
-            BotonVolver.Location = new Point(612, 379);
+            BotonVolver.Location = new Point(699, 505);
+            BotonVolver.Margin = new Padding(3, 4, 3, 4);
             BotonVolver.Name = "BotonVolver";
-            BotonVolver.Size = new Size(75, 23);
+            BotonVolver.Size = new Size(86, 31);
             BotonVolver.TabIndex = 12;
             BotonVolver.Text = "Volver";
             BotonVolver.UseVisualStyleBackColor = true;
             BotonVolver.Click += BotonVolver_Click;
             // 
-            // MenuAdActividades
+            // BotonModificar
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            BotonModificar.BackColor = Color.DarkOrange;
+            BotonModificar.ForeColor = Color.White;
+            BotonModificar.Location = new Point(468, 268);
+            BotonModificar.Margin = new Padding(3, 4, 3, 4);
+            BotonModificar.Name = "BotonModificar";
+            BotonModificar.Size = new Size(131, 65);
+            BotonModificar.TabIndex = 16;
+            BotonModificar.Text = "Modificar";
+            BotonModificar.UseVisualStyleBackColor = false;
+            BotonModificar.Click += BotonModificar_Click;
+            // 
+            // BotonEliminar
+            // 
+            BotonEliminar.BackColor = Color.DarkOrange;
+            BotonEliminar.ForeColor = Color.White;
+            BotonEliminar.Location = new Point(620, 268);
+            BotonEliminar.Margin = new Padding(3, 4, 3, 4);
+            BotonEliminar.Name = "BotonEliminar";
+            BotonEliminar.Size = new Size(131, 65);
+            BotonEliminar.TabIndex = 15;
+            BotonEliminar.Text = "Eliminar";
+            BotonEliminar.UseVisualStyleBackColor = false;
+            BotonEliminar.Click += BotonEliminar_Click;
+            // 
+            // BotonListar
+            // 
+            BotonListar.BackColor = Color.DarkOrange;
+            BotonListar.ForeColor = Color.White;
+            BotonListar.Location = new Point(315, 268);
+            BotonListar.Margin = new Padding(3, 4, 3, 4);
+            BotonListar.Name = "BotonListar";
+            BotonListar.Size = new Size(131, 65);
+            BotonListar.TabIndex = 14;
+            BotonListar.Text = "Listar";
+            BotonListar.UseVisualStyleBackColor = false;
+            BotonListar.Click += BotonListar_Click;
+            // 
+            // BotonAnadir
+            // 
+            BotonAnadir.BackColor = Color.DarkOrange;
+            BotonAnadir.ForeColor = Color.White;
+            BotonAnadir.Location = new Point(163, 268);
+            BotonAnadir.Margin = new Padding(3, 4, 3, 4);
+            BotonAnadir.Name = "BotonAnadir";
+            BotonAnadir.Size = new Size(131, 65);
+            BotonAnadir.TabIndex = 13;
+            BotonAnadir.Text = "Añadir";
+            BotonAnadir.UseVisualStyleBackColor = false;
+            BotonAnadir.Click += BotonAnadir_Click;
+            // 
+            // ActividadesAdmin
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
+            Controls.Add(BotonModificar);
+            Controls.Add(BotonEliminar);
+            Controls.Add(BotonListar);
+            Controls.Add(BotonAnadir);
             Controls.Add(BotonVolver);
-            Controls.Add(ImagenAnadir);
-            Controls.Add(BotonZumba);
-            Controls.Add(BotonSpinning);
-            Controls.Add(BotonYoga);
-            Controls.Add(BotonCore);
-            Controls.Add(BotonBodyCombat);
             Controls.Add(Actividades);
-            Controls.Add(BotonBodyPump);
             Controls.Add(Logo);
-            Name = "MenuAdActividades";
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "ActividadesAdmin";
             Text = "MenuAdActividades";
             ((System.ComponentModel.ISupportInitialize)Logo).EndInit();
-            ((System.ComponentModel.ISupportInitialize)ImagenAnadir).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         private PictureBox Logo;
-        private Button BotonBodyPump;
         private Label Actividades;
-        private Button BotonBodyCombat;
-        private Button BotonYoga;
-        private Button BotonCore;
-        private Button BotonZumba;
-        private Button BotonSpinning;
-        private PictureBox ImagenAnadir;
         private Button BotonVolver;
+        private Button BotonModificar;
+        private Button BotonEliminar;
+        private Button BotonListar;
+        private Button BotonAnadir;
     }
 }

@@ -117,4 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="TextoZumba.Text" xml:space="preserve">
+    <value>Zumba combina baile y fitness en una sesión dinámica y divertida. Con movimientos inspirados en ritmos latinos y música enérgica, ayuda a mejorar la coordinación, quemar calorías y liberar tensiones mientras disfrutas de un ambiente animado y social.</value>
+  </data>
 </root>

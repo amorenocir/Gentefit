@@ -29,9 +29,9 @@ namespace Gentefit
                 listaReservas = new List<Reserva>()
             };
             // RUNS DE PRUEBAS PARA SALTAR EL LOGIN
+            Application.Run(new InicioAdmin()); 
             //Application.Run(new MenuCliente(clienteTest));
-            //Application.Run(new InicioAdmin()); 
-            Application.Run(new InicioRecepcionista());
+            //Application.Run(new InicioRecepcionista());
 
             using var contexto = new GentefitContext();
             var cliente = contexto.Clientes.FirstOrDefault(); // obtiene el primero existente

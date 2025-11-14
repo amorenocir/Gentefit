@@ -18,6 +18,7 @@
     <None Remove="Resources\BodyPump.PNG" />
     <None Remove="Vistas\PantallasAdmin\dz1od1hr.4cz~" />
     <None Remove="Vistas\PantallasAdmin\e0npqnep.jcq~" />
+    <None Remove="Vistas\PantallasAdmin\GestionActividades\5x3mv2xw.ztn~" />
     <None Remove="Vistas\PantallasCliente\c34rf5vl.10z~" />
   </ItemGroup>
 
@@ -41,6 +42,24 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Vistas\PantallasAdmin\GestionActividades\PantallasActividadesAdmin\BodyCombat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\PantallasAdmin\GestionActividades\PantallasActividadesAdmin\BodyPump.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\PantallasAdmin\GestionActividades\PantallasActividadesAdmin\Core.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\PantallasAdmin\GestionActividades\PantallasActividadesAdmin\Spinning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\PantallasAdmin\GestionActividades\PantallasActividadesAdmin\Yoga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\PantallasAdmin\GestionActividades\PantallasActividadesAdmin\Zumba.cs">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Update="Vistas\PantallasRecepcionista\GestionClientes\AnadirCliente.cs">
       <SubType>Form</SubType>
