@@ -4,25 +4,40 @@
     <Compile Update="Test\TestConexion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Vistas\PantallasAdmin\AnadirCliente.cs">
+    <Compile Update="Vistas\PantallasAdmin\GestionClientes\AnadirClientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Vistas\PantallasAdmin\EliminarCliente.cs">
+    <Compile Update="Vistas\PantallasAdmin\GestionClientes\EliminarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Vistas\PantallasAdmin\ListarClientes.cs">
+    <Compile Update="Vistas\PantallasAdmin\GestionClientes\ListarClientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Vistas\PantallasAdmin\MenuAdActividades.cs">
+    <Compile Update="Vistas\PantallasAdmin\ActividadesAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Vistas\PantallasAdmin\MenuAdmin.cs">
+    <Compile Update="Vistas\PantallasAdmin\GestionUsuarios\AnadirUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Vistas\PantallasAdmin\MenuAdClientes.cs">
+    <Compile Update="Vistas\PantallasAdmin\GestionUsuarios\EliminarUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Vistas\PantallasAdmin\ModificarCliente.cs">
+    <Compile Update="Vistas\PantallasAdmin\GestionUsuarios\ListarUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\PantallasAdmin\GestionUsuarios\ModificarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\PantallasAdmin\InicioAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\PantallasAdmin\ClientesAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\PantallasAdmin\GestionClientes\ModificarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\PantallasAdmin\UsuariosAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Vistas\PantallasCliente\ActividadesCliente.cs">
@@ -31,14 +46,41 @@
     <Compile Update="Vistas\PantallasCliente\HorariosCliente.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Vistas\PantallasCliente\PantallasActividadesCliente\BodyCombat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\PantallasCliente\PantallasActividadesCliente\BodyPump.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\PantallasCliente\PantallasActividadesCliente\Core.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\PantallasCliente\PantallasActividadesCliente\Spinning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\PantallasCliente\PantallasActividadesCliente\Yoga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\PantallasCliente\PantallasActividadesCliente\Zumba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\PantallasCliente\PerfilCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\PantallasCliente\PerfilClienteEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Vistas\PantallasCliente\ReservasCliente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Vistas\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Vistas\PantallasCliente\MenuCliente.cs">
+    <Compile Update="Vistas\PantallasCliente\InicioCliente.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Resources\Tarjetas\TarjetaActividad.cs">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="Vistas\PantallasEncargado\MenuEncargado.cs">
       <SubType>Form</SubType>
