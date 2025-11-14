@@ -71,8 +71,8 @@ namespace Gentefit.Vistas.PantallasAdmin.GestionActividades
 
         private void BotonVolver_Click(object sender, EventArgs e)
         {
-            this.Hide();
             new ActividadesAdmin().Show();
+            this.Hide();
         }
 
         private void BotonVerTodos_Click(object sender, EventArgs e)

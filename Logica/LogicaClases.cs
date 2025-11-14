@@ -3,9 +3,9 @@ using Gentefit.Modelo;
 using Gentefit.ModeloXml;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Xml.Serialization;
-using System.IO;
 
 public class LogicaClases
 {
@@ -17,6 +17,7 @@ public class LogicaClases
             .Include(c => c.actividad)
             .Include(c => c.entrenador)
             .Include(c => c.sala)
+            .OrderBy(c => c.horario)
             .ToList();
     }
 
@@ -28,7 +29,7 @@ public class LogicaClases
             .Include(c => c.actividad)
             .Include(c => c.entrenador)
             .Include(c => c.sala)
-
+            .OrderBy(c => c.horario)
             .Select(c => new ClaseDTO
             {
                 IdClase = c.idClase,
@@ -54,15 +55,27 @@ public class LogicaClases
     }
 
     // Buscar clase por ID
-    public Clase BuscarPorId(int id)
+    public List<ClaseDTO> BuscarDTOPorId(int id)
     {
         using var contexto = new GentefitContext();
         return contexto.Clases
+            .Where(c => c.idClase == id)
             .Include(c => c.actividad)
             .Include(c => c.entrenador)
             .Include(c => c.sala)
-            .FirstOrDefault(c => c.idClase == id);
+            .Select(c => new ClaseDTO
+            {
+                IdClase = c.idClase,
+                NombreActividad = c.actividad.nombre,
+                NombreEntrenador = c.entrenador.nombre,
+                NombreSala = c.sala.nombre,
+                Horario = c.horario,
+                PlazasLibres = c.plazasLibres,
+                EnEspera = c.enEspera
+            })
+            .ToList();
     }
+
 
     // Añadir una nueva clase
     public void GuardarClase(Clase nuevaClase)

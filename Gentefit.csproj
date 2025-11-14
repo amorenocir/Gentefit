@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <None Remove="Resources\BodyPump.PNG" />
+    <None Remove="Vistas\PantallasAdmin\ClasesAdmin.resx~RF90a7fa8.TMP" />
     <None Remove="Vistas\PantallasAdmin\dz1od1hr.4cz~" />
     <None Remove="Vistas\PantallasAdmin\e0npqnep.jcq~" />
     <None Remove="Vistas\PantallasAdmin\GestionActividades\5x3mv2xw.ztn~" />

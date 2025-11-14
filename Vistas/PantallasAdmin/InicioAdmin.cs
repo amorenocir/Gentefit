@@ -42,16 +42,15 @@ namespace Gentefit.Vistas.PantallasAdmin
             new ActividadesAdmin().Show();
             this.Hide();
         }
+        private void BotonClases_Click(object sender, EventArgs e)
+        {
+            new ClasesAdmin().Show();
+            this.Hide();
+        }
 
         private void BotonReservas_Click(object sender, EventArgs e)
         {
             //Abrir Menu Reservas
-
-        }
-
-        private void BotonMonitores_Click(object sender, EventArgs e)
-        {
-            //Abrir Menu Monitores
 
         }
 
@@ -65,6 +64,12 @@ namespace Gentefit.Vistas.PantallasAdmin
         {
             new UsuariosAdmin().Show();
             this.Hide();
+
+        }
+
+        private void BotonMonitores_Click(object sender, EventArgs e)
+        {
+            //Abrir Menu Monitores
 
         }
 
