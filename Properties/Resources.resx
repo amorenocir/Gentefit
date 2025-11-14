@@ -142,4 +142,22 @@
   <data name="Texto" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Texto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="BodyCombat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BodyCombat.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BodyPump" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BodyPump.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Core" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Core.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Spining" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Spining.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Yoga" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Yoga.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Zumba" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Zumba.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

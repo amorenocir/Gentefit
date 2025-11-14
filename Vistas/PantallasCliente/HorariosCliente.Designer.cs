@@ -113,7 +113,6 @@
             label1.TabIndex = 18;
             label1.Text = "HORARIOS";
             label1.TextAlign = ContentAlignment.MiddleLeft;
-            label1.Click += label1_Click;
             // 
             // pictureBox1
             // 
@@ -147,6 +146,7 @@
             ImagenPerfil.SizeMode = PictureBoxSizeMode.Zoom;
             ImagenPerfil.TabIndex = 15;
             ImagenPerfil.TabStop = false;
+            ImagenPerfil.Click += ImagenPerfil_Click;
             // 
             // PanelHorarios
             // 

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfEntrenadorXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntrenadorXML>
+    <Id>1</Id>
+    <Nombre>Laura</Nombre>
+    <Apellidos>Gómez Ruiz</Apellidos>
+    <Dni>12345678A</Dni>
+  </EntrenadorXML>
+  <EntrenadorXML>
+    <Id>2</Id>
+    <Nombre>Marcos</Nombre>
+    <Apellidos>López Pérez</Apellidos>
+    <Dni>23456789B</Dni>
+  </EntrenadorXML>
+  <EntrenadorXML>
+    <Id>3</Id>
+    <Nombre>Ana</Nombre>
+    <Apellidos>Fernández Gil</Apellidos>
+    <Dni>34567890C</Dni>
+  </EntrenadorXML>
+  <EntrenadorXML>
+    <Id>4</Id>
+    <Nombre>David</Nombre>
+    <Apellidos>Martínez León</Apellidos>
+    <Dni>45678901D</Dni>
+  </EntrenadorXML>
+  <EntrenadorXML>
+    <Id>5</Id>
+    <Nombre>david</Nombre>
+    <Apellidos>f</Apellidos>
+    <Dni>323423</Dni>
+  </EntrenadorXML>
+</ArrayOfEntrenadorXML>

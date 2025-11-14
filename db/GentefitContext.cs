@@ -24,7 +24,7 @@ public partial class GentefitContext : DbContext
     public virtual DbSet<Cliente> Clientes { get; set; }
 
 
-    public virtual DbSet<Gentefit.Modelo.Entrenador> Entrenadores { get; set; }
+    public virtual DbSet<Entrenador> Entrenadores { get; set; }
 
     public virtual DbSet<Reserva> Reservas { get; set; }
 

@@ -43,7 +43,7 @@ namespace Gentefit.Vistas
                     switch (usuario.rol)
                     {
                         case TipoRol.Admin:
-                            new MenuAdmin().Show();
+                            new InicioAdmin().Show();
                             break;
                         case TipoRol.Encargado:
                             new MenuEncargado().Show();
@@ -63,7 +63,7 @@ namespace Gentefit.Vistas
 
                 if (cliente != null)
                 {
-                    new MenuCliente(cliente).Show();
+                    new InicioCliente(cliente).Show();
                     this.Hide();
                 }
                 else

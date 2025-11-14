@@ -339,6 +339,241 @@ F:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de
 F:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.pdb
 F:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.genruntimeconfig.cache
 F:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\ref\Gentefit.dll
+F:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasCliente.TarjetaActividad.resources
+F:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\Resources\BodyPump.PNG
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\Gentefit.exe
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\Gentefit.deps.json
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\Gentefit.runtimeconfig.json
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\Gentefit.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\Gentefit.pdb
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\Azure.Core.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\Azure.Identity.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\Google.Protobuf.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\Humanizer.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\K4os.Compression.LZ4.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\K4os.Compression.LZ4.Streams.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\K4os.Hash.xxHash.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\Microsoft.Build.Locator.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\Microsoft.CodeAnalysis.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\Microsoft.CodeAnalysis.CSharp.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\Microsoft.CodeAnalysis.Workspaces.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\Microsoft.Data.SqlClient.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Design.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Memory.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyModel.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\Microsoft.Identity.Client.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Abstractions.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Logging.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\Microsoft.SqlServer.Server.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\Mono.TextTemplating.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\MySql.Data.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\MySqlConnector.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\Pomelo.EntityFrameworkCore.MySql.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\System.ClientModel.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\System.Composition.AttributedModel.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\System.Composition.Convention.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\System.Composition.Hosting.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\System.Composition.Runtime.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\System.Composition.TypedParts.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\System.Diagnostics.DiagnosticSource.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\System.Formats.Asn1.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\System.IdentityModel.Tokens.Jwt.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\System.Memory.Data.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\System.Runtime.Caching.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\System.Text.Encodings.Web.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\System.Text.Json.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\ZstdSharp.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\cs\Microsoft.CodeAnalysis.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\de\Microsoft.CodeAnalysis.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\es\Microsoft.CodeAnalysis.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\fr\Microsoft.CodeAnalysis.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\it\Microsoft.CodeAnalysis.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\ja\Microsoft.CodeAnalysis.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\ko\Microsoft.CodeAnalysis.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\pl\Microsoft.CodeAnalysis.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\pt-BR\Microsoft.CodeAnalysis.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\ru\Microsoft.CodeAnalysis.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\tr\Microsoft.CodeAnalysis.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\runtimes\win-x64\native\comerr64.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\runtimes\win-x64\native\gssapi64.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\runtimes\win-x64\native\k5sprt64.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\runtimes\win-x64\native\krb5_64.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.csproj.AssemblyReference.cache
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Properties.Resources.resources
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasCliente.TarjetaActividad.resources
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Test.TestConexion.resources
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.Login.resources
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.ActividadesAdmin.resources
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.ClientesAdmin.resources
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.AnadirCliente.resources
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.EliminarCliente.resources
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.ListarClientes.resources
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.ModificarCliente.resources
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.GestionUsuarios.AnadirUsuario.resources
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.GestionUsuarios.EliminarUsuario.resources
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.GestionUsuarios.ListarUsuarios.resources
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.GestionUsuarios.ModificarUsuario.resources
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.InicioAdmin.resources
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.UsuariosAdmin.resources
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.ActividadesCliente.resources
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.HorariosCliente.resources
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.InicioCliente.resources
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasCliente.PantallasActividadesCliente.BodyCombat.resources
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasCliente.PantallasActividadesCliente.BodyPump.resources
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasCliente.PantallasActividadesCliente.Core.resources
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasCliente.PantallasActividadesCliente.Spinning.resources
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasCliente.PantallasActividadesCliente.Yoga.resources
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasCliente.PantallasActividadesCliente.Zumba.resources
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasCliente.PerfilCliente.resources
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasCliente.PerfilClienteEditar.resources
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.ReservasCliente.resources
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.MenuEncargado.resources
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.MenuRecepcionista.resources
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.csproj.GenerateResource.cache
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.GeneratedMSBuildEditorConfig.editorconfig
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.AssemblyInfoInputs.cache
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.AssemblyInfo.cs
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.csproj.CoreCompileInputs.cache
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.sourcelink.json
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.csproj.CopyComplete
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\refint\Gentefit.dll
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.pdb
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.genruntimeconfig.cache
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\ref\Gentefit.dll
+C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.csproj.AssemblyReference.cache
+C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Properties.Resources.resources
+C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasCliente.TarjetaActividad.resources
+C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Test.TestConexion.resources
+C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.Login.resources
+C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.ActividadesAdmin.resources
+C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.ClientesAdmin.resources
+C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.AnadirClientes.resources
+C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.EliminarCliente.resources
+C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.ListarClientes.resources
+C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.ModificarCliente.resources
+C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.AnadirEntrenador.resources
+C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.GestionUsuarios.AnadirUsuario.resources
+C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.GestionUsuarios.EliminarUsuario.resources
+C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.GestionUsuarios.ListarUsuarios.resources
+C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.GestionUsuarios.ModificarUsuario.resources
+C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.InicioAdmin.resources
+C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.UsuariosAdmin.resources
+C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.ActividadesCliente.resources
+C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.HorariosCliente.resources
+C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.InicioCliente.resources
+C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasCliente.PantallasActividadesCliente.BodyCombat.resources
+C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasCliente.PantallasActividadesCliente.BodyPump.resources
+C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasCliente.PantallasActividadesCliente.Core.resources
+C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasCliente.PantallasActividadesCliente.Spinning.resources
+C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasCliente.PantallasActividadesCliente.Yoga.resources
+C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasCliente.PantallasActividadesCliente.Zumba.resources
+C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasCliente.PerfilCliente.resources
+C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasCliente.PerfilClienteEditar.resources
+C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.ReservasCliente.resources
+C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.MenuEncargado.resources
+C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.MenuRecepcionista.resources
+C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.csproj.GenerateResource.cache
+C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.AssemblyInfoInputs.cache
+C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.AssemblyInfo.cs
+C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.csproj.CoreCompileInputs.cache
+C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.sourcelink.json
+C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.EntrenadoresAdmin.resources
+C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.EliminarEntrenador.resources
+C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.ListarEntrenadores.resources
+C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.ModificarEntrenador.resources
+C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.AnadirSala.resources
+C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.EliminarSala.resources
+C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.ListarSalas.resources
+C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.ModificarSala.resources
+C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.SalasAdmin.resources
 C:\Users\David\Source\Repos\GentefitAndrea\bin\Debug\net8.0-windows\Gentefit.exe
 C:\Users\David\Source\Repos\GentefitAndrea\bin\Debug\net8.0-windows\Gentefit.deps.json
 C:\Users\David\Source\Repos\GentefitAndrea\bin\Debug\net8.0-windows\Gentefit.runtimeconfig.json
@@ -482,29 +717,6 @@ C:\Users\David\Source\Repos\GentefitAndrea\bin\Debug\net8.0-windows\runtimes\win
 C:\Users\David\Source\Repos\GentefitAndrea\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
 C:\Users\David\Source\Repos\GentefitAndrea\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\Users\David\Source\Repos\GentefitAndrea\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
-C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.csproj.AssemblyReference.cache
-C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Properties.Resources.resources
-C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Test.TestConexion.resources
-C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.Login.resources
-C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.AnadirCliente.resources
-C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.EliminarCliente.resources
-C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.ListarClientes.resources
-C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.MenuAdActividades.resources
-C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.MenuAdClientes.resources
-C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.MenuAdmin.resources
-C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.ModificarCliente.resources
-C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.ActividadesCliente.resources
-C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.HorariosCliente.resources
-C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.MenuCliente.resources
-C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.ReservasCliente.resources
-C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.MenuEncargado.resources
-C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.MenuRecepcionista.resources
-C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.csproj.GenerateResource.cache
-C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.AssemblyInfoInputs.cache
-C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.AssemblyInfo.cs
-C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.csproj.CoreCompileInputs.cache
-C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.sourcelink.json
 C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.csproj.Up2Date
 C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.dll
 C:\Users\David\Source\Repos\GentefitAndrea\obj\Debug\net8.0-windows\refint\Gentefit.dll

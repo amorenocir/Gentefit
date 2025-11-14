@@ -1,3 +1,5 @@
+
+using Gentefit.Modelo;
 using Gentefit.db;
 using Gentefit.Test;
 using Gentefit.Vistas;
@@ -8,24 +10,33 @@ namespace Gentefit
 {
     internal static class Program
     {
-        /// <summary>
-        ///  The main entry point for the application.
-        /// </summary>
         [STAThread]
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Login());
-            //Application.Run(new MenuAdmin()); //Run de pruebas para saltarse el login e ir a admin
+            //Application.Run(new Login());
+            Application.Run(new InicioAdmin()); //Run de pruebas para saltarse el login e ir a admin
+            
+            var clienteTest = new Cliente //Cliente falso de prueba para poder acceder sin pasar por login y agilizar testeo
+            {
+                idCliente = 1,
+                nombre = "Usuario",
+                apellidos = "Test Prueba",
+                dni = "00000000A",
+                email = "prueba@test.com",
+                contrasena = "1234",
+                telefono = 600000000,
+                listaReservas = new List<Reserva>()
+            };
+            //Application.Run(new MenuCliente(clienteTest)); //Saltarse login e ir a cliente
+
 
             using var contexto = new GentefitContext();
             var cliente = contexto.Clientes.FirstOrDefault(); // obtiene el primero existente
             /*
             if (cliente != null)
             {
-                // ?? Pasamos ese cliente al menú del cliente
+                // ?? Pasamos ese cliente al menï¿½ del cliente
                 Application.Run(new MenuCliente(cliente));
             }
             else

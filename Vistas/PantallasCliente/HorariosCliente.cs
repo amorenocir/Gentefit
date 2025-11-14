@@ -1,4 +1,5 @@
 ﻿using Gentefit.Modelo;
+using Gentefit.Vistas.PantallasCliente;
 using MySqlX.XDevAPI;
 using System;
 using System.Collections.Generic;
@@ -21,13 +22,16 @@ namespace Gentefit.Vistas
             clienteLogeado = cliente;
             CargarClases();
         }
-        private void label1_Click(object sender, EventArgs e)
+        private void ImagenPerfil_Click(object sender, EventArgs e)
         {
-            // Tu código aquí, o dejar vacío
+            PerfilCliente perfil = new PerfilCliente(clienteLogeado);
+            perfil.Show();
+            this.Hide();
         }
+        
         private void BotonInicio_Click(object sender, EventArgs e)
         {
-            new MenuCliente(clienteLogeado).Show();
+            new InicioCliente(clienteLogeado).Show();
             this.Hide();
         }
         private void BotonActividades_Click(object sender, EventArgs e)

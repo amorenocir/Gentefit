@@ -75,6 +75,7 @@
             ImagenPerfil.SizeMode = PictureBoxSizeMode.Zoom;
             ImagenPerfil.TabIndex = 5;
             ImagenPerfil.TabStop = false;
+            ImagenPerfil.Click += ImagenPerfil_Click;
             // 
             // label1
             // 

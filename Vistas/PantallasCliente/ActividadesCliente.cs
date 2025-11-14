@@ -1,50 +1,93 @@
 ﻿using Gentefit.Modelo;
+using Gentefit.Vistas.PantallasCliente;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Gentefit.Vistas.PantallasCliente.PantallasActividadesCliente;
 namespace Gentefit.Vistas
 {
     public partial class ActividadesCliente : Form
     {
         private Cliente clienteLogeado;
+
         public ActividadesCliente(Cliente cliente)
         {
             InitializeComponent();
             clienteLogeado = cliente;
+            this.Load += ActividadesCliente_Load;
         }
-
-        private void label1_Click(object sender, EventArgs e)
+        private void ImagenPerfil_Click(object sender, EventArgs e)
         {
-
-        }
-        private void BotonInicio_Click(object sender, EventArgs e)
-        {
-            new MenuCliente(clienteLogeado).Show();
+            PerfilCliente perfil = new PerfilCliente(clienteLogeado);
+            perfil.Show();
             this.Hide();
         }
+
+        private void BotonInicio_Click(object sender, EventArgs e)
+        {
+            new InicioCliente(clienteLogeado).Show();
+            this.Hide();
+        }
+
         private void BotonHorarios_Click(object sender, EventArgs e)
         {
             new HorariosCliente(clienteLogeado).Show();
             this.Hide();
         }
+
         private void BotonReservas_Click(object sender, EventArgs e)
         {
             new ReservasCliente(clienteLogeado).Show();
             this.Hide();
         }
 
-
-        private void BotonVolver_Click(object sender, EventArgs e)
+        private void ActividadesCliente_Load(object sender, EventArgs e)
         {
-            this.Hide();
-            new Login().Show();
+            // Listado de actividades
+            string[] actividades = { "BodyPump", "BodyCombat", "Zumba", "Yoga", "Spinning", "Core" };
+            Image[] imagenes = { Gentefit.Properties.Resources.BodyPump,
+                                 Gentefit.Properties.Resources.BodyCombat,
+                                 Gentefit.Properties.Resources.Zumba,
+                                 Gentefit.Properties.Resources.Yoga,
+                                 Gentefit.Properties.Resources.Spining,
+                                 Gentefit.Properties.Resources.Core };
+
+            // Agregar tarjetas dinámicamente
+            for (int i = 0; i < actividades.Length; i++)
+            {
+                string nombreActividad = actividades[i];
+                TarjetaActividad tarjeta = new TarjetaActividad();
+                tarjeta.Size = new Size(200, 220);
+                tarjeta.Imagen = imagenes[i];
+                tarjeta.Texto = actividades[i];
+
+                tarjeta.Click += (s, args) => AbrirFormularioActividad(nombreActividad);
+
+                PanelFlow.Controls.Add(tarjeta);
+            }
+        }
+
+
+        // Método que abre el formulario según la actividad
+        private void AbrirFormularioActividad(string actividad)
+        {
+            Form formularioActividad = actividad switch
+            {
+                "BodyPump" => new BodyPump(),
+                "BodyCombat" => new BodyCombat(),
+                "Zumba" => new Zumba(),
+                "Yoga" => new Yoga(),
+                "Spinning" => new Spinning(),
+                "Core" => new Core(),
+                _ => null
+            };
+
+            if (formularioActividad != null)
+            {
+                formularioActividad.Show();
+                this.Hide();
+            }
         }
     }
 }
+

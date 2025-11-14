@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Resources\BodyPump.PNG" />
     <None Remove="Vistas\PantallasAdmin\dz1od1hr.4cz~" />
     <None Remove="Vistas\PantallasAdmin\e0npqnep.jcq~" />
     <None Remove="Vistas\PantallasCliente\c34rf5vl.10z~" />
@@ -41,6 +42,36 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Update="Vistas\PantallasAdmin\GestionSalas\EliminarSala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\PantallasAdmin\GestionSalas\ListarSalas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\PantallasAdmin\GestionSalas\ModificarSala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\PantallasAdmin\SalasAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\PantallasAdmin\EntrenadoresAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\PantallasAdmin\GestionEntrenador\AnadirEntrenador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\PantallasAdmin\GestionEntrenador\EliminarEntrenador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\PantallasAdmin\GestionEntrenador\ListarEntrenadores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\PantallasAdmin\GestionEntrenador\ModificarEntrenador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\PantallasAdmin\GestionSalas\AnadirSala.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
@@ -52,6 +83,7 @@
 
  <ItemGroup>
     <Folder Include="Migrations\" />
+    <Folder Include="Resources\Iconos\" />
   </ItemGroup>
 
 </Project>
