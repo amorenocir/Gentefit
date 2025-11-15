@@ -30,7 +30,7 @@ namespace Gentefit.Vistas.PantallasAdmin.GestionUsuarios
                 apellidos = CajaTextoApellidos.Text,
                 email = CajaTextoEmail.Text,
                 contrasena = CajaTextoContrasena.Text,
-                rol = Enum.Parse<TipoRol>(CajaTextoRol.Text),
+                rol = Enum.Parse<TipoRol>(ComboOpcionesRol.Text),
 
             };
 
@@ -48,6 +48,11 @@ namespace Gentefit.Vistas.PantallasAdmin.GestionUsuarios
         {
             this.Hide();
             new UsuariosAdmin().Show();
+
+        }
+
+        private void ComboOpcionesRol_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }

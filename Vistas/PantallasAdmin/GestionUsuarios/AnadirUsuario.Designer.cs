@@ -2,16 +2,9 @@
 {
     partial class AnadirUsuario
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
-        private System.ComponentModel.IContainer components = null;
+         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
+         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
             {
@@ -20,12 +13,6 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             AnadirClientes = new Label();
@@ -169,13 +156,14 @@
             // 
             // ComboOpcionesRol
             // 
-            ComboOpcionesRol.DrawMode = DrawMode.OwnerDrawFixed;
+            ComboOpcionesRol.DrawMode = DrawMode.Normal;
             ComboOpcionesRol.FormattingEnabled = true;
             ComboOpcionesRol.Items.AddRange(new object[] { "Admin", "Encargado", "Recepcionista" });
             ComboOpcionesRol.Location = new Point(121, 422);
             ComboOpcionesRol.Name = "ComboOpcionesRol";
             ComboOpcionesRol.Size = new Size(259, 28);
             ComboOpcionesRol.TabIndex = 38;
+            ComboOpcionesRol.SelectedIndexChanged += ComboOpcionesRol_SelectedIndexChanged;
             // 
             // AnadirUsuario
             // 
@@ -203,8 +191,6 @@
             ResumeLayout(false);
             PerformLayout();
         }
-
-        #endregion
 
         private Label AnadirClientes;
         private Button BotonVolver;

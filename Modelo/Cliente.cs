@@ -54,5 +54,20 @@ namespace Gentefit.Modelo
         public Cliente()
         {
         }
+
+        public Cliente Clone()
+        {
+            return new Cliente
+            {
+                idCliente = this.idCliente,
+                nombre = this.nombre,
+                apellidos = this.apellidos,
+                dni = this.dni,
+                email = this.email,
+                contrasena = this.contrasena,
+                telefono = this.telefono,
+                listaReservas = this.listaReservas?.ToList() ?? new List<Reserva>()
+            };
+        }
     }
 }

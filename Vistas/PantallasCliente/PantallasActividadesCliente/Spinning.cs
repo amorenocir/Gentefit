@@ -14,13 +14,14 @@ namespace Gentefit.Vistas.PantallasCliente.PantallasActividadesCliente
     public partial class Spinning : Form
     {
         private Cliente clienteLogeado;
-        public Spinning()
+        public Spinning(Cliente cliente)
         {
             InitializeComponent();
+            clienteLogeado = cliente;
         }
         private void BotonVolver_Click(object sender, EventArgs e)
         {
-            new ActividadesCliente(clienteLogeado).Show();
+            new ActividadesCliente(clienteLogeado.Clone()).Show();
             this.Hide();
         }
 

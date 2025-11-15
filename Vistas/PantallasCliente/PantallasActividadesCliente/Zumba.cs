@@ -14,13 +14,14 @@ namespace Gentefit.Vistas.PantallasCliente.PantallasActividadesCliente
     public partial class Zumba : Form
     {
         private Cliente clienteLogeado;
-        public Zumba()
+        public Zumba(Cliente cliente)
         {
             InitializeComponent();
+            clienteLogeado = cliente;
         }
         private void BotonVolver_Click(object sender, EventArgs e)
         {
-            new ActividadesCliente(clienteLogeado).Show();
+            new ActividadesCliente(clienteLogeado.Clone()).Show();
             this.Hide();
         }
     }

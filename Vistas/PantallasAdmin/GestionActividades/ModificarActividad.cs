@@ -79,7 +79,7 @@ namespace Gentefit.Vistas.PantallasAdmin.GestionActividades
 
         private void BotonVolver_Click(object sender, EventArgs e)
         {
-            new ClientesAdmin().Show();
+            new ActividadesAdmin().Show();
             this.Hide();
         }
         private void BotonVerTodos_Click(object sender, EventArgs e)

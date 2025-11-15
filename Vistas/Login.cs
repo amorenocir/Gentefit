@@ -64,6 +64,17 @@ namespace Gentefit.Vistas
 
                 if (cliente != null)
                 {
+                    var clienteBD = new Cliente
+                    {
+                        idCliente = cliente.idCliente,
+                        nombre = cliente.nombre,
+                        apellidos = cliente.apellidos,
+                        dni = cliente.dni,
+                        email = cliente.email,
+                        contrasena = cliente.contrasena,
+                        telefono = cliente.telefono,
+                        listaReservas = cliente.listaReservas?.ToList() ?? new List<Reserva>()
+                    };
                     new InicioCliente(cliente).Show();
                     this.Hide();
                 }
@@ -72,8 +83,6 @@ namespace Gentefit.Vistas
                     MessageBox.Show("Email o contraseña incorrectos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-
-
         }
     }
 }

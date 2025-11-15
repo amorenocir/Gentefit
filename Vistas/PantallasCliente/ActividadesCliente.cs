@@ -18,26 +18,26 @@ namespace Gentefit.Vistas
         }
         private void ImagenPerfil_Click(object sender, EventArgs e)
         {
-            PerfilCliente perfil = new PerfilCliente(clienteLogeado);
+            PerfilCliente perfil = new PerfilCliente(clienteLogeado.Clone());
             perfil.Show();
             this.Hide();
         }
 
         private void BotonInicio_Click(object sender, EventArgs e)
         {
-            new InicioCliente(clienteLogeado).Show();
+            new InicioCliente(clienteLogeado.Clone()).Show();
             this.Hide();
         }
 
         private void BotonHorarios_Click(object sender, EventArgs e)
         {
-            new HorariosCliente(clienteLogeado).Show();
+            new HorariosCliente(clienteLogeado.Clone()).Show();
             this.Hide();
         }
 
         private void BotonReservas_Click(object sender, EventArgs e)
         {
-            new ReservasCliente(clienteLogeado).Show();
+            new ReservasCliente(clienteLogeado.Clone()).Show();
             this.Hide();
         }
 
@@ -73,12 +73,12 @@ namespace Gentefit.Vistas
         {
             Form formularioActividad = actividad switch
             {
-                "BodyPump" => new BodyPump(),
-                "BodyCombat" => new BodyCombat(),
-                "Zumba" => new Zumba(),
-                "Yoga" => new Yoga(),
-                "Spinning" => new Spinning(),
-                "Core" => new Core(),
+                "BodyPump" => new BodyPump(clienteLogeado.Clone()),
+                "BodyCombat" => new BodyCombat(clienteLogeado.Clone()),
+                "Zumba" => new Zumba(clienteLogeado.Clone()),
+                "Yoga" => new Yoga(clienteLogeado.Clone()),
+                "Spinning" => new Spinning(clienteLogeado.Clone()),
+                "Core" => new Core(clienteLogeado.Clone()),
                 _ => null
             };
 

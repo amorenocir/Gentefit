@@ -22,12 +22,12 @@ namespace Gentefit.Vistas.PantallasCliente
         }
         private void BotonVolver_Click(object sender, EventArgs e)
         {
-            new InicioCliente(clienteLogeado).Show();
+            new InicioCliente(clienteLogeado.Clone()).Show();
             this.Hide();
         }
         private void BotonEditar_Click(object sender, EventArgs e)
         {
-            new PerfilClienteEditar(clienteLogeado).Show();
+            new PerfilClienteEditar(clienteLogeado.Clone()).Show();
             this.Hide();
         }
 

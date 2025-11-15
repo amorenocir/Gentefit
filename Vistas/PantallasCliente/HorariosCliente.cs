@@ -18,8 +18,8 @@ namespace Gentefit.Vistas
         private Cliente clienteLogeado;
         public HorariosCliente(Cliente cliente)
         {
-            InitializeComponent();
             clienteLogeado = cliente;
+            InitializeComponent();
             CargarClases();
         }
         private void ImagenPerfil_Click(object sender, EventArgs e)

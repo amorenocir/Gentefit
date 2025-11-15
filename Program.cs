@@ -15,7 +15,7 @@ namespace Gentefit
         static void Main()
         {
             ApplicationConfiguration.Initialize();
-            //Application.Run(new Login());
+            Application.Run(new Login());
 
             var clienteTest = new Cliente //Cliente falso de prueba para poder acceder sin pasar por login y agilizar testeo
             {
@@ -29,8 +29,8 @@ namespace Gentefit
                 listaReservas = new List<Reserva>()
             };
             // RUNS DE PRUEBAS PARA SALTAR EL LOGIN
-            Application.Run(new InicioAdmin()); 
-            //Application.Run(new MenuCliente(clienteTest));
+            //Application.Run(new InicioAdmin()); 
+            //Application.Run(new InicioCliente(clienteTest));
             //Application.Run(new InicioRecepcionista());
 
             using var contexto = new GentefitContext();

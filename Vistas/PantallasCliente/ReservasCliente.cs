@@ -28,7 +28,7 @@ namespace Gentefit.Vistas
         }
         private void ImagenPerfil_Click(object sender, EventArgs e)
         {
-            PerfilCliente perfil = new PerfilCliente(clienteLogeado);
+            PerfilCliente perfil = new PerfilCliente(clienteLogeado.Clone());
             perfil.Show();
             this.Hide();
         }
@@ -53,17 +53,17 @@ namespace Gentefit.Vistas
 
         private void BotonInicio_Click(object sender, EventArgs e)
         {
-            new InicioCliente(clienteLogeado).Show();
+            new InicioCliente(clienteLogeado.Clone()).Show();
             this.Hide();
         }
         private void BotonActividades_Click(object sender, EventArgs e)
         {
-            new ActividadesCliente(clienteLogeado).Show();
+            new ActividadesCliente(clienteLogeado.Clone()).Show();
             this.Hide();
         }
         private void BotonHorarios_Click(object sender, EventArgs e)
         {
-            new HorariosCliente(clienteLogeado).Show();
+            new HorariosCliente(clienteLogeado.Clone()).Show();
             this.Hide();
         }
 
