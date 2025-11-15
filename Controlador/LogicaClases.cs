@@ -39,9 +39,9 @@ namespace Gentefit.Controlador
             var c = contexto.Clases.FirstOrDefault(x => x.idClase == clase.idClase);
             if (c == null) return false;
 
-            c.actividad = clase.actividad;
-            c.entrenador = clase.entrenador;
-            c.sala = clase.sala;
+            c.idActividad = clase.idActividad;
+            c.idEntrenador = clase.idEntrenador;
+            c.idSala = clase.idSala;
             c.dia = clase.dia;
             c.hora = clase.hora;
 

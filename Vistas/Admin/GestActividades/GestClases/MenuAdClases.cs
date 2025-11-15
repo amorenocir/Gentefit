@@ -55,12 +55,14 @@ namespace Gentefit.Vistas.Admin.GestActividades.GestClases
 
         private void BotonModificar_Click(object sender, EventArgs e)
         {
-
+            new ModificarClases(idActividad).Show();
+            this.Hide();
         }
 
         private void BotonEliminar_Click(object sender, EventArgs e)
         {
-
+            new EliminarClase(idActividad).Show();
+            this.Hide();
         }
 
         private void Titulo_Click(object sender, EventArgs e)

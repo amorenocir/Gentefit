@@ -29,8 +29,9 @@
         private void InitializeComponent()
         {
             BotonVolver = new Button();
-            Clases = new Label();
+            Titulo = new Label();
             PanelClases = new DataGridView();
+            Tituloo = new Label();
             ((System.ComponentModel.ISupportInitialize)PanelClases).BeginInit();
             SuspendLayout();
             // 
@@ -44,16 +45,12 @@
             BotonVolver.UseVisualStyleBackColor = true;
             BotonVolver.Click += BotonVolver_Click;
             // 
-            // Clases
+            // Titulo
             // 
-            Clases.AutoSize = true;
-            Clases.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
-            Clases.ForeColor = Color.DarkSlateGray;
-            Clases.Location = new Point(267, 35);
-            Clases.Name = "Clases";
-            Clases.Size = new Size(301, 37);
-            Clases.TabIndex = 24;
-            Clases.Text = "CLASES REGISTRADAS";
+            Titulo.Location = new Point(0, 0);
+            Titulo.Name = "Titulo";
+            Titulo.Size = new Size(100, 23);
+            Titulo.TabIndex = 26;
             // 
             // PanelClases
             // 
@@ -63,13 +60,25 @@
             PanelClases.Size = new Size(688, 285);
             PanelClases.TabIndex = 23;
             // 
+            // Tituloo
+            // 
+            Tituloo.AutoSize = true;
+            Tituloo.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
+            Tituloo.ForeColor = Color.DarkSlateGray;
+            Tituloo.Location = new Point(56, 23);
+            Tituloo.Name = "Tituloo";
+            Tituloo.Size = new Size(262, 37);
+            Tituloo.TabIndex = 27;
+            Tituloo.Text = "TÍTULO TEMPORAL";
+            // 
             // ListarClases
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(Tituloo);
             Controls.Add(BotonVolver);
-            Controls.Add(Clases);
+            Controls.Add(Titulo);
             Controls.Add(PanelClases);
             Name = "ListarClases";
             Text = "ListarClases";
@@ -82,7 +91,8 @@
         #endregion
 
         private Button BotonVolver;
-        private Label Clases;
+        private Label Titulo;
         private DataGridView PanelClases;
+        private Label Tituloo;
     }
 }

@@ -35,8 +35,8 @@ namespace Gentefit.Vistas.Admin.GestActividades.GestClases
                 if (fila.IsNewRow) continue;
 
                 int idEntrenador = (int)fila.Cells["idEntrenador"].Value;
-                List<Entrenador> posiblesEntre = logicaEntre.BuscarPorId(idEntrenador);
-                Entrenador entrenador = posiblesEntre[0];
+                //List<Entrenador> posiblesEntre = logicaEntre.BuscarPorId(idEntrenador);
+                //Entrenador entrenador = posiblesEntre[0];
 
                 List<Clase> todasClases = logicaClases.ListarClases();
                 for (int i = 0; i < todasClases.Count; i++)
@@ -101,8 +101,6 @@ namespace Gentefit.Vistas.Admin.GestActividades.GestClases
                 return;
             }
             int idEntrenador = (int)PanelEntrenadores.CurrentRow.Cells["idEntrenador"].Value;
-            //List<Entrenador> posiblesEntre = logicaEntre.BuscarPorId(idEntrenador);
-            //Entrenador entrenador = posiblesEntre[0];
             clase.idEntrenador = idEntrenador;
             new AnadirClaseSala(idActividad, clase).Show();
             this.Close();

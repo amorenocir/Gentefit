@@ -188,3 +188,6 @@ C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vis
 C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.Admin.GestActividades.GestClases.AnadirClaseEntrenador.resources
 C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.Admin.GestActividades.GestClases.AnadirClaseSala.resources
 C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.Admin.GestActividades.GestClases.ListarClases.resources
+C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.Admin.GestActividades.GestClases.ModificarClases.resources
+C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.Admin.GestActividades.GestClases.ModificarClases2.resources
+C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.Admin.GestActividades.GestClases.EliminarClase.resources

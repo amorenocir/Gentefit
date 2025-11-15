@@ -19,11 +19,11 @@ namespace Gentefit.Vistas.Admin.GestActividades
         public ModificarActividad()
         {
             InitializeComponent();
-            this.Load += (s, e) => CargarDatos();
         }
 
         private void ModificarActividad_Load(object sender, EventArgs e)
         {
+            CargarDatos();
             DespleIntensidad.DataSource = Enum.GetValues(typeof(Intensidad));
         }
 
@@ -54,7 +54,7 @@ namespace Gentefit.Vistas.Admin.GestActividades
             bool exito = logica.Modificar(actividad);
             if (exito)
             {
-                MessageBox.Show("Actividad modificado correctamente.");
+                MessageBox.Show("Actividad modificada correctamente.");
                 CargarDatos();
             }
             else

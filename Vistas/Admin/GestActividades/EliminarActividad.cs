@@ -61,7 +61,7 @@ namespace Gentefit.Vistas.Admin.GestActividades
         {
             if (!int.TryParse(CajaTextoBuscar.Text, out int idBuscado))
             {
-                MessageBox.Show("Por introduce un ID válido.");
+                MessageBox.Show("Por favor introduce un ID válido.");
             }
             PanelActividades.DataSource = logica.BuscarPorID(idBuscado);
         }

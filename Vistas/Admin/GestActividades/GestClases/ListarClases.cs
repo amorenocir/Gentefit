@@ -1,4 +1,5 @@
 ﻿using Gentefit.Controlador;
+using Gentefit.Modelo;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,7 +15,8 @@ namespace Gentefit.Vistas.Admin.GestActividades.GestClases
     public partial class ListarClases : Form
     {
         private int idActividad;
-        LogicaClases logica = new LogicaClases();
+        LogicaClases logicaClases = new LogicaClases();
+        LogicaActividades logicaAct = new LogicaActividades();
         public ListarClases(int idActividad)
         {
             InitializeComponent();
@@ -29,10 +31,25 @@ namespace Gentefit.Vistas.Admin.GestActividades.GestClases
 
         private void ListarClases_Load(object sender, EventArgs e)
         {
-            PanelClases.DataSource = logica.ListarClases();
+            List<Clase> todasClases = logicaClases.ListarClases();
+            List<Clase> clasesMostrar = new List<Clase>();
+            for(int i = 0; i < todasClases.Count; i++)
+            {
+                if (todasClases[i].idActividad  == idActividad)
+                {
+                    clasesMostrar.Add(todasClases[i]);
+                }
+            }
+            PanelClases.DataSource = clasesMostrar;
+
             PanelClases.Columns["actividad"].Visible = false;
             PanelClases.Columns["entrenador"].Visible = false;
             PanelClases.Columns["sala"].Visible = false;
+
+            List<Actividad> posiblesAct = logicaAct.BuscarPorID(idActividad);
+            Actividad actividad = posiblesAct[0];
+            string tituloMin = "Lista de clases de " + actividad.nombre;
+            Tituloo.Text = tituloMin.ToUpper();
         }
     }
 }

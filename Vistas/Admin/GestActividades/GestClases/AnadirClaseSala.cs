@@ -91,8 +91,6 @@ namespace Gentefit.Vistas.Admin.GestActividades.GestClases
                 return;
             }
             int idSala = (int)PanelSalas.CurrentRow.Cells["idSala"].Value;
-            List<Sala> posiblesSalas = logicaSala.BuscarPorId(idSala);
-            Sala sala = posiblesSalas[0];
             clase.idSala = idSala;
             logicaClase.AddClase(clase);
 

@@ -34,7 +34,7 @@ namespace Gentefit.Modelo
         public TimeOnly hora { get; set; }
         public Dia dia { get; set; }
         //public int plazasLibres { get; set; }
-        //public int enEspera { get; set; }
+
 
         public List<Reserva> reservas { get; set; } = new List<Reserva>();
 
