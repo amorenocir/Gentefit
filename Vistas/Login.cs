@@ -3,6 +3,7 @@ using Gentefit.Modelo;
 using Gentefit.Modelo.Enums;
 using Gentefit.Vistas.PantallasAdmin;
 using Gentefit.Vistas.PantallasRecepcionista;
+using Gentefit.Vistas.PantallasEncargado;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

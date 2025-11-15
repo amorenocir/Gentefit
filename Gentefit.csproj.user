@@ -109,7 +109,13 @@
     <Compile Update="Resources\Tarjetas\TarjetaActividad.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="Vistas\PantallasEncargado\ClientesEncargado.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Vistas\PantallasEncargado\InicioEncargado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\PantallasEncargado\ReservasEncargado.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Vistas\PantallasRecepcionista\InicioRecepcionista.cs">
