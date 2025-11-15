@@ -17,6 +17,14 @@ namespace Gentefit.Controlador
             return contexto.Salas.ToList();
         }
 
+        //Buscar sala por ID
+        public List<Sala> BuscarPorId(int id)
+        {
+            using var contexto = new GentefitContext();
+            return contexto.Salas.Where(
+                s => s.idSala == id).ToList();
+        }
+
         //Añadir una sala
         public void AnadirSala(Sala nuevaSala)
         {

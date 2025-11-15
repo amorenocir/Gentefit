@@ -43,12 +43,14 @@ namespace Gentefit.Vistas.Admin.GestActividades.GestClases
 
         private void BotonAnadir_Click(object sender, EventArgs e)
         {
-
+            new AnadirClase(idActividad).Show();
+            this.Hide();
         }
 
         private void BotonListar_Click(object sender, EventArgs e)
         {
-
+            new ListarClases(idActividad).Show();
+            this.Hide();
         }
 
         private void BotonModificar_Click(object sender, EventArgs e)

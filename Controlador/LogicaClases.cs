@@ -39,7 +39,28 @@ namespace Gentefit.Controlador
             var c = contexto.Clases.FirstOrDefault(x => x.idClase == clase.idClase);
             if (c == null) return false;
 
-            c.nombre
+            c.actividad = clase.actividad;
+            c.entrenador = clase.entrenador;
+            c.sala = clase.sala;
+            c.dia = clase.dia;
+            c.hora = clase.hora;
+
+            contexto.SaveChanges();
+            return true;
+        }
+
+        //Eliminar clase
+        public bool EliminarClase(int id)
+        {
+            using var contexto = new GentefitContext();
+            var clase = contexto.Clases.Find(id);
+            if(clase != null)
+            {
+                contexto.Clases.Remove(clase);
+                contexto.SaveChanges();
+                return true;
+            }
+            return false;
         }
     }
 }

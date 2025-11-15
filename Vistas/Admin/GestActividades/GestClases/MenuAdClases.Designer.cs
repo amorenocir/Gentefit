@@ -95,11 +95,11 @@
             Titulo.AutoSize = true;
             Titulo.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
             Titulo.ForeColor = Color.DarkSlateGray;
-            Titulo.Location = new Point(134, 65);
+            Titulo.Location = new Point(134, 90);
             Titulo.Name = "Titulo";
-            Titulo.Size = new Size(94, 37);
+            Titulo.Size = new Size(262, 37);
             Titulo.TabIndex = 19;
-            Titulo.Text = "           ";
+            Titulo.Text = "TÍTULO TEMPORAL";
             Titulo.Click += Titulo_Click;
             // 
             // MenuAdClases

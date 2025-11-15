@@ -31,9 +31,10 @@ namespace Gentefit.Modelo
         public int idSala { get; set; }
         public Sala sala { get; set; }
 
-        public DateTime horario { get; set; }
-        public int plazasLibres { get; set; }
-        public int enEspera { get; set; }
+        public TimeOnly hora { get; set; }
+        public Dia dia { get; set; }
+        //public int plazasLibres { get; set; }
+        //public int enEspera { get; set; }
 
         public List<Reserva> reservas { get; set; } = new List<Reserva>();
 

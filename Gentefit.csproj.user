@@ -10,6 +10,18 @@
     <Compile Update="Vistas\Admin\GestActividades\EliminarActividad.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Vistas\Admin\GestActividades\GestClases\AnadirClase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Admin\GestActividades\GestClases\AnadirClaseEntrenador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Admin\GestActividades\GestClases\AnadirClaseSala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Admin\GestActividades\GestClases\ListarClases.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Vistas\Admin\GestActividades\GestClases\MenuActivClases.cs">
       <SubType>Form</SubType>
     </Compile>

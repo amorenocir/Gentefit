@@ -16,7 +16,7 @@ namespace Gentefit.Modelo
         public int idSala { get; set; }
         [Required, MaxLength(50)]
         public string nombre { get; set; }
-        public List<Clase> listaClases { get; set; }
+        public List<Clase> listaClases { get; set; } = new List<Clase>();
 
         public Sala(int idSala, string nombre, List<Clase> listaClases)
         {

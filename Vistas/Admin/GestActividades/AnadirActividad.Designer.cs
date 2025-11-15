@@ -39,6 +39,7 @@
             Nombre = new Label();
             BotonVolver = new Button();
             DespleIntesidad = new ComboBox();
+            Intensidad = new Label();
             SuspendLayout();
             // 
             // AnadirClientes
@@ -142,11 +143,21 @@
             DespleIntesidad.TabIndex = 3;
             DespleIntesidad.SelectedIndexChanged += DespleIntesidad_SelectedIndexChanged;
             // 
+            // Intensidad
+            // 
+            Intensidad.AutoSize = true;
+            Intensidad.Location = new Point(108, 206);
+            Intensidad.Name = "Intensidad";
+            Intensidad.Size = new Size(62, 15);
+            Intensidad.TabIndex = 39;
+            Intensidad.Text = "Intensidad";
+            // 
             // AnadirActividad
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(Intensidad);
             Controls.Add(DespleIntesidad);
             Controls.Add(BotonVolver);
             Controls.Add(AnadirClientes);
@@ -178,5 +189,6 @@
         private Label Nombre;
         private Button BotonVolver;
         private ComboBox DespleIntesidad;
+        private Label Intensidad;
     }
 }
