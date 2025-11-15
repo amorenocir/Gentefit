@@ -50,7 +50,6 @@ namespace Gentefit.Vistas.PantallasAdmin
             Clientes.Size = new Size(171, 46);
             Clientes.TabIndex = 6;
             Clientes.Text = "CLIENTES";
-            Clientes.Click += Actividades_Click;
             // 
             // BotonAnadir
             // 

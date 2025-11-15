@@ -1,6 +1,6 @@
-﻿namespace Gentefit.Vistas.PantallasAdmin.GestionUsuarios
+﻿namespace Gentefit.Vistas.PantallasAdmin.GestionActividades
 {
-    partial class ListarUsuarios
+    partial class ListarActividades
     {
         /// <summary>
         /// Required designer variable.
@@ -32,14 +32,14 @@
             BotonExportarXml = new Button();
             BotonVolver = new Button();
             Actividades = new Label();
-            PanelUsuarios = new DataGridView();
-            ((System.ComponentModel.ISupportInitialize)PanelUsuarios).BeginInit();
+            PanelActividades = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)PanelActividades).BeginInit();
             SuspendLayout();
             // 
             // BotonImportarXml
             // 
             BotonImportarXml.BackColor = Color.DarkOrange;
-            BotonImportarXml.Location = new Point(512, 499);
+            BotonImportarXml.Location = new Point(501, 523);
             BotonImportarXml.Margin = new Padding(3, 4, 3, 4);
             BotonImportarXml.Name = "BotonImportarXml";
             BotonImportarXml.Size = new Size(111, 31);
@@ -51,7 +51,7 @@
             // BotonExportarXml
             // 
             BotonExportarXml.BackColor = Color.DarkOrange;
-            BotonExportarXml.Location = new Point(644, 499);
+            BotonExportarXml.Location = new Point(633, 523);
             BotonExportarXml.Margin = new Padding(3, 4, 3, 4);
             BotonExportarXml.Name = "BotonExportarXml";
             BotonExportarXml.Size = new Size(111, 31);
@@ -62,7 +62,7 @@
             // 
             // BotonVolver
             // 
-            BotonVolver.Location = new Point(773, 499);
+            BotonVolver.Location = new Point(762, 523);
             BotonVolver.Margin = new Padding(3, 4, 3, 4);
             BotonVolver.Name = "BotonVolver";
             BotonVolver.Size = new Size(86, 31);
@@ -76,36 +76,35 @@
             Actividades.AutoSize = true;
             Actividades.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
             Actividades.ForeColor = Color.DarkSlateGray;
-            Actividades.Location = new Point(256, 25);
+            Actividades.Location = new Point(217, 45);
             Actividades.Name = "Actividades";
-            Actividades.Size = new Size(429, 46);
+            Actividades.Size = new Size(475, 46);
             Actividades.TabIndex = 18;
-            Actividades.Text = "USUARIOS REGISTRADOS";
+            Actividades.Text = "ACTIVIDADES REGISTRADAS";
             // 
-            // PanelUsuarios
+            // PanelActividades
             // 
-            PanelUsuarios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            PanelUsuarios.Location = new Point(72, 98);
-            PanelUsuarios.Margin = new Padding(3, 4, 3, 4);
-            PanelUsuarios.Name = "PanelUsuarios";
-            PanelUsuarios.RowHeadersWidth = 51;
-            PanelUsuarios.ShowEditingIcon = false;
-            PanelUsuarios.Size = new Size(786, 380);
-            PanelUsuarios.TabIndex = 17;
+            PanelActividades.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            PanelActividades.Location = new Point(61, 122);
+            PanelActividades.Margin = new Padding(3, 4, 3, 4);
+            PanelActividades.Name = "PanelActividades";
+            PanelActividades.RowHeadersWidth = 51;
+            PanelActividades.Size = new Size(786, 380);
+            PanelActividades.TabIndex = 17;
             // 
-            // ListarUsuarios
+            // ListarActividades
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(920, 570);
+            ClientSize = new Size(909, 601);
             Controls.Add(BotonImportarXml);
             Controls.Add(BotonExportarXml);
             Controls.Add(BotonVolver);
             Controls.Add(Actividades);
-            Controls.Add(PanelUsuarios);
-            Name = "ListarUsuarios";
-            Text = "ListarUsuarios";
-            ((System.ComponentModel.ISupportInitialize)PanelUsuarios).EndInit();
+            Controls.Add(PanelActividades);
+            Name = "ListarActividades";
+            Text = "ListarActividades";
+            ((System.ComponentModel.ISupportInitialize)PanelActividades).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -116,6 +115,6 @@
         private Button BotonExportarXml;
         private Button BotonVolver;
         private Label Actividades;
-        private DataGridView PanelUsuarios;
+        private DataGridView PanelActividades;
     }
 }

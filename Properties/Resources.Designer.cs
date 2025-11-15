@@ -123,6 +123,16 @@ namespace Gentefit.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LogoRecepcion {
+            get {
+                object obj = ResourceManager.GetObject("LogoRecepcion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LogoTexto {
             get {
                 object obj = ResourceManager.GetObject("LogoTexto", resourceCulture);

@@ -117,4 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="TextoBodyCombat.Text" xml:space="preserve">
+    <value>Body Combat es un entrenamiento inspirado en artes marciales y boxeo, sin contacto físico con otros participantes. Sus rutinas de movimientos rápidos y combinaciones de golpes y patadas ayudan a quemar calorías, mejorar la resistencia y liberar tensiones acumuladas.</value>
+  </data>
 </root>

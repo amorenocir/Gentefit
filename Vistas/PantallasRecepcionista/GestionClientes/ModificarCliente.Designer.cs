@@ -1,4 +1,4 @@
-﻿namespace Gentefit.Vistas.PantallasAdmin
+﻿namespace Gentefit.Vistas.PantallasRecepcionista
 {
     partial class ModificarCliente
     {
@@ -36,7 +36,6 @@
             EtiquetaID = new Label();
             BotonBuscar = new Button();
             BotonVerTodos = new Button();
-            AnadirClientes = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)PanelClientes).BeginInit();
             SuspendLayout();
@@ -54,7 +53,7 @@
             // 
             // CajaTextoTelefono
             // 
-            CajaTextoTelefono.Location = new Point(301, 109);
+            CajaTextoTelefono.Location = new Point(301, 59);
             CajaTextoTelefono.Margin = new Padding(3, 4, 3, 4);
             CajaTextoTelefono.Name = "CajaTextoTelefono";
             CajaTextoTelefono.Size = new Size(210, 27);
@@ -63,7 +62,7 @@
             // EtiquetaTelefono
             // 
             EtiquetaTelefono.AutoSize = true;
-            EtiquetaTelefono.Location = new Point(301, 85);
+            EtiquetaTelefono.Location = new Point(301, 35);
             EtiquetaTelefono.Name = "EtiquetaTelefono";
             EtiquetaTelefono.Size = new Size(67, 20);
             EtiquetaTelefono.TabIndex = 30;
@@ -71,7 +70,7 @@
             // 
             // CajaTextoContrasena
             // 
-            CajaTextoContrasena.Location = new Point(301, 254);
+            CajaTextoContrasena.Location = new Point(301, 204);
             CajaTextoContrasena.Margin = new Padding(3, 4, 3, 4);
             CajaTextoContrasena.Name = "CajaTextoContrasena";
             CajaTextoContrasena.Size = new Size(210, 27);
@@ -80,7 +79,7 @@
             // EtiquetaContrasena
             // 
             EtiquetaContrasena.AutoSize = true;
-            EtiquetaContrasena.Location = new Point(301, 230);
+            EtiquetaContrasena.Location = new Point(301, 180);
             EtiquetaContrasena.Name = "EtiquetaContrasena";
             EtiquetaContrasena.Size = new Size(83, 20);
             EtiquetaContrasena.TabIndex = 28;
@@ -88,7 +87,7 @@
             // 
             // CajaTextoEmail
             // 
-            CajaTextoEmail.Location = new Point(301, 185);
+            CajaTextoEmail.Location = new Point(301, 135);
             CajaTextoEmail.Margin = new Padding(3, 4, 3, 4);
             CajaTextoEmail.Name = "CajaTextoEmail";
             CajaTextoEmail.Size = new Size(210, 27);
@@ -97,7 +96,7 @@
             // EtiquetaEmail
             // 
             EtiquetaEmail.AutoSize = true;
-            EtiquetaEmail.Location = new Point(301, 161);
+            EtiquetaEmail.Location = new Point(301, 111);
             EtiquetaEmail.Name = "EtiquetaEmail";
             EtiquetaEmail.Size = new Size(46, 20);
             EtiquetaEmail.TabIndex = 26;
@@ -105,7 +104,7 @@
             // 
             // CajaTextoDNI
             // 
-            CajaTextoDNI.Location = new Point(43, 323);
+            CajaTextoDNI.Location = new Point(43, 273);
             CajaTextoDNI.Margin = new Padding(3, 4, 3, 4);
             CajaTextoDNI.Name = "CajaTextoDNI";
             CajaTextoDNI.Size = new Size(210, 27);
@@ -114,7 +113,7 @@
             // EtiquetaDni
             // 
             EtiquetaDni.AutoSize = true;
-            EtiquetaDni.Location = new Point(43, 299);
+            EtiquetaDni.Location = new Point(43, 249);
             EtiquetaDni.Name = "EtiquetaDni";
             EtiquetaDni.Size = new Size(135, 20);
             EtiquetaDni.TabIndex = 24;
@@ -122,7 +121,7 @@
             // 
             // CajaTextoApellidos
             // 
-            CajaTextoApellidos.Location = new Point(43, 254);
+            CajaTextoApellidos.Location = new Point(43, 204);
             CajaTextoApellidos.Margin = new Padding(3, 4, 3, 4);
             CajaTextoApellidos.Name = "CajaTextoApellidos";
             CajaTextoApellidos.Size = new Size(210, 27);
@@ -131,7 +130,7 @@
             // EtiquetaApellidos
             // 
             EtiquetaApellidos.AutoSize = true;
-            EtiquetaApellidos.Location = new Point(43, 230);
+            EtiquetaApellidos.Location = new Point(43, 180);
             EtiquetaApellidos.Name = "EtiquetaApellidos";
             EtiquetaApellidos.Size = new Size(72, 20);
             EtiquetaApellidos.TabIndex = 22;
@@ -139,7 +138,7 @@
             // 
             // CajaTextoNombre
             // 
-            CajaTextoNombre.Location = new Point(43, 178);
+            CajaTextoNombre.Location = new Point(43, 128);
             CajaTextoNombre.Margin = new Padding(3, 4, 3, 4);
             CajaTextoNombre.Name = "CajaTextoNombre";
             CajaTextoNombre.Size = new Size(210, 27);
@@ -148,7 +147,7 @@
             // EtiquetaNombre
             // 
             EtiquetaNombre.AutoSize = true;
-            EtiquetaNombre.Location = new Point(43, 154);
+            EtiquetaNombre.Location = new Point(43, 104);
             EtiquetaNombre.Name = "EtiquetaNombre";
             EtiquetaNombre.Size = new Size(64, 20);
             EtiquetaNombre.TabIndex = 20;
@@ -198,7 +197,7 @@
             // 
             // CajaTextoId
             // 
-            CajaTextoId.Location = new Point(43, 113);
+            CajaTextoId.Location = new Point(43, 63);
             CajaTextoId.Margin = new Padding(3, 4, 3, 4);
             CajaTextoId.Name = "CajaTextoId";
             CajaTextoId.Size = new Size(210, 27);
@@ -207,7 +206,7 @@
             // EtiquetaID
             // 
             EtiquetaID.AutoSize = true;
-            EtiquetaID.Location = new Point(43, 89);
+            EtiquetaID.Location = new Point(43, 39);
             EtiquetaID.Name = "EtiquetaID";
             EtiquetaID.Size = new Size(24, 20);
             EtiquetaID.TabIndex = 37;
@@ -237,23 +236,11 @@
             BotonVerTodos.UseVisualStyleBackColor = false;
             BotonVerTodos.Click += BotonVerTodos_Click;
             // 
-            // AnadirClientes
-            // 
-            AnadirClientes.AutoSize = true;
-            AnadirClientes.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
-            AnadirClientes.ForeColor = Color.DarkSlateGray;
-            AnadirClientes.Location = new Point(43, 9);
-            AnadirClientes.Name = "AnadirClientes";
-            AnadirClientes.Size = new Size(352, 46);
-            AnadirClientes.TabIndex = 46;
-            AnadirClientes.Text = "MODIFICAR CLIENTE";
-            // 
             // ModificarCliente
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(914, 600);
-            Controls.Add(AnadirClientes);
             Controls.Add(BotonVerTodos);
             Controls.Add(BotonBuscar);
             Controls.Add(CajaTextoId);
@@ -305,6 +292,5 @@
         private Button BotonBuscar;
         private TextBox CajaTextoId;
         private Button BotonVerTodos;
-        private Label AnadirClientes;
     }
 }

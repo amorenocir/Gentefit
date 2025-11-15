@@ -117,4 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="TextoBodyPump.Text" xml:space="preserve">
+    <value>Body Pump es una clase de entrenamiento con pesas que trabaja todos los grupos musculares principales. Mediante series de repeticiones con música motivadora, fortalece, tonifica y mejora la resistencia muscular de forma segura y efectiva.</value>
+  </data>
 </root>

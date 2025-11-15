@@ -34,6 +34,7 @@
             Rol = new Label();
             CajaOpcionesRol = new ComboBox();
             BotonVerTodos = new Button();
+            AnadirClientes = new Label();
             ((System.ComponentModel.ISupportInitialize)PanelUsuarios).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -52,7 +53,7 @@
             // 
             // CajaTextoId
             // 
-            CajaTextoId.Location = new Point(55, 75);
+            CajaTextoId.Location = new Point(55, 95);
             CajaTextoId.Margin = new Padding(3, 4, 3, 4);
             CajaTextoId.Name = "CajaTextoId";
             CajaTextoId.Size = new Size(210, 27);
@@ -61,7 +62,7 @@
             // EtiquetaID
             // 
             EtiquetaID.AutoSize = true;
-            EtiquetaID.Location = new Point(55, 51);
+            EtiquetaID.Location = new Point(55, 71);
             EtiquetaID.Name = "EtiquetaID";
             EtiquetaID.Size = new Size(24, 20);
             EtiquetaID.TabIndex = 57;
@@ -111,7 +112,7 @@
             // 
             // CajaTextoContrasena
             // 
-            CajaTextoContrasena.Location = new Point(310, 140);
+            CajaTextoContrasena.Location = new Point(310, 160);
             CajaTextoContrasena.Margin = new Padding(3, 4, 3, 4);
             CajaTextoContrasena.Name = "CajaTextoContrasena";
             CajaTextoContrasena.Size = new Size(210, 27);
@@ -120,7 +121,7 @@
             // EtiquetaContrasena
             // 
             EtiquetaContrasena.AutoSize = true;
-            EtiquetaContrasena.Location = new Point(310, 116);
+            EtiquetaContrasena.Location = new Point(310, 136);
             EtiquetaContrasena.Name = "EtiquetaContrasena";
             EtiquetaContrasena.Size = new Size(83, 20);
             EtiquetaContrasena.TabIndex = 49;
@@ -128,7 +129,7 @@
             // 
             // CajaTextoEmail
             // 
-            CajaTextoEmail.Location = new Point(310, 75);
+            CajaTextoEmail.Location = new Point(310, 95);
             CajaTextoEmail.Margin = new Padding(3, 4, 3, 4);
             CajaTextoEmail.Name = "CajaTextoEmail";
             CajaTextoEmail.Size = new Size(210, 27);
@@ -137,7 +138,7 @@
             // EtiquetaEmail
             // 
             EtiquetaEmail.AutoSize = true;
-            EtiquetaEmail.Location = new Point(310, 51);
+            EtiquetaEmail.Location = new Point(310, 71);
             EtiquetaEmail.Name = "EtiquetaEmail";
             EtiquetaEmail.Size = new Size(46, 20);
             EtiquetaEmail.TabIndex = 47;
@@ -145,7 +146,7 @@
             // 
             // CajaTextoApellidos
             // 
-            CajaTextoApellidos.Location = new Point(55, 211);
+            CajaTextoApellidos.Location = new Point(55, 223);
             CajaTextoApellidos.Margin = new Padding(3, 4, 3, 4);
             CajaTextoApellidos.Name = "CajaTextoApellidos";
             CajaTextoApellidos.Size = new Size(210, 27);
@@ -154,7 +155,7 @@
             // EtiquetaApellidos
             // 
             EtiquetaApellidos.AutoSize = true;
-            EtiquetaApellidos.Location = new Point(55, 187);
+            EtiquetaApellidos.Location = new Point(55, 199);
             EtiquetaApellidos.Name = "EtiquetaApellidos";
             EtiquetaApellidos.Size = new Size(72, 20);
             EtiquetaApellidos.TabIndex = 43;
@@ -162,7 +163,7 @@
             // 
             // CajaTextoNombre
             // 
-            CajaTextoNombre.Location = new Point(55, 140);
+            CajaTextoNombre.Location = new Point(55, 160);
             CajaTextoNombre.Margin = new Padding(3, 4, 3, 4);
             CajaTextoNombre.Name = "CajaTextoNombre";
             CajaTextoNombre.Size = new Size(210, 27);
@@ -171,7 +172,7 @@
             // EtiquetaNombre
             // 
             EtiquetaNombre.AutoSize = true;
-            EtiquetaNombre.Location = new Point(55, 116);
+            EtiquetaNombre.Location = new Point(55, 136);
             EtiquetaNombre.Name = "EtiquetaNombre";
             EtiquetaNombre.Size = new Size(64, 20);
             EtiquetaNombre.TabIndex = 41;
@@ -191,7 +192,7 @@
             // Rol
             // 
             Rol.AutoSize = true;
-            Rol.Location = new Point(310, 188);
+            Rol.Location = new Point(310, 200);
             Rol.Name = "Rol";
             Rol.Size = new Size(31, 20);
             Rol.TabIndex = 60;
@@ -201,7 +202,7 @@
             // 
             CajaOpcionesRol.FormattingEnabled = true;
             CajaOpcionesRol.Items.AddRange(new object[] { "Admin", "Encargado", "Recepcionista" });
-            CajaOpcionesRol.Location = new Point(310, 211);
+            CajaOpcionesRol.Location = new Point(310, 223);
             CajaOpcionesRol.Name = "CajaOpcionesRol";
             CajaOpcionesRol.Size = new Size(210, 28);
             CajaOpcionesRol.TabIndex = 62;
@@ -218,11 +219,23 @@
             BotonVerTodos.UseVisualStyleBackColor = false;
             BotonVerTodos.Click += BotonVerTodos_Click;
             // 
+            // AnadirClientes
+            // 
+            AnadirClientes.AutoSize = true;
+            AnadirClientes.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
+            AnadirClientes.ForeColor = Color.DarkSlateGray;
+            AnadirClientes.Location = new Point(55, 9);
+            AnadirClientes.Name = "AnadirClientes";
+            AnadirClientes.Size = new Size(371, 46);
+            AnadirClientes.TabIndex = 64;
+            AnadirClientes.Text = "MODIFICAR USUARIO";
+            // 
             // ModificarUsuario
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(906, 568);
+            Controls.Add(AnadirClientes);
             Controls.Add(BotonVerTodos);
             Controls.Add(CajaOpcionesRol);
             Controls.Add(Rol);
@@ -269,5 +282,6 @@
         private Label Rol;
         private ComboBox CajaOpcionesRol;
         private Button BotonVerTodos;
+        private Label AnadirClientes;
     }
 }

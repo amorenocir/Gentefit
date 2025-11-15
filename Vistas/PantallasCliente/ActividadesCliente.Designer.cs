@@ -27,7 +27,6 @@
             pictureBox1 = new PictureBox();
             ImagenMensajes = new PictureBox();
             ImagenPerfil = new PictureBox();
-            PanelFlow = new FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ImagenMensajes).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ImagenPerfil).BeginInit();

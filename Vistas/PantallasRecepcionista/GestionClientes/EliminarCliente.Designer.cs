@@ -1,4 +1,4 @@
-﻿namespace Gentefit.Vistas.PantallasAdmin
+﻿namespace Gentefit.Vistas.PantallasRecepcionista
 {
     partial class EliminarCliente
     {
@@ -41,20 +41,17 @@
             // PanelClientes
             // 
             PanelClientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            PanelClientes.Location = new Point(90, 184);
-            PanelClientes.Margin = new Padding(3, 4, 3, 4);
+            PanelClientes.Location = new Point(79, 138);
             PanelClientes.Name = "PanelClientes";
-            PanelClientes.RowHeadersWidth = 51;
-            PanelClientes.Size = new Size(757, 288);
+            PanelClientes.Size = new Size(662, 216);
             PanelClientes.TabIndex = 37;
             // 
             // BotonBuscar
             // 
             BotonBuscar.BackColor = Color.DarkOrange;
-            BotonBuscar.Location = new Point(313, 115);
-            BotonBuscar.Margin = new Padding(3, 4, 3, 4);
+            BotonBuscar.Location = new Point(274, 86);
             BotonBuscar.Name = "BotonBuscar";
-            BotonBuscar.Size = new Size(80, 45);
+            BotonBuscar.Size = new Size(70, 34);
             BotonBuscar.TabIndex = 41;
             BotonBuscar.Text = "Buscar";
             BotonBuscar.UseVisualStyleBackColor = false;
@@ -62,18 +59,16 @@
             // 
             // CajaTextoBuscar
             // 
-            CajaTextoBuscar.Location = new Point(90, 124);
-            CajaTextoBuscar.Margin = new Padding(3, 4, 3, 4);
+            CajaTextoBuscar.Location = new Point(79, 93);
             CajaTextoBuscar.Name = "CajaTextoBuscar";
-            CajaTextoBuscar.Size = new Size(205, 27);
+            CajaTextoBuscar.Size = new Size(180, 23);
             CajaTextoBuscar.TabIndex = 40;
             // 
             // BotonVolver
             // 
-            BotonVolver.Location = new Point(767, 480);
-            BotonVolver.Margin = new Padding(3, 4, 3, 4);
+            BotonVolver.Location = new Point(671, 360);
             BotonVolver.Name = "BotonVolver";
-            BotonVolver.Size = new Size(81, 45);
+            BotonVolver.Size = new Size(71, 34);
             BotonVolver.TabIndex = 43;
             BotonVolver.Text = "Volver";
             BotonVolver.UseVisualStyleBackColor = true;
@@ -82,10 +77,9 @@
             // BotonEliminar
             // 
             BotonEliminar.BackColor = Color.DarkOrange;
-            BotonEliminar.Location = new Point(672, 480);
-            BotonEliminar.Margin = new Padding(3, 4, 3, 4);
+            BotonEliminar.Location = new Point(588, 360);
             BotonEliminar.Name = "BotonEliminar";
-            BotonEliminar.Size = new Size(80, 45);
+            BotonEliminar.Size = new Size(70, 34);
             BotonEliminar.TabIndex = 42;
             BotonEliminar.Text = "Eliminar";
             BotonEliminar.UseVisualStyleBackColor = false;
@@ -94,10 +88,9 @@
             // BotonVerTodos
             // 
             BotonVerTodos.BackColor = Color.DarkOrange;
-            BotonVerTodos.Location = new Point(413, 115);
-            BotonVerTodos.Margin = new Padding(3, 4, 3, 4);
+            BotonVerTodos.Location = new Point(361, 86);
             BotonVerTodos.Name = "BotonVerTodos";
-            BotonVerTodos.Size = new Size(94, 45);
+            BotonVerTodos.Size = new Size(82, 34);
             BotonVerTodos.TabIndex = 44;
             BotonVerTodos.Text = "Ver todos";
             BotonVerTodos.UseVisualStyleBackColor = false;
@@ -108,17 +101,17 @@
             EliminarClientes.AutoSize = true;
             EliminarClientes.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
             EliminarClientes.ForeColor = Color.DarkSlateGray;
-            EliminarClientes.Location = new Point(90, 41);
+            EliminarClientes.Location = new Point(79, 31);
             EliminarClientes.Name = "EliminarClientes";
-            EliminarClientes.Size = new Size(324, 46);
+            EliminarClientes.Size = new Size(274, 37);
             EliminarClientes.TabIndex = 45;
-            EliminarClientes.Text = "ELIMINAR CLIENTE";
+            EliminarClientes.Text = "ELIMINAR CLIENTES";
             // 
             // EliminarCliente
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(914, 600);
+            ClientSize = new Size(800, 450);
             Controls.Add(EliminarClientes);
             Controls.Add(BotonVerTodos);
             Controls.Add(BotonVolver);
@@ -126,7 +119,6 @@
             Controls.Add(BotonBuscar);
             Controls.Add(CajaTextoBuscar);
             Controls.Add(PanelClientes);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "EliminarCliente";
             Text = "EliminarCliente";
             ((System.ComponentModel.ISupportInitialize)PanelClientes).EndInit();

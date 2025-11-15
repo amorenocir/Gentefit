@@ -4,7 +4,19 @@
     <Compile Update="Test\TestConexion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Vistas\PantallasAdmin\GestionClientes\AnadirClientes.cs">
+    <Compile Update="Vistas\PantallasAdmin\GestionActividades\AnadirActividad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\PantallasAdmin\GestionActividades\EliminarActividad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\PantallasAdmin\GestionActividades\ListarActividades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\PantallasAdmin\GestionActividades\ModificarActividad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\PantallasAdmin\GestionClientes\AnadirCliente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Vistas\PantallasAdmin\GestionClientes\EliminarCliente.cs">
@@ -82,10 +94,10 @@
     <Compile Update="Resources\Tarjetas\TarjetaActividad.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="Vistas\PantallasEncargado\MenuEncargado.cs">
+    <Compile Update="Vistas\PantallasEncargado\InicioEncargado.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Vistas\PantallasRecepcionista\MenuRecepcionista.cs">
+    <Compile Update="Vistas\PantallasRecepcionista\InicioRecepcionista.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
