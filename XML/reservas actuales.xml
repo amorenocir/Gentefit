@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfReservaXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ReservaXml>
+    <IdReserva>6</IdReserva>
+    <IdCliente>1</IdCliente>
+    <IdClase>1</IdClase>
+    <Estado>Cancelada</Estado>
+    <Fecha>2025-11-01T09:00:00</Fecha>
+  </ReservaXml>
+  <ReservaXml>
+    <IdReserva>7</IdReserva>
+    <IdCliente>2</IdCliente>
+    <IdClase>1</IdClase>
+    <Estado>Cancelada</Estado>
+    <Fecha>2025-11-01T09:05:00</Fecha>
+  </ReservaXml>
+  <ReservaXml>
+    <IdReserva>8</IdReserva>
+    <IdCliente>3</IdCliente>
+    <IdClase>1</IdClase>
+    <Estado>Confirmada</Estado>
+    <Fecha>2025-11-02T10:00:00</Fecha>
+  </ReservaXml>
+  <ReservaXml>
+    <IdReserva>9</IdReserva>
+    <IdCliente>4</IdCliente>
+    <IdClase>4</IdClase>
+    <Estado>EnEspera</Estado>
+    <Fecha>2025-11-02T10:10:00</Fecha>
+  </ReservaXml>
+  <ReservaXml>
+    <IdReserva>10</IdReserva>
+    <IdCliente>3</IdCliente>
+    <IdClase>1</IdClase>
+    <Estado>EnEspera</Estado>
+    <Fecha>2025-11-11T19:44:27</Fecha>
+  </ReservaXml>
+  <ReservaXml>
+    <IdReserva>11</IdReserva>
+    <IdCliente>2</IdCliente>
+    <IdClase>1</IdClase>
+    <Estado>EnEspera</Estado>
+    <Fecha>2025-11-11T19:46:28</Fecha>
+  </ReservaXml>
+</ArrayOfReservaXml>

@@ -112,20 +112,62 @@ public class LogicaReservas
     }
 
     // Modificar una reserva
-    public bool ModificarReserva(Reserva reserva)
+    // Modificar una reserva
+    public bool ModificarReserva(Reserva reservaMod)
     {
         using var contexto = new GentefitContext();
-        var c = contexto.Reservas.FirstOrDefault(x => x.idReserva == reserva.idReserva);
-        if (c == null) return false;
 
-        c.idCliente = reserva.idCliente;
-        c.idClase = reserva.idClase;
-        c.estado = reserva.estado;
-        c.fecha = reserva.fecha;
+        // Cargar reserva original con su clase
+        var reserva = contexto.Reservas
+            .Include(r => r.clase)
+            .FirstOrDefault(r => r.idReserva == reservaMod.idReserva);
+
+        if (reserva == null) return false;
+
+        var clase = reserva.clase;
+
+        // Guardar estado anterior y nuevo
+        var estadoAnterior = reserva.estado;
+        var nuevoEstado = reservaMod.estado;
+
+        // 1️⃣ No permitir Confirmada si la clase está llena
+        if (nuevoEstado == EstadoReserva.Confirmada &&
+            estadoAnterior != EstadoReserva.Confirmada &&
+            clase.plazasLibres == 0)
+        {
+            MessageBox.Show("❌ No se puede confirmar la reserva porque la clase ya está llena.");
+            return false;
+        }
+
+        // 2️⃣ Si pasa de Confirmada → EnEspera o Cancelada → liberar una plaza
+        if (estadoAnterior == EstadoReserva.Confirmada &&
+            (nuevoEstado == EstadoReserva.EnEspera || nuevoEstado == EstadoReserva.Cancelada))
+        {
+            clase.plazasLibres++;
+        }
+
+        // 3️⃣ Si pasa de EnEspera → Confirmada → ocupar plaza
+        if (estadoAnterior == EstadoReserva.EnEspera &&
+            nuevoEstado == EstadoReserva.Confirmada)
+        {
+            clase.plazasLibres--;
+        }
+
+        // 4️⃣ Si el admin la pone como Cancelada → usar tu lógica completa de cancelación
+        if (nuevoEstado == EstadoReserva.Cancelada)
+        {
+            return CancelarReserva(reserva.idReserva);
+        }
+
+        // 5️⃣ Guardar cambios normales (sin cancelación)
+        reserva.idCliente = reservaMod.idCliente;
+        reserva.idClase = reservaMod.idClase;
+        reserva.estado = nuevoEstado;
 
         contexto.SaveChanges();
         return true;
     }
+
 
     // Cancelar una reserva
     public bool CancelarReserva(int idReserva)
@@ -239,6 +281,38 @@ public class LogicaReservas
                 FechaReserva = r.fecha,
             })
             .ToList();
+    }
+    public List<ReservaAdminDTO> ObtenerTodasParaAdmin()
+    {
+        using var contexto = new GentefitContext();
+
+        return contexto.Reservas
+            .Include(r => r.cliente)
+            .Include(r => r.clase)
+                .ThenInclude(c => c.actividad)
+            .Select(r => new ReservaAdminDTO
+            {
+                IdReserva = r.idReserva,
+                IdCliente = r.idCliente,
+                ClienteNombre = r.cliente.nombre + " " + r.cliente.apellidos,
+                IdClase = r.idClase,
+                ClaseNombre = r.clase.actividad.nombre,
+                Estado = r.estado.ToString(),
+                FechaReserva = r.fecha
+            })
+            .ToList();
+    }
+
+
+    public class ReservaAdminDTO
+    {
+        public int IdReserva { get; set; }
+        public int IdCliente { get; set; }
+        public string ClienteNombre { get; set; }
+        public int IdClase { get; set; }
+        public string ClaseNombre { get; set; }
+        public string Estado { get; set; }
+        public DateTime FechaReserva { get; set; }
     }
 
     public class ReservaDTO

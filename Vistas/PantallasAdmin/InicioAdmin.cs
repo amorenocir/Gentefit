@@ -46,7 +46,8 @@ namespace Gentefit.Vistas.PantallasAdmin
         private void BotonReservas_Click(object sender, EventArgs e)
         {
             //Abrir Menu Reservas
-
+            new ReservasAdmin().Show();
+            this.Hide();
         }
 
         private void BotonMonitores_Click(object sender, EventArgs e)
