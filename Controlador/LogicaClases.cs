@@ -89,6 +89,31 @@ namespace Gentefit.Controlador
             return false;
         }
 
+        // Filtrar clases por actividad
+        public List<ClaseDTO> FiltrarPorActividad(int idActividad)
+        {
+            using var contexto = new GentefitContext();
+            return contexto.Clases
+                .Where(c => c.idActividad == idActividad)
+                .Include(c => c.actividad)
+                .Include(c => c.entrenador)
+                .Include(c => c.sala)
+                .Select(c => new ClaseDTO
+                {
+                    IdClase = c.idClase,
+                    IdActividad = c.idActividad,
+                    NombreActividad = c.actividad.nombre,
+                    NombreEntrenador = c.entrenador.nombre,
+                    NombreSala = c.sala.nombre,
+                    Dia = (Dia)c.horario.DayOfWeek,
+                    Horario = c.horario,
+                    Hora = TimeOnly.FromDateTime(c.horario),
+                    PlazasLibres = c.plazasLibres,
+                    EnEspera = c.enEspera
+                })
+                .ToList();
+        }
+
         // Estructura para mostrar la clase al cliente.
         public class ClaseDTO
         {

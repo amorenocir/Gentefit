@@ -27,13 +27,15 @@ namespace Gentefit.Vistas.PantallasAdmin
 
         private void ImagenPerfil_Click(object sender, EventArgs e)
         {
-            //Abrir Menu Actividades
-            //new MenuAd...().Show();
+            //Abrir perfil admin
+            this.Hide();
+
         }
 
         private void ImagenMensajes_Click(object sender, EventArgs e)
         {
-            //Abrir Menu Actividades
+            //Abrir Mensajes
+            this.Hide();
 
         }
 
@@ -50,7 +52,7 @@ namespace Gentefit.Vistas.PantallasAdmin
 
         private void BotonReservas_Click(object sender, EventArgs e)
         {
-            //new ReservasAdmin().Show();
+            new ReservasAdmin().Show();
             this.Hide();
 
         }
@@ -90,7 +92,7 @@ namespace Gentefit.Vistas.PantallasAdmin
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            label2.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
+            FechaHora.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
         }
     }
 }

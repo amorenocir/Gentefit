@@ -49,7 +49,7 @@ public partial class GentefitContext : DbContext
                 .HasMaxLength(200)
                 .IsUnicode(false);
             entity.Property(e => e.intensidad)
-                .HasConversion<int>()  // Guardar enum como INT
+                .HasConversion<int>()
                 .HasColumnName("Intensidad");
             entity.Property(e => e.nombre)
                 .HasMaxLength(30)
@@ -63,7 +63,7 @@ public partial class GentefitContext : DbContext
             entity.ToTable("Clase");
 
             entity.Property(e => e.idClase).HasColumnName("ID");
-            //entity.Property(e => e.horario).HasColumnType("datetime");
+            entity.Property(e => e.horario).HasColumnType("datetime");
 
         });
 

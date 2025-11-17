@@ -70,6 +70,18 @@
     <Compile Update="Vistas\PantallasAdmin\GestionEntrenador\ModificarEntrenador.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Vistas\PantallasAdmin\GestionReservas\AnadirReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\PantallasAdmin\GestionReservas\EliminarReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\PantallasAdmin\GestionReservas\ListarReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\PantallasAdmin\GestionReservas\ModificarReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Vistas\PantallasAdmin\GestionSalas\AnadirSala.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +113,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Vistas\PantallasAdmin\GestionClientes\ModificarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\PantallasAdmin\ReservasAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Vistas\PantallasAdmin\SalasAdmin.cs">

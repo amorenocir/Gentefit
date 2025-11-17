@@ -38,12 +38,14 @@ namespace Gentefit.Vistas.PantallasAdmin
             }
 
             MessageBox.Show("Entrenador añadido correctamente");
+            new EntrenadoresAdmin().Show();
+            this.Hide();
         }
 
         private void BotonVolver_Click(object sender, EventArgs e)
         {
-            this.Hide();
             new EntrenadoresAdmin().Show();
+            this.Hide();
 
         }
     }

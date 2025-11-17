@@ -519,6 +519,10 @@ E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de
 E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.EliminarEntrenador.resources
 E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.ListarEntrenadores.resources
 E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.ModificarEntrenador.resources
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.GestionReservas.AnadirReserva.resources
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.EliminarReserva.resources
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.ListarReservas.resources
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.ModificarReserva.resources
 E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.AnadirSala.resources
 E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.EliminarSala.resources
 E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.ListarSalas.resources
@@ -528,6 +532,7 @@ E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de
 E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.GestionUsuarios.ListarUsuarios.resources
 E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.GestionUsuarios.ModificarUsuario.resources
 E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.InicioAdmin.resources
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.ReservasAdmin.resources
 E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.SalasAdmin.resources
 E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.UsuariosAdmin.resources
 E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.ActividadesCliente.resources

@@ -2,16 +2,9 @@
 {
     partial class InicioAdmin
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
+       protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
             {
@@ -20,21 +13,15 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InicioAdmin));
-            pictureBox1 = new PictureBox();
+            LogoAdmin = new PictureBox();
             ImagenPerfil = new PictureBox();
             ImagenMensajes = new PictureBox();
-            label1 = new Label();
-            label2 = new Label();
+            Inicio = new Label();
+            FechaHora = new Label();
             BotonActividades = new Button();
             BotonReservas = new Button();
             BotonEntrenadores = new Button();
@@ -44,21 +31,21 @@
             timer1 = new System.Windows.Forms.Timer(components);
             BotonClases = new Button();
             BotonSalas = new Button();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)LogoAdmin).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ImagenPerfil).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ImagenMensajes).BeginInit();
             SuspendLayout();
             // 
-            // pictureBox1
+            // LogoAdmin
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(390, 29);
-            pictureBox1.Margin = new Padding(3, 4, 3, 4);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(167, 113);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            LogoAdmin.Image = (Image)resources.GetObject("LogoAdmin.Image");
+            LogoAdmin.Location = new Point(390, 29);
+            LogoAdmin.Margin = new Padding(3, 4, 3, 4);
+            LogoAdmin.Name = "LogoAdmin";
+            LogoAdmin.Size = new Size(167, 113);
+            LogoAdmin.SizeMode = PictureBoxSizeMode.Zoom;
+            LogoAdmin.TabIndex = 0;
+            LogoAdmin.TabStop = false;
             // 
             // ImagenPerfil
             // 
@@ -82,27 +69,27 @@
             ImagenMensajes.TabIndex = 2;
             ImagenMensajes.TabStop = false;
             // 
-            // label1
+            // Inicio
             // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
-            label1.ForeColor = SystemColors.ControlText;
-            label1.Location = new Point(429, 184);
-            label1.Name = "label1";
-            label1.Size = new Size(102, 37);
-            label1.TabIndex = 3;
-            label1.Text = "INICIO";
-            label1.TextAlign = ContentAlignment.MiddleLeft;
+            Inicio.AutoSize = true;
+            Inicio.BackColor = Color.Transparent;
+            Inicio.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
+            Inicio.ForeColor = SystemColors.ControlText;
+            Inicio.Location = new Point(429, 184);
+            Inicio.Name = "Inicio";
+            Inicio.Size = new Size(102, 37);
+            Inicio.TabIndex = 3;
+            Inicio.Text = "INICIO";
+            Inicio.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // label2
+            // FechaHora
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(407, 224);
-            label2.Name = "label2";
-            label2.Size = new Size(144, 20);
-            label2.TabIndex = 4;
-            label2.Text = "HH:MM DD-MM-AA";
+            FechaHora.AutoSize = true;
+            FechaHora.Location = new Point(407, 224);
+            FechaHora.Name = "FechaHora";
+            FechaHora.Size = new Size(144, 20);
+            FechaHora.TabIndex = 4;
+            FechaHora.Text = "HH:MM DD-MM-AA";
             // 
             // BotonActividades
             // 
@@ -229,30 +216,27 @@
             Controls.Add(BotonEntrenadores);
             Controls.Add(BotonReservas);
             Controls.Add(BotonActividades);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            Controls.Add(FechaHora);
+            Controls.Add(Inicio);
             Controls.Add(ImagenMensajes);
             Controls.Add(ImagenPerfil);
-            Controls.Add(pictureBox1);
+            Controls.Add(LogoAdmin);
             Margin = new Padding(3, 4, 3, 4);
             Name = "InicioAdmin";
             Text = "MenuAdmin";
             Load += timer1_Tick;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)LogoAdmin).EndInit();
             ((System.ComponentModel.ISupportInitialize)ImagenPerfil).EndInit();
             ((System.ComponentModel.ISupportInitialize)ImagenMensajes).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
-  
 
-        #endregion
-
-        private PictureBox pictureBox1;
+        private PictureBox LogoAdmin;
         private PictureBox ImagenPerfil;
         private PictureBox ImagenMensajes;
-        private Label label1;
-        private Label label2;
+        private Label Inicio;
+        private Label FechaHora;
         private Button BotonActividades;
         private Button BotonReservas;
         private Button BotonEntrenadores;

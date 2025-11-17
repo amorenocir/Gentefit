@@ -30,6 +30,29 @@ namespace Gentefit.Controlador
                             .ToList();
         }
 
+        public List<ReservaDTO> ObtenerReservasDetalladas()
+        {
+            using var contexto = new GentefitContext();
+
+            return contexto.Reservas
+                .Include(r => r.cliente)
+                .Include(r => r.clase)
+                    .ThenInclude(c => c.actividad)
+                .Select(r => new ReservaDTO
+                {
+                    IdReserva = r.idReserva,
+                    Cliente = r.cliente.nombre + " " + r.cliente.apellidos,
+                    Clase = r.clase.actividad.nombre,
+                    FechaClase = r.clase.horario,
+                    Dia = r.clase.dia,
+                    Hora = r.clase.hora,
+                    Estado = r.estado.ToString(),
+                    FechaReserva = r.fecha
+                })
+                .ToList();
+        }
+
+
         // Crear una reserva
         public bool ReservarClase(int idClase, int idCliente)
         {
@@ -238,7 +261,7 @@ namespace Gentefit.Controlador
                 .Select(r => new ReservaDTO
                 {
                     IdReserva = r.idReserva,
-                    ClaseNombre = r.clase.actividad.nombre,
+                    Clase = r.clase.actividad.nombre,
                     Estado = r.estado.ToString(),
                     FechaClase = r.clase.horario,
                     Dia = r.clase.dia,
@@ -251,7 +274,8 @@ namespace Gentefit.Controlador
         public class ReservaDTO
         {
             public int IdReserva { get; set; }
-            public string ClaseNombre { get; set; }
+            public string Cliente { get; set; } 
+            public string Clase { get; set; }
             public DateTime FechaClase { get; set; }
             public DateTime FechaReserva { get; set; }
             public Dia Dia { get; set; }

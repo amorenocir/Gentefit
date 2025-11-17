@@ -36,12 +36,14 @@ namespace Gentefit.Vistas.PantallasAdmin
             }
 
             MessageBox.Show("Sala añadida correctamente");
+            new SalasAdmin().Show();
+            this.Hide();
         }
 
         private void BotonVolver_Click(object sender, EventArgs e)
         {
-            this.Hide();
             new SalasAdmin().Show();
+            this.Hide();
 
         }
     }
