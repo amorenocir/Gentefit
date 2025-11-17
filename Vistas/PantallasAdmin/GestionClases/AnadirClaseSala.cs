@@ -19,7 +19,7 @@ namespace Gentefit.Vistas.PantallasAdmin
     {
         private Clase clase;
         private int idActividad;
-        LogicaSala logicaSala = new LogicaSala();
+        LogicaSalas logicaSala = new LogicaSalas();
         LogicaActividades logicaActiv = new LogicaActividades();
         LogicaClases logicaClase = new LogicaClases();
         public AnadirClaseSala(int idActividad, Clase clase)
@@ -31,7 +31,7 @@ namespace Gentefit.Vistas.PantallasAdmin
 
         private void AnadirClaseSala_Load(object sender, EventArgs e)
         {
-            PanelSalas.DataSource = logicaSala.ListarSalas();
+            PanelSalas.DataSource = logicaSala.ObtenerTodos();
 
             foreach (DataGridViewRow fila in PanelSalas.Rows)
             {

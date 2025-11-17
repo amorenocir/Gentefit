@@ -3,15 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 using Gentefit.db;
 using Gentefit.Modelo;
+using Gentefit.ModeloXml;
 
 namespace Gentefit.Controlador
 {
     internal class LogicaEntrenadores
     {
         //Obtener todos los entrenadores
-        public List<Entrenador> ListarEntrenadores()
+        public List<Entrenador> ObtenerTodos()
         {
             using var contexto = new GentefitContext();
             return contexto.Entrenadores.ToList();
@@ -61,6 +63,62 @@ namespace Gentefit.Controlador
                 return true;
             }
             return false;
+        }
+        // Exportar Entrenadores a XML
+        public void ExportarXml(string rutaArchivo)
+        {
+            var Entrenadores = ObtenerTodos();
+            var EntrenadoresXml = Entrenadores.Select(c => ConvertirAXml(c)).ToList();
+
+            XmlSerializer serializer = new XmlSerializer(typeof(List<EntrenadorXML>));
+            using (FileStream fs = new FileStream(rutaArchivo, FileMode.Create))
+            {
+                serializer.Serialize(fs, EntrenadoresXml);
+            }
+        }
+
+        // Importar Entrenadores desde XML
+        public void ImportarXml(string rutaArchivo)
+        {
+            using var contexto = new GentefitContext();
+            XmlSerializer serializer = new XmlSerializer(typeof(List<EntrenadorXML>));
+            using (FileStream fs = new FileStream(rutaArchivo, FileMode.Open))
+            {
+                List<EntrenadorXML> EntrenadoresXml = (List<EntrenadorXML>)serializer.Deserialize(fs);
+                List<Entrenador> Entrenadores = EntrenadoresXml.Select(x =>
+                {
+                    var c = ConvertirAEntidad(x);
+                    c.idEntrenador = 0; // Ignorar el ID del XML
+                    return c;
+                }).ToList();
+
+                contexto.Entrenadores.AddRange(Entrenadores);
+                contexto.SaveChanges();
+            }
+        }
+
+        // Conversión Entrenador -> EntrenadorXml
+        public static EntrenadorXML ConvertirAXml(Entrenador Entrenador)
+        {
+            return new EntrenadorXML
+            {
+                Id = Entrenador.idEntrenador,
+                Nombre = Entrenador.nombre,
+                Apellidos = Entrenador.apellidos,
+                Dni = Entrenador.dni,
+            };
+        }
+
+        // Conversión EntrenadorXml -> Entrenador
+        public static Entrenador ConvertirAEntidad(EntrenadorXML EntrenadorXml)
+        {
+            return new Entrenador
+            {
+                idEntrenador = EntrenadorXml.Id,
+                nombre = EntrenadorXml.Nombre,
+                apellidos = EntrenadorXml.Apellidos,
+                dni = EntrenadorXml.Dni,
+            };
         }
     }
 }

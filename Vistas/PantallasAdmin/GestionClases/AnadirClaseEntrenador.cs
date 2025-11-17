@@ -114,7 +114,7 @@ namespace Gentefit.Vistas.PantallasAdmin
 
         public void CargarDatos()
         {
-            PanelEntrenadores.DataSource = logicaEntre.ListarEntrenadores();
+            PanelEntrenadores.DataSource = logicaEntre.ObtenerTodos();
         }
     }
 }

@@ -17,7 +17,7 @@ namespace Gentefit.Vistas.PantallasAdmin
         private int idActividad;
         private Clase clase;
         LogicaEntrenadores logicaEntre = new LogicaEntrenadores();
-        LogicaSala logicaSalas = new LogicaSala();
+        LogicaSalas logicaSalas = new LogicaSalas();
         LogicaClases logicaClases = new LogicaClases();
         LogicaActividades logicaAct = new LogicaActividades();
         public ModificarClases2(int idActividad, Clase clase)
@@ -29,8 +29,8 @@ namespace Gentefit.Vistas.PantallasAdmin
 
         private void ModificarClases2_Load(object sender, EventArgs e)
         {
-            PanelEntrenadores.DataSource = logicaEntre.ListarEntrenadores();
-            PanelSalas.DataSource = logicaSalas.ListarSalas();
+            PanelEntrenadores.DataSource = logicaEntre.ObtenerTodos();
+            PanelSalas.DataSource = logicaSalas.ObtenerTodos();
             EditarPanel(PanelEntrenadores, true);
             EditarPanel(PanelSalas, false);
 
