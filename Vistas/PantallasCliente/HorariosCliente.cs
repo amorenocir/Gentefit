@@ -1,4 +1,5 @@
 ﻿using Gentefit.Modelo;
+using Gentefit.Logica;
 using Gentefit.Vistas.PantallasCliente;
 using MySqlX.XDevAPI;
 using System;

@@ -1,5 +1,5 @@
-﻿using Gentefit.db;
-using Gentefit.Logica;
+﻿using Gentefit.Logica;
+using Gentefit.Modelo;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,60 +9,80 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static LogicaClases;
 
-namespace Gentefit.Vistas.PantallasAdmin.GestionClases
+namespace Gentefit.Vistas.PantallasAdmin
 {
-
     public partial class EliminarClase : Form
     {
-        private LogicaClases logicaClases;
-        public EliminarClase()
+        private int idActividad;
+        LogicaClases logicaClases = new LogicaClases();
+        LogicaActividades logicaAct = new LogicaActividades();
+        public EliminarClase(int idActividad)
         {
             InitializeComponent();
-            this.Load += EliminarClase_Load;
+            this.idActividad = idActividad;
         }
 
         private void EliminarClase_Load(object sender, EventArgs e)
         {
-            using var contexto = new GentefitContext();
-            logicaClases = new LogicaClases();
-            PanelClases.DataSource = logicaClases.ObtenerClasesDisponibles();
+            CargarDatos();
+            PanelClases.Columns["actividad"].Visible = false;
+            PanelClases.Columns["entrenador"].Visible = false;
+            PanelClases.Columns["sala"].Visible = false;
+
+            List<Actividad> posiblesAct = logicaAct.BuscarPorId(idActividad);
+            Actividad actividad = posiblesAct[0];
+            string tituloMin = "Modificar clases de " + actividad.nombre;
+            Titulo.Text = tituloMin.ToUpper();
+        }
+
+        private void CargarDatos()
+        {
+            List<Clase> todasClases = logicaClases.ListarClases();
+            List<Clase> clasesMostrar = new List<Clase>();
+            for (int i = 0; i < todasClases.Count; i++)
+            {
+                if (todasClases[i].idActividad == idActividad)
+                {
+                    clasesMostrar.Add(todasClases[i]);
+                }
+            }
+            PanelClases.DataSource = clasesMostrar;
         }
 
         private void BotonBuscar_Click(object sender, EventArgs e)
         {
-            if (!int.TryParse(CajaTextoBuscar.Text, out int idBuscado))
+            if (!int.TryParse(CajaTextoBuscar.Text, out int idBuscar))
             {
                 MessageBox.Show("Por favor introduce un ID válido.");
-                return;
             }
-
-            // Usar el nuevo método que devuelve DTOs
-            listaClases = logicaClases.BuscarDTOPorId(idBuscado);
-            PanelClases.DataSource = listaClases;
+            PanelClases.DataSource = logicaClases.BuscarPorId(idBuscar);
         }
 
+        private void BotonVerTodos_Click(object sender, EventArgs e)
+        {
+            CargarDatos();
+        }
 
+        private void BotonVolver_Click(object sender, EventArgs e)
+        {
+            new MenuAdClases(idActividad).Show();
+            this.Close();
+        }
 
         private void BotonEliminar_Click(object sender, EventArgs e)
         {
             if (PanelClases.CurrentRow == null)
             {
-                MessageBox.Show("Por favor selecciona una clase para eliminar.");
+                MessageBox.Show("Por favor selecciona una actividad para eliminar.");
                 return;
             }
-
             int idClase = (int)PanelClases.CurrentRow.Cells["idClase"].Value;
-
             var confirmacion = MessageBox.Show(
                 "¿Seguro que deseas eliminar esta clase?",
-                "Confirmar eliminación",
-                MessageBoxButtons.YesNo,
-                MessageBoxIcon.Warning
-            );
-
-            if (confirmacion == DialogResult.Yes)
+                "Confirmar eliminación", MessageBoxButtons.YesNo,
+                MessageBoxIcon.Warning);
+            if(confirmacion == DialogResult.Yes)
             {
                 if (logicaClases.EliminarClase(idClase))
                 {
@@ -75,35 +95,5 @@ namespace Gentefit.Vistas.PantallasAdmin.GestionClases
                 }
             }
         }
-
-        private void BotonVolver_Click(object sender, EventArgs e)
-        {
-            new ClasesAdmin().Show();
-            this.Hide();
-        }
-
-        private void BotonVerTodos_Click(object sender, EventArgs e)
-        {
-            CargarDatos();
-        }
-        private List<ClaseDTO> listaClases;
-        private void CargarDatos()
-        {
-            // Obtener la lista de DTOs con nombres y IDs
-            listaClases = logicaClases.ObtenerClasesDisponibles(); // Devuelve List<ClaseDTO>
-
-            // Asignar al DataGridView
-            PanelClases.DataSource = listaClases;
-
-            // Ajustar encabezados
-            PanelClases.Columns["IdClase"].HeaderText = "ID";
-            PanelClases.Columns["NombreActividad"].HeaderText = "Actividad";
-            PanelClases.Columns["NombreEntrenador"].HeaderText = "Entrenador";
-            PanelClases.Columns["NombreSala"].HeaderText = "Sala";
-            PanelClases.Columns["Horario"].HeaderText = "Horario";
-            PanelClases.Columns["PlazasLibres"].HeaderText = "Plazas libres";
-            PanelClases.Columns["EnEspera"].HeaderText = "En espera";
-        }
-
     }
 }

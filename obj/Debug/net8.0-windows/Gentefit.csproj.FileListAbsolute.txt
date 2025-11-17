@@ -502,10 +502,14 @@ E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de
 E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.GestionActividades.PantallasActividadesAdmin.Spinning.resources
 E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.GestionActividades.PantallasActividadesAdmin.Yoga.resources
 E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.GestionActividades.PantallasActividadesAdmin.Zumba.resources
-E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.GestionClases.AnadirClase.resources
-E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.GestionClases.EliminarClase.resources
-E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.GestionClases.ListarClases.resources
-E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.GestionClases.ModificarClase.resources
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.AnadirClase.resources
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.AnadirClaseEntrenador.resources
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.AnadirClaseSala.resources
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.EliminarClase.resources
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.ListarClases.resources
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.MenuAdClases.resources
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.ModificarClases.resources
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.ModificarClases2.resources
 E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.AnadirCliente.resources
 E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.EliminarCliente.resources
 E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.ListarClientes.resources
@@ -528,6 +532,9 @@ E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de
 E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasCliente.PerfilCliente.resources
 E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasCliente.PerfilClienteEditar.resources
 E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.ReservasCliente.resources
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasEncargado.ClientesEncargado.resources
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasEncargado.InicioEncargado.resources
+E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasEncargado.ReservasEncargado.resources
 E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasRecepcionista.AnadirCliente.resources
 E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasRecepcionista.EliminarCliente.resources
 E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasRecepcionista.ListarClientes.resources
@@ -545,6 +552,3 @@ E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de
 E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.pdb
 E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.genruntimeconfig.cache
 E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\ref\Gentefit.dll
-E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasEncargado.ClientesEncargado.resources
-E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasEncargado.ReservasEncargado.resources
-E:\andrea\Clase\4-Grado Informática\Clase\3º Año\1º Semestre\Persistencia de Datos .NET\Visual Studio\Gentefit\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasEncargado.InicioEncargado.resources

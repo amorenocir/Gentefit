@@ -26,6 +26,8 @@ namespace Gentefit.Modelo
         public EstadoReserva estado { get; set; }
 
         public DateTime fecha { get; set; }
+        public Dia dia { get; set; }
+        public TimeOnly hora { get; set; }
 
         public Reserva() { }
     }

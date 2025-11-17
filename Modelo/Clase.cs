@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -30,10 +31,12 @@ namespace Gentefit.Modelo
         [Column("id_sala")]
         public int idSala { get; set; }
         public Sala sala { get; set; }
-
         public DateTime horario { get; set; }
+        public Dia dia { get; set; }
+        public TimeOnly hora { get; set; }
         public int plazasLibres { get; set; }
         public int enEspera { get; set; }
+
         public List<Reserva> reservas { get; set; } = new List<Reserva>();
 
         [NotMapped]

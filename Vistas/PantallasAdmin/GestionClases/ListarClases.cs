@@ -1,5 +1,5 @@
-﻿using Gentefit.Modelo;
-using Gentefit.ModeloXml;
+﻿using Gentefit.Logica;
+using Gentefit.Modelo;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,93 +10,46 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Gentefit.Vistas.PantallasAdmin.GestionClases
+namespace Gentefit.Vistas.PantallasAdmin
 {
     public partial class ListarClases : Form
     {
-        private readonly LogicaClases logicaClases = new LogicaClases();
-
-        public ListarClases()
+        private int idActividad;
+        LogicaClases logicaClases = new LogicaClases();
+        LogicaActividades logicaAct = new LogicaActividades();
+        public ListarClases(int idActividad)
         {
             InitializeComponent();
-            this.Load += (s, e) => PanelClases.DataSource = logicaClases.ObtenerClasesDisponibles();
+            this.idActividad = idActividad;
         }
 
         private void BotonVolver_Click(object sender, EventArgs e)
         {
-            new ClasesAdmin().Show();
-            this.Hide();
+            new MenuAdClases(idActividad).Show();
+            this.Close();
         }
 
-        private void BotonExportarXml_Click(object sender, EventArgs e)
+        private void ListarClases_Load(object sender, EventArgs e)
         {
-            SaveFileDialog saveFileDialog = new SaveFileDialog
+            List<Clase> todasClases = logicaClases.ListarClases();
+            List<Clase> clasesMostrar = new List<Clase>();
+            for(int i = 0; i < todasClases.Count; i++)
             {
-                Filter = "Archivos XML|*.xml",
-                Title = "Exportar clases a XML"
-            };
-
-            if (saveFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                logicaClases.ExportarXmlClases(saveFileDialog.FileName);
-                MessageBox.Show("Clases exportadas correctamente.");
+                if (todasClases[i].idActividad  == idActividad)
+                {
+                    clasesMostrar.Add(todasClases[i]);
+                }
             }
-        }
+            PanelClases.DataSource = clasesMostrar;
 
-        private void BotonImportarXml_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog openFileDialog = new OpenFileDialog
-            {
-                Filter = "Archivos XML|*.xml",
-                Title = "Importar clases desde XML"
-            };
+            PanelClases.Columns["actividad"].Visible = false;
+            PanelClases.Columns["entrenador"].Visible = false;
+            PanelClases.Columns["sala"].Visible = false;
 
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                logicaClases.ImportarXmlClases(openFileDialog.FileName);
-                MessageBox.Show("Clases importadas correctamente.");
-                PanelClases.DataSource = logicaClases.ObtenerTodos();
-
-            }
+            List<Actividad> posiblesAct = logicaAct.BuscarPorId(idActividad);
+            Actividad actividad = posiblesAct[0];
+            string tituloMin = "Lista de clases de " + actividad.nombre;
+            Tituloo.Text = tituloMin.ToUpper();
         }
-
-        public static ClaseXml ConvertirAXml(Clase clase)
-        {
-            return new ClaseXml
-            {
-                IdClase = clase.idClase,
-                Actividad = clase.actividad,
-                IdActividad = clase.idActividad,
-                Entrenador = clase.entrenador,
-                IdEntrenador = clase.idEntrenador,
-                Sala = clase.sala,
-                IdSala = clase.idSala,
-                Horario = clase.horario,
-                PlazasLibres = clase.plazasLibres,
-                EnEspera = clase.enEspera,
-                Reservas = clase.reservas,
-            };
-        }
-        
-        public static Clase ConvertirAEntidad(ClaseXml claseXml)
-        {
-            return new Clase
-            {
-                // Si el Id es autoincremental en la BD, podemos dejarlo en 0.
-                idClase = claseXml.IdClase,
-                actividad = claseXml.Actividad,
-                idActividad = claseXml.IdActividad,
-                entrenador = claseXml.Entrenador,
-                idEntrenador = claseXml.IdEntrenador,
-                sala = claseXml.Sala,
-                idSala = claseXml.IdSala,
-                horario = claseXml.Horario,
-                plazasLibres = claseXml.PlazasLibres,
-                enEspera = claseXml.EnEspera,
-                reservas = claseXml.Reservas,
-            };
-        }
-        
     }
 }
-

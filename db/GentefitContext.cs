@@ -63,7 +63,7 @@ public partial class GentefitContext : DbContext
             entity.ToTable("Clase");
 
             entity.Property(e => e.idClase).HasColumnName("ID");
-            entity.Property(e => e.horario).HasColumnType("datetime");
+            //entity.Property(e => e.horario).HasColumnType("datetime");
 
         });
 

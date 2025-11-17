@@ -2,8 +2,16 @@
 {
     partial class ClasesAdmin
     {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
         private System.ComponentModel.IContainer components = null;
-         protected override void Dispose(bool disposing)
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
             {
@@ -12,128 +20,143 @@
             base.Dispose(disposing);
         }
 
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
         private void InitializeComponent()
         {
-            BotonVolver = new Button();
-            pictureBox1 = new PictureBox();
-            BotonModificar = new Button();
-            BotonEliminar = new Button();
-            BotonListar = new Button();
-            BotonAnadir = new Button();
             Clientes = new Label();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            PanelActividades = new DataGridView();
+            BotonVolver = new Button();
+            CajaTextoBusqueda = new TextBox();
+            IdActividad = new Label();
+            BotonGuardar = new Button();
+            BotonVerTodos = new Button();
+            BotonBuscar = new Button();
+            BotonSeleccionar = new Button();
+            ((System.ComponentModel.ISupportInitialize)PanelActividades).BeginInit();
             SuspendLayout();
-            // 
-            // BotonVolver
-            // 
-            BotonVolver.Location = new Point(632, 477);
-            BotonVolver.Margin = new Padding(3, 4, 3, 4);
-            BotonVolver.Name = "BotonVolver";
-            BotonVolver.Size = new Size(86, 31);
-            BotonVolver.TabIndex = 23;
-            BotonVolver.Text = "Volver";
-            BotonVolver.UseVisualStyleBackColor = true;
-            BotonVolver.Click += BotonVolver_Click;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Properties.Resources.LogoAdmin;
-            pictureBox1.Location = new Point(333, 13);
-            pictureBox1.Margin = new Padding(3, 4, 3, 4);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(177, 113);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 22;
-            pictureBox1.TabStop = false;
-            // 
-            // BotonModificar
-            // 
-            BotonModificar.BackColor = Color.DarkOrange;
-            BotonModificar.ForeColor = Color.White;
-            BotonModificar.Location = new Point(435, 266);
-            BotonModificar.Margin = new Padding(3, 4, 3, 4);
-            BotonModificar.Name = "BotonModificar";
-            BotonModificar.Size = new Size(131, 65);
-            BotonModificar.TabIndex = 21;
-            BotonModificar.Text = "Modificar";
-            BotonModificar.UseVisualStyleBackColor = false;
-            BotonModificar.Click += BotonModificar_Click;
-            // 
-            // BotonEliminar
-            // 
-            BotonEliminar.BackColor = Color.DarkOrange;
-            BotonEliminar.ForeColor = Color.White;
-            BotonEliminar.Location = new Point(587, 266);
-            BotonEliminar.Margin = new Padding(3, 4, 3, 4);
-            BotonEliminar.Name = "BotonEliminar";
-            BotonEliminar.Size = new Size(131, 65);
-            BotonEliminar.TabIndex = 20;
-            BotonEliminar.Text = "Eliminar";
-            BotonEliminar.UseVisualStyleBackColor = false;
-            BotonEliminar.Click += BotonEliminar_Click;
-            // 
-            // BotonListar
-            // 
-            BotonListar.BackColor = Color.DarkOrange;
-            BotonListar.ForeColor = Color.White;
-            BotonListar.Location = new Point(282, 266);
-            BotonListar.Margin = new Padding(3, 4, 3, 4);
-            BotonListar.Name = "BotonListar";
-            BotonListar.Size = new Size(131, 65);
-            BotonListar.TabIndex = 19;
-            BotonListar.Text = "Listar";
-            BotonListar.UseVisualStyleBackColor = false;
-            BotonListar.Click += BotonListar_Click;
-            // 
-            // BotonAnadir
-            // 
-            BotonAnadir.BackColor = Color.DarkOrange;
-            BotonAnadir.ForeColor = Color.White;
-            BotonAnadir.Location = new Point(130, 266);
-            BotonAnadir.Margin = new Padding(3, 4, 3, 4);
-            BotonAnadir.Name = "BotonAnadir";
-            BotonAnadir.Size = new Size(131, 65);
-            BotonAnadir.TabIndex = 18;
-            BotonAnadir.Text = "Añadir";
-            BotonAnadir.UseVisualStyleBackColor = false;
-            BotonAnadir.Click += BotonAnadir_Click;
             // 
             // Clientes
             // 
             Clientes.AutoSize = true;
             Clientes.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
             Clientes.ForeColor = Color.DarkSlateGray;
-            Clientes.Location = new Point(352, 147);
+            Clientes.Location = new Point(99, 36);
             Clientes.Name = "Clientes";
-            Clientes.Size = new Size(139, 46);
-            Clientes.TabIndex = 17;
-            Clientes.Text = "CLASES";
+            Clientes.Size = new Size(288, 37);
+            Clientes.TabIndex = 18;
+            Clientes.Text = "ESCOGER ACTIVIDAD";
+            Clientes.Click += Clientes_Click;
             // 
-            // ClasesAdmin
+            // PanelActividades
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            PanelActividades.Location = new Point(99, 161);
+            PanelActividades.Name = "PanelActividades";
+            PanelActividades.Size = new Size(644, 200);
+            PanelActividades.TabIndex = 51;
+            PanelActividades.CellContentClick += PanelActividades_CellContentClick;
+            // 
+            // BotonVolver
+            // 
+            BotonVolver.Location = new Point(668, 391);
+            BotonVolver.Name = "BotonVolver";
+            BotonVolver.Size = new Size(75, 23);
+            BotonVolver.TabIndex = 52;
+            BotonVolver.Text = "Volver";
+            BotonVolver.UseVisualStyleBackColor = true;
+            BotonVolver.Click += BotonVolver_Click;
+            // 
+            // CajaTextoBusqueda
+            // 
+            CajaTextoBusqueda.Location = new Point(99, 107);
+            CajaTextoBusqueda.Name = "CajaTextoBusqueda";
+            CajaTextoBusqueda.Size = new Size(184, 23);
+            CajaTextoBusqueda.TabIndex = 54;
+            // 
+            // IdActividad
+            // 
+            IdActividad.AutoSize = true;
+            IdActividad.Location = new Point(99, 89);
+            IdActividad.Name = "IdActividad";
+            IdActividad.Size = new Size(97, 15);
+            IdActividad.TabIndex = 53;
+            IdActividad.Text = "ID de la actividad";
+            // 
+            // BotonGuardar
+            // 
+            BotonGuardar.Location = new Point(0, 0);
+            BotonGuardar.Name = "BotonGuardar";
+            BotonGuardar.Size = new Size(75, 23);
+            BotonGuardar.TabIndex = 58;
+            // 
+            // BotonVerTodos
+            // 
+            BotonVerTodos.BackColor = Color.DarkOrange;
+            BotonVerTodos.Location = new Point(404, 100);
+            BotonVerTodos.Name = "BotonVerTodos";
+            BotonVerTodos.Size = new Size(82, 34);
+            BotonVerTodos.TabIndex = 57;
+            BotonVerTodos.Text = "Ver todos";
+            BotonVerTodos.UseVisualStyleBackColor = false;
+            BotonVerTodos.Click += BotonVerTodos_Click;
+            // 
+            // BotonBuscar
+            // 
+            BotonBuscar.BackColor = Color.DarkOrange;
+            BotonBuscar.Location = new Point(317, 100);
+            BotonBuscar.Name = "BotonBuscar";
+            BotonBuscar.Size = new Size(70, 34);
+            BotonBuscar.TabIndex = 56;
+            BotonBuscar.Text = "Buscar";
+            BotonBuscar.UseVisualStyleBackColor = false;
+            BotonBuscar.Click += BotonBuscar_Click;
+            // 
+            // BotonSeleccionar
+            // 
+            BotonSeleccionar.BackColor = Color.DarkOrange;
+            BotonSeleccionar.Location = new Point(530, 385);
+            BotonSeleccionar.Name = "BotonSeleccionar";
+            BotonSeleccionar.Size = new Size(95, 34);
+            BotonSeleccionar.TabIndex = 59;
+            BotonSeleccionar.Text = "Seleccionar";
+            BotonSeleccionar.UseVisualStyleBackColor = false;
+            BotonSeleccionar.Click += BotonSeleccionar_Click;
+            // 
+            // MenuActivClases
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(876, 535);
+            ClientSize = new Size(800, 450);
+            Controls.Add(BotonSeleccionar);
+            Controls.Add(BotonVerTodos);
+            Controls.Add(BotonBuscar);
+            Controls.Add(BotonGuardar);
+            Controls.Add(CajaTextoBusqueda);
+            Controls.Add(IdActividad);
             Controls.Add(BotonVolver);
-            Controls.Add(pictureBox1);
-            Controls.Add(BotonModificar);
-            Controls.Add(BotonEliminar);
-            Controls.Add(BotonListar);
-            Controls.Add(BotonAnadir);
+            Controls.Add(PanelActividades);
             Controls.Add(Clientes);
-            Name = "ClasesAdmin";
-            Text = "ClasesAdmin";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            Name = "MenuActivClases";
+            Text = "MenuActivClases";
+            ((System.ComponentModel.ISupportInitialize)PanelActividades).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
-        private Button BotonVolver;
-        private PictureBox pictureBox1;
-        private Button BotonModificar;
-        private Button BotonEliminar;
-        private Button BotonListar;
-        private Button BotonAnadir;
+        #endregion
+
         private Label Clientes;
+        private DataGridView PanelActividades;
+        private Button BotonVolver;
+        private TextBox CajaTextoBusqueda;
+        private Label IdActividad;
+        private Button BotonGuardar;
+        private Button BotonVerTodos;
+        private Button BotonBuscar;
+        private Button BotonSeleccionar;
     }
 }

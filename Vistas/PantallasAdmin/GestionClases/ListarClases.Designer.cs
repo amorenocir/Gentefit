@@ -1,9 +1,16 @@
-﻿namespace Gentefit.Vistas.PantallasAdmin.GestionClases
+﻿namespace Gentefit.Vistas.PantallasAdmin
 {
     partial class ListarClases
     {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -12,94 +19,84 @@
             }
             base.Dispose(disposing);
         }
-       
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
         private void InitializeComponent()
         {
-            BotonImportarXml = new Button();
-            BotonExportarXml = new Button();
             BotonVolver = new Button();
-            Actividades = new Label();
+            Titulo = new Label();
             PanelClases = new DataGridView();
+            Tituloo = new Label();
             ((System.ComponentModel.ISupportInitialize)PanelClases).BeginInit();
             SuspendLayout();
             // 
-            // BotonImportarXml
-            // 
-            BotonImportarXml.BackColor = Color.DarkOrange;
-            BotonImportarXml.Location = new Point(505, 497);
-            BotonImportarXml.Margin = new Padding(3, 4, 3, 4);
-            BotonImportarXml.Name = "BotonImportarXml";
-            BotonImportarXml.Size = new Size(111, 31);
-            BotonImportarXml.TabIndex = 21;
-            BotonImportarXml.Text = "Importar XML";
-            BotonImportarXml.UseVisualStyleBackColor = false;
-            BotonImportarXml.Click += BotonImportarXml_Click;
-            // 
-            // BotonExportarXml
-            // 
-            BotonExportarXml.BackColor = Color.DarkOrange;
-            BotonExportarXml.Location = new Point(637, 497);
-            BotonExportarXml.Margin = new Padding(3, 4, 3, 4);
-            BotonExportarXml.Name = "BotonExportarXml";
-            BotonExportarXml.Size = new Size(111, 31);
-            BotonExportarXml.TabIndex = 20;
-            BotonExportarXml.Text = "Exportar XML";
-            BotonExportarXml.UseVisualStyleBackColor = false;
-            BotonExportarXml.Click += BotonExportarXml_Click;
-            // 
             // BotonVolver
             // 
-            BotonVolver.Location = new Point(766, 497);
+            BotonVolver.Location = new Point(765, 524);
             BotonVolver.Margin = new Padding(3, 4, 3, 4);
             BotonVolver.Name = "BotonVolver";
             BotonVolver.Size = new Size(86, 31);
-            BotonVolver.TabIndex = 19;
+            BotonVolver.TabIndex = 25;
             BotonVolver.Text = "Volver";
             BotonVolver.UseVisualStyleBackColor = true;
             BotonVolver.Click += BotonVolver_Click;
             // 
-            // Actividades
+            // Titulo
             // 
-            Actividades.AutoSize = true;
-            Actividades.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
-            Actividades.ForeColor = Color.DarkSlateGray;
-            Actividades.Location = new Point(277, 25);
-            Actividades.Name = "Actividades";
-            Actividades.Size = new Size(375, 46);
-            Actividades.TabIndex = 18;
-            Actividades.Text = "CLASES REGISTRADAS";
+            Titulo.Location = new Point(0, 0);
+            Titulo.Name = "Titulo";
+            Titulo.Size = new Size(114, 31);
+            Titulo.TabIndex = 26;
             // 
             // PanelClases
             // 
             PanelClases.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            PanelClases.Location = new Point(65, 96);
+            PanelClases.Location = new Point(64, 123);
             PanelClases.Margin = new Padding(3, 4, 3, 4);
             PanelClases.Name = "PanelClases";
             PanelClases.RowHeadersWidth = 51;
             PanelClases.Size = new Size(786, 380);
-            PanelClases.TabIndex = 17;
+            PanelClases.TabIndex = 23;
+            // 
+            // Tituloo
+            // 
+            Tituloo.AutoSize = true;
+            Tituloo.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
+            Tituloo.ForeColor = Color.DarkSlateGray;
+            Tituloo.Location = new Point(64, 31);
+            Tituloo.Name = "Tituloo";
+            Tituloo.Size = new Size(139, 46);
+            Tituloo.TabIndex = 27;
+            Tituloo.Text = "CLASES";
             // 
             // ListarClases
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(913, 546);
-            Controls.Add(BotonImportarXml);
-            Controls.Add(BotonExportarXml);
+            ClientSize = new Size(914, 600);
+            Controls.Add(Tituloo);
             Controls.Add(BotonVolver);
-            Controls.Add(Actividades);
+            Controls.Add(Titulo);
             Controls.Add(PanelClases);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "ListarClases";
             Text = "ListarClases";
+            Load += ListarClases_Load;
             ((System.ComponentModel.ISupportInitialize)PanelClases).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
-        private Button BotonImportarXml;
-        private Button BotonExportarXml;
+        #endregion
+
         private Button BotonVolver;
-        private Label Actividades;
+        private Label Titulo;
         private DataGridView PanelClases;
+        private Label Tituloo;
     }
 }

@@ -91,7 +91,8 @@ public class LogicaReservas
                 <h3>Hola {cliente.nombre},</h3>
                 <p>Tu reserva para la clase <b>{clase.actividad.nombre}</b> se ha registrado correctamente.</p>
                 <p><b>Estado actual:</b> {estadoTexto}</p>
-                <p>Fecha de la clase: {clase.horario}</p>
+                <p>Fecha de la clase: {clase.dia}</p>
+                <p>Hora de la clase: {clase.hora}</p>
                 <hr><p>Gracias por confiar en Gentefit 💪</p>";
             
             // Dejo el envio de emails desconectado para no petar a emails por ahora.
@@ -169,7 +170,8 @@ public class LogicaReservas
                             <h3>Hola {primeraEnEspera.cliente.nombre},</h3>
                             <p>Tu reserva en Gentefit ha pasado de <b>espera</b> a <b>confirmada</b>.</p>
                             <p><b>Clase:</b> {clase.actividad?.nombre}</p>
-                            <p><b>Fecha de la clase:</b> {clase.horario}</p>
+                            <p><b>Fecha de la clase:</b> {clase.dia}</p>
+                            <p><b>Hora de la clase:</b> {clase.hora}</p>
                             <hr><p>¡Nos vemos en el gimnasio 🏋️‍♀️!</p>";
                 // Dejo el envio de emails desconectado para no petar a emails por ahora.
                 //EnviarCorreo.Notificar(primeraEnEspera.cliente.email, asunto, cuerpo);
@@ -193,7 +195,8 @@ public class LogicaReservas
             string cuerpo = $@"
             <h3>Hola {reserva.cliente.nombre},</h3>
             <p>Tu reserva para la clase <b>{clase.actividad?.nombre}</b> ha sido cancelada correctamente.</p>
-            <p><b>Fecha de la clase:</b> {clase.horario}</p>
+            <p><b>Fecha de la clase:</b> {clase.dia}</p>
+            <p><b>Hora de la clase:</b> {clase.hora}</p>
             <hr><p>Esperamos verte pronto 💪</p>";
 
             // Dejo el envio de emails desconectado para no petar a emails por ahora.
@@ -236,6 +239,8 @@ public class LogicaReservas
                 ClaseNombre = r.clase.actividad.nombre,
                 Estado = r.estado.ToString(),
                 FechaClase = r.clase.horario,
+                Dia = r.clase.dia,
+                Hora = r.clase.hora,
                 FechaReserva = r.fecha,
             })
             .ToList();
@@ -247,8 +252,12 @@ public class LogicaReservas
         public string ClaseNombre { get; set; }
         public DateTime FechaClase { get; set; }
         public DateTime FechaReserva { get; set; }
+        public Dia Dia { get; set; }
+        public TimeOnly Hora { get; set; }
         public string Estado { get; set; }
         
+
+
     }
 
 

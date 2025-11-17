@@ -1,210 +1,122 @@
-﻿using Gentefit.db;
-using Gentefit.Modelo;
-using Gentefit.ModeloXml;
-using Microsoft.EntityFrameworkCore;
+﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Xml.Serialization;
+using System.Text;
+using System.Threading.Tasks;
+using Gentefit.db;
+using Gentefit.Modelo;
+using Microsoft.EntityFrameworkCore;
 
-public class LogicaClases
+namespace Gentefit.Logica
 {
-    // Obtener todas las clases
-    public List<Clase> ObtenerTodos()
+    internal class LogicaClases
     {
-        using var contexto = new GentefitContext();
-        return contexto.Clases
-            .Include(c => c.actividad)
-            .Include(c => c.entrenador)
-            .Include(c => c.sala)
-            .OrderBy(c => c.horario)
-            .ToList();
-    }
-
-    // Obtener las clases disponibles:
-    public List<ClaseDTO> ObtenerClasesDisponibles()
-    {
-        using var contexto = new GentefitContext();
-        return contexto.Clases
-            .Include(c => c.actividad)
-            .Include(c => c.entrenador)
-            .Include(c => c.sala)
-            .OrderBy(c => c.horario)
-            .Select(c => new ClaseDTO
-            {
-                IdClase = c.idClase,
-                NombreActividad = c.actividad.nombre,
-                NombreEntrenador = c.entrenador.nombre,
-                NombreSala = c.sala.nombre,
-                Horario = c.horario,
-                PlazasLibres = c.plazasLibres,
-            })
-            .ToList();
-    }
-
-    // Estructura para mostrar la clase al cliente.
-    public class ClaseDTO
-    {
-        public int IdClase { get; set; }
-        public string NombreActividad { get; set; }
-        public string NombreEntrenador { get; set; }
-        public string NombreSala { get; set; }
-        public DateTime Horario { get; set; }
-        public int PlazasLibres { get; set; }
-        public int EnEspera { get; set; }
-    }
-
-    // Buscar clase por ID
-    public List<ClaseDTO> BuscarDTOPorId(int id)
-    {
-        using var contexto = new GentefitContext();
-        return contexto.Clases
-            .Where(c => c.idClase == id)
-            .Include(c => c.actividad)
-            .Include(c => c.entrenador)
-            .Include(c => c.sala)
-            .Select(c => new ClaseDTO
-            {
-                IdClase = c.idClase,
-                NombreActividad = c.actividad.nombre,
-                NombreEntrenador = c.entrenador.nombre,
-                NombreSala = c.sala.nombre,
-                Horario = c.horario,
-                PlazasLibres = c.plazasLibres,
-                EnEspera = c.enEspera
-            })
-            .ToList();
-    }
-
-
-    // Añadir una nueva clase
-    public void GuardarClase(Clase nuevaClase)
-    {
-        using var contexto = new GentefitContext();
-        contexto.Clases.Add(nuevaClase);
-        contexto.SaveChanges();
-    }
-
-    // Modificar una clase
-    public bool ModificarClase(Clase clase)
-    {
-        using var contexto = new GentefitContext();
-        var c = contexto.Clases.FirstOrDefault(x => x.idClase == clase.idClase);
-        if (c == null) return false;
-
-        c.idActividad = clase.idActividad;
-        c.idEntrenador = clase.idEntrenador;
-        c.idSala = clase.idSala;
-        c.horario = clase.horario;
-        c.plazasLibres = clase.plazasLibres;
-
-        contexto.SaveChanges();
-        return true;
-    }
-
-    // Eliminar clase por ID
-    public bool EliminarClase(int id)
-    {
-        using var contexto = new GentefitContext();
-        var clase = contexto.Clases.Find(id);
-        if (clase != null)
+        //Obtener todas las clases
+        public List<Clase> ListarClases()
         {
-            contexto.Clases.Remove(clase);
+            using var contexto = new GentefitContext();
+            return contexto.Clases.ToList();
+        }
+
+        //Buscar clase por ID
+        public List<Clase> BuscarPorId(int id)
+        {
+            using var contexto = new GentefitContext();
+            return contexto.Clases.Where(c => c.idClase == id).ToList();
+        }
+
+        // Obtener las clases disponibles:
+        public List<ClaseDTO> ObtenerClasesDisponibles()
+        {
+            using var contexto = new GentefitContext();
+            return contexto.Clases
+                .Include(c => c.actividad)
+                .Include(c => c.entrenador)
+                .Include(c => c.sala)
+                .OrderBy(c => c.horario)
+                .Select(c => new ClaseDTO
+                {
+                    IdClase = c.idClase,
+                    NombreActividad = c.actividad.nombre,
+                    NombreEntrenador = c.entrenador.nombre,
+                    NombreSala = c.sala.nombre,
+                    Horario = c.horario,
+                    PlazasLibres = c.plazasLibres,
+                })
+                .ToList();
+        }
+
+        //Añadir una nueva clase
+        public void AddClase(Clase clase)
+        {
+            using var contexto = new GentefitContext();
+            contexto.Clases.Add(clase);
+            contexto.SaveChanges();
+        }
+
+        //Modificar una clase
+        public bool Modificar(Clase clase)
+        {
+            using var contexto = new GentefitContext();
+            var c = contexto.Clases.FirstOrDefault(x => x.idClase == clase.idClase);
+            if (c == null) return false;
+
+            c.idActividad = clase.idActividad;
+            c.idEntrenador = clase.idEntrenador;
+            c.idSala = clase.idSala;
+            c.dia = clase.dia;
+            c.hora = clase.hora;
+
             contexto.SaveChanges();
             return true;
         }
-        return false;
-    }
 
-    // Filtrar clases por actividad
-    public List<ClaseDTO> FiltrarPorActividad(int idActividad)
-    {
-        using var contexto = new GentefitContext();
-        return contexto.Clases
-            .Where(c => c.idActividad == idActividad)
-            .Include(c => c.actividad)
-            .Include(c => c.entrenador)
-            .Include(c => c.sala)
-            .Select(c => new ClaseDTO
+        //Eliminar clase
+        public bool EliminarClase(int id)
+        {
+            using var contexto = new GentefitContext();
+            var clase = contexto.Clases.Find(id);
+            if (clase != null)
             {
-                IdClase = c.idClase,
-                NombreActividad = c.actividad.nombre,
-                NombreEntrenador = c.entrenador.nombre,
-                NombreSala = c.sala.nombre,
-                Horario = c.horario,
-                PlazasLibres = c.plazasLibres,
-            })
-            .ToList();
-    }
-
-
-    // Exportar clases a XML
-    public void ExportarXmlClases(string rutaArchivo)
-    {
-        var clases = ObtenerTodos();
-        var clasesXml = clases.Select(c => ConvertirAXml(c)).ToList();
-
-        XmlSerializer serializer = new XmlSerializer(typeof(List<ClaseXml>));
-        using (FileStream fs = new FileStream(rutaArchivo, FileMode.Create))
-        {
-            serializer.Serialize(fs, clasesXml);
+                contexto.Clases.Remove(clase);
+                contexto.SaveChanges();
+                return true;
+            }
+            return false;
         }
-    }
 
-    // Importar clases desde XML
-    public void ImportarXmlClases(string rutaArchivo)
-    {
-        using var contexto = new GentefitContext();
-        XmlSerializer serializer = new XmlSerializer(typeof(List<ClaseXml>));
-        using (FileStream fs = new FileStream(rutaArchivo, FileMode.Open))
+        // Estructura para mostrar la clase al cliente.
+        public class ClaseDTO
         {
-            List<ClaseXml> clasesXml = (List<ClaseXml>)serializer.Deserialize(fs);
-            List<Clase> clases = clasesXml.Select(x =>
-            {
-                var c = ConvertirAEntidad(x);
-                c.idClase = 0; // Ignorar el ID del XML
-                return c;
-            }).ToList();
-
-            contexto.Clases.AddRange(clases);
-            contexto.SaveChanges();
+            public int IdClase { get; set; }
+            public string NombreActividad { get; set; }
+            public string NombreEntrenador { get; set; }
+            public string NombreSala { get; set; }
+            public DateTime Horario { get; set; }
+            public int PlazasLibres { get; set; }
+            public int EnEspera { get; set; }
         }
-    }
 
-    // Conversión Clase -> ClaseXml
-    public static ClaseXml ConvertirAXml(Clase clase)
-    {
-        return new ClaseXml
+        // Buscar clase por ID
+        public List<ClaseDTO> BuscarDTOPorId(int id)
         {
-            IdClase = clase.idClase,
-            IdActividad = clase.idActividad,
-            Actividad = clase.actividad,
-            IdEntrenador = clase.idEntrenador,
-            Entrenador = clase.entrenador,
-            IdSala = clase.idSala,
-            Sala = clase.sala,
-            Horario = clase.horario,
-            PlazasLibres = clase.plazasLibres,
-            Reservas = clase.reservas
-        };
-    }
-
-    // Conversión ClaseXml -> Clase
-    public static Clase ConvertirAEntidad(ClaseXml claseXml)
-    {
-        return new Clase
-        {
-            idClase = claseXml.IdClase,
-            idActividad = claseXml.IdActividad,
-            actividad = claseXml.Actividad,
-            idEntrenador = claseXml.IdEntrenador,
-            entrenador = claseXml.Entrenador,
-            idSala = claseXml.IdSala,
-            sala = claseXml.Sala,
-            horario = claseXml.Horario,
-            plazasLibres = claseXml.PlazasLibres,
-            reservas = claseXml.Reservas
-        };
+            using var contexto = new GentefitContext();
+            return contexto.Clases
+                .Where(c => c.idClase == id)
+                .Include(c => c.actividad)
+                .Include(c => c.entrenador)
+                .Include(c => c.sala)
+                .Select(c => new ClaseDTO
+                {
+                    IdClase = c.idClase,
+                    NombreActividad = c.actividad.nombre,
+                    NombreEntrenador = c.entrenador.nombre,
+                    NombreSala = c.sala.nombre,
+                    //Horario = c.horario,
+                    PlazasLibres = c.plazasLibres,
+                    //EnEspera = c.enEspera
+                })
+                .ToList();
+        }
     }
 }
-
