@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Gentefit.ModeloXml;
 using Gentefit.Modelo;
 using Gentefit.Vistas.PantallasAdmin;
+using Gentefit.Controlador;
 
 namespace Gentefit.Vistas.PantallasEncargado
 {

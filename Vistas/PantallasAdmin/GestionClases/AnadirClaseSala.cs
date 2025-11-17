@@ -1,4 +1,4 @@
-﻿using Gentefit.Logica;
+﻿using Gentefit.Controlador;
 using Gentefit.db;
 using Gentefit.Modelo;
 using Org.BouncyCastle.Crypto;
@@ -39,9 +39,9 @@ namespace Gentefit.Vistas.PantallasAdmin
 
                 int idSala = (int)fila.Cells["idSala"].Value;
                 List<Sala> posiblesSalas = logicaSala.BuscarPorId(idSala);
-                Sala sala = posiblesSalas[0]; //Ja tenim l'objecte Sala de la fila
+                Sala sala = posiblesSalas[0];
 
-                List<Clase> todasClases = logicaClase.ListarClases(); //Comparem cada clase existent amb les clases de la sala de cada fila
+                List<Clase> todasClases = logicaClase.ListarClases(); //Comapar cada clase existente con las clases de la sala de cada fila
                 for (int i = 0; i < todasClases.Count; i++)
                 {
                     List<Actividad> posibleAct = logicaActiv.BuscarPorId(todasClases[i].idActividad);
@@ -92,6 +92,8 @@ namespace Gentefit.Vistas.PantallasAdmin
             }
             int idSala = (int)PanelSalas.CurrentRow.Cells["idSala"].Value;
             clase.idSala = idSala;
+            clase.plazasLibres = 16;
+            clase.enEspera = 0;
             logicaClase.AddClase(clase);
 
             MessageBox.Show("Clase añadida correctamente.");

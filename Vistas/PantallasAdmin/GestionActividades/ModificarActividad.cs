@@ -1,6 +1,6 @@
 ﻿using Gentefit.Modelo;
 using Gentefit.Vistas.PantallasAdmin.GestionActividades.PantallasActividadesAdmin;
-using Gentefit.Logica;
+using Gentefit.Controlador;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

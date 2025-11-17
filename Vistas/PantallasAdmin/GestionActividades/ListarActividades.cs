@@ -1,4 +1,4 @@
-﻿using Gentefit.Logica;
+﻿using Gentefit.Controlador;
 using Gentefit.Modelo;
 using Gentefit.ModeloXml;
 using System;

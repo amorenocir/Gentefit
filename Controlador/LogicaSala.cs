@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Gentefit.Modelo;
 
-namespace Gentefit.Logica
+namespace Gentefit.Controlador
 {
     internal class LogicaSala
     {

@@ -3,6 +3,7 @@ using Gentefit.db;
 using System;
 using System.Linq;
 using System.Windows.Forms;
+using Gentefit.Controlador;
 
 namespace Gentefit.Vistas.PantallasRecepcionista
 {

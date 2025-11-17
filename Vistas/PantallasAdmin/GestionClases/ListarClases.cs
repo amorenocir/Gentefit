@@ -1,4 +1,4 @@
-﻿using Gentefit.Logica;
+﻿using Gentefit.Controlador;
 using Gentefit.Modelo;
 using System;
 using System.Collections.Generic;
@@ -31,25 +31,28 @@ namespace Gentefit.Vistas.PantallasAdmin
 
         private void ListarClases_Load(object sender, EventArgs e)
         {
-            List<Clase> todasClases = logicaClases.ListarClases();
-            List<Clase> clasesMostrar = new List<Clase>();
-            for(int i = 0; i < todasClases.Count; i++)
-            {
-                if (todasClases[i].idActividad  == idActividad)
-                {
-                    clasesMostrar.Add(todasClases[i]);
-                }
-            }
+            // Obtener todas las clases disponibles como DTO
+            List<LogicaClases.ClaseDTO> todasClasesDTO = logicaClases.ObtenerClasesDisponibles();
+
+            // Filtrar por la actividad seleccionada
+            List<LogicaClases.ClaseDTO> clasesMostrar = todasClasesDTO
+                .Where(c => c.IdActividad == idActividad)
+                .ToList();
+
+            // Asignar al DataGridView
             PanelClases.DataSource = clasesMostrar;
 
-            PanelClases.Columns["actividad"].Visible = false;
-            PanelClases.Columns["entrenador"].Visible = false;
-            PanelClases.Columns["sala"].Visible = false;
+            // Ajustar columnas visibles
+            PanelClases.Columns["IdClase"].HeaderText = "ID Clase";
+            PanelClases.Columns["NombreActividad"].HeaderText = "Actividad";
+            PanelClases.Columns["NombreEntrenador"].HeaderText = "Entrenador";
+            PanelClases.Columns["NombreSala"].HeaderText = "Sala";
+            PanelClases.Columns["Dia"].HeaderText = "Día";
+            PanelClases.Columns["Hora"].HeaderText = "Hora";
+            PanelClases.Columns["PlazasLibres"].HeaderText = "Plazas Libres";
 
-            List<Actividad> posiblesAct = logicaAct.BuscarPorId(idActividad);
-            Actividad actividad = posiblesAct[0];
-            string tituloMin = "Lista de clases de " + actividad.nombre;
-            Tituloo.Text = tituloMin.ToUpper();
+            PanelClases.Columns["Horario"].Visible = false;
+            PanelClases.Columns["IdActividad"].Visible = false;
         }
     }
 }

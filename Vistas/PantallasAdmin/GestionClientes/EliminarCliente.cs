@@ -1,4 +1,5 @@
 ﻿using Gentefit.Modelo;
+using Gentefit.Controlador;
 using Gentefit.db;
 using System;
 using System.Windows.Forms;

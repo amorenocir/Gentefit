@@ -1,6 +1,7 @@
 ﻿using Gentefit.db;
 using Gentefit.Modelo;
 using Gentefit.Modelo.Enums;
+using Gentefit.Controlador;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

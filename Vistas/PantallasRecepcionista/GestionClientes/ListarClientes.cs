@@ -11,6 +11,7 @@ using System.Xml.Serialization;
 using Gentefit.db;
 using Gentefit.ModeloXml;
 using Gentefit.Modelo;
+using Gentefit.Controlador;
 
 namespace Gentefit.Vistas.PantallasRecepcionista
 {

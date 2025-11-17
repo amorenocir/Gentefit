@@ -1,4 +1,5 @@
 ﻿using Gentefit.Modelo;
+using Gentefit.Controlador;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

@@ -5,9 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using Gentefit.db;
 using Gentefit.Modelo;
+using Gentefit.Modelo.Enums;
 using Microsoft.EntityFrameworkCore;
 
-namespace Gentefit.Logica
+namespace Gentefit.Controlador
 {
     internal class LogicaClases
     {
@@ -37,10 +38,13 @@ namespace Gentefit.Logica
                 .Select(c => new ClaseDTO
                 {
                     IdClase = c.idClase,
+                    IdActividad = c.idActividad,
                     NombreActividad = c.actividad.nombre,
                     NombreEntrenador = c.entrenador.nombre,
                     NombreSala = c.sala.nombre,
                     Horario = c.horario,
+                    Dia = c.dia,
+                    Hora = c.hora,
                     PlazasLibres = c.plazasLibres,
                 })
                 .ToList();
@@ -89,10 +93,13 @@ namespace Gentefit.Logica
         public class ClaseDTO
         {
             public int IdClase { get; set; }
+            public int IdActividad { get; set; }
             public string NombreActividad { get; set; }
             public string NombreEntrenador { get; set; }
             public string NombreSala { get; set; }
             public DateTime Horario { get; set; }
+            public Dia Dia { get; set; }
+            public TimeOnly Hora { get; set; }
             public int PlazasLibres { get; set; }
             public int EnEspera { get; set; }
         }

@@ -6,7 +6,7 @@ using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Gentefit.Logica
+namespace Gentefit.Controlador
 {
     internal class EnviarCorreo
     {

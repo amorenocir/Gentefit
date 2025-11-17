@@ -1,4 +1,4 @@
-﻿using Gentefit.Logica;
+﻿using Gentefit.Controlador;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

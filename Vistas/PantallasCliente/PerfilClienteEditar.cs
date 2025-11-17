@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Gentefit.Vistas.PantallasCliente;
-using Gentefit.Logica;
+using Gentefit.Controlador;
 
 namespace Gentefit.Vistas.PantallasCliente
 {

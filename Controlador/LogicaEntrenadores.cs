@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Gentefit.db;
 using Gentefit.Modelo;
 
-namespace Gentefit.Logica
+namespace Gentefit.Controlador
 {
     internal class LogicaEntrenadores
     {

@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Gentefit.Controlador;
 
 namespace Gentefit.Vistas.PantallasAdmin.GestionUsuarios
 {
