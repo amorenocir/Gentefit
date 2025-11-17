@@ -97,7 +97,7 @@ namespace Gentefit.Vistas.PantallasAdmin.GestionReservas
                 MessageBox.Show("Por favor introduce un ID válido.");
                 return;
             }
-
+              
             LogicaClientes logica = new LogicaClientes();
             var resultados = logica.BuscarPorId(idBuscado);
             DgvClientes.DataSource = resultados;
