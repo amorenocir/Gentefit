@@ -112,54 +112,74 @@ public class LogicaReservas
     }
 
     // Modificar una reserva
-    // Modificar una reserva
     public bool ModificarReserva(Reserva reservaMod)
     {
         using var contexto = new GentefitContext();
-
-        // Cargar reserva original con su clase
         var reserva = contexto.Reservas
             .Include(r => r.clase)
+                .ThenInclude(c => c.actividad)
+            .Include(r => r.cliente)
             .FirstOrDefault(r => r.idReserva == reservaMod.idReserva);
 
-        if (reserva == null) return false;
+        if (reserva == null)
+            return false;
 
         var clase = reserva.clase;
 
-        // Guardar estado anterior y nuevo
-        var estadoAnterior = reserva.estado;
-        var nuevoEstado = reservaMod.estado;
+        EstadoReserva estadoAnterior = reserva.estado;
+        EstadoReserva nuevoEstado = reservaMod.estado;
 
-        // 1️⃣ No permitir Confirmada si la clase está llena
+        // 🔹 VALIDACIÓN: no permitir Confirmada si no hay plazas
         if (nuevoEstado == EstadoReserva.Confirmada &&
             estadoAnterior != EstadoReserva.Confirmada &&
             clase.plazasLibres == 0)
         {
-            MessageBox.Show("❌ No se puede confirmar la reserva porque la clase ya está llena.");
+            MessageBox.Show("No se puede confirmar la reserva porque la clase está completa.");
             return false;
         }
 
-        // 2️⃣ Si pasa de Confirmada → EnEspera o Cancelada → liberar una plaza
+        // 🔹 CASO 1: Confirmada → EnEspera  (liberar 1 plaza + promover siguiente)
         if (estadoAnterior == EstadoReserva.Confirmada &&
-            (nuevoEstado == EstadoReserva.EnEspera || nuevoEstado == EstadoReserva.Cancelada))
+            nuevoEstado == EstadoReserva.EnEspera)
         {
             clase.plazasLibres++;
+
+            // Buscar siguiente en espera
+            var siguiente = contexto.Reservas
+                .Include(r => r.cliente)
+                .Where(r => r.idClase == clase.idClase && r.estado == EstadoReserva.EnEspera)
+                .OrderBy(r => r.fecha)
+                .FirstOrDefault();
+
+            if (siguiente != null)
+            {
+                siguiente.estado = EstadoReserva.Confirmada;
+
+                string asunto = "🎉 ¡Tu reserva ha sido confirmada!";
+                string cuerpo = $@"
+                    <h3>Hola {siguiente.cliente.nombre},</h3>
+                    <p>Una plaza se ha liberado y tu reserva ahora está <b>CONFIRMADA</b>.</p>
+                    <p>Clase: {clase.actividad.nombre}</p>
+                    <p>Fecha: {clase.horario}</p>";
+                EnviarCorreo.Notificar(siguiente.cliente.email, asunto, cuerpo);
+            }
         }
 
-        // 3️⃣ Si pasa de EnEspera → Confirmada → ocupar plaza
+        // 🔹 CASO 2: Confirmada → Cancelada  (usamos CancelarReserva para mantener la lógica)
+        if (estadoAnterior == EstadoReserva.Confirmada &&
+            nuevoEstado == EstadoReserva.Cancelada)
+        {
+            return CancelarReserva(reserva.idReserva);
+        }
+
+        // 🔹 CASO 3: EnEspera → Confirmada  (ocupa 1 plaza)
         if (estadoAnterior == EstadoReserva.EnEspera &&
             nuevoEstado == EstadoReserva.Confirmada)
         {
             clase.plazasLibres--;
         }
 
-        // 4️⃣ Si el admin la pone como Cancelada → usar tu lógica completa de cancelación
-        if (nuevoEstado == EstadoReserva.Cancelada)
-        {
-            return CancelarReserva(reserva.idReserva);
-        }
-
-        // 5️⃣ Guardar cambios normales (sin cancelación)
+        // 🔹 CASO 4: Cualquier otro cambio simple (no requiere promoción ni cancelación)
         reserva.idCliente = reservaMod.idCliente;
         reserva.idClase = reservaMod.idClase;
         reserva.estado = nuevoEstado;
@@ -167,6 +187,7 @@ public class LogicaReservas
         contexto.SaveChanges();
         return true;
     }
+
 
 
     // Cancelar una reserva
