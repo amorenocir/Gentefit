@@ -4,6 +4,9 @@ using Gentefit.db;
 using Gentefit.Test;
 using Gentefit.Vistas;
 using Gentefit.Vistas.PantallasAdmin;
+using Gentefit.Vistas.PantallasRecepcionista;
+using Gentefit.Vistas.PantallasEncargado;
+
 
 
 namespace Gentefit
@@ -15,8 +18,7 @@ namespace Gentefit
         {
             ApplicationConfiguration.Initialize();
             //Application.Run(new Login());
-            Application.Run(new InicioAdmin()); //Run de pruebas para saltarse el login e ir a admin
-            
+
             var clienteTest = new Cliente //Cliente falso de prueba para poder acceder sin pasar por login y agilizar testeo
             {
                 idCliente = 1,
@@ -28,7 +30,12 @@ namespace Gentefit
                 telefono = 600000000,
                 listaReservas = new List<Reserva>()
             };
-            //Application.Run(new MenuCliente(clienteTest)); //Saltarse login e ir a cliente
+
+            // RUNS DE PRUEBAS PARA SALTAR EL LOGIN
+            Application.Run(new InicioAdmin()); 
+            //Application.Run(new InicioEncargado());
+            //Application.Run(new InicioRecepcionista());
+            //Application.Run(new InicioCliente(clienteTest));
 
 
             using var contexto = new GentefitContext();
