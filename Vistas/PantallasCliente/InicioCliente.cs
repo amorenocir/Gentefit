@@ -61,5 +61,9 @@ namespace Gentefit.Vistas
             this.Hide();
         }
 
+        private void InicioCliente_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

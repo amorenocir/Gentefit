@@ -22,7 +22,7 @@ namespace Gentefit.Vistas.PantallasAdmin
         {
             using var contexto = new GentefitContext();
             logica = new LogicaReservas();
-            PanelReservas.DataSource = logica.ObtenerTodos();
+            CargarDatos();
         }
 
         private void BotonBuscar_Click(object sender, EventArgs e)
@@ -79,7 +79,12 @@ namespace Gentefit.Vistas.PantallasAdmin
 
         private void CargarDatos()
         {
-            PanelReservas.DataSource = logica.ObtenerTodos();
+            PanelReservas.DataSource = logica.ObtenerReservasDetalladas();
+        }
+
+        private void EliminarReserva_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

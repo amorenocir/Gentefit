@@ -88,6 +88,12 @@ namespace Gentefit.Vistas
                 this.Hide();
             }
         }
+
+        private void BotonVolver_Click(object sender, EventArgs e)
+        {
+            new InicioCliente(clienteLogeado).Show();
+            this.Close();
+        }
     }
 }
 

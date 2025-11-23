@@ -151,7 +151,7 @@
             BotonInicio.Text = "Inicio";
             BotonInicio.UseVisualStyleBackColor = false;
             // 
-            // MenuCliente
+            // InicioCliente
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -166,8 +166,9 @@
             Controls.Add(pictureBox1);
             Controls.Add(ImagenMensajes);
             Controls.Add(ImagenPerfil);
-            Name = "MenuCliente";
+            Name = "InicioCliente";
             Text = "MenuCliente";
+            Load += InicioCliente_Load;
             ((System.ComponentModel.ISupportInitialize)ImagenPerfil).EndInit();
             ((System.ComponentModel.ISupportInitialize)ImagenMensajes).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

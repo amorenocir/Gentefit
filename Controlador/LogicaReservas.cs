@@ -43,11 +43,9 @@ namespace Gentefit.Controlador
                     IdReserva = r.idReserva,
                     Cliente = r.cliente.nombre + " " + r.cliente.apellidos,
                     Clase = r.clase.actividad.nombre,
-                    FechaClase = r.clase.horario,
-                    Dia = r.clase.dia,
-                    Hora = r.clase.hora,
+                    FechaClase = r.fechaClase,
                     Estado = r.estado.ToString(),
-                    FechaReserva = r.fecha
+                    FechaReserva = r.fechaReserva
                 })
                 .ToList();
         }
@@ -81,12 +79,42 @@ namespace Gentefit.Controlador
 
             if (clase == null) return false;
 
+            // Buscar la fecha de la clase que se reserva
+            DayOfWeek diaObjetivo = DayOfWeek.Monday;
+            DateTime fechaHoraClase;
+            switch (clase.dia)
+            {
+                case Dia.Lunes:
+                    diaObjetivo = DayOfWeek.Monday;
+                    break;
+                case Dia.Martes:
+                    diaObjetivo = DayOfWeek.Tuesday;
+                    break;
+                case Dia.Miercoles:
+                    diaObjetivo = DayOfWeek.Wednesday;
+                    break;
+                case Dia.Jueves:
+                    diaObjetivo = DayOfWeek.Thursday;
+                    break;
+                case Dia.Viernes:
+                    diaObjetivo = DayOfWeek.Friday;
+                    break;
+                case Dia.Sabado:
+                    diaObjetivo = DayOfWeek.Saturday;
+                    break;
+                case Dia.Domingo:
+                    diaObjetivo = DayOfWeek.Sunday;
+                    break;
+            }
+            fechaHoraClase = BuscarFechaReserva(diaObjetivo, clase);
+
             // Crear la reserva
             Reserva nuevaReserva = new Reserva
             {
                 idClase = clase.idClase,
                 idCliente = idCliente,
-                fecha = DateTime.Now
+                fechaClase = fechaHoraClase,
+                fechaReserva = DateTime.Now
             };
 
             // Comprobar plazas libres
@@ -147,7 +175,8 @@ namespace Gentefit.Controlador
             c.idCliente = reserva.idCliente;
             c.idClase = reserva.idClase;
             c.estado = reserva.estado;
-            c.fecha = reserva.fecha;
+            c.fechaClase = reserva.fechaClase;
+            c.fechaReserva = reserva.fechaReserva;
 
             contexto.SaveChanges();
             return true;
@@ -181,7 +210,7 @@ namespace Gentefit.Controlador
                 var primeraEnEspera = contexto.Reservas
                     .Include(r => r.cliente)
                     .Where(r => r.idClase == clase.idClase && r.estado == EstadoReserva.EnEspera)
-                    .OrderBy(r => r.fecha)
+                    .OrderBy(r => r.fechaReserva)
                     .FirstOrDefault();
 
                 if (primeraEnEspera != null)
@@ -264,9 +293,9 @@ namespace Gentefit.Controlador
                     Clase = r.clase.actividad.nombre,
                     Estado = r.estado.ToString(),
                     FechaClase = r.clase.horario,
-                    Dia = r.clase.dia,
-                    Hora = r.clase.hora,
-                    FechaReserva = r.fecha,
+                    //Dia = r.clase.dia,
+                    //Hora = r.clase.hora,
+                    FechaReserva = r.fechaReserva,
                 })
                 .ToList();
         }
@@ -278,8 +307,8 @@ namespace Gentefit.Controlador
             public string Clase { get; set; }
             public DateTime FechaClase { get; set; }
             public DateTime FechaReserva { get; set; }
-            public Dia Dia { get; set; }
-            public TimeOnly Hora { get; set; }
+            //public Dia Dia { get; set; }
+            //public TimeOnly Hora { get; set; }
             public string Estado { get; set; }
 
 
@@ -331,7 +360,8 @@ namespace Gentefit.Controlador
                 IdClase = reserva.idClase,
                 Clase = reserva.clase,
                 Estado = reserva.estado,
-                Fecha = reserva.fecha,
+                FechaReserva = reserva.fechaReserva,
+                FechaClase = reserva.fechaClase
             };
         }
 
@@ -346,8 +376,26 @@ namespace Gentefit.Controlador
                 idClase = reservaXml.IdClase,
                 clase = reservaXml.Clase,
                 estado = reservaXml.Estado,
-                fecha = reservaXml.Fecha,
+                fechaClase = reservaXml.FechaClase,
+                fechaReserva = reservaXml.FechaReserva
             };
+        }
+
+        //Busca la fecha y hora de la clase que se quiere reservar
+        public static DateTime BuscarFechaReserva(DayOfWeek diaObjetivo, Clase clase)
+        {
+            DateTime hoy = DateTime.Today;
+            int diasQueFaltan = ((int)diaObjetivo - (int)hoy.DayOfWeek + 7) % 7;
+            if (diasQueFaltan == 0) //Aseguramos que la reserva se hace para un futuro
+            {
+                if (clase.hora < TimeOnly.FromDateTime(DateTime.Now))
+                {
+                    diasQueFaltan = 7;
+                }
+            }
+            DateTime diaClase = hoy.AddDays(diasQueFaltan);
+            DateTime fechaHoraClase = diaClase.Add(clase.hora.ToTimeSpan());
+            return fechaHoraClase;
         }
     }
 }

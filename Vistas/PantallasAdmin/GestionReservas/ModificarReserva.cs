@@ -91,9 +91,12 @@ namespace Gentefit.Vistas.PantallasAdmin
                     r.idCliente,
                     r.idClase,
                     Estado = r.estado,   // enum
-                    r.fecha
+                    r.fechaClase,
+                    r.fechaReserva,
                 })
                 .ToList();
+
+            //var reservas = logica.ObtenerReservasDetalladas();
 
             PanelReservas.DataSource = reservas;
 

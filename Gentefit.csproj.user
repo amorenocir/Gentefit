@@ -172,6 +172,9 @@
     <Compile Update="Vistas\PantallasEncargado\InicioEncargado.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Vistas\PantallasEncargado\ListadoReservasEncargado.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Vistas\PantallasEncargado\ReservasEncargado.cs">
       <SubType>Form</SubType>
     </Compile>

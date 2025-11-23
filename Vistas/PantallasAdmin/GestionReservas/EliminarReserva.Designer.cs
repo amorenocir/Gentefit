@@ -41,20 +41,18 @@
             // PanelReservas
             // 
             PanelReservas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            PanelReservas.Location = new Point(90, 184);
-            PanelReservas.Margin = new Padding(3, 4, 3, 4);
+            PanelReservas.Location = new Point(79, 138);
             PanelReservas.Name = "PanelReservas";
             PanelReservas.RowHeadersWidth = 51;
-            PanelReservas.Size = new Size(757, 288);
+            PanelReservas.Size = new Size(662, 216);
             PanelReservas.TabIndex = 37;
             // 
             // BotonBuscar
             // 
             BotonBuscar.BackColor = Color.DarkOrange;
-            BotonBuscar.Location = new Point(313, 115);
-            BotonBuscar.Margin = new Padding(3, 4, 3, 4);
+            BotonBuscar.Location = new Point(274, 86);
             BotonBuscar.Name = "BotonBuscar";
-            BotonBuscar.Size = new Size(80, 45);
+            BotonBuscar.Size = new Size(70, 34);
             BotonBuscar.TabIndex = 41;
             BotonBuscar.Text = "Buscar";
             BotonBuscar.UseVisualStyleBackColor = false;
@@ -62,18 +60,16 @@
             // 
             // CajaTextoBuscar
             // 
-            CajaTextoBuscar.Location = new Point(90, 124);
-            CajaTextoBuscar.Margin = new Padding(3, 4, 3, 4);
+            CajaTextoBuscar.Location = new Point(79, 93);
             CajaTextoBuscar.Name = "CajaTextoBuscar";
-            CajaTextoBuscar.Size = new Size(205, 27);
+            CajaTextoBuscar.Size = new Size(180, 23);
             CajaTextoBuscar.TabIndex = 40;
             // 
             // BotonVolver
             // 
-            BotonVolver.Location = new Point(767, 480);
-            BotonVolver.Margin = new Padding(3, 4, 3, 4);
+            BotonVolver.Location = new Point(671, 360);
             BotonVolver.Name = "BotonVolver";
-            BotonVolver.Size = new Size(81, 45);
+            BotonVolver.Size = new Size(71, 34);
             BotonVolver.TabIndex = 43;
             BotonVolver.Text = "Volver";
             BotonVolver.UseVisualStyleBackColor = true;
@@ -82,10 +78,9 @@
             // BotonEliminar
             // 
             BotonEliminar.BackColor = Color.DarkOrange;
-            BotonEliminar.Location = new Point(672, 480);
-            BotonEliminar.Margin = new Padding(3, 4, 3, 4);
+            BotonEliminar.Location = new Point(588, 360);
             BotonEliminar.Name = "BotonEliminar";
-            BotonEliminar.Size = new Size(80, 45);
+            BotonEliminar.Size = new Size(70, 34);
             BotonEliminar.TabIndex = 42;
             BotonEliminar.Text = "Eliminar";
             BotonEliminar.UseVisualStyleBackColor = false;
@@ -94,10 +89,9 @@
             // BotonVerTodos
             // 
             BotonVerTodos.BackColor = Color.DarkOrange;
-            BotonVerTodos.Location = new Point(413, 115);
-            BotonVerTodos.Margin = new Padding(3, 4, 3, 4);
+            BotonVerTodos.Location = new Point(361, 86);
             BotonVerTodos.Name = "BotonVerTodos";
-            BotonVerTodos.Size = new Size(94, 45);
+            BotonVerTodos.Size = new Size(82, 34);
             BotonVerTodos.TabIndex = 44;
             BotonVerTodos.Text = "Ver todos";
             BotonVerTodos.UseVisualStyleBackColor = false;
@@ -108,17 +102,17 @@
             EliminarReservas.AutoSize = true;
             EliminarReservas.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
             EliminarReservas.ForeColor = Color.DarkSlateGray;
-            EliminarReservas.Location = new Point(90, 41);
+            EliminarReservas.Location = new Point(79, 31);
             EliminarReservas.Name = "EliminarReservas";
-            EliminarReservas.Size = new Size(355, 46);
+            EliminarReservas.Size = new Size(284, 37);
             EliminarReservas.TabIndex = 45;
             EliminarReservas.Text = "ELIMINAR RESERVAS";
             // 
             // EliminarReserva
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(914, 600);
+            ClientSize = new Size(800, 450);
             Controls.Add(EliminarReservas);
             Controls.Add(BotonVerTodos);
             Controls.Add(BotonVolver);
@@ -126,9 +120,9 @@
             Controls.Add(BotonBuscar);
             Controls.Add(CajaTextoBuscar);
             Controls.Add(PanelReservas);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "EliminarReserva";
             Text = "EliminarReserva";
+            Load += EliminarReserva_Load_1;
             ((System.ComponentModel.ISupportInitialize)PanelReservas).EndInit();
             ResumeLayout(false);
             PerformLayout();

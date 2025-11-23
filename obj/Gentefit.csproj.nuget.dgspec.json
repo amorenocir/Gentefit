@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\andrea\\Clase\\4-Grado Informática\\Clase\\3º Año\\1º Semestre\\Persistencia de Datos .NET\\Visual Studio\\Gentefit\\Gentefit.csproj": {}
+    "C:\\Users\\maria\\source\\repos\\GentefitAndrea\\Gentefit.csproj": {}
   },
   "projects": {
-    "E:\\andrea\\Clase\\4-Grado Informática\\Clase\\3º Año\\1º Semestre\\Persistencia de Datos .NET\\Visual Studio\\Gentefit\\Gentefit.csproj": {
+    "C:\\Users\\maria\\source\\repos\\GentefitAndrea\\Gentefit.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\andrea\\Clase\\4-Grado Informática\\Clase\\3º Año\\1º Semestre\\Persistencia de Datos .NET\\Visual Studio\\Gentefit\\Gentefit.csproj",
+        "projectUniqueName": "C:\\Users\\maria\\source\\repos\\GentefitAndrea\\Gentefit.csproj",
         "projectName": "Gentefit",
-        "projectPath": "E:\\andrea\\Clase\\4-Grado Informática\\Clase\\3º Año\\1º Semestre\\Persistencia de Datos .NET\\Visual Studio\\Gentefit\\Gentefit.csproj",
-        "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-        "outputPath": "E:\\andrea\\Clase\\4-Grado Informática\\Clase\\3º Año\\1º Semestre\\Persistencia de Datos .NET\\Visual Studio\\Gentefit\\obj\\",
+        "projectPath": "C:\\Users\\maria\\source\\repos\\GentefitAndrea\\Gentefit.csproj",
+        "packagesPath": "C:\\Users\\maria\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\maria\\source\\repos\\GentefitAndrea\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\maria\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -38,7 +39,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -92,7 +99,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.415/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

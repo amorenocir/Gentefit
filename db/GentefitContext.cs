@@ -34,7 +34,7 @@ public partial class GentefitContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseMySql("server=localhost;database=gentefitdb;user=root;password=1234", new MySqlServerVersion(new Version(8,0, 36)));
+        => optionsBuilder.UseMySql("server=localhost;port=3306;user=root;password=1234;database=gentefitdb", new MySqlServerVersion(new Version(8,0, 36)));
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -96,7 +96,7 @@ public partial class GentefitContext : DbContext
         {
             entity.HasKey(e => e.idEntrenador).HasName("PK__Monitor__3214EC272BF7700F");
 
-            entity.ToTable("Entrenador");
+            entity.ToTable("monitor");
 
             entity.Property(e => e.idEntrenador).HasColumnName("ID");
             entity.Property(e => e.apellidos)
@@ -123,7 +123,7 @@ public partial class GentefitContext : DbContext
                 .HasConversion<int>() // Guarda el enum como int
                 .HasColumnName("Estado");
 
-            entity.Property(e => e.fecha)
+            entity.Property(e => e.fechaReserva)
                 .HasColumnType("timestamp")
                 .HasDefaultValueSql("CURRENT_TIMESTAMP");
 

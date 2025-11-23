@@ -16,6 +16,7 @@ namespace Gentefit.ModeloXml
         public int IdClase { get; set; }
         public Clase Clase { get; set; }
         public EstadoReserva Estado { get; set; }
-        public DateTime Fecha { get; set; }
+        public DateTime FechaReserva { get; set; }
+        public DateTime FechaClase { get; set; }
     }
 }

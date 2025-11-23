@@ -68,11 +68,14 @@ namespace Gentefit.Migrations
                     b.Property<int>("dia")
                         .HasColumnType("int");
 
+                    b.Property<int>("enEspera")
+                        .HasColumnType("int");
+
                     b.Property<TimeOnly>("hora")
                         .HasColumnType("time(6)");
 
                     b.Property<DateTime>("horario")
-                        .HasColumnType("datetime(6)");
+                        .HasColumnType("datetime");
 
                     b.Property<int>("idActividad")
                         .HasColumnType("int")
@@ -182,7 +185,7 @@ namespace Gentefit.Migrations
                     b.HasKey("idEntrenador")
                         .HasName("PK__Monitor__3214EC272BF7700F");
 
-                    b.ToTable("Entrenador", (string)null);
+                    b.ToTable("monitor", (string)null);
                 });
 
             modelBuilder.Entity("Gentefit.Modelo.Reserva", b =>
@@ -194,20 +197,17 @@ namespace Gentefit.Migrations
 
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("idReserva"));
 
-                    b.Property<int>("dia")
-                        .HasColumnType("int");
-
                     b.Property<int>("estado")
                         .HasColumnType("int")
                         .HasColumnName("Estado");
 
-                    b.Property<DateTime>("fecha")
+                    b.Property<DateTime>("fechaClase")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<DateTime>("fechaReserva")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("timestamp")
                         .HasDefaultValueSql("CURRENT_TIMESTAMP");
-
-                    b.Property<TimeOnly>("hora")
-                        .HasColumnType("time(6)");
 
                     b.Property<int>("idClase")
                         .HasColumnType("int")

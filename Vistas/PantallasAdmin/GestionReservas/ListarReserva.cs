@@ -36,10 +36,10 @@ namespace Gentefit.Vistas.PantallasAdmin
             PanelReservas.Columns["Cliente"].HeaderText = "Cliente";
             PanelReservas.Columns["Clase"].HeaderText = "Clase";
             PanelReservas.Columns["FechaClase"].HeaderText = "Fecha de la Clase";
-            PanelReservas.Columns["Hora"].HeaderText = "Hora";
+            //PanelReservas.Columns["Hora"].HeaderText = "Hora";
             PanelReservas.Columns["FechaReserva"].HeaderText = "Fecha de la Reserva";
             PanelReservas.Columns["Estado"].HeaderText = "Estado";
-
+            
             PanelReservas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
@@ -92,7 +92,8 @@ namespace Gentefit.Vistas.PantallasAdmin
                 IdClase = reserva.idClase,
                 Clase = reserva.clase,
                 Estado = reserva.estado,
-                Fecha = reserva.fecha,
+                FechaReserva = reserva.fechaReserva,
+                FechaClase = reserva.fechaClase,
             };
         }
 
@@ -106,7 +107,8 @@ namespace Gentefit.Vistas.PantallasAdmin
                 idClase = reservaXml.IdClase,
                 clase = reservaXml.Clase,
                 estado = reservaXml.Estado,
-                fecha = reservaXml.Fecha,
+                fechaReserva = reservaXml.FechaReserva,
+                fechaClase = reservaXml.FechaClase,
             };
         }
     }

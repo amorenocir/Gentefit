@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Gentefit.Migrations
 {
     [DbContext(typeof(GentefitContext))]
-    [Migration("20251111184001_David2")]
-    partial class David2
+    [Migration("20251122102514_EditarTablaReservas")]
+    partial class EditarTablaReservas
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -67,6 +67,15 @@ namespace Gentefit.Migrations
                         .HasColumnName("ID");
 
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("idClase"));
+
+                    b.Property<int>("dia")
+                        .HasColumnType("int");
+
+                    b.Property<int>("enEspera")
+                        .HasColumnType("int");
+
+                    b.Property<TimeOnly>("hora")
+                        .HasColumnType("time(6)");
 
                     b.Property<DateTime>("horario")
                         .HasColumnType("datetime");
@@ -179,7 +188,7 @@ namespace Gentefit.Migrations
                     b.HasKey("idEntrenador")
                         .HasName("PK__Monitor__3214EC272BF7700F");
 
-                    b.ToTable("Entrenador", (string)null);
+                    b.ToTable("monitor", (string)null);
                 });
 
             modelBuilder.Entity("Gentefit.Modelo.Reserva", b =>
@@ -195,7 +204,10 @@ namespace Gentefit.Migrations
                         .HasColumnType("int")
                         .HasColumnName("Estado");
 
-                    b.Property<DateTime>("fecha")
+                    b.Property<DateTime>("fechaClase")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<DateTime>("fechaReserva")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("timestamp")
                         .HasDefaultValueSql("CURRENT_TIMESTAMP");

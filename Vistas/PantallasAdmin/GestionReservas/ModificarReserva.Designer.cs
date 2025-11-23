@@ -42,38 +42,35 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.Perfil;
-            pictureBox1.Location = new Point(579, -13);
-            pictureBox1.Margin = new Padding(3, 4, 3, 4);
+            pictureBox1.Location = new Point(507, -10);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(283, 343);
+            pictureBox1.Size = new Size(248, 257);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 19;
             pictureBox1.TabStop = false;
             // 
             // CajaTextoIdClase
             // 
-            CajaTextoIdClase.Location = new Point(43, 196);
-            CajaTextoIdClase.Margin = new Padding(3, 4, 3, 4);
+            CajaTextoIdClase.Location = new Point(38, 147);
             CajaTextoIdClase.Name = "CajaTextoIdClase";
-            CajaTextoIdClase.Size = new Size(210, 27);
+            CajaTextoIdClase.Size = new Size(184, 23);
             CajaTextoIdClase.TabIndex = 21;
             // 
             // EtiquetaNombre
             // 
             EtiquetaNombre.AutoSize = true;
             EtiquetaNombre.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            EtiquetaNombre.Location = new Point(43, 172);
+            EtiquetaNombre.Location = new Point(38, 129);
             EtiquetaNombre.Name = "EtiquetaNombre";
-            EtiquetaNombre.Size = new Size(65, 20);
+            EtiquetaNombre.Size = new Size(51, 15);
             EtiquetaNombre.TabIndex = 20;
             EtiquetaNombre.Text = "ID Clase";
             // 
             // BotonVolver
             // 
-            BotonVolver.Location = new Point(799, 528);
-            BotonVolver.Margin = new Padding(3, 4, 3, 4);
+            BotonVolver.Location = new Point(699, 396);
             BotonVolver.Name = "BotonVolver";
-            BotonVolver.Size = new Size(81, 45);
+            BotonVolver.Size = new Size(71, 34);
             BotonVolver.TabIndex = 33;
             BotonVolver.Text = "Volver";
             BotonVolver.UseVisualStyleBackColor = true;
@@ -82,10 +79,9 @@
             // BotonGuardar
             // 
             BotonGuardar.BackColor = Color.DarkOrange;
-            BotonGuardar.Location = new Point(713, 528);
-            BotonGuardar.Margin = new Padding(3, 4, 3, 4);
+            BotonGuardar.Location = new Point(624, 396);
             BotonGuardar.Name = "BotonGuardar";
-            BotonGuardar.Size = new Size(80, 45);
+            BotonGuardar.Size = new Size(70, 34);
             BotonGuardar.TabIndex = 32;
             BotonGuardar.Text = "Guardar";
             BotonGuardar.UseVisualStyleBackColor = false;
@@ -93,49 +89,45 @@
             // 
             // CajaTextoBuscar
             // 
-            CajaTextoBuscar.Location = new Point(48, 320);
-            CajaTextoBuscar.Margin = new Padding(3, 4, 3, 4);
+            CajaTextoBuscar.Location = new Point(42, 240);
             CajaTextoBuscar.Name = "CajaTextoBuscar";
-            CajaTextoBuscar.Size = new Size(205, 27);
+            CajaTextoBuscar.Size = new Size(180, 23);
             CajaTextoBuscar.TabIndex = 35;
             CajaTextoBuscar.Text = "Buscar por ID";
             // 
             // PanelReservas
             // 
             PanelReservas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            PanelReservas.Location = new Point(43, 359);
-            PanelReservas.Margin = new Padding(3, 4, 3, 4);
+            PanelReservas.Location = new Point(38, 269);
             PanelReservas.Name = "PanelReservas";
             PanelReservas.RowHeadersWidth = 51;
-            PanelReservas.Size = new Size(837, 161);
+            PanelReservas.Size = new Size(732, 121);
             PanelReservas.TabIndex = 36;
             PanelReservas.CellClick += PanelReservas_CellClick;
             // 
             // CajaTextoId
             // 
-            CajaTextoId.Location = new Point(43, 131);
-            CajaTextoId.Margin = new Padding(3, 4, 3, 4);
+            CajaTextoId.Location = new Point(38, 98);
             CajaTextoId.Name = "CajaTextoId";
-            CajaTextoId.Size = new Size(210, 27);
+            CajaTextoId.Size = new Size(184, 23);
             CajaTextoId.TabIndex = 38;
             // 
             // EtiquetaID
             // 
             EtiquetaID.AutoSize = true;
             EtiquetaID.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            EtiquetaID.Location = new Point(43, 107);
+            EtiquetaID.Location = new Point(38, 80);
             EtiquetaID.Name = "EtiquetaID";
-            EtiquetaID.Size = new Size(85, 20);
+            EtiquetaID.Size = new Size(68, 15);
             EtiquetaID.TabIndex = 37;
             EtiquetaID.Text = "ID Reserva";
             // 
             // BotonBuscar
             // 
             BotonBuscar.BackColor = Color.DarkOrange;
-            BotonBuscar.Location = new Point(270, 319);
-            BotonBuscar.Margin = new Padding(3, 4, 3, 4);
+            BotonBuscar.Location = new Point(236, 239);
             BotonBuscar.Name = "BotonBuscar";
-            BotonBuscar.Size = new Size(80, 32);
+            BotonBuscar.Size = new Size(70, 24);
             BotonBuscar.TabIndex = 39;
             BotonBuscar.Text = "Buscar";
             BotonBuscar.UseVisualStyleBackColor = false;
@@ -144,10 +136,9 @@
             // BotonVerTodos
             // 
             BotonVerTodos.BackColor = Color.DarkOrange;
-            BotonVerTodos.Location = new Point(366, 320);
-            BotonVerTodos.Margin = new Padding(3, 4, 3, 4);
+            BotonVerTodos.Location = new Point(320, 240);
             BotonVerTodos.Name = "BotonVerTodos";
-            BotonVerTodos.Size = new Size(94, 32);
+            BotonVerTodos.Size = new Size(82, 24);
             BotonVerTodos.TabIndex = 45;
             BotonVerTodos.Text = "Ver todos";
             BotonVerTodos.UseVisualStyleBackColor = false;
@@ -159,36 +150,36 @@
             label1.BackColor = Color.White;
             label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.DarkSlateGray;
-            label1.Location = new Point(43, 22);
+            label1.Location = new Point(38, 16);
             label1.Name = "label1";
-            label1.Size = new Size(324, 41);
+            label1.Size = new Size(259, 32);
             label1.TabIndex = 55;
             label1.Text = "MODIFICAR RESERVA";
             // 
             // CajaTextoIdCliente
             // 
-            CajaTextoIdCliente.Location = new Point(301, 131);
-            CajaTextoIdCliente.Margin = new Padding(3, 4, 3, 4);
+            CajaTextoIdCliente.Location = new Point(263, 98);
             CajaTextoIdCliente.Name = "CajaTextoIdCliente";
-            CajaTextoIdCliente.Size = new Size(210, 27);
+            CajaTextoIdCliente.Size = new Size(184, 23);
             CajaTextoIdCliente.TabIndex = 56;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label2.Location = new Point(301, 107);
+            label2.Location = new Point(263, 80);
             label2.Name = "label2";
-            label2.Size = new Size(77, 20);
+            label2.Size = new Size(62, 15);
             label2.TabIndex = 57;
             label2.Text = "ID Cliente";
             // 
             // comboBoxEstado
             // 
             comboBoxEstado.FormattingEnabled = true;
-            comboBoxEstado.Location = new Point(301, 195);
+            comboBoxEstado.Location = new Point(263, 146);
+            comboBoxEstado.Margin = new Padding(3, 2, 3, 2);
             comboBoxEstado.Name = "comboBoxEstado";
-            comboBoxEstado.Size = new Size(202, 28);
+            comboBoxEstado.Size = new Size(177, 23);
             comboBoxEstado.TabIndex = 58;
             // 
             // reservaBindingSource
@@ -201,10 +192,10 @@
             // 
             // ModificarReserva
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(914, 600);
+            ClientSize = new Size(800, 450);
             Controls.Add(comboBoxEstado);
             Controls.Add(label2);
             Controls.Add(CajaTextoIdCliente);
@@ -220,7 +211,6 @@
             Controls.Add(CajaTextoIdClase);
             Controls.Add(EtiquetaNombre);
             Controls.Add(pictureBox1);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "ModificarReserva";
             Text = "ModificarReserva";
             Load += FormModificarReserva_Load;

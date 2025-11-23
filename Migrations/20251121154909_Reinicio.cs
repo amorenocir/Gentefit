@@ -6,8 +6,10 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Gentefit.Migrations
 {
-    public partial class David : Migration
+    /// <inheritdoc />
+    public partial class Reinicio : Migration
     {
+        /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AlterDatabase()
@@ -57,7 +59,7 @@ namespace Gentefit.Migrations
                 .Annotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.CreateTable(
-                name: "Entrenador",
+                name: "monitor",
                 columns: table => new
                 {
                     ID = table.Column<int>(type: "int", nullable: false)
@@ -122,7 +124,10 @@ namespace Gentefit.Migrations
                     id_entrenador = table.Column<int>(type: "int", nullable: false),
                     id_sala = table.Column<int>(type: "int", nullable: false),
                     horario = table.Column<DateTime>(type: "datetime", nullable: false),
-                    plazasLibres = table.Column<int>(type: "int", nullable: false)
+                    dia = table.Column<int>(type: "int", nullable: false),
+                    hora = table.Column<TimeOnly>(type: "time(6)", nullable: false),
+                    plazasLibres = table.Column<int>(type: "int", nullable: false),
+                    enEspera = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -134,15 +139,15 @@ namespace Gentefit.Migrations
                         principalColumn: "ID",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Clase_Entrenador_id_entrenador",
-                        column: x => x.id_entrenador,
-                        principalTable: "Entrenador",
-                        principalColumn: "ID",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
                         name: "FK_Clase_Sala_id_sala",
                         column: x => x.id_sala,
                         principalTable: "Sala",
+                        principalColumn: "ID",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Clase_monitor_id_entrenador",
+                        column: x => x.id_entrenador,
+                        principalTable: "monitor",
                         principalColumn: "ID",
                         onDelete: ReferentialAction.Cascade);
                 })
@@ -157,7 +162,9 @@ namespace Gentefit.Migrations
                     id_cliente = table.Column<int>(type: "int", nullable: false),
                     id_clase = table.Column<int>(type: "int", nullable: false),
                     Estado = table.Column<int>(type: "int", nullable: false),
-                    fecha = table.Column<DateTime>(type: "timestamp", nullable: false, defaultValueSql: "CURRENT_TIMESTAMP")
+                    fecha = table.Column<DateTime>(type: "timestamp", nullable: false, defaultValueSql: "CURRENT_TIMESTAMP"),
+                    dia = table.Column<int>(type: "int", nullable: false),
+                    hora = table.Column<TimeOnly>(type: "time(6)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -203,6 +210,7 @@ namespace Gentefit.Migrations
                 column: "id_cliente");
         }
 
+        /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
@@ -221,10 +229,10 @@ namespace Gentefit.Migrations
                 name: "Actividad");
 
             migrationBuilder.DropTable(
-                name: "Entrenador");
+                name: "Sala");
 
             migrationBuilder.DropTable(
-                name: "Sala");
+                name: "monitor");
         }
     }
 }
