@@ -76,7 +76,13 @@
     <Compile Update="Vistas\PantallasAdmin\GestionReservas\EliminarReserva.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Vistas\PantallasAdmin\GestionReservas\ListarReserva.cs">
+    <Compile Update="Vistas\PantallasAdmin\GestionReservas\ListarReservas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\PantallasAdmin\GestionReservas\ListarReservas2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\PantallasAdmin\GestionReservas\MenuListarReservas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Vistas\PantallasAdmin\GestionReservas\ModificarReserva.cs">
@@ -169,13 +175,13 @@
     <Compile Update="Vistas\PantallasEncargado\ClientesEncargado.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Vistas\PantallasEncargado\EscogerListaReservas.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Vistas\PantallasEncargado\InicioEncargado.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Vistas\PantallasEncargado\ListadoReservasEncargado.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Vistas\PantallasEncargado\ReservasEncargado.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Vistas\PantallasRecepcionista\InicioRecepcionista.cs">

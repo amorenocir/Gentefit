@@ -747,7 +747,6 @@ C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vis
 C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.ModificarEntrenador.resources
 C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.GestionReservas.AnadirReserva.resources
 C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.EliminarReserva.resources
-C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.ListarReservas.resources
 C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.ModificarReserva.resources
 C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.AnadirSala.resources
 C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.EliminarSala.resources
@@ -775,7 +774,6 @@ C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vis
 C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.ReservasCliente.resources
 C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasEncargado.ClientesEncargado.resources
 C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasEncargado.InicioEncargado.resources
-C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasEncargado.ReservasEncargado.resources
 C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasRecepcionista.AnadirCliente.resources
 C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasRecepcionista.EliminarCliente.resources
 C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasRecepcionista.ListarClientes.resources
@@ -794,3 +792,7 @@ C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.pdb
 C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.genruntimeconfig.cache
 C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\ref\Gentefit.dll
 C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasEncargado.ListadoReservasEncargado.resources
+C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.GestionReservas.MenuListarReservas.resources
+C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasEncargado.EscogerListaReservas.resources
+C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.GestionReservas.ListarReservas.resources
+C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasAdmin.GestionReservas.ListarReservas2.resources

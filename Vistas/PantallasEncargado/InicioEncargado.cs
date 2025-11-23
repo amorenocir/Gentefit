@@ -24,7 +24,7 @@ namespace Gentefit.Vistas.PantallasEncargado
         }
         private void BotonVerReservas_Click(object sender, EventArgs e)
         {
-            new ReservasEncargado().Show();
+            new EscogerListaReservas().Show();
             this.Hide();
         }
     }

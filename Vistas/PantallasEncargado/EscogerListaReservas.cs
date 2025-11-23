@@ -12,12 +12,12 @@ using System.Windows.Forms;
 
 namespace Gentefit.Vistas.PantallasEncargado
 {
-    public partial class ReservasEncargado : Form
+    public partial class EscogerListaReservas : Form
     {
         private LogicaClientes logicaClientes = new LogicaClientes();
         private LogicaClases logicaClases = new LogicaClases();
         private LogicaReservas logicaReservas = new LogicaReservas();
-        public ReservasEncargado()
+        public EscogerListaReservas()
         {
             InitializeComponent();
             this.Load += (s, e) => CargarDatos();
@@ -40,7 +40,7 @@ namespace Gentefit.Vistas.PantallasEncargado
 
         private void BotonBuscarCli_Click(object sender, EventArgs e)
         {
-            if(!int.TryParse(CajaTextoBuscarCli.Text, out int idBuscado))
+            if (!int.TryParse(CajaTextoBuscarCli.Text, out int idBuscado))
             {
                 MessageBox.Show("Por favor introduce un ID válido.");
                 return;
@@ -72,7 +72,7 @@ namespace Gentefit.Vistas.PantallasEncargado
 
         private void BotonSelecCli_Click(object sender, EventArgs e)
         {
-            if(PanelClientes.CurrentRow == null)
+            if (PanelClientes.CurrentRow == null)
             {
                 MessageBox.Show("Por favor selecciona un cliente.");
                 return;
@@ -85,7 +85,7 @@ namespace Gentefit.Vistas.PantallasEncargado
             List<Reserva> lista = new List<Reserva>();
             foreach (Reserva r in todasReservas)
             {
-                if(r.idCliente == idCliente)
+                if (r.idCliente == idCliente)
                 {
                     lista.Add(r);
                 }
@@ -135,6 +135,7 @@ namespace Gentefit.Vistas.PantallasEncargado
             PanelClientes.Columns["contrasena"].HeaderText = "Contraseña";
             PanelClientes.Columns["telefono"].HeaderText = "Teléfono";
         }
+
         private void CargarDatosClases()
         {
             PanelClases.DataSource = logicaClases.ObtenerClasesDisponibles();
@@ -146,11 +147,6 @@ namespace Gentefit.Vistas.PantallasEncargado
             PanelClases.Columns["nombreSala"].HeaderText = "Sala";
             PanelClases.Columns["PlazasLibres"].HeaderText = "Plazas libres";
             PanelClases.Columns["EnEspera"].HeaderText = "En espera";
-        }
-
-        private void CajaTextoBuscarCli_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

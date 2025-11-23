@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Gentefit.Controlador;
+using Gentefit.Modelo;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,12 +9,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Gentefit.Controlador;
-using Gentefit.Modelo;
 
-namespace Gentefit.Vistas.PantallasEncargado
+namespace Gentefit.Vistas.PantallasAdmin.GestionReservas
 {
-    public partial class ListadoReservasEncargado : Form
+    public partial class ListarReservas2 : Form
     {
         private List<Reserva> lista = new List<Reserva>();
         Cliente cliente;
@@ -20,8 +20,7 @@ namespace Gentefit.Vistas.PantallasEncargado
         LogicaClases logicaClases = new LogicaClases();
         LogicaActividades logicaActividades = new LogicaActividades();
         LogicaReservas logicaReservas = new LogicaReservas();
-
-        public ListadoReservasEncargado(List<Reserva> lista, Cliente cliente, Clase clase)
+        public ListarReservas2(List<Reserva> lista, Cliente cliente, Clase clase)
         {
             this.lista = lista;
             this.cliente = cliente;
@@ -34,27 +33,39 @@ namespace Gentefit.Vistas.PantallasEncargado
 
         private void BotonVolver_Click(object sender, EventArgs e)
         {
-            new EscogerListaReservas().Show();
+            new ListarReservas().Show();
             this.Close();
         }
 
-        private void EscogerTitulo(Cliente cliente, Clase clase)
+        private void BotonImportarXml_Click(object sender, EventArgs e)
         {
-            if (cliente == null && clase == null)
+            OpenFileDialog openFileDialog = new OpenFileDialog
             {
-                Titulo.Text = "TODAS LAS RESERVAS";
+                Filter = "Archivos XML|*.xml",
+                Title = "Importar Reservas desde XML"
+            };
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                logicaReservas.ImportarXmlReservas(openFileDialog.FileName);
+                MessageBox.Show("Reservas importadas correctamente.");
+                PanelReservas.DataSource = logicaReservas.ObtenerTodos();
+
             }
-            else if (cliente != null)
+        }
+
+        private void BotonExportarXml_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog
             {
-                string tituloMin = "Reservas de " + cliente.nombre + " " + cliente.apellidos;
-                Titulo.Text = tituloMin.ToUpper();
-            }
-            else
+                Filter = "Archivos XML|*.xml",
+                Title = "Exportar Reservas a XML"
+            };
+
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
             {
-                List<Actividad> posiblesAct = logicaActividades.BuscarPorId(clase.idActividad);
-                Actividad actividad = posiblesAct[0];
-                string tituloMin = "Reservas de " + actividad.nombre + " " + clase.dia + " " + clase.hora;
-                Titulo.Text = tituloMin.ToUpper();
+                logicaReservas.ExportarXmlReservas(saveFileDialog.FileName);
+                MessageBox.Show("Reservas exportadas correctamente.");
             }
         }
 
@@ -93,35 +104,23 @@ namespace Gentefit.Vistas.PantallasEncargado
             }
         }
 
-        private void BotonImportarXml_Click(object sender, EventArgs e)
+        private void EscogerTitulo(Cliente cliente, Clase clase)
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog
+            if (cliente == null && clase == null)
             {
-                Filter = "Archivos XML|*.xml",
-                Title = "Importar Reservas desde XML"
-            };
-
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                logicaReservas.ImportarXmlReservas(openFileDialog.FileName);
-                MessageBox.Show("Reservas importadas correctamente.");
-                PanelReservas.DataSource = logicaReservas.ObtenerTodos();
-
+                Titulo.Text = "TODAS LAS RESERVAS";
             }
-        }
-
-        private void BotonExportarXml_Click(object sender, EventArgs e)
-        {
-            SaveFileDialog saveFileDialog = new SaveFileDialog
+            else if (cliente != null)
             {
-                Filter = "Archivos XML|*.xml",
-                Title = "Exportar Reservas a XML"
-            };
-
-            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                string tituloMin = "Reservas de " + cliente.nombre + " " + cliente.apellidos;
+                Titulo.Text = tituloMin.ToUpper();
+            }
+            else
             {
-                logicaReservas.ExportarXmlReservas(saveFileDialog.FileName);
-                MessageBox.Show("Reservas exportadas correctamente.");
+                List<Actividad> posiblesAct = logicaActividades.BuscarPorId(clase.idActividad);
+                Actividad actividad = posiblesAct[0];
+                string tituloMin = "Reservas de " + actividad.nombre + " " + clase.dia + " " + clase.hora;
+                Titulo.Text = tituloMin.ToUpper();
             }
         }
     }

@@ -1,6 +1,6 @@
-﻿namespace Gentefit.Vistas.PantallasEncargado
+﻿namespace Gentefit.Vistas.PantallasAdmin.GestionReservas
 {
-    partial class ListadoReservasEncargado
+    partial class ListarReservas2
     {
         /// <summary>
         /// Required designer variable.
@@ -28,20 +28,42 @@
         /// </summary>
         private void InitializeComponent()
         {
+            BotonImportarXml = new Button();
+            BotonExportarXml = new Button();
             BotonVolver = new Button();
             Titulo = new Label();
             PanelReservas = new DataGridView();
-            BotonImportarXml = new Button();
-            BotonExportarXml = new Button();
             ((System.ComponentModel.ISupportInitialize)PanelReservas).BeginInit();
             SuspendLayout();
             // 
+            // BotonImportarXml
+            // 
+            BotonImportarXml.BackColor = Color.DarkOrange;
+            BotonImportarXml.Location = new Point(438, 394);
+            BotonImportarXml.Name = "BotonImportarXml";
+            BotonImportarXml.Size = new Size(97, 23);
+            BotonImportarXml.TabIndex = 29;
+            BotonImportarXml.Text = "Importar XML";
+            BotonImportarXml.UseVisualStyleBackColor = false;
+            BotonImportarXml.Click += BotonImportarXml_Click;
+            // 
+            // BotonExportarXml
+            // 
+            BotonExportarXml.BackColor = Color.DarkOrange;
+            BotonExportarXml.Location = new Point(553, 394);
+            BotonExportarXml.Name = "BotonExportarXml";
+            BotonExportarXml.Size = new Size(97, 23);
+            BotonExportarXml.TabIndex = 28;
+            BotonExportarXml.Text = "Exportar XML";
+            BotonExportarXml.UseVisualStyleBackColor = false;
+            BotonExportarXml.Click += BotonExportarXml_Click;
+            // 
             // BotonVolver
             // 
-            BotonVolver.Location = new Point(669, 392);
+            BotonVolver.Location = new Point(669, 394);
             BotonVolver.Name = "BotonVolver";
             BotonVolver.Size = new Size(75, 23);
-            BotonVolver.TabIndex = 22;
+            BotonVolver.TabIndex = 27;
             BotonVolver.Text = "Volver";
             BotonVolver.UseVisualStyleBackColor = true;
             BotonVolver.Click += BotonVolver_Click;
@@ -51,44 +73,22 @@
             Titulo.AutoSize = true;
             Titulo.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
             Titulo.ForeColor = Color.DarkSlateGray;
-            Titulo.Location = new Point(56, 32);
+            Titulo.Location = new Point(56, 34);
             Titulo.Name = "Titulo";
             Titulo.Size = new Size(161, 37);
-            Titulo.TabIndex = 21;
+            Titulo.TabIndex = 26;
             Titulo.Text = "TEMPORAL";
             // 
             // PanelReservas
             // 
             PanelReservas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            PanelReservas.Location = new Point(56, 91);
+            PanelReservas.Location = new Point(56, 93);
             PanelReservas.Name = "PanelReservas";
             PanelReservas.RowHeadersWidth = 51;
             PanelReservas.Size = new Size(688, 285);
-            PanelReservas.TabIndex = 20;
+            PanelReservas.TabIndex = 25;
             // 
-            // BotonImportarXml
-            // 
-            BotonImportarXml.BackColor = Color.DarkOrange;
-            BotonImportarXml.Location = new Point(438, 392);
-            BotonImportarXml.Name = "BotonImportarXml";
-            BotonImportarXml.Size = new Size(97, 23);
-            BotonImportarXml.TabIndex = 24;
-            BotonImportarXml.Text = "Importar XML";
-            BotonImportarXml.UseVisualStyleBackColor = false;
-            BotonImportarXml.Click += BotonImportarXml_Click;
-            // 
-            // BotonExportarXml
-            // 
-            BotonExportarXml.BackColor = Color.DarkOrange;
-            BotonExportarXml.Location = new Point(553, 392);
-            BotonExportarXml.Name = "BotonExportarXml";
-            BotonExportarXml.Size = new Size(97, 23);
-            BotonExportarXml.TabIndex = 23;
-            BotonExportarXml.Text = "Exportar XML";
-            BotonExportarXml.UseVisualStyleBackColor = false;
-            BotonExportarXml.Click += BotonExportarXml_Click;
-            // 
-            // ListadoReservasEncargado
+            // ListarReservas2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -98,8 +98,8 @@
             Controls.Add(BotonVolver);
             Controls.Add(Titulo);
             Controls.Add(PanelReservas);
-            Name = "ListadoReservasEncargado";
-            Text = "ListadoReservasEncargado";
+            Name = "ListarReservas2";
+            Text = "ListarReservas2";
             ((System.ComponentModel.ISupportInitialize)PanelReservas).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -107,10 +107,10 @@
 
         #endregion
 
+        private Button BotonImportarXml;
+        private Button BotonExportarXml;
         private Button BotonVolver;
         private Label Titulo;
         private DataGridView PanelReservas;
-        private Button BotonImportarXml;
-        private Button BotonExportarXml;
     }
 }

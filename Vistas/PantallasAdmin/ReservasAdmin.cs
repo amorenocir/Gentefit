@@ -1,5 +1,6 @@
 ﻿using Gentefit.Modelo;
 using Gentefit.Vistas.PantallasAdmin.GestionReservas;
+using Gentefit.Vistas.PantallasEncargado;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -28,6 +29,7 @@ namespace Gentefit.Vistas.PantallasAdmin
         private void BotonListar_Click(object sender, EventArgs e)
         {
             new ListarReservas().Show();
+            //new EscogerListaReservas().Show();
             this.Hide();
         }
         private void BotonModificar_Click(object sender, EventArgs e)
