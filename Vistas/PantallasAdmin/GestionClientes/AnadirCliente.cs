@@ -41,6 +41,8 @@ namespace Gentefit.Vistas.PantallasAdmin
             }
 
             MessageBox.Show("Cliente añadido correctamente");
+            new ClientesAdmin().Show();
+            this.Close();
         }
 
         private void BotonVolver_Click(object sender, EventArgs e)

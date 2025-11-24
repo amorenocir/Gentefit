@@ -87,7 +87,7 @@ namespace Gentefit.Vistas.PantallasAdmin
                     x = "idSala";
                 }
                 int idObjeto = (int)fila.Cells[x].Value;
-                List<Clase> todasClases = logicaClases.ListarClases();
+                List<Clase> todasClases = logicaClases.ObtenerTodo();
                 for (int i = 0; i < todasClases.Count; i++)
                 {
                     List<Actividad> posiblesAct = logicaAct.BuscarPorId(todasClases[i].idActividad);

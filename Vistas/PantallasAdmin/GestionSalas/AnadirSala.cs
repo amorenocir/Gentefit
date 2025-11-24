@@ -15,6 +15,7 @@ namespace Gentefit.Vistas.PantallasAdmin
 {
     public partial class AnadirSala : Form
     {
+        LogicaSalas logica = new LogicaSalas();
         public AnadirSala()
         {
             InitializeComponent();
@@ -29,11 +30,7 @@ namespace Gentefit.Vistas.PantallasAdmin
             };
 
             // Insertar en la base de datos usando EF Core
-            using (var contexto = new GentefitContext())
-            {
-                var logica = new LogicaSalas();
-                logica.AnadirSala(nuevoSala);
-            }
+            logica.AnadirSala(nuevoSala);
 
             MessageBox.Show("Sala añadida correctamente");
             new SalasAdmin().Show();

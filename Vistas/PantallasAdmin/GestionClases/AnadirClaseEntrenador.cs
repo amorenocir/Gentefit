@@ -38,7 +38,7 @@ namespace Gentefit.Vistas.PantallasAdmin
                 //List<Entrenador> posiblesEntre = logicaEntre.BuscarPorId(idEntrenador);
                 //Entrenador entrenador = posiblesEntre[0];
 
-                List<Clase> todasClases = logicaClases.ListarClases();
+                List<Clase> todasClases = logicaClases.ObtenerTodo();
                 for (int i = 0; i < todasClases.Count; i++)
                 {
                     List<Actividad> posiblesAct = logicaAct.BuscarPorId(todasClases[i].idActividad);

@@ -44,24 +44,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Update="Vistas\PantallasAdmin\GestionActividades\PantallasActividadesAdmin\BodyCombat.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Vistas\PantallasAdmin\GestionActividades\PantallasActividadesAdmin\BodyPump.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Vistas\PantallasAdmin\GestionActividades\PantallasActividadesAdmin\Core.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Vistas\PantallasAdmin\GestionActividades\PantallasActividadesAdmin\Spinning.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Vistas\PantallasAdmin\GestionActividades\PantallasActividadesAdmin\Yoga.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Vistas\PantallasAdmin\GestionActividades\PantallasActividadesAdmin\Zumba.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="Vistas\PantallasRecepcionista\GestionClientes\AnadirCliente.cs">
       <SubType>Form</SubType>
     </Compile>

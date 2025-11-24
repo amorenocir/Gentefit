@@ -35,17 +35,18 @@ namespace Gentefit.Vistas
 
         private void BotonActividades_Click(object sender, EventArgs e)
         {
-            new ActividadesCliente(clienteLogeado.Clone()).Show();
+            //new ActividadesCliente(clienteLogeado.Clone()).Show();
+            new ActividadesCliente(clienteLogeado).Show();
             this.Hide();
         }
         private void BotonHorarios_Click(object sender, EventArgs e)
         {
-            new HorariosCliente(clienteLogeado.Clone()).Show();
+            //new HorariosCliente(clienteLogeado.Clone()).Show();
             this.Hide();
         }
         private void BotonReservas_Click(object sender, EventArgs e)
         {
-            new ReservasCliente(clienteLogeado.Clone()).Show();
+            //new ReservasCliente(clienteLogeado.Clone()).Show();
             this.Hide();
         }
 

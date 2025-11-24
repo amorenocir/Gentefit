@@ -38,7 +38,7 @@ namespace Gentefit.Vistas.PantallasAdmin
 
         private void CargarDatos()
         {
-            List<Clase> todasClases = logicaClases.ListarClases();
+            List<Clase> todasClases = logicaClases.ObtenerTodo();
             List<Clase> clasesMostrar = new List<Clase>();
             for (int i = 0; i < todasClases.Count; i++)
             {

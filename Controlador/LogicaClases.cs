@@ -12,13 +12,6 @@ namespace Gentefit.Controlador
 {
     internal class LogicaClases
     {
-        //Obtener todas las clases
-        public List<Clase> ListarClases()
-        {
-            using var contexto = new GentefitContext();
-            return contexto.Clases.ToList();
-        }
-
         //Buscar clase por ID
         public List<Clase> BuscarPorId(int id)
         {
@@ -27,6 +20,12 @@ namespace Gentefit.Controlador
         }
 
         // Obtener las clases disponibles:
+        public List<Clase> ObtenerTodo()
+        {
+            using var contexto = new GentefitContext();
+            return contexto.Clases.ToList();
+        }
+        
         public List<ClaseDTO> ObtenerClasesDisponibles()
         {
             using var contexto = new GentefitContext();

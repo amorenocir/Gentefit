@@ -14,6 +14,7 @@ namespace Gentefit.Controlador
 {
     internal class LogicaReservas
     {
+        private LogicaClases logicaClases = new LogicaClases();
         // Obtener todos las reservas
         public List<Reserva> ObtenerTodos()
         {
@@ -117,19 +118,19 @@ namespace Gentefit.Controlador
                 fechaReserva = DateTime.Now
             };
 
-            // Comprobar plazas libres
-            if (clase.plazasLibres > 0)
+            List<Reserva> reservasAceptadas = ReservasAceptadas(clase);
+            if(reservasAceptadas.Count < 16)
             {
-                clase.plazasLibres--;
                 nuevaReserva.estado = EstadoReserva.Confirmada;
             }
             else
             {
-                nuevaReserva.estado = EstadoReserva.EnEspera; // en espera
+                nuevaReserva.estado = EstadoReserva.EnEspera;
             }
-
+            
             // Guardar la reserva
             GuardarReserva(nuevaReserva);
+            GestionarListasReservas(clase);
 
             // Guardar los cambios en la clase (plazas libres y plazas en espera)
             contexto.SaveChanges();
@@ -271,6 +272,9 @@ namespace Gentefit.Controlador
             if (reserva != null)
             {
                 contexto.Reservas.Remove(reserva);
+                Clase clase = logicaClases.BuscarPorId(reserva.idClase).FirstOrDefault();
+                contexto.SaveChanges();
+                GestionarListasReservas(clase);
                 contexto.SaveChanges();
                 return true;
             }
@@ -346,6 +350,13 @@ namespace Gentefit.Controlador
 
                 contexto.Reservas.AddRange(reservas);
                 contexto.SaveChanges();
+
+                List<Clase> todasClases = logicaClases.ObtenerTodo();
+                foreach (Clase clase in todasClases)
+                {
+                    GestionarListasReservas(clase);
+                    contexto.SaveChanges();
+                }
             }
         }
 
@@ -396,6 +407,65 @@ namespace Gentefit.Controlador
             DateTime diaClase = hoy.AddDays(diasQueFaltan);
             DateTime fechaHoraClase = diaClase.Add(clase.hora.ToTimeSpan());
             return fechaHoraClase;
+        }
+
+        public void GestionarListasReservas(Clase clase)
+        {
+            List<Reserva> todasRes = ObtenerTodos();
+            List<Reserva> aceptadas = new List<Reserva>();
+            aceptadas.Clear();
+            List<Reserva> enEspera = new List<Reserva>();
+            enEspera.Clear();
+            using var contexto = new GentefitContext();
+            foreach (Reserva res in todasRes)
+            {
+                if(res.idClase == clase.idClase)
+                {
+                    if (res.estado == EstadoReserva.Confirmada)
+                    {
+                        aceptadas.Add(res);
+                    }else if(res.estado == EstadoReserva.EnEspera)
+                    {
+                        if(aceptadas.Count < 16)
+                        {                          
+                            res.estado = EstadoReserva.Confirmada;
+                            aceptadas.Add(res);
+
+                            var r = contexto.Reservas.FirstOrDefault(x => x.idReserva == res.idReserva);
+                            r.estado = res.estado;
+                            contexto.SaveChanges();
+                        }
+                        else
+                        {
+                            enEspera.Add(res);
+                        }
+                    }
+                }
+            }
+            var c = contexto.Clases.FirstOrDefault(x => x.idClase == clase.idClase);
+            c.plazasLibres = (16 - aceptadas.Count);
+            c.enEspera = enEspera.Count;
+            contexto.SaveChanges();
+
+            clase.plazasLibres = (16 - aceptadas.Count);
+            clase.enEspera = enEspera.Count;
+        }
+
+        public List<Reserva> ReservasAceptadas(Clase clase)
+        {
+            List<Reserva> todasReservas = ObtenerTodos();
+            List<Reserva> listaAceptadas = new List<Reserva>();
+            foreach (Reserva res in todasReservas)
+            {
+                if(res.idClase == clase.idClase)
+                {
+                    if(res.estado == EstadoReserva.Confirmada)
+                    {
+                        listaAceptadas.Add(res);
+                    }
+                }
+            }
+            return listaAceptadas;
         }
     }
 }

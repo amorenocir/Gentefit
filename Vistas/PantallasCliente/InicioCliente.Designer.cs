@@ -91,7 +91,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
             label1.ForeColor = SystemColors.ControlText;
-            label1.Location = new Point(368, 160);
+            label1.Location = new Point(367, 217);
             label1.Name = "label1";
             label1.Size = new Size(82, 30);
             label1.TabIndex = 6;
@@ -111,7 +111,7 @@
             // BotonHorarios
             // 
             BotonHorarios.BackColor = Color.DarkOrange;
-            BotonHorarios.Location = new Point(422, 106);
+            BotonHorarios.Location = new Point(422, 141);
             BotonHorarios.Name = "BotonHorarios";
             BotonHorarios.Size = new Size(87, 33);
             BotonHorarios.TabIndex = 27;
@@ -122,7 +122,7 @@
             // BotonReservas
             // 
             BotonReservas.BackColor = Color.DarkOrange;
-            BotonReservas.Location = new Point(529, 106);
+            BotonReservas.Location = new Point(529, 141);
             BotonReservas.Name = "BotonReservas";
             BotonReservas.Size = new Size(87, 33);
             BotonReservas.TabIndex = 26;
@@ -133,7 +133,7 @@
             // BotonActividades
             // 
             BotonActividades.BackColor = Color.DarkOrange;
-            BotonActividades.Location = new Point(307, 106);
+            BotonActividades.Location = new Point(307, 141);
             BotonActividades.Name = "BotonActividades";
             BotonActividades.Size = new Size(87, 33);
             BotonActividades.TabIndex = 25;
@@ -144,7 +144,7 @@
             // BotonInicio
             // 
             BotonInicio.BackColor = Color.Wheat;
-            BotonInicio.Location = new Point(190, 106);
+            BotonInicio.Location = new Point(190, 141);
             BotonInicio.Name = "BotonInicio";
             BotonInicio.Size = new Size(87, 33);
             BotonInicio.TabIndex = 24;

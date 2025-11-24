@@ -41,7 +41,7 @@ namespace Gentefit.Vistas.PantallasAdmin
                 List<Sala> posiblesSalas = logicaSala.BuscarPorId(idSala);
                 Sala sala = posiblesSalas[0];
 
-                List<Clase> todasClases = logicaClase.ListarClases(); //Comapar cada clase existente con las clases de la sala de cada fila
+                List<Clase> todasClases = logicaClase.ObtenerTodo(); //Comapar cada clase existente con las clases de la sala de cada fila
                 for (int i = 0; i < todasClases.Count; i++)
                 {
                     List<Actividad> posibleAct = logicaActiv.BuscarPorId(todasClases[i].idActividad);
