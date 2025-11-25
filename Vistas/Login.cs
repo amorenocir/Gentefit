@@ -90,5 +90,10 @@ namespace Gentefit.Vistas
         {
             Application.Exit();
         }
+
+        private void CajaTextoEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -38,7 +38,6 @@
             BotonHorarios = new Button();
             BotonReservas = new Button();
             BotonActividades = new Button();
-            BotonInicio = new Button();
             timer2 = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)ImagenPerfil).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ImagenMensajes).BeginInit();
@@ -91,7 +90,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
             label1.ForeColor = SystemColors.ControlText;
-            label1.Location = new Point(367, 217);
+            label1.Location = new Point(372, 153);
             label1.Name = "label1";
             label1.Size = new Size(82, 30);
             label1.TabIndex = 6;
@@ -100,7 +99,7 @@
             // 
             // BotonSalir
             // 
-            BotonSalir.Location = new Point(541, 359);
+            BotonSalir.Location = new Point(541, 342);
             BotonSalir.Name = "BotonSalir";
             BotonSalir.Size = new Size(75, 23);
             BotonSalir.TabIndex = 14;
@@ -111,7 +110,7 @@
             // BotonHorarios
             // 
             BotonHorarios.BackColor = Color.DarkOrange;
-            BotonHorarios.Location = new Point(422, 141);
+            BotonHorarios.Location = new Point(372, 223);
             BotonHorarios.Name = "BotonHorarios";
             BotonHorarios.Size = new Size(87, 33);
             BotonHorarios.TabIndex = 27;
@@ -122,7 +121,7 @@
             // BotonReservas
             // 
             BotonReservas.BackColor = Color.DarkOrange;
-            BotonReservas.Location = new Point(529, 141);
+            BotonReservas.Location = new Point(501, 223);
             BotonReservas.Name = "BotonReservas";
             BotonReservas.Size = new Size(87, 33);
             BotonReservas.TabIndex = 26;
@@ -133,23 +132,13 @@
             // BotonActividades
             // 
             BotonActividades.BackColor = Color.DarkOrange;
-            BotonActividades.Location = new Point(307, 141);
+            BotonActividades.Location = new Point(235, 223);
             BotonActividades.Name = "BotonActividades";
             BotonActividades.Size = new Size(87, 33);
             BotonActividades.TabIndex = 25;
             BotonActividades.Text = "Actividades";
             BotonActividades.UseVisualStyleBackColor = false;
             BotonActividades.Click += BotonActividades_Click;
-            // 
-            // BotonInicio
-            // 
-            BotonInicio.BackColor = Color.Wheat;
-            BotonInicio.Location = new Point(190, 141);
-            BotonInicio.Name = "BotonInicio";
-            BotonInicio.Size = new Size(87, 33);
-            BotonInicio.TabIndex = 24;
-            BotonInicio.Text = "Inicio";
-            BotonInicio.UseVisualStyleBackColor = false;
             // 
             // InicioCliente
             // 
@@ -159,7 +148,6 @@
             Controls.Add(BotonHorarios);
             Controls.Add(BotonReservas);
             Controls.Add(BotonActividades);
-            Controls.Add(BotonInicio);
             Controls.Add(BotonSalir);
             Controls.Add(label1);
             Controls.Add(FechaYHora);
@@ -187,7 +175,6 @@
         private Button BotonHorarios;
         private Button BotonReservas;
         private Button BotonActividades;
-        private Button BotonInicio;
         private System.Windows.Forms.Timer timer2;
     }
 }

@@ -37,19 +37,18 @@
             AnadirClientes.AutoSize = true;
             AnadirClientes.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
             AnadirClientes.ForeColor = Color.DarkSlateGray;
-            AnadirClientes.Location = new Point(121, 25);
+            AnadirClientes.Location = new Point(106, 19);
             AnadirClientes.Name = "AnadirClientes";
-            AnadirClientes.Size = new Size(313, 46);
+            AnadirClientes.Size = new Size(250, 37);
             AnadirClientes.TabIndex = 37;
             AnadirClientes.Text = "AÑADIR USUARIO";
             // 
             // BotonVolver
             // 
-            BotonVolver.Location = new Point(701, 473);
-            BotonVolver.Margin = new Padding(3, 4, 3, 4);
+            BotonVolver.Location = new Point(613, 355);
             BotonVolver.Name = "BotonVolver";
-            BotonVolver.Size = new Size(81, 45);
-            BotonVolver.TabIndex = 36;
+            BotonVolver.Size = new Size(71, 34);
+            BotonVolver.TabIndex = 7;
             BotonVolver.Text = "Volver";
             BotonVolver.UseVisualStyleBackColor = true;
             BotonVolver.Click += BotonVolver_Click;
@@ -57,120 +56,114 @@
             // BotonAnadir
             // 
             BotonAnadir.BackColor = Color.DarkOrange;
-            BotonAnadir.Location = new Point(412, 473);
-            BotonAnadir.Margin = new Padding(3, 4, 3, 4);
+            BotonAnadir.Location = new Point(360, 355);
             BotonAnadir.Name = "BotonAnadir";
-            BotonAnadir.Size = new Size(80, 45);
-            BotonAnadir.TabIndex = 35;
+            BotonAnadir.Size = new Size(70, 34);
+            BotonAnadir.TabIndex = 6;
             BotonAnadir.Text = "Añadir";
             BotonAnadir.UseVisualStyleBackColor = false;
             BotonAnadir.Click += BotonAnadir_Click;
             // 
             // CajaTextoEmail
             // 
-            CajaTextoEmail.Location = new Point(121, 271);
-            CajaTextoEmail.Margin = new Padding(3, 4, 3, 4);
+            CajaTextoEmail.Location = new Point(106, 203);
             CajaTextoEmail.Name = "CajaTextoEmail";
-            CajaTextoEmail.Size = new Size(259, 27);
-            CajaTextoEmail.TabIndex = 33;
+            CajaTextoEmail.Size = new Size(227, 23);
+            CajaTextoEmail.TabIndex = 3;
             // 
             // Email
             // 
             Email.AutoSize = true;
-            Email.Location = new Point(121, 247);
+            Email.Location = new Point(106, 185);
             Email.Name = "Email";
-            Email.Size = new Size(46, 20);
+            Email.Size = new Size(36, 15);
             Email.TabIndex = 32;
             Email.Text = "Email";
             // 
             // Rol
             // 
             Rol.AutoSize = true;
-            Rol.Location = new Point(121, 399);
+            Rol.Location = new Point(106, 299);
             Rol.Name = "Rol";
-            Rol.Size = new Size(31, 20);
+            Rol.Size = new Size(24, 15);
             Rol.TabIndex = 30;
             Rol.Text = "Rol";
             // 
             // CajaTextoContrasena
             // 
-            CajaTextoContrasena.Location = new Point(121, 347);
-            CajaTextoContrasena.Margin = new Padding(3, 4, 3, 4);
+            CajaTextoContrasena.Location = new Point(106, 260);
             CajaTextoContrasena.Name = "CajaTextoContrasena";
-            CajaTextoContrasena.Size = new Size(259, 27);
-            CajaTextoContrasena.TabIndex = 29;
+            CajaTextoContrasena.Size = new Size(227, 23);
+            CajaTextoContrasena.TabIndex = 4;
             // 
             // Contrasena
             // 
             Contrasena.AutoSize = true;
-            Contrasena.Location = new Point(121, 323);
+            Contrasena.Location = new Point(106, 242);
             Contrasena.Name = "Contrasena";
-            Contrasena.Size = new Size(83, 20);
+            Contrasena.Size = new Size(67, 15);
             Contrasena.TabIndex = 28;
             Contrasena.Text = "Contraseña";
             // 
             // CajaTextoApellidos
             // 
-            CajaTextoApellidos.Location = new Point(121, 199);
-            CajaTextoApellidos.Margin = new Padding(3, 4, 3, 4);
+            CajaTextoApellidos.Location = new Point(106, 149);
             CajaTextoApellidos.Name = "CajaTextoApellidos";
-            CajaTextoApellidos.Size = new Size(259, 27);
-            CajaTextoApellidos.TabIndex = 27;
+            CajaTextoApellidos.Size = new Size(227, 23);
+            CajaTextoApellidos.TabIndex = 2;
             // 
             // Apellidos
             // 
             Apellidos.AutoSize = true;
-            Apellidos.Location = new Point(121, 175);
+            Apellidos.Location = new Point(106, 131);
             Apellidos.Name = "Apellidos";
-            Apellidos.Size = new Size(72, 20);
+            Apellidos.Size = new Size(56, 15);
             Apellidos.TabIndex = 26;
             Apellidos.Text = "Apellidos";
             // 
             // CajaTextoNombre
             // 
-            CajaTextoNombre.Location = new Point(121, 121);
-            CajaTextoNombre.Margin = new Padding(3, 4, 3, 4);
+            CajaTextoNombre.Location = new Point(106, 91);
             CajaTextoNombre.Name = "CajaTextoNombre";
-            CajaTextoNombre.Size = new Size(259, 27);
-            CajaTextoNombre.TabIndex = 25;
+            CajaTextoNombre.Size = new Size(227, 23);
+            CajaTextoNombre.TabIndex = 1;
             // 
             // Nombre
             // 
             Nombre.AutoSize = true;
-            Nombre.Location = new Point(121, 97);
+            Nombre.Location = new Point(106, 73);
             Nombre.Name = "Nombre";
-            Nombre.Size = new Size(64, 20);
+            Nombre.Size = new Size(51, 15);
             Nombre.TabIndex = 24;
             Nombre.Text = "Nombre";
             // 
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.Perfil;
-            pictureBox1.Location = new Point(499, 25);
-            pictureBox1.Margin = new Padding(3, 4, 3, 4);
+            pictureBox1.Location = new Point(437, 19);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(283, 343);
+            pictureBox1.Size = new Size(248, 257);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 34;
             pictureBox1.TabStop = false;
             // 
             // ComboOpcionesRol
             // 
-            ComboOpcionesRol.DrawMode = DrawMode.Normal;
             ComboOpcionesRol.FormattingEnabled = true;
             ComboOpcionesRol.Items.AddRange(new object[] { "Admin", "Encargado", "Recepcionista" });
-            ComboOpcionesRol.Location = new Point(121, 422);
+            ComboOpcionesRol.Location = new Point(106, 316);
+            ComboOpcionesRol.Margin = new Padding(3, 2, 3, 2);
             ComboOpcionesRol.Name = "ComboOpcionesRol";
-            ComboOpcionesRol.Size = new Size(259, 28);
-            ComboOpcionesRol.TabIndex = 38;
+            ComboOpcionesRol.Size = new Size(227, 23);
+            ComboOpcionesRol.TabIndex = 5;
             ComboOpcionesRol.SelectedIndexChanged += ComboOpcionesRol_SelectedIndexChanged;
             // 
             // AnadirUsuario
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(893, 544);
+            ClientSize = new Size(781, 408);
             Controls.Add(ComboOpcionesRol);
             Controls.Add(AnadirClientes);
             Controls.Add(BotonVolver);
@@ -185,6 +178,7 @@
             Controls.Add(CajaTextoNombre);
             Controls.Add(Nombre);
             Controls.Add(pictureBox1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "AnadirUsuario";
             Text = "AnadirUsuario";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

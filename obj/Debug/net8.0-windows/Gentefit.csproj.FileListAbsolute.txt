@@ -784,3 +784,5 @@ C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vis
 C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasCliente.ActividadesCliente.resources
 C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasCliente.VerActividadCliente.resources
 C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasCliente.ReservarCliente.resources
+C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasCliente.ListarReservasCliente.resources
+C:\Users\maria\source\repos\GentefitAndrea\obj\Debug\net8.0-windows\Gentefit.Vistas.PantallasCliente.CalendarioClientes.resources

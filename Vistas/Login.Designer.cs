@@ -46,7 +46,7 @@
             BotonEntrar.Location = new Point(251, 333);
             BotonEntrar.Name = "BotonEntrar";
             BotonEntrar.Size = new Size(89, 38);
-            BotonEntrar.TabIndex = 0;
+            BotonEntrar.TabIndex = 3;
             BotonEntrar.Text = "Entrar";
             BotonEntrar.UseVisualStyleBackColor = false;
             BotonEntrar.UseWaitCursor = true;
@@ -59,7 +59,7 @@
             CajaTextoContrasena.Name = "CajaTextoContrasena";
             CajaTextoContrasena.PasswordChar = '*';
             CajaTextoContrasena.Size = new Size(218, 23);
-            CajaTextoContrasena.TabIndex = 1;
+            CajaTextoContrasena.TabIndex = 2;
             // 
             // TextoContraseña
             // 
@@ -87,7 +87,8 @@
             CajaTextoEmail.Location = new Point(294, 197);
             CajaTextoEmail.Name = "CajaTextoEmail";
             CajaTextoEmail.Size = new Size(218, 23);
-            CajaTextoEmail.TabIndex = 3;
+            CajaTextoEmail.TabIndex = 1;
+            CajaTextoEmail.TextChanged += CajaTextoEmail_TextChanged;
             // 
             // Logo
             // 
@@ -108,7 +109,7 @@
             BotonSalir.Location = new Point(448, 333);
             BotonSalir.Name = "BotonSalir";
             BotonSalir.Size = new Size(89, 38);
-            BotonSalir.TabIndex = 6;
+            BotonSalir.TabIndex = 4;
             BotonSalir.Text = "Salir";
             BotonSalir.UseVisualStyleBackColor = false;
             BotonSalir.UseWaitCursor = true;

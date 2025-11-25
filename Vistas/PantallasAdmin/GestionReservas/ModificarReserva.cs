@@ -73,7 +73,7 @@ namespace Gentefit.Vistas.PantallasAdmin
 
         private void BotonVolver_Click(object sender, EventArgs e)
         {
-            new InicioAdmin().Show();
+            new ReservasAdmin().Show();
             this.Hide();
         }
 

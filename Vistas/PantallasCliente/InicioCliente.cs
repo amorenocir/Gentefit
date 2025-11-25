@@ -41,12 +41,12 @@ namespace Gentefit.Vistas
         }
         private void BotonHorarios_Click(object sender, EventArgs e)
         {
-            //new HorariosCliente(clienteLogeado.Clone()).Show();
+            new CalendarioClientes(clienteLogeado).Show();
             this.Hide();
         }
         private void BotonReservas_Click(object sender, EventArgs e)
         {
-            //new ReservasCliente(clienteLogeado.Clone()).Show();
+            new ListarReservasCliente(clienteLogeado).Show();
             this.Hide();
         }
 

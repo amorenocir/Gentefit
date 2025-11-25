@@ -40,11 +40,10 @@
             // 
             // BotonVolver
             // 
-            BotonVolver.Location = new Point(643, 477);
-            BotonVolver.Margin = new Padding(3, 4, 3, 4);
+            BotonVolver.Location = new Point(563, 358);
             BotonVolver.Name = "BotonVolver";
-            BotonVolver.Size = new Size(86, 31);
-            BotonVolver.TabIndex = 23;
+            BotonVolver.Size = new Size(75, 23);
+            BotonVolver.TabIndex = 5;
             BotonVolver.Text = "Volver";
             BotonVolver.UseVisualStyleBackColor = true;
             BotonVolver.Click += BotonVolver_Click;
@@ -52,10 +51,9 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.LogoAdmin;
-            pictureBox1.Location = new Point(344, 13);
-            pictureBox1.Margin = new Padding(3, 4, 3, 4);
+            pictureBox1.Location = new Point(301, 10);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(177, 113);
+            pictureBox1.Size = new Size(155, 85);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 22;
             pictureBox1.TabStop = false;
@@ -64,11 +62,10 @@
             // 
             BotonModificar.BackColor = Color.DarkOrange;
             BotonModificar.ForeColor = Color.White;
-            BotonModificar.Location = new Point(446, 266);
-            BotonModificar.Margin = new Padding(3, 4, 3, 4);
+            BotonModificar.Location = new Point(390, 200);
             BotonModificar.Name = "BotonModificar";
-            BotonModificar.Size = new Size(131, 65);
-            BotonModificar.TabIndex = 21;
+            BotonModificar.Size = new Size(115, 49);
+            BotonModificar.TabIndex = 3;
             BotonModificar.Text = "Modificar";
             BotonModificar.UseVisualStyleBackColor = false;
             BotonModificar.Click += BotonModificar_Click;
@@ -77,11 +74,10 @@
             // 
             BotonEliminar.BackColor = Color.DarkOrange;
             BotonEliminar.ForeColor = Color.White;
-            BotonEliminar.Location = new Point(598, 266);
-            BotonEliminar.Margin = new Padding(3, 4, 3, 4);
+            BotonEliminar.Location = new Point(523, 200);
             BotonEliminar.Name = "BotonEliminar";
-            BotonEliminar.Size = new Size(131, 65);
-            BotonEliminar.TabIndex = 20;
+            BotonEliminar.Size = new Size(115, 49);
+            BotonEliminar.TabIndex = 4;
             BotonEliminar.Text = "Eliminar";
             BotonEliminar.UseVisualStyleBackColor = false;
             BotonEliminar.Click += BotonEliminar_Click;
@@ -90,11 +86,10 @@
             // 
             BotonListar.BackColor = Color.DarkOrange;
             BotonListar.ForeColor = Color.White;
-            BotonListar.Location = new Point(293, 266);
-            BotonListar.Margin = new Padding(3, 4, 3, 4);
+            BotonListar.Location = new Point(256, 200);
             BotonListar.Name = "BotonListar";
-            BotonListar.Size = new Size(131, 65);
-            BotonListar.TabIndex = 19;
+            BotonListar.Size = new Size(115, 49);
+            BotonListar.TabIndex = 2;
             BotonListar.Text = "Listar";
             BotonListar.UseVisualStyleBackColor = false;
             BotonListar.Click += BotonListar_Click;
@@ -103,31 +98,30 @@
             // 
             BotonAnadir.BackColor = Color.DarkOrange;
             BotonAnadir.ForeColor = Color.White;
-            BotonAnadir.Location = new Point(141, 266);
-            BotonAnadir.Margin = new Padding(3, 4, 3, 4);
+            BotonAnadir.Location = new Point(123, 200);
             BotonAnadir.Name = "BotonAnadir";
-            BotonAnadir.Size = new Size(131, 65);
-            BotonAnadir.TabIndex = 18;
+            BotonAnadir.Size = new Size(115, 49);
+            BotonAnadir.TabIndex = 1;
             BotonAnadir.Text = "Añadir";
             BotonAnadir.UseVisualStyleBackColor = false;
             BotonAnadir.Click += BotonAnadir_Click;
             // 
-            // Usuarios
+            // Clientes
             // 
             Clientes.AutoSize = true;
             Clientes.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
             Clientes.ForeColor = Color.DarkSlateGray;
-            Clientes.Location = new Point(354, 148);
-            Clientes.Name = "Usuarios";
-            Clientes.Size = new Size(190, 46);
+            Clientes.Location = new Point(310, 111);
+            Clientes.Name = "Clientes";
+            Clientes.Size = new Size(152, 37);
             Clientes.TabIndex = 17;
             Clientes.Text = "USUARIOS";
             // 
             // UsuariosAdmin
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(883, 534);
+            ClientSize = new Size(773, 400);
             Controls.Add(BotonVolver);
             Controls.Add(pictureBox1);
             Controls.Add(BotonModificar);
@@ -135,6 +129,7 @@
             Controls.Add(BotonListar);
             Controls.Add(BotonAnadir);
             Controls.Add(Clientes);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "UsuariosAdmin";
             Text = "UsuariosAdmin";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

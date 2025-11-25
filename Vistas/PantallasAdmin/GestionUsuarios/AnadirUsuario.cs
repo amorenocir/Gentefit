@@ -43,6 +43,8 @@ namespace Gentefit.Vistas.PantallasAdmin.GestionUsuarios
             }
 
             MessageBox.Show("Usuario añadido correctamente");
+            new UsuariosAdmin().Show();
+            this.Close();
         }
 
         private void BotonVolver_Click(object sender, EventArgs e)
