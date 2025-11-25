@@ -426,7 +426,8 @@ namespace Gentefit.Controlador
                     if (res.estado == EstadoReserva.Confirmada)
                     {
                         aceptadas.Add(res);
-                    }else if(res.estado == EstadoReserva.EnEspera)
+                    }
+                    else if(res.estado == EstadoReserva.EnEspera)
                     {
                         if(aceptadas.Count < 16)
                         {                          

@@ -31,6 +31,7 @@ namespace Gentefit.Vistas.PantallasAdmin.GestionReservas
             // Eventos para seleccionar filas
             DgvClientes.CellClick += DgvClientes_CellClick;
             DgvClases.CellClick += DgvClases_CellClick;
+            DgvClases.Columns["enEspera"].Visible = false;
         }
 
         //  Cargar tablas de clientes y clases
@@ -161,6 +162,7 @@ namespace Gentefit.Vistas.PantallasAdmin.GestionReservas
             var listaClasesActualizada = logicaClases.ObtenerClasesDisponibles();
             DgvClases.DataSource = null;
             DgvClases.DataSource = listaClasesActualizada;
+            
 
             // Volver a calcular plazasLibres y enEspera
             using var contexto = new GentefitContext();
