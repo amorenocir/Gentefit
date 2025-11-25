@@ -40,15 +40,27 @@ namespace Gentefit.Vistas.PantallasAdmin
             if (!int.TryParse(CajaTextoIdCliente.Text, out int idCliente)) return;
             if (!int.TryParse(CajaTextoIdClase.Text, out int idClase)) return;
 
-            var Reserva = new Reserva
+            // Busca la reserva original
+            var reservaOriginal = logica.ObtenerTodos().FirstOrDefault(r => r.idReserva == id);
+            if (reservaOriginal == null)
+            {
+                MessageBox.Show("Reserva no encontrada.");
+                return;
+            }
+
+            // Crea una nueva modificada
+            var reservaModificada = new Reserva
             {
                 idReserva = id,
                 idCliente = idCliente,
                 idClase = idClase,
-                estado = (EstadoReserva)comboBoxEstado.SelectedItem
+                estado = (EstadoReserva)comboBoxEstado.SelectedItem,
+                fechaClase = reservaOriginal.fechaClase,
+                fechaReserva = reservaOriginal.fechaReserva
             };
 
-            bool exito = logica.ModificarReserva(Reserva);
+            bool exito = logica.ModificarReserva(reservaModificada);
+
             if (exito)
             {
                 MessageBox.Show("Reserva modificada correctamente");
