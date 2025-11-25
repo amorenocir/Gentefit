@@ -28,6 +28,7 @@ namespace Gentefit.Vistas.PantallasEncargado
             this.clase = clase;
 
             InitializeComponent();
+            this.Text = "GenteFit";
             this.Load += (s, e) => CargarDatos();
             EscogerTitulo(cliente, clase);
         }

@@ -20,6 +20,7 @@ namespace Gentefit.Vistas.PantallasAdmin.GestionUsuarios
         public ListarUsuarios()
         {
             InitializeComponent();
+            this.Text = "GenteFit";
             this.Load += (s, e) => PanelUsuarios.DataSource = logicaUs.ObtenerTodos();
         }
         

@@ -21,6 +21,7 @@ namespace Gentefit.Vistas.PantallasCliente
         public CalendarioClientes(Cliente cliente)
         {
             InitializeComponent();
+            this.Text = "GenteFit";
             clienteLogeado = cliente;
         }
 

@@ -21,6 +21,7 @@ namespace Gentefit.Vistas
         public Login()
         {
             InitializeComponent();
+            this.Text = "GenteFit";
         }
 
         private void BotonEntrar_Click(object sender, EventArgs e)

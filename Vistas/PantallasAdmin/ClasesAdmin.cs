@@ -17,6 +17,7 @@ namespace Gentefit.Vistas.PantallasAdmin
         public ClasesAdmin()
         {
             InitializeComponent();
+            this.Text = "GenteFit";
             this.Load += (s, e) => CargarDatos();
         }
 

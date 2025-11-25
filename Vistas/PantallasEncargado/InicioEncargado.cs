@@ -16,6 +16,7 @@ namespace Gentefit.Vistas.PantallasEncargado
         public InicioEncargado()
         {
             InitializeComponent();
+            this.Text = "GenteFit";
         }
         private void BotonVerClientes_Click(object sender, EventArgs e)
         {
@@ -26,6 +27,12 @@ namespace Gentefit.Vistas.PantallasEncargado
         {
             new EscogerListaReservas().Show();
             this.Hide();
+        }
+
+        private void BotonVolver_Click(object sender, EventArgs e)
+        {
+            new Login().Show();
+            this.Close();
         }
     }
 }

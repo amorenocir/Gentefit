@@ -17,6 +17,7 @@ namespace Gentefit.Vistas.PantallasAdmin
         public InicioAdmin()
         {
             InitializeComponent();
+            this.Text = "GenteFit";
         }
 
         private void MenuAdmin_Load(object sender, EventArgs e)

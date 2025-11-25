@@ -21,6 +21,7 @@ namespace Gentefit.Vistas.PantallasCliente
         public ListarReservasCliente(Cliente cliente)
         {
             InitializeComponent();
+            this.Text = "GenteFit";
             clienteLogeado = cliente;
             Titulo.Text = "Reservas de " + cliente.nombre + " " + cliente.apellidos;
             this.Load += (s, e) => CrearPanelReservas(cliente);

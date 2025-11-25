@@ -19,6 +19,7 @@ namespace Gentefit.Vistas.PantallasAdmin
         public AnadirSala()
         {
             InitializeComponent();
+            this.Text = "GenteFit";
         }
 
         private void BotonAnadir_Click(object sender, EventArgs e)

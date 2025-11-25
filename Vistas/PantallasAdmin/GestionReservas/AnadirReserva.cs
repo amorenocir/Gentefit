@@ -10,6 +10,7 @@ namespace Gentefit.Vistas.PantallasAdmin.GestionReservas
         public AnadirReserva()
         {
             InitializeComponent();
+            this.Text = "GenteFit";
             CargarTablas();
 
             // Marcar los TextBox como solo lectura

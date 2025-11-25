@@ -21,6 +21,7 @@ namespace Gentefit.Vistas
         public InicioCliente(Cliente cliente)
         {
             InitializeComponent();
+            this.Text = "GenteFit";
             clienteLogeado = cliente;
         }
 
@@ -53,7 +54,7 @@ namespace Gentefit.Vistas
         private void BotonSalir_Click(object sender, EventArgs e)
         {
             new Login().Show();
-            this.Hide();
+            this.Close();
         }
         private void ImagenPerfil_Click(object sender, EventArgs e)
         {

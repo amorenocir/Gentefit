@@ -20,6 +20,7 @@ namespace Gentefit.Vistas.PantallasAdmin.GestionActividades
         public ModificarActividad()
         {
             InitializeComponent();
+            this.Text = "GenteFit";
             this.Load += (s, e) => CargarDatos();
             PanelActividades.CellClick += PanelActividades_CellClick;
             CajaTextoId.ReadOnly = true;

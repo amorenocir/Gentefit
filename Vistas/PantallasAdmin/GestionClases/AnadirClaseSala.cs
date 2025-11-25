@@ -25,6 +25,7 @@ namespace Gentefit.Vistas.PantallasAdmin
         public AnadirClaseSala(int idActividad, Clase clase)
         {
             InitializeComponent();
+            this.Text = "GenteFit";
             this.idActividad = idActividad;
             this.clase = clase;
         }

@@ -27,6 +27,7 @@ namespace Gentefit.Vistas.PantallasAdmin.GestionReservas
             this.clase = clase;
 
             InitializeComponent();
+            this.Text = "GenteFit";
             this.Load += (s, e) => CargarDatos();
             EscogerTitulo(cliente, clase);
         }

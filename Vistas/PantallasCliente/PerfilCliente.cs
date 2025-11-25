@@ -17,6 +17,7 @@ namespace Gentefit.Vistas.PantallasCliente
         public PerfilCliente(Cliente cliente)
         {
             InitializeComponent();
+            this.Text = "GenteFit";
             clienteLogeado = cliente;
             this.Load += PerfilCliente_Load;
         }

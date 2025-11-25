@@ -24,6 +24,7 @@ namespace Gentefit.Vistas.PantallasCliente
         public VerActividadCliente(Cliente cliente, int idActividad)
         {
             InitializeComponent();
+            this.Text = "GenteFit";
             clienteLogeado = cliente;
             this.idActividad = idActividad;
 

@@ -18,6 +18,7 @@ namespace Gentefit.Vistas.PantallasAdmin.GestionActividades
         public EliminarActividad()
         {
             InitializeComponent();
+            this.Text = "GenteFit";
             this.Load += EliminarActividad_Load;
         }
 

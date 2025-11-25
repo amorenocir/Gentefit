@@ -19,6 +19,7 @@ namespace Gentefit.Vistas.PantallasAdmin
         public MenuAdClases(int idActividad)
         {
             InitializeComponent();
+            this.Text = "GenteFit";
             this.idActividad = idActividad;
             List<Actividad> listaActividades = logica.BuscarPorId(idActividad);
             if(listaActividades.Count <= 0)

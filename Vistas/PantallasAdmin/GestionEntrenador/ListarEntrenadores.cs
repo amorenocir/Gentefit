@@ -22,6 +22,7 @@ namespace Gentefit.Vistas.PantallasAdmin
         public ListarEntrenadores()
         {
             InitializeComponent();
+            this.Text = "GenteFit";
             this.Load += (s, e) => PanelEntrenadores.DataSource = logicaCl.ObtenerTodos();
         }
 

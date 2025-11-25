@@ -23,15 +23,13 @@ namespace Gentefit.Vistas.PantallasAdmin
         public EliminarClase(int idActividad)
         {
             InitializeComponent();
+            this.Text = "GenteFit";
             this.idActividad = idActividad;
         }
 
         private void EliminarClase_Load(object sender, EventArgs e)
         {
             CargarDatos();
-           /*PanelClases.Columns["actividad"].Visible = false;
-            PanelClases.Columns["entrenador"].Visible = false;
-            PanelClases.Columns["sala"].Visible = false;*/
 
             List<Actividad> posiblesAct = logicaAct.BuscarPorId(idActividad);
             Actividad actividad = posiblesAct[0];

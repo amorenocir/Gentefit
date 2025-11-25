@@ -15,6 +15,7 @@ namespace Gentefit.Vistas.PantallasAdmin
         public ModificarReserva()
         {
             InitializeComponent();
+            this.Text = "GenteFit";
             CajaTextoId.ReadOnly = true;
         }
 

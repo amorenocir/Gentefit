@@ -23,6 +23,7 @@
             ImagenMensajes = new PictureBox();
             ImagenPerfil = new PictureBox();
             pictureBox1 = new PictureBox();
+            BotonVolver = new Button();
             ((System.ComponentModel.ISupportInitialize)ImagenMensajes).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ImagenPerfil).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -32,10 +33,9 @@
             // 
             BotonVerClientes.BackColor = Color.DarkOrange;
             BotonVerClientes.ForeColor = Color.White;
-            BotonVerClientes.Location = new Point(304, 303);
-            BotonVerClientes.Margin = new Padding(3, 4, 3, 4);
+            BotonVerClientes.Location = new Point(266, 227);
             BotonVerClientes.Name = "BotonVerClientes";
-            BotonVerClientes.Size = new Size(129, 53);
+            BotonVerClientes.Size = new Size(113, 40);
             BotonVerClientes.TabIndex = 23;
             BotonVerClientes.Text = "Ver Clientes";
             BotonVerClientes.UseVisualStyleBackColor = false;
@@ -45,10 +45,9 @@
             // 
             BotonVerReservas.BackColor = Color.DarkOrange;
             BotonVerReservas.ForeColor = Color.White;
-            BotonVerReservas.Location = new Point(482, 303);
-            BotonVerReservas.Margin = new Padding(3, 4, 3, 4);
+            BotonVerReservas.Location = new Point(422, 227);
             BotonVerReservas.Name = "BotonVerReservas";
-            BotonVerReservas.Size = new Size(129, 53);
+            BotonVerReservas.Size = new Size(113, 40);
             BotonVerReservas.TabIndex = 21;
             BotonVerReservas.Text = "Ver Reservas";
             BotonVerReservas.UseVisualStyleBackColor = false;
@@ -57,9 +56,9 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(387, 249);
+            label2.Location = new Point(339, 187);
             label2.Name = "label2";
-            label2.Size = new Size(144, 20);
+            label2.Size = new Size(117, 15);
             label2.TabIndex = 19;
             label2.Text = "HH:MM DD-MM-AA";
             // 
@@ -69,9 +68,9 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
             label1.ForeColor = SystemColors.ControlText;
-            label1.Location = new Point(409, 209);
+            label1.Location = new Point(358, 157);
             label1.Name = "label1";
-            label1.Size = new Size(102, 37);
+            label1.Size = new Size(82, 30);
             label1.TabIndex = 18;
             label1.Text = "INICIO";
             label1.TextAlign = ContentAlignment.MiddleLeft;
@@ -79,10 +78,9 @@
             // ImagenMensajes
             // 
             ImagenMensajes.Image = Properties.Resources.Mensajes;
-            ImagenMensajes.Location = new Point(615, 54);
-            ImagenMensajes.Margin = new Padding(3, 4, 3, 4);
+            ImagenMensajes.Location = new Point(538, 40);
             ImagenMensajes.Name = "ImagenMensajes";
-            ImagenMensajes.Size = new Size(131, 117);
+            ImagenMensajes.Size = new Size(115, 88);
             ImagenMensajes.SizeMode = PictureBoxSizeMode.Zoom;
             ImagenMensajes.TabIndex = 17;
             ImagenMensajes.TabStop = false;
@@ -90,10 +88,9 @@
             // ImagenPerfil
             // 
             ImagenPerfil.Image = Properties.Resources.Perfil;
-            ImagenPerfil.Location = new Point(177, 54);
-            ImagenPerfil.Margin = new Padding(3, 4, 3, 4);
+            ImagenPerfil.Location = new Point(155, 40);
             ImagenPerfil.Name = "ImagenPerfil";
-            ImagenPerfil.Size = new Size(121, 109);
+            ImagenPerfil.Size = new Size(106, 82);
             ImagenPerfil.SizeMode = PictureBoxSizeMode.Zoom;
             ImagenPerfil.TabIndex = 16;
             ImagenPerfil.TabStop = false;
@@ -101,19 +98,29 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(376, 54);
-            pictureBox1.Margin = new Padding(3, 4, 3, 4);
+            pictureBox1.Location = new Point(329, 40);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(167, 113);
+            pictureBox1.Size = new Size(146, 85);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 15;
             pictureBox1.TabStop = false;
             // 
+            // BotonVolver
+            // 
+            BotonVolver.Location = new Point(523, 331);
+            BotonVolver.Name = "BotonVolver";
+            BotonVolver.Size = new Size(75, 23);
+            BotonVolver.TabIndex = 24;
+            BotonVolver.Text = "Volver";
+            BotonVolver.UseVisualStyleBackColor = true;
+            BotonVolver.Click += BotonVolver_Click;
+            // 
             // InicioEncargado
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(888, 567);
+            ClientSize = new Size(777, 425);
+            Controls.Add(BotonVolver);
             Controls.Add(BotonVerClientes);
             Controls.Add(BotonVerReservas);
             Controls.Add(label2);
@@ -121,6 +128,7 @@
             Controls.Add(ImagenMensajes);
             Controls.Add(ImagenPerfil);
             Controls.Add(pictureBox1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "InicioEncargado";
             Text = "MenuEncargado";
             ((System.ComponentModel.ISupportInitialize)ImagenMensajes).EndInit();
@@ -137,5 +145,6 @@
         private PictureBox ImagenMensajes;
         private PictureBox ImagenPerfil;
         private PictureBox pictureBox1;
+        private Button BotonVolver;
     }
 }

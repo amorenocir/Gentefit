@@ -19,6 +19,7 @@ namespace Gentefit.Vistas.PantallasAdmin
         public AnadirClase(int idActividad)
         {
             InitializeComponent();
+            this.Text = "GenteFit";
             this.idActividad = idActividad;
             DespleDia.DataSource = Enum.GetValues(typeof(Dia));
         }

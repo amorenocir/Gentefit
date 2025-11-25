@@ -20,6 +20,7 @@ namespace Gentefit.Vistas.PantallasEncargado
         public EscogerListaReservas()
         {
             InitializeComponent();
+            this.Text = "GenteFit";
             this.Load += (s, e) => CargarDatos();
             CajaTextoBuscarCli.PlaceholderText = "Buscar por ID";
             CajaTextoBuscarCla.PlaceholderText = "Buscar por ID";

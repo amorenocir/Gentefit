@@ -22,6 +22,7 @@ namespace Gentefit.Vistas.PantallasAdmin.GestionActividades
         public ListarActividades()
         {
             InitializeComponent();
+            this.Text = "GenteFit";
             this.Load += (s, e) => PanelActividades.DataSource = logicaAct.ObtenerTodos();
         }
        

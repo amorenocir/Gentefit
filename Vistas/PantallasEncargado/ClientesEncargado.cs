@@ -20,6 +20,7 @@ namespace Gentefit.Vistas.PantallasEncargado
         public ClientesEncargado()
         {
             InitializeComponent();
+            this.Text = "GenteFit";
             this.Load += (s, e) => PanelClientes.DataSource = logicaCl.ObtenerTodos();
         }
         private void BotonVolver_Click(object sender, EventArgs e)

@@ -20,6 +20,7 @@ namespace Gentefit.Vistas.PantallasCliente
         public ActividadesCliente(Cliente cliente)
         {
             InitializeComponent();
+            this.Text = "GenteFit";
             clienteLogeado = cliente;
             this.Load += (s, e) => PanelActividades.DataSource = logicaActividades.ObtenerTodos();
         }

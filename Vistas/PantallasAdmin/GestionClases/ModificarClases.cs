@@ -24,6 +24,7 @@ namespace Gentefit.Vistas.PantallasAdmin
         public ModificarClases(int idActividad)
         {
             InitializeComponent();
+            this.Text = "GenteFit";
             this.idActividad = idActividad;
         }
 

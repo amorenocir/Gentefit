@@ -22,6 +22,7 @@ namespace Gentefit.Vistas.PantallasAdmin
         public AnadirClaseEntrenador(Clase clase, int idActividad)
         {
             InitializeComponent();
+            this.Text = "GenteFit";
             this.clase = clase;
             this.idActividad = idActividad;
         }
@@ -35,8 +36,6 @@ namespace Gentefit.Vistas.PantallasAdmin
                 if (fila.IsNewRow) continue;
 
                 int idEntrenador = (int)fila.Cells["idEntrenador"].Value;
-                //List<Entrenador> posiblesEntre = logicaEntre.BuscarPorId(idEntrenador);
-                //Entrenador entrenador = posiblesEntre[0];
 
                 List<Clase> todasClases = logicaClases.ObtenerTodo();
                 for (int i = 0; i < todasClases.Count; i++)

@@ -13,6 +13,7 @@ namespace Gentefit.Vistas.PantallasAdmin
         public EliminarEntrenador()
         {
             InitializeComponent();
+            this.Text = "GenteFit";
             this.Load += EliminarEntrenador_Load;
         }
 

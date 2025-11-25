@@ -13,6 +13,7 @@ namespace Gentefit.Vistas.PantallasAdmin
         public EliminarSala()
         {
             InitializeComponent();
+            this.Text = "GenteFit";
             this.Load += EliminarSala_Load;
         }
 

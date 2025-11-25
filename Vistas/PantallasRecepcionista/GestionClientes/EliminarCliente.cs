@@ -13,6 +13,7 @@ namespace Gentefit.Vistas.PantallasRecepcionista
         public EliminarCliente()
         {
             InitializeComponent();
+            this.Text = "GenteFit";
             this.Load += EliminarCliente_Load;
         }
 

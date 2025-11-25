@@ -22,6 +22,7 @@ namespace Gentefit.Vistas.PantallasAdmin
         public ListarSalas()
         {
             InitializeComponent();
+            this.Text = "GenteFit";
             this.Load += (s, e) => PanelSalas.DataSource = logicaSl.ObtenerTodos();
         }
 

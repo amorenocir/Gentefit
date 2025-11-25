@@ -20,6 +20,7 @@ namespace Gentefit.Vistas.PantallasAdmin.GestionUsuarios
         public EliminarUsuario()
         {
             InitializeComponent();
+            this.Text = "GenteFit";
             this.Load += EliminarUsuario_Load;
         }
 

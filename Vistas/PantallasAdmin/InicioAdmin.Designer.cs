@@ -39,10 +39,9 @@
             // LogoAdmin
             // 
             LogoAdmin.Image = (Image)resources.GetObject("LogoAdmin.Image");
-            LogoAdmin.Location = new Point(390, 29);
-            LogoAdmin.Margin = new Padding(3, 4, 3, 4);
+            LogoAdmin.Location = new Point(341, 22);
             LogoAdmin.Name = "LogoAdmin";
-            LogoAdmin.Size = new Size(167, 113);
+            LogoAdmin.Size = new Size(146, 85);
             LogoAdmin.SizeMode = PictureBoxSizeMode.Zoom;
             LogoAdmin.TabIndex = 0;
             LogoAdmin.TabStop = false;
@@ -50,10 +49,9 @@
             // ImagenPerfil
             // 
             ImagenPerfil.Image = Properties.Resources.Perfil;
-            ImagenPerfil.Location = new Point(197, 29);
-            ImagenPerfil.Margin = new Padding(3, 4, 3, 4);
+            ImagenPerfil.Location = new Point(172, 22);
             ImagenPerfil.Name = "ImagenPerfil";
-            ImagenPerfil.Size = new Size(121, 109);
+            ImagenPerfil.Size = new Size(106, 82);
             ImagenPerfil.SizeMode = PictureBoxSizeMode.Zoom;
             ImagenPerfil.TabIndex = 1;
             ImagenPerfil.TabStop = false;
@@ -61,10 +59,9 @@
             // ImagenMensajes
             // 
             ImagenMensajes.Image = Properties.Resources.Mensajes;
-            ImagenMensajes.Location = new Point(635, 29);
-            ImagenMensajes.Margin = new Padding(3, 4, 3, 4);
+            ImagenMensajes.Location = new Point(556, 22);
             ImagenMensajes.Name = "ImagenMensajes";
-            ImagenMensajes.Size = new Size(131, 117);
+            ImagenMensajes.Size = new Size(115, 88);
             ImagenMensajes.SizeMode = PictureBoxSizeMode.Zoom;
             ImagenMensajes.TabIndex = 2;
             ImagenMensajes.TabStop = false;
@@ -75,9 +72,9 @@
             Inicio.BackColor = Color.Transparent;
             Inicio.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
             Inicio.ForeColor = SystemColors.ControlText;
-            Inicio.Location = new Point(429, 184);
+            Inicio.Location = new Point(375, 138);
             Inicio.Name = "Inicio";
-            Inicio.Size = new Size(102, 37);
+            Inicio.Size = new Size(82, 30);
             Inicio.TabIndex = 3;
             Inicio.Text = "INICIO";
             Inicio.TextAlign = ContentAlignment.MiddleLeft;
@@ -85,9 +82,9 @@
             // FechaHora
             // 
             FechaHora.AutoSize = true;
-            FechaHora.Location = new Point(407, 224);
+            FechaHora.Location = new Point(356, 168);
             FechaHora.Name = "FechaHora";
-            FechaHora.Size = new Size(144, 20);
+            FechaHora.Size = new Size(117, 15);
             FechaHora.TabIndex = 4;
             FechaHora.Text = "HH:MM DD-MM-AA";
             // 
@@ -95,11 +92,10 @@
             // 
             BotonActividades.BackColor = Color.DarkOrange;
             BotonActividades.ForeColor = Color.White;
-            BotonActividades.Location = new Point(174, 281);
-            BotonActividades.Margin = new Padding(3, 4, 3, 4);
+            BotonActividades.Location = new Point(152, 211);
             BotonActividades.Name = "BotonActividades";
-            BotonActividades.Size = new Size(129, 53);
-            BotonActividades.TabIndex = 5;
+            BotonActividades.Size = new Size(113, 40);
+            BotonActividades.TabIndex = 1;
             BotonActividades.Text = "Actividades";
             BotonActividades.UseVisualStyleBackColor = false;
             BotonActividades.Click += BotonActividades_Click;
@@ -108,11 +104,10 @@
             // 
             BotonReservas.BackColor = Color.DarkOrange;
             BotonReservas.ForeColor = Color.White;
-            BotonReservas.Location = new Point(485, 281);
-            BotonReservas.Margin = new Padding(3, 4, 3, 4);
+            BotonReservas.Location = new Point(424, 211);
             BotonReservas.Name = "BotonReservas";
-            BotonReservas.Size = new Size(129, 53);
-            BotonReservas.TabIndex = 6;
+            BotonReservas.Size = new Size(113, 40);
+            BotonReservas.TabIndex = 3;
             BotonReservas.Text = "Reservas";
             BotonReservas.UseVisualStyleBackColor = false;
             BotonReservas.Click += BotonReservas_Click;
@@ -122,11 +117,10 @@
             BotonEntrenadores.AllowDrop = true;
             BotonEntrenadores.BackColor = Color.DarkOrange;
             BotonEntrenadores.ForeColor = Color.White;
-            BotonEntrenadores.Location = new Point(556, 355);
-            BotonEntrenadores.Margin = new Padding(3, 4, 3, 4);
+            BotonEntrenadores.Location = new Point(486, 266);
             BotonEntrenadores.Name = "BotonEntrenadores";
             BotonEntrenadores.RightToLeft = RightToLeft.Yes;
-            BotonEntrenadores.Size = new Size(129, 53);
+            BotonEntrenadores.Size = new Size(113, 40);
             BotonEntrenadores.TabIndex = 7;
             BotonEntrenadores.Text = "Entrenadores";
             BotonEntrenadores.UseVisualStyleBackColor = false;
@@ -136,11 +130,10 @@
             // 
             BotonClientes.BackColor = Color.DarkOrange;
             BotonClientes.ForeColor = Color.White;
-            BotonClientes.Location = new Point(245, 355);
-            BotonClientes.Margin = new Padding(3, 4, 3, 4);
+            BotonClientes.Location = new Point(214, 266);
             BotonClientes.Name = "BotonClientes";
-            BotonClientes.Size = new Size(129, 53);
-            BotonClientes.TabIndex = 8;
+            BotonClientes.Size = new Size(113, 40);
+            BotonClientes.TabIndex = 5;
             BotonClientes.Text = "Clientes";
             BotonClientes.UseVisualStyleBackColor = false;
             BotonClientes.Click += BotonClientes_Click;
@@ -149,22 +142,20 @@
             // 
             BotonUsuarios.BackColor = Color.DarkOrange;
             BotonUsuarios.ForeColor = Color.White;
-            BotonUsuarios.Location = new Point(402, 355);
-            BotonUsuarios.Margin = new Padding(3, 4, 3, 4);
+            BotonUsuarios.Location = new Point(352, 266);
             BotonUsuarios.Name = "BotonUsuarios";
-            BotonUsuarios.Size = new Size(129, 53);
-            BotonUsuarios.TabIndex = 9;
+            BotonUsuarios.Size = new Size(113, 40);
+            BotonUsuarios.TabIndex = 6;
             BotonUsuarios.Text = "Usuarios";
             BotonUsuarios.UseVisualStyleBackColor = false;
             BotonUsuarios.Click += BotonUsuarios_Click;
             // 
             // BotonVolver
             // 
-            BotonVolver.Location = new Point(757, 497);
-            BotonVolver.Margin = new Padding(3, 4, 3, 4);
+            BotonVolver.Location = new Point(662, 373);
             BotonVolver.Name = "BotonVolver";
-            BotonVolver.Size = new Size(86, 31);
-            BotonVolver.TabIndex = 13;
+            BotonVolver.Size = new Size(75, 23);
+            BotonVolver.TabIndex = 8;
             BotonVolver.Text = "Volver";
             BotonVolver.UseVisualStyleBackColor = true;
             BotonVolver.Click += BotonVolver_Click;
@@ -179,11 +170,10 @@
             // 
             BotonClases.BackColor = Color.DarkOrange;
             BotonClases.ForeColor = Color.White;
-            BotonClases.Location = new Point(331, 281);
-            BotonClases.Margin = new Padding(3, 4, 3, 4);
+            BotonClases.Location = new Point(290, 211);
             BotonClases.Name = "BotonClases";
-            BotonClases.Size = new Size(129, 53);
-            BotonClases.TabIndex = 14;
+            BotonClases.Size = new Size(113, 40);
+            BotonClases.TabIndex = 2;
             BotonClases.Text = "Clases";
             BotonClases.UseVisualStyleBackColor = false;
             BotonClases.Click += BotonClases_Click;
@@ -192,22 +182,21 @@
             // 
             BotonSalas.BackColor = Color.DarkOrange;
             BotonSalas.ForeColor = Color.White;
-            BotonSalas.Location = new Point(634, 281);
-            BotonSalas.Margin = new Padding(3, 4, 3, 4);
+            BotonSalas.Location = new Point(555, 211);
             BotonSalas.Name = "BotonSalas";
-            BotonSalas.Size = new Size(129, 53);
-            BotonSalas.TabIndex = 15;
+            BotonSalas.Size = new Size(113, 40);
+            BotonSalas.TabIndex = 4;
             BotonSalas.Text = "Salas";
             BotonSalas.UseVisualStyleBackColor = false;
             BotonSalas.Click += BotonSalas_Click;
             // 
             // InicioAdmin
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             BackgroundImageLayout = ImageLayout.None;
-            ClientSize = new Size(914, 600);
+            ClientSize = new Size(800, 450);
             Controls.Add(BotonSalas);
             Controls.Add(BotonClases);
             Controls.Add(BotonVolver);
@@ -221,7 +210,6 @@
             Controls.Add(ImagenMensajes);
             Controls.Add(ImagenPerfil);
             Controls.Add(LogoAdmin);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "InicioAdmin";
             Text = "MenuAdmin";
             Load += timer1_Tick;

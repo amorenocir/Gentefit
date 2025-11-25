@@ -23,6 +23,7 @@ namespace Gentefit.Vistas.PantallasAdmin
         public ListarClases(int idActividad)
         {
             InitializeComponent();
+            this.Text = "GenteFit";
             this.idActividad = idActividad;
         }
 

@@ -22,6 +22,7 @@ namespace Gentefit.Vistas.PantallasRecepcionista
         public ListarClientes()
         {
             InitializeComponent();
+            this.Text = "GenteFit";
             this.Load += (s, e) => PanelClientes.DataSource = logicaCl.ObtenerTodos();
         }
 

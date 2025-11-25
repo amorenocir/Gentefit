@@ -14,6 +14,7 @@ namespace Gentefit.Vistas.PantallasRecepcionista
         public ModificarCliente()
         {
             InitializeComponent();
+            this.Text = "GenteFit";
             this.Load += (s, e) => CargarDatos();
             CajaTextoId.ReadOnly = true;
         }

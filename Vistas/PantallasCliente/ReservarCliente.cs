@@ -25,6 +25,7 @@ namespace Gentefit.Vistas.PantallasCliente
         public ReservarCliente(Cliente cliente, int idActividad)
         {
             InitializeComponent();
+            this.Text = "GenteFit";
             clienteLogeado = cliente;
             this.idActividad = idActividad;
 

@@ -13,7 +13,7 @@ namespace Gentefit.Vistas.PantallasAdmin
         public EliminarReserva()
         {
             InitializeComponent();
-
+            this.Text = "GenteFit";
 
             this.Load += EliminarReserva_Load;
         }
