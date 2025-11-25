@@ -17,6 +17,7 @@
         private void InitializeComponent()
         {
             DgvClases = new DataGridView();
+            DgvClases.AutoGenerateColumns = true;
             DgvClientes = new DataGridView();
             BotonReservar = new Button();
             BotonVolver = new Button();

@@ -53,7 +53,7 @@ namespace Gentefit.Controlador
 
 
         // Crear una reserva
-        public bool ReservarClase(int idClase, int idCliente)
+        public EstadoReserva ReservarClase(int idClase, int idCliente)
         {
             using var contexto = new GentefitContext();
 
@@ -69,7 +69,7 @@ namespace Gentefit.Controlador
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Warning
                 );
-                return false;
+                return EstadoReserva.Cancelada; ;
             }
 
             // Obtener la clase
@@ -78,7 +78,7 @@ namespace Gentefit.Controlador
                 .Include(c => c.actividad)
                 .FirstOrDefault(c => c.idClase == idClase);
 
-            if (clase == null) return false;
+            if (clase == null) return EstadoReserva.Cancelada; ;
 
             // Buscar la fecha de la clase que se reserva
             DayOfWeek diaObjetivo = DayOfWeek.Monday;
@@ -154,7 +154,7 @@ namespace Gentefit.Controlador
 
             }
 
-            return true;
+            return nuevaReserva.estado; ;
         }
 
 
@@ -419,7 +419,9 @@ namespace Gentefit.Controlador
             using var contexto = new GentefitContext();
             foreach (Reserva res in todasRes)
             {
-                if(res.idClase == clase.idClase)
+                if (res == null) return;
+
+                if (res.idClase == clase.idClase)
                 {
                     if (res.estado == EstadoReserva.Confirmada)
                     {

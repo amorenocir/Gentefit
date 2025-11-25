@@ -44,14 +44,27 @@ namespace Gentefit.Vistas.PantallasCliente
             }
             int idClase = (int)PanelClases.CurrentRow.Cells["idClase"].Value;
             int idCliente = clienteLogeado.idCliente;
-            if(logicaRes.ReservarClase(idClase, idCliente))
-            {
-                List<Reserva> todasRes = logicaRes.ObtenerTodos();
-                var reserva = todasRes.LastOrDefault(r => r.idCliente == idCliente);
 
-                MessageBox.Show($"¡Perfecto! Tu reserva está " + reserva.estado);
-                CrearPanelClases(idActividad);
+            EstadoReserva estado = logicaRes.ReservarClase(idClase, idCliente);
+
+            List<Reserva> todasRes = logicaRes.ObtenerTodos();
+            var reserva = todasRes.LastOrDefault(r => r.idCliente == idCliente);
+
+            if (estado == EstadoReserva.Confirmada)
+            {
+                MessageBox.Show("Perfecto. Tu reserva esta confirmada.");
             }
+            else if (estado == EstadoReserva.EnEspera)
+            {
+                MessageBox.Show("Clase llena. Estas en lista de espera.");
+            }
+            else // Cancelada o error
+            {
+                MessageBox.Show("No se pudo crear la reserva.");
+            }
+
+            // Recargar la tabla de clases
+            CrearPanelClases(idActividad);
         }
 
         private void BotonVolver_Click(object sender, EventArgs e)
@@ -71,6 +84,7 @@ namespace Gentefit.Vistas.PantallasCliente
                     lista.Add(clase);
                 }
             }
+            PanelClases.DataSource = null; 
             PanelClases.DataSource = lista;
             PanelClases.Columns["idActividad"].Visible = false;
             PanelClases.Columns["actividad"].Visible = false;
@@ -97,6 +111,7 @@ namespace Gentefit.Vistas.PantallasCliente
                 
                 logicaRes.GestionarListasReservas(clase);
             }
+            PanelClases.Refresh();
         }
     }
 }

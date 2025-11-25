@@ -1,7 +1,10 @@
-﻿using Gentefit.Modelo;
+﻿using Gentefit.Controlador;
+using Gentefit.db;
+using Gentefit.Modelo;
+using Gentefit.Modelo.Enums;
 using System;
 using System.Windows.Forms;
-using Gentefit.Controlador;
+
 
 namespace Gentefit.Vistas.PantallasAdmin.GestionReservas
 {
@@ -139,19 +142,46 @@ namespace Gentefit.Vistas.PantallasAdmin.GestionReservas
             int idClase = int.Parse(txtIdClase.Text);
 
             LogicaReservas logicaReservas = new LogicaReservas();
-            bool exito = logicaReservas.ReservarClase(idClase, idCliente);
+            LogicaClases logicaClases = new LogicaClases();
+            EstadoReserva estado = logicaReservas.ReservarClase(idClase, idCliente);
 
-            if (exito)
+            switch (estado)
             {
-                MessageBox.Show("Reserva creada correctamente.");
-                CargarTablas();
+                case EstadoReserva.Confirmada:
+                    MessageBox.Show("Reserva confirmada correctamente.", "Reserva");
+                    break;
+                case EstadoReserva.EnEspera:
+                    MessageBox.Show("Clase llena. Estás en lista de espera.", "Reserva");
+                    break;
+                case EstadoReserva.Cancelada: // se puede usar para errores o duplicados
+                    MessageBox.Show("No se pudo crear la reserva.", "Error");
+                    break;
             }
-            else
+            // Refrescar la tabla de clases
+            var listaClasesActualizada = logicaClases.ObtenerClasesDisponibles();
+            DgvClases.DataSource = null;
+            DgvClases.DataSource = listaClasesActualizada;
+
+            // Volver a calcular plazasLibres y enEspera
+            using var contexto = new GentefitContext();
+            foreach (DataGridViewRow fila in DgvClases.Rows)
             {
-                MessageBox.Show("No se pudo crear la reserva.");
+                Clase clase = fila.DataBoundItem as Clase;
+                if (clase == null) continue;
+
+                // Traer la clase completa desde la BD
+                var claseCompleta = contexto.Clases.FirstOrDefault(c => c.idClase == clase.idClase);
+                if (claseCompleta != null)
+                {
+                    logicaReservas.GestionarListasReservas(claseCompleta);
+
+                    // Actualizar las columnas del DataGridView
+                    fila.Cells["plazasLibres"].Value = claseCompleta.plazasLibres;
+                    fila.Cells["enEspera"].Value = claseCompleta.enEspera;
+                }
             }
         }
-
+       
 
         private void BotonVolver_Click(object sender, EventArgs e)
         {
