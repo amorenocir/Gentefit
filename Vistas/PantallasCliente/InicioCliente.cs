@@ -29,11 +29,7 @@ namespace Gentefit.Vistas
         {
             timer2.Start();
         }
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            FechaYHora.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
-        }
-
+     
         private void BotonActividades_Click(object sender, EventArgs e)
         {
             //new ActividadesCliente(clienteLogeado.Clone()).Show();

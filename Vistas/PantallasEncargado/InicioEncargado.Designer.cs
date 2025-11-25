@@ -18,7 +18,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InicioEncargado));
             BotonVerClientes = new Button();
             BotonVerReservas = new Button();
-            label2 = new Label();
             label1 = new Label();
             ImagenMensajes = new PictureBox();
             ImagenPerfil = new PictureBox();
@@ -52,15 +51,6 @@
             BotonVerReservas.Text = "Ver Reservas";
             BotonVerReservas.UseVisualStyleBackColor = false;
             BotonVerReservas.Click += BotonVerReservas_Click;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(339, 187);
-            label2.Name = "label2";
-            label2.Size = new Size(117, 15);
-            label2.TabIndex = 19;
-            label2.Text = "HH:MM DD-MM-AA";
             // 
             // label1
             // 
@@ -123,7 +113,6 @@
             Controls.Add(BotonVolver);
             Controls.Add(BotonVerClientes);
             Controls.Add(BotonVerReservas);
-            Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(ImagenMensajes);
             Controls.Add(ImagenPerfil);
@@ -140,7 +129,6 @@
 
         private Button BotonVerClientes;
         private Button BotonVerReservas;
-        private Label label2;
         private Label label1;
         private PictureBox ImagenMensajes;
         private PictureBox ImagenPerfil;

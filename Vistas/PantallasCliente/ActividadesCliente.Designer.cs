@@ -61,7 +61,7 @@
             // 
             // Logo
             // 
-            Logo.Image = Properties.Resources.LogoAdmin;
+            Logo.Image = Properties.Resources.Texto;
             Logo.Location = new Point(310, 12);
             Logo.Name = "Logo";
             Logo.Size = new Size(155, 85);

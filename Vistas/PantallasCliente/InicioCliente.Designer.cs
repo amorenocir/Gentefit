@@ -32,7 +32,6 @@
             ImagenPerfil = new PictureBox();
             ImagenMensajes = new PictureBox();
             pictureBox1 = new PictureBox();
-            FechaYHora = new Label();
             label1 = new Label();
             BotonSalir = new Button();
             BotonHorarios = new Button();
@@ -74,15 +73,6 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
-            // 
-            // FechaYHora
-            // 
-            FechaYHora.AutoSize = true;
-            FechaYHora.Location = new Point(344, 84);
-            FechaYHora.Name = "FechaYHora";
-            FechaYHora.Size = new Size(117, 15);
-            FechaYHora.TabIndex = 5;
-            FechaYHora.Text = "HH:MM DD-MM-AA";
             // 
             // label1
             // 
@@ -150,7 +140,6 @@
             Controls.Add(BotonActividades);
             Controls.Add(BotonSalir);
             Controls.Add(label1);
-            Controls.Add(FechaYHora);
             Controls.Add(pictureBox1);
             Controls.Add(ImagenMensajes);
             Controls.Add(ImagenPerfil);
@@ -169,7 +158,6 @@
         private PictureBox ImagenPerfil;
         private PictureBox ImagenMensajes;
         private PictureBox pictureBox1;
-        private Label FechaYHora;
         private Label label1;
         private Button BotonSalir;
         private Button BotonHorarios;
