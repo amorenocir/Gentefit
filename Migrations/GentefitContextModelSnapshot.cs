@@ -183,9 +183,9 @@ namespace Gentefit.Migrations
                         .HasColumnType("varchar(100)");
 
                     b.HasKey("idEntrenador")
-                        .HasName("PK__Monitor__3214EC272BF7700F");
+                        .HasName("PK__Entrenador__3214EC272BF7700F");
 
-                    b.ToTable("monitor", (string)null);
+                    b.ToTable("entrenador", (string)null);
                 });
 
             modelBuilder.Entity("Gentefit.Modelo.Reserva", b =>

@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Gentefit.Migrations
 {
     [DbContext(typeof(GentefitContext))]
-    [Migration("20251122102514_EditarTablaReservas")]
-    partial class EditarTablaReservas
+    [Migration("20251125173816_CorrecionMonitorAEntrenador")]
+    partial class CorrecionMonitorAEntrenador
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -186,9 +186,9 @@ namespace Gentefit.Migrations
                         .HasColumnType("varchar(100)");
 
                     b.HasKey("idEntrenador")
-                        .HasName("PK__Monitor__3214EC272BF7700F");
+                        .HasName("PK__Entrenador__3214EC272BF7700F");
 
-                    b.ToTable("monitor", (string)null);
+                    b.ToTable("entrenador", (string)null);
                 });
 
             modelBuilder.Entity("Gentefit.Modelo.Reserva", b =>

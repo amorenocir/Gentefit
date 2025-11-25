@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Gentefit.Migrations
 {
     /// <inheritdoc />
-    public partial class Reinicio : Migration
+    public partial class CorrecionMonitorAEntrenador : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -59,7 +59,7 @@ namespace Gentefit.Migrations
                 .Annotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.CreateTable(
-                name: "monitor",
+                name: "entrenador",
                 columns: table => new
                 {
                     ID = table.Column<int>(type: "int", nullable: false)
@@ -73,7 +73,7 @@ namespace Gentefit.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK__Monitor__3214EC272BF7700F", x => x.ID);
+                    table.PrimaryKey("PK__Entrenador__3214EC272BF7700F", x => x.ID);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 
@@ -145,9 +145,9 @@ namespace Gentefit.Migrations
                         principalColumn: "ID",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Clase_monitor_id_entrenador",
+                        name: "FK_Clase_entrenador_id_entrenador",
                         column: x => x.id_entrenador,
-                        principalTable: "monitor",
+                        principalTable: "entrenador",
                         principalColumn: "ID",
                         onDelete: ReferentialAction.Cascade);
                 })
@@ -162,9 +162,8 @@ namespace Gentefit.Migrations
                     id_cliente = table.Column<int>(type: "int", nullable: false),
                     id_clase = table.Column<int>(type: "int", nullable: false),
                     Estado = table.Column<int>(type: "int", nullable: false),
-                    fecha = table.Column<DateTime>(type: "timestamp", nullable: false, defaultValueSql: "CURRENT_TIMESTAMP"),
-                    dia = table.Column<int>(type: "int", nullable: false),
-                    hora = table.Column<TimeOnly>(type: "time(6)", nullable: false)
+                    fechaClase = table.Column<DateTime>(type: "datetime(6)", nullable: false),
+                    fechaReserva = table.Column<DateTime>(type: "timestamp", nullable: false, defaultValueSql: "CURRENT_TIMESTAMP")
                 },
                 constraints: table =>
                 {
@@ -232,7 +231,7 @@ namespace Gentefit.Migrations
                 name: "Sala");
 
             migrationBuilder.DropTable(
-                name: "monitor");
+                name: "entrenador");
         }
     }
 }

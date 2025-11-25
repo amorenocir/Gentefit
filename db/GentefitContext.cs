@@ -94,9 +94,9 @@ public partial class GentefitContext : DbContext
 
         modelBuilder.Entity<Gentefit.Modelo.Entrenador>(entity =>
         {
-            entity.HasKey(e => e.idEntrenador).HasName("PK__Monitor__3214EC272BF7700F");
+            entity.HasKey(e => e.idEntrenador).HasName("PK__Entrenador__3214EC272BF7700F");
 
-            entity.ToTable("monitor");
+            entity.ToTable("entrenador");
 
             entity.Property(e => e.idEntrenador).HasColumnName("ID");
             entity.Property(e => e.apellidos)
