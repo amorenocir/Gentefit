@@ -4,7 +4,19 @@
     <_LastSelectedProfileId>C:\Users\David\Source\Repos\GentefitInstalador\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Update="Test\TestConexion.cs">
+    <Compile Update="Test\TestActividad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Test\TestClase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Test\TestEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Test\TestReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Test\TestValidacionesUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Vistas\PantallasAdmin\EntrenadoresAdmin.cs">
