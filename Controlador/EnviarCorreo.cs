@@ -29,7 +29,7 @@ namespace Gentefit.Controlador
                 smtp.EnableSsl = true;
 
              
-                smtp.Send(mensaje);
+                //smtp.Send(mensaje);
             }
             catch (Exception ex)
             {
