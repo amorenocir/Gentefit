@@ -26,7 +26,7 @@ namespace Gentefit.Test
             {
                 idCliente = 1,
                 idClase = 10,
-                fecha = DateTime.Now
+                //fecha = DateTime.Now
             };
 
             if (clase.plazasLibres > 0)
