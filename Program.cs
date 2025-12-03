@@ -1,23 +1,57 @@
+
+using Gentefit.Modelo;
+using Gentefit.db;
 using Gentefit.Test;
 using Gentefit.Vistas;
-using Gentefit.Vistas.Admin;
+using Gentefit.Vistas.PantallasAdmin;
+using Gentefit.Vistas.PantallasRecepcionista;
+using Gentefit.Vistas.PantallasEncargado;
+
 
 
 namespace Gentefit
 {
     internal static class Program
     {
-        /// <summary>
-        ///  The main entry point for the application.
-        /// </summary>
         [STAThread]
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            //Application.Run(new Login());
-            Application.Run(new MenuAdmin()); //Run de pruebas para saltarse el login
+            Application.Run(new Login());
+
+            var clienteTest = new Cliente //Cliente falso de prueba para poder acceder sin pasar por login y agilizar testeo
+            {
+                idCliente = 1,
+                nombre = "Usuario",
+                apellidos = "Test Prueba",
+                dni = "00000000A",
+                email = "prueba@test.com",
+                contrasena = "1234",
+                telefono = 600000000,
+                listaReservas = new List<Reserva>()
+            };
+
+            // RUNS DE PRUEBAS PARA SALTAR EL LOGIN
+            //Application.Run(new InicioAdmin()); 
+            //Application.Run(new InicioEncargado());
+            //Application.Run(new InicioRecepcionista());
+            //Application.Run(new InicioCliente(clienteTest));
+
+
+            using var contexto = new GentefitContext();
+            var cliente = contexto.Clientes.FirstOrDefault(); // obtiene el primero existente
+            /*
+            if (cliente != null)
+            {
+                // ?? Pasamos ese cliente al men� del cliente
+                Application.Run(new MenuCliente(cliente));
+            }
+            else
+            {
+                MessageBox.Show("No hay clientes en la base de datos.");
+            }
+            Application.Run(new MenuCliente(cliente)); //Saltarse login e ir a cliente
+            */
         }
     }
 }
